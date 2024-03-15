@@ -16,7 +16,6 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DMS\Project_ver1\obj\Debug\Project_ver1
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe.config
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Project_ver1.pdb
-D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Guna.UI.dll
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.AssemblyReference.cache
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.SanPhamUi.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.KhachHangUI.resources
@@ -33,3 +32,6 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.dll
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\BusinessAccessLayer.pdb
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Guna.UI2.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.Form1.resources
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug\Guna.UI.dll

@@ -8,42 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessAccessLayer;
 
 namespace Project_ver1
 {
     public partial class KhachHangUI : Form
     {
-        string strConnectionString = "Data Source= MSI\\CSDL;Initial " +
-       "Catalog=Test;Integrated Security = True";
-        SqlConnection conn = null;
-        SqlDataAdapter daKhachHang = null;
-        DataTable dtKhachHang= null;
+        DBKhachHang dbkh;
+        DataTable dtKhachHang = null;
         public KhachHangUI()
         {
-
             InitializeComponent();
+            dbkh = new DBKhachHang();
         }
         private void KhachHangUI_Load(object sender, EventArgs e)
         {
   
             LoadData();
-
         }
         public void LoadData()
         {
             try
             {
-                conn = new SqlConnection(strConnectionString);
-                if (conn.State == ConnectionState.Open) { conn.Close(); }
-                conn.Open();
-
-                daKhachHang = new SqlDataAdapter("SELECT * FROM khachhang", conn);
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
-                daKhachHang.Fill(dtKhachHang);
-                // Đưa dữ liệu lên DataGridView
-                dgvSanPham.DataSource = dtKhachHang;
-                conn.Close();
+                dtKhachHang = dbkh.LayThanhPho().Tables[0];
+                // Đưa dữ liệu lên DataGridView  
+                dgvKhachHang.DataSource = dtKhachHang;
             }
             catch (SqlException)
             {
@@ -55,7 +46,6 @@ namespace Project_ver1
         {
             dtKhachHang.Dispose();
             dtKhachHang = null;
-            conn = null;
         }
 
 

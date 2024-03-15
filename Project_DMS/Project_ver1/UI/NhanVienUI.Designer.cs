@@ -42,17 +42,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.dgvNhanVien = new Guna.UI.WinForms.GunaDataGridView();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Point = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.ReadButton = new Guna.UI.WinForms.GunaButton();
             this.AddButton = new Guna.UI.WinForms.GunaButton();
             this.RemoveButton = new Guna.UI.WinForms.GunaButton();
             this.UpdateButton = new Guna.UI.WinForms.GunaButton();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -68,7 +70,7 @@
             this.panel1.Controls.Add(this.FindButton);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.gunaTextBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(775, 128);
             this.panel1.TabIndex = 14;
@@ -97,6 +99,7 @@
             this.gunaTextBox2.Location = new System.Drawing.Point(177, 58);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.SelectedText = "";
             this.gunaTextBox2.Size = new System.Drawing.Size(199, 31);
             this.gunaTextBox2.TabIndex = 7;
             // 
@@ -114,8 +117,11 @@
             // 
             this.FindButton.AnimationHoverSpeed = 0.07F;
             this.FindButton.AnimationSpeed = 0.03F;
+            this.FindButton.BackColor = System.Drawing.Color.Transparent;
             this.FindButton.BaseColor = System.Drawing.Color.Khaki;
             this.FindButton.BorderColor = System.Drawing.Color.Black;
+            this.FindButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FindButton.FocusedColor = System.Drawing.Color.Empty;
             this.FindButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FindButton.ForeColor = System.Drawing.Color.White;
             this.FindButton.Image = ((System.Drawing.Image)(resources.GetObject("FindButton.Image")));
@@ -154,6 +160,7 @@
             this.gunaTextBox1.Location = new System.Drawing.Point(397, 58);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.SelectedText = "";
             this.gunaTextBox1.Size = new System.Drawing.Size(200, 31);
             this.gunaTextBox1.TabIndex = 5;
             // 
@@ -162,7 +169,7 @@
             this.dgvNhanVien.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
             this.dgvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -180,10 +187,12 @@
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
             this.TenNV,
-            this.SDT,
+            this.Birthday,
+            this.GioiTinh,
             this.DiaChi,
-            this.Point,
-            this.Column1});
+            this.SDT,
+            this.Status,
+            this.ChucVu});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -212,7 +221,7 @@
             this.dgvNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(775, 433);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1011, 467);
             this.dgvNhanVien.TabIndex = 15;
             this.dgvNhanVien.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Light;
             this.dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
@@ -237,59 +246,6 @@
             this.dgvNhanVien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.dgvNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNhanVien";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.MinimumWidth = 6;
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
-            this.MaNV.Width = 165;
-            // 
-            // TenNV
-            // 
-            this.TenNV.DataPropertyName = "TenNhanVien";
-            this.TenNV.HeaderText = "Tên Nhân Viên";
-            this.TenNV.MinimumWidth = 6;
-            this.TenNV.Name = "TenNV";
-            this.TenNV.ReadOnly = true;
-            this.TenNV.Width = 177;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SoDienThoai";
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            this.SDT.Width = 163;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 103;
-            // 
-            // Point
-            // 
-            this.Point.DataPropertyName = "Point";
-            this.Point.HeaderText = "Point";
-            this.Point.MinimumWidth = 6;
-            this.Point.Name = "Point";
-            this.Point.ReadOnly = true;
-            this.Point.Width = 88;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 122;
-            // 
             // gunaElipsePanel1
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
@@ -298,7 +254,7 @@
             this.gunaElipsePanel1.Controls.Add(this.AddButton);
             this.gunaElipsePanel1.Controls.Add(this.RemoveButton);
             this.gunaElipsePanel1.Controls.Add(this.UpdateButton);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(154, 610);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(380, 652);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(643, 71);
@@ -308,8 +264,11 @@
             // 
             this.ReadButton.AnimationHoverSpeed = 0.07F;
             this.ReadButton.AnimationSpeed = 0.03F;
+            this.ReadButton.BackColor = System.Drawing.Color.Transparent;
             this.ReadButton.BaseColor = System.Drawing.Color.LightSkyBlue;
             this.ReadButton.BorderColor = System.Drawing.Color.Black;
+            this.ReadButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ReadButton.FocusedColor = System.Drawing.Color.Empty;
             this.ReadButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReadButton.ForeColor = System.Drawing.Color.Black;
             this.ReadButton.Image = ((System.Drawing.Image)(resources.GetObject("ReadButton.Image")));
@@ -332,8 +291,11 @@
             // 
             this.AddButton.AnimationHoverSpeed = 0.07F;
             this.AddButton.AnimationSpeed = 0.03F;
+            this.AddButton.BackColor = System.Drawing.Color.Transparent;
             this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AddButton.BorderColor = System.Drawing.Color.Black;
+            this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddButton.FocusedColor = System.Drawing.Color.Empty;
             this.AddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddButton.ForeColor = System.Drawing.Color.Black;
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
@@ -356,8 +318,11 @@
             // 
             this.RemoveButton.AnimationHoverSpeed = 0.07F;
             this.RemoveButton.AnimationSpeed = 0.03F;
+            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
             this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.RemoveButton.BorderColor = System.Drawing.Color.Black;
+            this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.RemoveButton.FocusedColor = System.Drawing.Color.Empty;
             this.RemoveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButton.ForeColor = System.Drawing.Color.Black;
             this.RemoveButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveButton.Image")));
@@ -381,8 +346,11 @@
             // 
             this.UpdateButton.AnimationHoverSpeed = 0.07F;
             this.UpdateButton.AnimationSpeed = 0.03F;
+            this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
             this.UpdateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.UpdateButton.BorderColor = System.Drawing.Color.Black;
+            this.UpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateButton.FocusedColor = System.Drawing.Color.Empty;
             this.UpdateButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
@@ -401,11 +369,84 @@
             this.UpdateButton.Text = "Sửa";
             this.UpdateButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "EmployeeID";
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 165;
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "NameEmployee";
+            this.TenNV.HeaderText = "Tên Nhân Viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
+            this.TenNV.Width = 177;
+            // 
+            // Birthday
+            // 
+            this.Birthday.DataPropertyName = "Birthday";
+            this.Birthday.HeaderText = "Ngày sinh";
+            this.Birthday.MinimumWidth = 6;
+            this.Birthday.Name = "Birthday";
+            this.Birthday.ReadOnly = true;
+            this.Birthday.Width = 133;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "Gender";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioiTinh.Width = 128;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "AddressEmployee";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 103;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "PhoneNumber";
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
+            this.SDT.Width = 163;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Trạng thái";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 135;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "Title";
+            this.ChucVu.HeaderText = "Chức Vụ";
+            this.ChucVu.MinimumWidth = 6;
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.ReadOnly = true;
+            this.ChucVu.Width = 121;
+            // 
             // NhanVienUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 689);
+            this.ClientSize = new System.Drawing.Size(1027, 725);
             this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.panel1);
@@ -440,9 +481,11 @@
         private Guna.UI.WinForms.GunaButton UpdateButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Point;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
     }
 }

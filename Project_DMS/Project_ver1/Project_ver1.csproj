@@ -68,6 +68,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UI\BienLaiUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BienLaiUI.Designer.cs">
+      <DependentUpon>BienLaiUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HoaDonUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HoaDonUI.Designer.cs">
+      <DependentUpon>HoaDonUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NhaCungCapUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NhaCungCapUI.Designer.cs">
+      <DependentUpon>NhaCungCapUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\NhanVienUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\BienLaiUI.resx">
+      <DependentUpon>BienLaiUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HoaDonUI.resx">
+      <DependentUpon>HoaDonUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NhaCungCapUI.resx">
+      <DependentUpon>NhaCungCapUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\NhanVienUI.resx">
       <DependentUpon>NhanVienUI.cs</DependentUpon>
     </EmbeddedResource>

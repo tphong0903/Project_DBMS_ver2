@@ -9,19 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BusinessAccessLayer;
 
 namespace Project_ver1
 {
     public partial class SanPhamUi : Form
     {
-        string strConnectionString = "Data Source= MSI\\CSDL;Initial " +
-       "Catalog=Test;Integrated Security = True";
-        SqlConnection conn = null;
-        SqlDataAdapter daSanPham = null;
+        DBSanPham dbsp;
         DataTable dtSanPham = null;
         public SanPhamUi()
         {
             InitializeComponent();
+            dbsp = new DBSanPham();
         }
 
         private void gunaComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,17 +31,12 @@ namespace Project_ver1
         {
             try
             {
-                conn = new SqlConnection(strConnectionString);
-                if (conn.State == ConnectionState.Open) { conn.Close(); }
-                conn.Open();
 
-                daSanPham = new SqlDataAdapter("SELECT * FROM sanpham", conn);
                 dtSanPham = new DataTable();
                 dtSanPham.Clear();
-                daSanPham.Fill(dtSanPham);
-                // Đưa dữ liệu lên DataGridView
+                dtSanPham = dbsp.LayThanhPho().Tables[0];
+                // Đưa dữ liệu lên DataGridView  
                 dgvSanPham.DataSource = dtSanPham;
-                conn.Close();
             }
             catch (SqlException)
             {
@@ -65,7 +59,6 @@ namespace Project_ver1
         {
             dtSanPham.Dispose();
             dtSanPham = null;
-            conn = null;
         }
     }
 }

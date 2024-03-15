@@ -16,6 +16,9 @@ namespace Project_ver1
         SanPhamUi frm1 = new SanPhamUi();
         KhachHangUI frm2 = new KhachHangUI();
         NhanVienUI frm3 = new NhanVienUI();
+        HoaDonUI frm4 = new HoaDonUI();
+        BienLaiUI frm5 = new BienLaiUI();
+        NhaCungCapUI frm6 = new NhaCungCapUI();
         public MainForm()
         {
             InitializeComponent();
@@ -36,21 +39,32 @@ namespace Project_ver1
         }
         void addForm()
         {
-           
             frm1.TopLevel = false;
             panel1.Controls.Add(frm1);
-          
+
             frm2.TopLevel = false;
             panel1.Controls.Add(frm2);
 
             frm3.TopLevel = false;
             panel1.Controls.Add(frm3);
+
+            frm4.TopLevel = false;
+            panel1.Controls.Add(frm4);
+
+            frm5.TopLevel = false;
+            panel1.Controls.Add(frm5);
+
+            frm6.TopLevel = false;
+            panel1.Controls.Add(frm6);
         }
         void TurnOffAllForm()
         {
             frm1.Hide();
             frm2.Hide();
             frm3.Hide();
+            frm4.Hide();
+            frm5.Hide();
+            frm6.Hide();
         }
 
 
@@ -76,6 +90,24 @@ namespace Project_ver1
         {
             TurnOffAllForm();
             frm3.Show();
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            TurnOffAllForm();
+            frm4.Show();
+        }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+            TurnOffAllForm();
+            frm6.Show();
+        }
+
+        private void gunaButton7_Click(object sender, EventArgs e)
+        {
+            TurnOffAllForm();
+            frm5.Show();
         }
     }
 }

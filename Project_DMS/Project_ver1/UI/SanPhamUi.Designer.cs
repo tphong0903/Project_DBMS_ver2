@@ -50,10 +50,9 @@
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaDM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
@@ -66,6 +65,7 @@
             this.gunaComboBox2.BorderColor = System.Drawing.Color.Silver;
             this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox2.FormattingEnabled = true;
@@ -83,6 +83,7 @@
             this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
             this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox1.FormattingEnabled = true;
@@ -106,6 +107,7 @@
             this.gunaTextBox1.Location = new System.Drawing.Point(380, 58);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.SelectedText = "";
             this.gunaTextBox1.Size = new System.Drawing.Size(215, 31);
             this.gunaTextBox1.TabIndex = 5;
             // 
@@ -119,7 +121,7 @@
             this.panel1.Controls.Add(this.gunaComboBox2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(775, 127);
             this.panel1.TabIndex = 4;
@@ -128,8 +130,11 @@
             // 
             this.FindButton.AnimationHoverSpeed = 0.07F;
             this.FindButton.AnimationSpeed = 0.03F;
+            this.FindButton.BackColor = System.Drawing.Color.Transparent;
             this.FindButton.BaseColor = System.Drawing.Color.Khaki;
             this.FindButton.BorderColor = System.Drawing.Color.Black;
+            this.FindButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FindButton.FocusedColor = System.Drawing.Color.Empty;
             this.FindButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FindButton.ForeColor = System.Drawing.Color.White;
             this.FindButton.Image = ((System.Drawing.Image)(resources.GetObject("FindButton.Image")));
@@ -181,8 +186,11 @@
             // 
             this.AddButton.AnimationHoverSpeed = 0.07F;
             this.AddButton.AnimationSpeed = 0.03F;
+            this.AddButton.BackColor = System.Drawing.Color.Transparent;
             this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AddButton.BorderColor = System.Drawing.Color.Black;
+            this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddButton.FocusedColor = System.Drawing.Color.Empty;
             this.AddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddButton.ForeColor = System.Drawing.Color.Black;
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
@@ -205,8 +213,11 @@
             // 
             this.UpdateButton.AnimationHoverSpeed = 0.07F;
             this.UpdateButton.AnimationSpeed = 0.03F;
+            this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
             this.UpdateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.UpdateButton.BorderColor = System.Drawing.Color.Black;
+            this.UpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateButton.FocusedColor = System.Drawing.Color.Empty;
             this.UpdateButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
@@ -229,8 +240,11 @@
             // 
             this.RemoveButton.AnimationHoverSpeed = 0.07F;
             this.RemoveButton.AnimationSpeed = 0.03F;
+            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
             this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.RemoveButton.BorderColor = System.Drawing.Color.Black;
+            this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.RemoveButton.FocusedColor = System.Drawing.Color.Empty;
             this.RemoveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButton.ForeColor = System.Drawing.Color.Black;
             this.RemoveButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveButton.Image")));
@@ -257,7 +271,7 @@
             this.gunaElipsePanel1.Controls.Add(this.AddButton);
             this.gunaElipsePanel1.Controls.Add(this.RemoveButton);
             this.gunaElipsePanel1.Controls.Add(this.UpdateButton);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(154, 610);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(380, 652);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(643, 71);
@@ -267,8 +281,11 @@
             // 
             this.ReadButton.AnimationHoverSpeed = 0.07F;
             this.ReadButton.AnimationSpeed = 0.03F;
+            this.ReadButton.BackColor = System.Drawing.Color.Transparent;
             this.ReadButton.BaseColor = System.Drawing.Color.LightSkyBlue;
             this.ReadButton.BorderColor = System.Drawing.Color.Black;
+            this.ReadButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ReadButton.FocusedColor = System.Drawing.Color.Empty;
             this.ReadButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReadButton.ForeColor = System.Drawing.Color.Black;
             this.ReadButton.Image = ((System.Drawing.Image)(resources.GetObject("ReadButton.Image")));
@@ -292,10 +309,10 @@
             this.dgvSanPham.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
             this.dgvSanPham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvSanPham.BackgroundColor = System.Drawing.Color.White;
             this.dgvSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            this.dgvSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
@@ -305,15 +322,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSanPham.ColumnHeadersHeight = 30;
-            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSP,
             this.TenSP,
-            this.MaDM,
-            this.MaKM,
-            this.GiaTien,
-            this.Column1});
+            this.Gia,
+            this.MaBrand,
+            this.MaDM});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -342,7 +357,7 @@
             this.dgvSanPham.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvSanPham.RowTemplate.Height = 24;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSanPham.Size = new System.Drawing.Size(775, 436);
+            this.dgvSanPham.Size = new System.Drawing.Size(1011, 467);
             this.dgvSanPham.TabIndex = 10;
             this.dgvSanPham.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Light;
             this.dgvSanPham.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
@@ -356,8 +371,8 @@
             this.dgvSanPham.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dgvSanPham.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dgvSanPham.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvSanPham.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvSanPham.ThemeStyle.HeaderStyle.Height = 30;
+            this.dgvSanPham.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.ThemeStyle.HeaderStyle.Height = 29;
             this.dgvSanPham.ThemeStyle.ReadOnly = true;
             this.dgvSanPham.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvSanPham.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -369,7 +384,7 @@
             // 
             // MaSP
             // 
-            this.MaSP.DataPropertyName = "MaSanPham";
+            this.MaSP.DataPropertyName = "Product_ID";
             this.MaSP.HeaderText = "Mã sản phẩm";
             this.MaSP.MinimumWidth = 6;
             this.MaSP.Name = "MaSP";
@@ -378,53 +393,45 @@
             // 
             // TenSP
             // 
-            this.TenSP.DataPropertyName = "TenSanPham";
+            this.TenSP.DataPropertyName = "ProductName";
             this.TenSP.HeaderText = "Tên sản phẩm";
             this.TenSP.MinimumWidth = 6;
             this.TenSP.Name = "TenSP";
             this.TenSP.ReadOnly = true;
             this.TenSP.Width = 173;
             // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "UnitPrice";
+            this.Gia.HeaderText = "Giá bán";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
+            this.Gia.Width = 112;
+            // 
+            // MaBrand
+            // 
+            this.MaBrand.DataPropertyName = "Brand_ID";
+            this.MaBrand.HeaderText = "Mã thương hiệu";
+            this.MaBrand.MinimumWidth = 6;
+            this.MaBrand.Name = "MaBrand";
+            this.MaBrand.ReadOnly = true;
+            this.MaBrand.Width = 190;
+            // 
             // MaDM
             // 
-            this.MaDM.DataPropertyName = "MaDanhMuc";
+            this.MaDM.DataPropertyName = "Category_ID";
             this.MaDM.HeaderText = "Mã danh mục";
             this.MaDM.MinimumWidth = 6;
             this.MaDM.Name = "MaDM";
             this.MaDM.ReadOnly = true;
             this.MaDM.Width = 166;
             // 
-            // MaKM
-            // 
-            this.MaKM.DataPropertyName = "MaKhuyenMai";
-            this.MaKM.HeaderText = "Mã Khuyến Mãi";
-            this.MaKM.MinimumWidth = 6;
-            this.MaKM.Name = "MaKM";
-            this.MaKM.ReadOnly = true;
-            this.MaKM.Width = 184;
-            // 
-            // GiaTien
-            // 
-            this.GiaTien.DataPropertyName = "GiaTien";
-            this.GiaTien.HeaderText = "Giá Tiền";
-            this.GiaTien.MinimumWidth = 6;
-            this.GiaTien.Name = "GiaTien";
-            this.GiaTien.ReadOnly = true;
-            this.GiaTien.Width = 118;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 122;
-            // 
             // SanPhamUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 689);
+            this.ClientSize = new System.Drawing.Size(1027, 725);
             this.ControlBox = false;
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.gunaElipsePanel1);
@@ -460,9 +467,8 @@
         private Guna.UI.WinForms.GunaDataGridView dgvSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBrand;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

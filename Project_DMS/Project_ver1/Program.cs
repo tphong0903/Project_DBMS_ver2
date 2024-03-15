@@ -19,7 +19,7 @@ namespace Project_ver1
                 SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new MainForm());
         }
         // Fix sacle man hinh
         [System.Runtime.InteropServices.DllImport("user32.dll")]

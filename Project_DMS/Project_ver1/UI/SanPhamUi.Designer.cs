@@ -131,7 +131,7 @@
             this.FindButton.AnimationHoverSpeed = 0.07F;
             this.FindButton.AnimationSpeed = 0.03F;
             this.FindButton.BackColor = System.Drawing.Color.Transparent;
-            this.FindButton.BaseColor = System.Drawing.Color.Khaki;
+            this.FindButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.FindButton.BorderColor = System.Drawing.Color.Black;
             this.FindButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.FindButton.FocusedColor = System.Drawing.Color.Empty;
@@ -140,15 +140,15 @@
             this.FindButton.Image = ((System.Drawing.Image)(resources.GetObject("FindButton.Image")));
             this.FindButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FindButton.ImageSize = new System.Drawing.Size(30, 30);
-            this.FindButton.Location = new System.Drawing.Point(613, 44);
+            this.FindButton.Location = new System.Drawing.Point(643, 44);
             this.FindButton.Name = "FindButton";
-            this.FindButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.FindButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.FindButton.OnHoverBorderColor = System.Drawing.Color.Black;
             this.FindButton.OnHoverForeColor = System.Drawing.Color.White;
             this.FindButton.OnHoverImage = null;
             this.FindButton.OnPressedColor = System.Drawing.Color.Black;
             this.FindButton.Radius = 15;
-            this.FindButton.Size = new System.Drawing.Size(145, 55);
+            this.FindButton.Size = new System.Drawing.Size(115, 55);
             this.FindButton.TabIndex = 5;
             this.FindButton.Click += new System.EventHandler(this.FindButton_Click);
             // 
@@ -187,7 +187,7 @@
             this.AddButton.AnimationHoverSpeed = 0.07F;
             this.AddButton.AnimationSpeed = 0.03F;
             this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.AddButton.BorderColor = System.Drawing.Color.Black;
             this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddButton.FocusedColor = System.Drawing.Color.Empty;
@@ -196,17 +196,16 @@
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddButton.Location = new System.Drawing.Point(472, 3);
+            this.AddButton.Location = new System.Drawing.Point(488, 3);
             this.AddButton.Name = "AddButton";
-            this.AddButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
             this.AddButton.OnHoverForeColor = System.Drawing.Color.White;
             this.AddButton.OnHoverImage = null;
             this.AddButton.OnPressedColor = System.Drawing.Color.Black;
             this.AddButton.Radius = 15;
-            this.AddButton.Size = new System.Drawing.Size(145, 49);
+            this.AddButton.Size = new System.Drawing.Size(107, 49);
             this.AddButton.TabIndex = 6;
-            this.AddButton.Text = "Thêm";
             this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UpdateButton
@@ -214,7 +213,7 @@
             this.UpdateButton.AnimationHoverSpeed = 0.07F;
             this.UpdateButton.AnimationSpeed = 0.03F;
             this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
-            this.UpdateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.UpdateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.UpdateButton.BorderColor = System.Drawing.Color.Black;
             this.UpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.UpdateButton.FocusedColor = System.Drawing.Color.Empty;
@@ -223,17 +222,16 @@
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
             this.UpdateButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UpdateButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.UpdateButton.Location = new System.Drawing.Point(321, 3);
+            this.UpdateButton.Location = new System.Drawing.Point(375, 3);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.UpdateButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.UpdateButton.OnHoverBorderColor = System.Drawing.Color.Black;
             this.UpdateButton.OnHoverForeColor = System.Drawing.Color.WhiteSmoke;
             this.UpdateButton.OnHoverImage = null;
             this.UpdateButton.OnPressedColor = System.Drawing.Color.Black;
             this.UpdateButton.Radius = 15;
-            this.UpdateButton.Size = new System.Drawing.Size(145, 49);
+            this.UpdateButton.Size = new System.Drawing.Size(107, 49);
             this.UpdateButton.TabIndex = 7;
-            this.UpdateButton.Text = "Sửa";
             this.UpdateButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemoveButton
@@ -241,7 +239,7 @@
             this.RemoveButton.AnimationHoverSpeed = 0.07F;
             this.RemoveButton.AnimationSpeed = 0.03F;
             this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
-            this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.RemoveButton.BorderColor = System.Drawing.Color.Black;
             this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.RemoveButton.FocusedColor = System.Drawing.Color.Empty;
@@ -250,18 +248,18 @@
             this.RemoveButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveButton.Image")));
             this.RemoveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RemoveButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.RemoveButton.Location = new System.Drawing.Point(19, 3);
+            this.RemoveButton.Location = new System.Drawing.Point(149, 0);
             this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.RemoveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.RemoveButton.OnHoverBorderColor = System.Drawing.Color.Black;
             this.RemoveButton.OnHoverForeColor = System.Drawing.Color.White;
             this.RemoveButton.OnHoverImage = null;
             this.RemoveButton.OnPressedColor = System.Drawing.Color.Black;
             this.RemoveButton.Radius = 15;
-            this.RemoveButton.Size = new System.Drawing.Size(145, 49);
+            this.RemoveButton.Size = new System.Drawing.Size(107, 49);
             this.RemoveButton.TabIndex = 8;
-            this.RemoveButton.Text = "Xóa";
             this.RemoveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // gunaElipsePanel1
             // 
@@ -271,10 +269,10 @@
             this.gunaElipsePanel1.Controls.Add(this.AddButton);
             this.gunaElipsePanel1.Controls.Add(this.RemoveButton);
             this.gunaElipsePanel1.Controls.Add(this.UpdateButton);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(380, 652);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(420, 652);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(643, 71);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(603, 71);
             this.gunaElipsePanel1.TabIndex = 9;
             // 
             // ReadButton
@@ -282,7 +280,7 @@
             this.ReadButton.AnimationHoverSpeed = 0.07F;
             this.ReadButton.AnimationSpeed = 0.03F;
             this.ReadButton.BackColor = System.Drawing.Color.Transparent;
-            this.ReadButton.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.ReadButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.ReadButton.BorderColor = System.Drawing.Color.Black;
             this.ReadButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ReadButton.FocusedColor = System.Drawing.Color.Empty;
@@ -291,17 +289,16 @@
             this.ReadButton.Image = ((System.Drawing.Image)(resources.GetObject("ReadButton.Image")));
             this.ReadButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ReadButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.ReadButton.Location = new System.Drawing.Point(170, 3);
+            this.ReadButton.Location = new System.Drawing.Point(262, 3);
             this.ReadButton.Name = "ReadButton";
-            this.ReadButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.ReadButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.ReadButton.OnHoverBorderColor = System.Drawing.Color.Black;
             this.ReadButton.OnHoverForeColor = System.Drawing.Color.White;
             this.ReadButton.OnHoverImage = null;
             this.ReadButton.OnPressedColor = System.Drawing.Color.Black;
             this.ReadButton.Radius = 15;
-            this.ReadButton.Size = new System.Drawing.Size(145, 49);
+            this.ReadButton.Size = new System.Drawing.Size(107, 49);
             this.ReadButton.TabIndex = 11;
-            this.ReadButton.Text = "Chi tiết";
             this.ReadButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dgvSanPham
@@ -322,7 +319,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.ColumnHeadersHeight = 29;
             this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSP,
             this.TenSP,
@@ -371,7 +368,7 @@
             this.dgvSanPham.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dgvSanPham.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dgvSanPham.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvSanPham.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvSanPham.ThemeStyle.HeaderStyle.Height = 29;
             this.dgvSanPham.ThemeStyle.ReadOnly = true;
             this.dgvSanPham.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;

@@ -60,5 +60,10 @@ namespace Project_ver1
             dtSanPham.Dispose();
             dtSanPham = null;
         }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

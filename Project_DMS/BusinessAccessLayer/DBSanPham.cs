@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 //
 using DataAccessLayer;
+using System.Xml.Linq;
 
 namespace BusinessAccessLayer
 {
@@ -34,12 +35,11 @@ namespace BusinessAccessLayer
                 "select * from Brand", CommandType.Text, null);
         }
 
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public DataSet TimSanPham( string a, string b,string c)
         {
-            return db.MyExecuteNonQuery("spThemThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+            return db.ExecuteQueryDataSet(
+                "SELECT * FROM Find_Product('"+a+ "',N'"+b+ "',N'"+a+"')",
+                CommandType.Text,null);
         }
         public bool XoaThanhPho(ref string err, string ThanhPho)
         {

@@ -46,8 +46,8 @@ namespace Project_ver1
                 dtTT.Clear();
                 dtTT = dbsp.LayThuongHieu().Tables[0];
                 dtTT.Rows.InsertAt(dtTT.NewRow(), 0);
-                TTCombox.DataSource = dtTT;
-                TTCombox.DisplayMember = "BrandName";
+                THCombox.DataSource = dtTT;
+                THCombox.DisplayMember = "BrandName";
 
             }
             catch (SqlException)
@@ -64,7 +64,23 @@ namespace Project_ver1
 
         private void FindButton_Click(object sender, EventArgs e)
         {
-
+            string DMName = DMCombox.Text;
+            string THName = THCombox.Text;
+            string Name = NameText.Text;
+            
+            string err = "";
+            try
+            {
+                dtSanPham = new DataTable();
+                dtSanPham.Clear();
+                dtSanPham = dbsp.TimSanPham(THName,DMName,Name).Tables[0];
+                dgvSanPham.DataSource = dtSanPham;
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
 
         private void SanPhamUi_FormClosing(object sender, FormClosingEventArgs e)

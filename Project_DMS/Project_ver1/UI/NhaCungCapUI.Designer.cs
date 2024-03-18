@@ -41,7 +41,6 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.FindButton = new Guna.UI.WinForms.GunaButton();
@@ -52,10 +51,11 @@
             this.AddButton = new Guna.UI.WinForms.GunaButton();
             this.RemoveButton = new Guna.UI.WinForms.GunaButton();
             this.UpdateButton = new Guna.UI.WinForms.GunaButton();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.gunaElipsePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvNCC
@@ -195,18 +195,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 128);
             this.panel1.TabIndex = 15;
-            // 
-            // gunaCirclePictureBox1
-            // 
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(27, 3);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 8;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
             // gunaTextBox2
             // 
@@ -403,6 +391,18 @@
             this.UpdateButton.TabIndex = 7;
             this.UpdateButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(27, 3);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 8;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            // 
             // NhaCungCapUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -419,8 +419,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.gunaElipsePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,7 +429,6 @@
 
         private Guna.UI.WinForms.GunaDataGridView dgvNCC;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaButton FindButton;
@@ -445,5 +444,6 @@
         private Guna.UI.WinForms.GunaButton AddButton;
         private Guna.UI.WinForms.GunaButton RemoveButton;
         private Guna.UI.WinForms.GunaButton UpdateButton;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
     }
 }

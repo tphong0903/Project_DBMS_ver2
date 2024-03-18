@@ -23,6 +23,17 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from Product", CommandType.Text, null);
         }
+        public DataSet LayDanhMuc()
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from Category", CommandType.Text, null);
+        }
+        public DataSet LayThuongHieu()
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from Brand", CommandType.Text, null);
+        }
+
         public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
         {
             return db.MyExecuteNonQuery("spThemThanhPho",

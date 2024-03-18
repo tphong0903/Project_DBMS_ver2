@@ -23,10 +23,7 @@ namespace Project_ver1
             dbsp = new DBSanPham();
         }
 
-        private void gunaComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
         public void LoadData()
         {
             try
@@ -37,6 +34,21 @@ namespace Project_ver1
                 dtSanPham = dbsp.LayThanhPho().Tables[0];
                 // Đưa dữ liệu lên DataGridView  
                 dgvSanPham.DataSource = dtSanPham;
+
+                DataTable dtDM = new DataTable();
+                dtDM.Clear();
+                dtDM = dbsp.LayDanhMuc().Tables[0];
+                dtDM.Rows.InsertAt(dtDM.NewRow(), 0);
+                DMCombox.DataSource = dtDM;
+                DMCombox.DisplayMember = "CategoryName";
+
+                DataTable dtTT = new DataTable();
+                dtTT.Clear();
+                dtTT = dbsp.LayThuongHieu().Tables[0];
+                dtTT.Rows.InsertAt(dtTT.NewRow(), 0);
+                TTCombox.DataSource = dtTT;
+                TTCombox.DisplayMember = "BrandName";
+
             }
             catch (SqlException)
             {

@@ -34,8 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.TTCombox = new Guna.UI.WinForms.GunaComboBox();
+            this.DMCombox = new Guna.UI.WinForms.GunaComboBox();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.FindButton = new Guna.UI.WinForms.GunaButton();
@@ -58,43 +58,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.SuspendLayout();
             // 
-            // gunaComboBox2
+            // TTCombox
             // 
-            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Location = new System.Drawing.Point(189, 58);
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox2.Size = new System.Drawing.Size(168, 31);
-            this.gunaComboBox2.TabIndex = 2;
+            this.TTCombox.BackColor = System.Drawing.Color.Transparent;
+            this.TTCombox.BaseColor = System.Drawing.Color.White;
+            this.TTCombox.BorderColor = System.Drawing.Color.Silver;
+            this.TTCombox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.TTCombox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TTCombox.FocusedColor = System.Drawing.Color.Empty;
+            this.TTCombox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TTCombox.ForeColor = System.Drawing.Color.Black;
+            this.TTCombox.FormattingEnabled = true;
+            this.TTCombox.Location = new System.Drawing.Point(189, 58);
+            this.TTCombox.Name = "TTCombox";
+            this.TTCombox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TTCombox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.TTCombox.Size = new System.Drawing.Size(168, 31);
+            this.TTCombox.TabIndex = 2;
             // 
-            // gunaComboBox1
+            // DMCombox
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(3, 56);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Size = new System.Drawing.Size(168, 31);
-            this.gunaComboBox1.TabIndex = 0;
-            this.gunaComboBox1.SelectedIndexChanged += new System.EventHandler(this.gunaComboBox1_SelectedIndexChanged);
-            // 
+            this.DMCombox.BackColor = System.Drawing.Color.Transparent;
+            this.DMCombox.BaseColor = System.Drawing.Color.White;
+            this.DMCombox.BorderColor = System.Drawing.Color.Silver;
+            this.DMCombox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DMCombox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DMCombox.FocusedColor = System.Drawing.Color.Empty;
+            this.DMCombox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.DMCombox.ForeColor = System.Drawing.Color.Black;
+            this.DMCombox.FormattingEnabled = true;
+            this.DMCombox.Location = new System.Drawing.Point(3, 56);
+            this.DMCombox.Name = "DMCombox";
+            this.DMCombox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DMCombox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.DMCombox.Size = new System.Drawing.Size(168, 31);
+            this.DMCombox.TabIndex = 0;
+            
             // gunaTextBox1
             // 
             this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
@@ -117,8 +116,8 @@
             this.panel1.Controls.Add(this.FindButton);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.gunaTextBox1);
-            this.panel1.Controls.Add(this.gunaComboBox1);
-            this.panel1.Controls.Add(this.gunaComboBox2);
+            this.panel1.Controls.Add(this.DMCombox);
+            this.panel1.Controls.Add(this.TTCombox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(247, 12);
@@ -448,8 +447,8 @@
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaComboBox TTCombox;
+        private Guna.UI.WinForms.GunaComboBox DMCombox;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI.WinForms.GunaButton AddButton;

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BusinessAccessLayer;
+using Project_ver1.UI;
 
 namespace Project_ver1
 {
@@ -17,6 +18,7 @@ namespace Project_ver1
     {
         DBSanPham dbsp;
         DataTable dtSanPham = null;
+        string Product_ID = null;
         public SanPhamUi()
         {
             InitializeComponent();
@@ -50,9 +52,9 @@ namespace Project_ver1
                 THCombox.DisplayMember = "BrandName";
 
             }
-            catch (SqlException)
+            catch (SqlException e)
             {
-                MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
+                MessageBox.Show(e.ToString());
             }
         }
         private void SanPhamUi_Load(object sender, EventArgs e)
@@ -92,6 +94,18 @@ namespace Project_ver1
         private void RemoveButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ReadButton_Click(object sender, EventArgs e)
+        {
+            DetailForm detailForm = new DetailForm(0,Product_ID);
+            detailForm.ShowDialog();
+        }
+
+        private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int r = dgvSanPham.CurrentCell.RowIndex;
+            Product_ID = dgvSanPham.Rows[r].Cells[0].Value.ToString();
         }
     }
 }

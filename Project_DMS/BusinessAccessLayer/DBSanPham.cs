@@ -22,17 +22,17 @@ namespace BusinessAccessLayer
         public DataSet LayThanhPho()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Product", CommandType.Text, null);
+                "select Product_ID, ProductName,UnitPrice,Quantity  from View_Product", CommandType.Text, null);
         }
         public DataSet LayDanhMuc()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Category", CommandType.Text, null);
+                "select * from Categories", CommandType.Text, null);
         }
         public DataSet LayThuongHieu()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Brand", CommandType.Text, null);
+                "select * from Brands", CommandType.Text, null);
         }
 
         public DataSet TimSanPham( string a, string b,string c)
@@ -40,6 +40,12 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "SELECT * FROM Find_Product('"+a+ "',N'"+b+ "',N'"+a+"')",
                 CommandType.Text,null);
+        }
+        public DataSet ChiTietSanPham(string a)
+        {
+            return db.ExecuteQueryDataSet(
+                "SELECT * FROM View_Product where Product_ID = '"+a+"'",
+                CommandType.Text, null);
         }
         public bool XoaThanhPho(ref string err, string ThanhPho)
         {

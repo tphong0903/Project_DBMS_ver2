@@ -21,7 +21,7 @@ namespace BusinessAccessLayer
         public DataSet LayThanhPho()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Customer", CommandType.Text, null);
+                "select * from Customers", CommandType.Text, null);
         }
         public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
         {

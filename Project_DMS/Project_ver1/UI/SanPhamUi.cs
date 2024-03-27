@@ -127,7 +127,7 @@ namespace Project_ver1
             if (r > 1)
             {
                 DetailForm detailForm = new DetailForm(1, Product_ID);
-                detailForm.ShowDialog();
+                detailForm.Show();
             }
             else
                 MessageBox.Show("Vui lòng chọn sản phẩm");

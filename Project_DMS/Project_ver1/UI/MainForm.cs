@@ -66,9 +66,6 @@ namespace Project_ver1
             frm5.Hide();
             frm6.Hide();
         }
-
-
-
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             TurnOffAllForm();

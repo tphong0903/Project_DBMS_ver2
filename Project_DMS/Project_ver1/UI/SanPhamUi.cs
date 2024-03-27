@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using BusinessAccessLayer;
 using Project_ver1.UI;
+using System.Timers;
 
 namespace Project_ver1
 {
@@ -19,6 +20,10 @@ namespace Project_ver1
         DBSanPham dbsp;
         DataTable dtSanPham = null;
         string Product_ID = null;
+        DetailForm detailForm = null;
+        string DMName =null;
+        string THName = null;
+        string Name = null ;
         public SanPhamUi()
         {
             InitializeComponent();
@@ -40,8 +45,8 @@ namespace Project_ver1
                 dtDM.Clear();
                 dtDM = dbsp.LayDanhMuc().Tables[0];
                 dtDM.Rows.InsertAt(dtDM.NewRow(), 0);
-                DMCombox.DataSource = dtDM;
-                DMCombox.DisplayMember = "CategoryName";
+               // DMCombox.DataSource = dtDM;
+               // DMCombox.DisplayMember = "CategoryName";
 
                 DataTable dtTT = new DataTable();
                 dtTT.Clear();
@@ -51,7 +56,7 @@ namespace Project_ver1
                 THCombox.DisplayMember = "BrandName";
 
                 Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
-
+                SLSP.Text = (dgvSanPham.RowCount - 1).ToString();
             }
             catch (SqlException e)
             {
@@ -60,36 +65,39 @@ namespace Project_ver1
         }
         private void SanPhamUi_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'testDataSet.sanpham' table. You can move, or remove it, as needed.
             LoadData();
-
         }
+        private void ButtonDM_Click(object sender, EventArgs e)
+        {
+            Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
 
+            if (clickedButton != null)
+            {
+                DMName= clickedButton.Text;
+                FindButton_Click(sender, e);
+                DMName = null;
+            }
+        }
         private void FindButton_Click(object sender, EventArgs e)
         {
-            string DMName = DMCombox.Text;
-            string THName = THCombox.Text;
-            string Name = NameText.Text;
-            
-            string err = "";
             try
             {
-                dtSanPham = new DataTable();
-                dtSanPham.Clear();
-                dtSanPham = dbsp.TimSanPham(THName,DMName,Name).Tables[0];
+                THName = THCombox.Text;
+                Name = NameText.Text;
+                DataTable dtSanPham = dbsp.TimSanPham(THName, DMName,Name).Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
-                int r = dgvSanPham.RowCount;
-                if (r > 1)
+
+                SLSP.Text = (dtSanPham.Rows.Count).ToString();
+
+                if (dtSanPham.Rows.Count > 0)
                 {
                     Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
                 }
-              
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            
         }
 
         private void SanPhamUi_FormClosing(object sender, FormClosingEventArgs e)
@@ -126,11 +134,44 @@ namespace Project_ver1
             int r = dgvSanPham.RowCount;
             if (r > 1)
             {
-                DetailForm detailForm = new DetailForm(1, Product_ID);
+                detailForm = new DetailForm(1, Product_ID);
                 detailForm.Show();
             }
             else
                 MessageBox.Show("Vui lòng chọn sản phẩm");
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            detailForm = new DetailForm(2, Product_ID);
+            detailForm.Show();
+        }
+
+        private void ReloadButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void NameText_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                THName = THCombox.Text;
+                Name = NameText.Text;
+                DataTable dtSanPham = dbsp.TimSanPham(THName, DMName, Name).Tables[0];
+                dgvSanPham.DataSource = dtSanPham;
+
+                SLSP.Text = (dtSanPham.Rows.Count).ToString();
+
+                if (dtSanPham.Rows.Count > 0)
+                {
+                    Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

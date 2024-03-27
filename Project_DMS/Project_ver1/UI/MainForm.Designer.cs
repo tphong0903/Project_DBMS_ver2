@@ -53,7 +53,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 725);
+            this.pictureBox1.Size = new System.Drawing.Size(307, 868);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -138,7 +138,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(307, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 725);
+            this.panel1.Size = new System.Drawing.Size(1094, 848);
             this.panel1.TabIndex = 1;
             // 
             // gunaButton3
@@ -154,7 +154,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.Black;
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton3.Location = new System.Drawing.Point(1, 685);
+            this.gunaButton3.Location = new System.Drawing.Point(1, 796);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -299,7 +299,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 727);
+            this.ClientSize = new System.Drawing.Size(1400, 850);
             this.Controls.Add(this.gunaButton8);
             this.Controls.Add(this.gunaButton7);
             this.Controls.Add(this.gunaButton6);

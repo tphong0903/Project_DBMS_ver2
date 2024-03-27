@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PicProduct = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -43,18 +43,21 @@
             this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
             this.a = new System.Windows.Forms.DataGridView();
             this.SaveButton = new Guna.UI.WinForms.GunaButton();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            ((System.ComponentModel.ISupportInitialize)(this.PicProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2PictureBox1
+            // PicProduct
             // 
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 22);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(236, 279);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.PicProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicProduct.Location = new System.Drawing.Point(12, 22);
+            this.PicProduct.Name = "PicProduct";
+            this.PicProduct.ShadowDecoration.Parent = this.PicProduct;
+            this.PicProduct.Size = new System.Drawing.Size(236, 279);
+            this.PicProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicProduct.TabIndex = 0;
+            this.PicProduct.TabStop = false;
             // 
             // gunaLabel1
             // 
@@ -131,7 +134,7 @@
             this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MaSP.HoverState.Parent = this.MaSP;
             this.MaSP.Location = new System.Drawing.Point(420, 13);
-            this.MaSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaSP.Margin = new System.Windows.Forms.Padding(4);
             this.MaSP.Name = "MaSP";
             this.MaSP.PasswordChar = '\0';
             this.MaSP.PlaceholderText = "";
@@ -156,7 +159,7 @@
             this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TenSP.HoverState.Parent = this.TenSP;
             this.TenSP.Location = new System.Drawing.Point(420, 65);
-            this.TenSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TenSP.Margin = new System.Windows.Forms.Padding(4);
             this.TenSP.Name = "TenSP";
             this.TenSP.PasswordChar = '\0';
             this.TenSP.PlaceholderText = "";
@@ -180,7 +183,7 @@
             this.Gia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Gia.HoverState.Parent = this.Gia;
             this.Gia.Location = new System.Drawing.Point(420, 117);
-            this.Gia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Gia.Margin = new System.Windows.Forms.Padding(4);
             this.Gia.Name = "Gia";
             this.Gia.PasswordChar = '\0';
             this.Gia.PlaceholderText = "";
@@ -204,7 +207,7 @@
             this.ThuongHieu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ThuongHieu.HoverState.Parent = this.ThuongHieu;
             this.ThuongHieu.Location = new System.Drawing.Point(420, 169);
-            this.ThuongHieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThuongHieu.Margin = new System.Windows.Forms.Padding(4);
             this.ThuongHieu.Name = "ThuongHieu";
             this.ThuongHieu.PasswordChar = '\0';
             this.ThuongHieu.PlaceholderText = "";
@@ -228,7 +231,7 @@
             this.DanhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DanhMuc.HoverState.Parent = this.DanhMuc;
             this.DanhMuc.Location = new System.Drawing.Point(420, 221);
-            this.DanhMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.DanhMuc.Name = "DanhMuc";
             this.DanhMuc.PasswordChar = '\0';
             this.DanhMuc.PlaceholderText = "";
@@ -252,7 +255,7 @@
             this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SoLuong.HoverState.Parent = this.SoLuong;
             this.SoLuong.Location = new System.Drawing.Point(420, 277);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.PasswordChar = '\0';
             this.SoLuong.PlaceholderText = "";
@@ -264,11 +267,11 @@
             // a
             // 
             this.a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.a.Location = new System.Drawing.Point(25, 323);
+            this.a.Location = new System.Drawing.Point(12, 362);
             this.a.Name = "a";
             this.a.RowHeadersWidth = 51;
             this.a.RowTemplate.Height = 24;
-            this.a.Size = new System.Drawing.Size(71, 61);
+            this.a.Size = new System.Drawing.Size(52, 33);
             this.a.TabIndex = 19;
             this.a.Visible = false;
             // 
@@ -300,11 +303,40 @@
             this.SaveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(55, 307);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 15;
+            this.gunaButton1.Size = new System.Drawing.Size(138, 49);
+            this.gunaButton1.TabIndex = 21;
+            this.gunaButton1.Text = "Hình ảnh";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
             // DetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 396);
+            this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.a);
             this.Controls.Add(this.SoLuong);
@@ -319,7 +351,7 @@
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.PicProduct);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "DetailForm";
@@ -328,7 +360,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết sản phẩm";
             this.Load += new System.EventHandler(this.DetailForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -337,7 +369,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox PicProduct;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
@@ -352,5 +384,6 @@
         private Guna.UI2.WinForms.Guna2TextBox SoLuong;
         private System.Windows.Forms.DataGridView a;
         private Guna.UI.WinForms.GunaButton SaveButton;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
     }
 }

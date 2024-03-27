@@ -38,3 +38,4 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhaCungCapUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.BienLaiUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.DetailForm.resources
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NVDetail.resources

@@ -30,7 +30,6 @@ namespace Project_ver1
         {
             try
             {
-
                 dtSanPham = new DataTable();
                 dtSanPham.Clear();
                 dtSanPham = dbsp.LayThanhPho().Tables[0];
@@ -50,6 +49,8 @@ namespace Project_ver1
                 dtTT.Rows.InsertAt(dtTT.NewRow(), 0);
                 THCombox.DataSource = dtTT;
                 THCombox.DisplayMember = "BrandName";
+
+                Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
 
             }
             catch (SqlException e)
@@ -77,6 +78,12 @@ namespace Project_ver1
                 dtSanPham.Clear();
                 dtSanPham = dbsp.TimSanPham(THName,DMName,Name).Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
+                int r = dgvSanPham.RowCount;
+                if (r > 1)
+                {
+                    Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
+                }
+              
             }
             catch (SqlException ex)
             {
@@ -98,14 +105,32 @@ namespace Project_ver1
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            DetailForm detailForm = new DetailForm(0,Product_ID);
-            detailForm.ShowDialog();
+            int r = dgvSanPham.RowCount;
+            if (r > 1)
+            {
+                DetailForm detailForm = new DetailForm(0, Product_ID);
+                detailForm.ShowDialog();
+            }
+            else
+                MessageBox.Show("Vui lòng chọn sản phẩm");
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int r = dgvSanPham.CurrentCell.RowIndex;
             Product_ID = dgvSanPham.Rows[r].Cells[0].Value.ToString();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            int r = dgvSanPham.RowCount;
+            if (r > 1)
+            {
+                DetailForm detailForm = new DetailForm(1, Product_ID);
+                detailForm.ShowDialog();
+            }
+            else
+                MessageBox.Show("Vui lòng chọn sản phẩm");
         }
     }
 }

@@ -23,15 +23,27 @@ namespace Project_ver1.UI
         {
             Check=check;
             Product_Id = Product_ID;
+            
             InitializeComponent();
+            MaSP.Enabled = false;
+            TenSP.Enabled = false;
+            Gia.Enabled = false;
+            ThuongHieu.Enabled = false;
+            DanhMuc.Enabled = false;
+            SoLuong.Enabled = false;
+            SaveButton.Visible = false;
+            if (Check == 1)
+            {
+                Gia.Enabled = true;
+                SaveButton.Visible= true;
+            }
             dbsp = new DBSanPham();
-            if (Check == 0) { };
+         
         }
         public void LoadData()
         {
             try
             {
-               
                 dtSanPham = new DataTable();
                 dtSanPham.Clear();
                 dtSanPham = dbsp.ChiTietSanPham(Product_Id).Tables[0];
@@ -51,6 +63,11 @@ namespace Project_ver1.UI
         private void DetailForm_Load(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

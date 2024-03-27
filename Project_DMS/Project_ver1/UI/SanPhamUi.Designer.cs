@@ -47,13 +47,13 @@
             this.RemoveButton = new Guna.UI.WinForms.GunaButton();
             this.ReadButton = new Guna.UI.WinForms.GunaButton();
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -186,7 +186,7 @@
             // 
             this.AddButton.AnimationHoverSpeed = 0.07F;
             this.AddButton.AnimationSpeed = 0.03F;
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
+            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.AddButton.BorderColor = System.Drawing.Color.White;
             this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -200,7 +200,7 @@
             this.AddButton.Name = "AddButton";
             this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.AddButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.AddButton.OnHoverForeColor = System.Drawing.Color.Black;
             this.AddButton.OnHoverImage = null;
             this.AddButton.OnPressedColor = System.Drawing.Color.Black;
             this.AddButton.Radius = 15;
@@ -212,7 +212,7 @@
             // 
             this.UpdateButton.AnimationHoverSpeed = 0.07F;
             this.UpdateButton.AnimationSpeed = 0.03F;
-            this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
+            this.UpdateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.UpdateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.UpdateButton.BorderColor = System.Drawing.Color.Black;
             this.UpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -226,19 +226,20 @@
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.UpdateButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.UpdateButton.OnHoverForeColor = System.Drawing.Color.WhiteSmoke;
+            this.UpdateButton.OnHoverForeColor = System.Drawing.Color.Black;
             this.UpdateButton.OnHoverImage = null;
             this.UpdateButton.OnPressedColor = System.Drawing.Color.Black;
             this.UpdateButton.Radius = 15;
             this.UpdateButton.Size = new System.Drawing.Size(107, 49);
             this.UpdateButton.TabIndex = 7;
             this.UpdateButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // RemoveButton
             // 
             this.RemoveButton.AnimationHoverSpeed = 0.07F;
             this.RemoveButton.AnimationSpeed = 0.03F;
-            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
+            this.RemoveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.RemoveButton.BorderColor = System.Drawing.Color.Black;
             this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -252,7 +253,7 @@
             this.RemoveButton.Name = "RemoveButton";
             this.RemoveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.RemoveButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.RemoveButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.RemoveButton.OnHoverForeColor = System.Drawing.Color.Black;
             this.RemoveButton.OnHoverImage = null;
             this.RemoveButton.OnPressedColor = System.Drawing.Color.Black;
             this.RemoveButton.Radius = 15;
@@ -265,7 +266,7 @@
             // 
             this.ReadButton.AnimationHoverSpeed = 0.07F;
             this.ReadButton.AnimationSpeed = 0.03F;
-            this.ReadButton.BackColor = System.Drawing.Color.Transparent;
+            this.ReadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.ReadButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.ReadButton.BorderColor = System.Drawing.Color.Black;
             this.ReadButton.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -279,7 +280,7 @@
             this.ReadButton.Name = "ReadButton";
             this.ReadButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.ReadButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.ReadButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.ReadButton.OnHoverForeColor = System.Drawing.Color.Black;
             this.ReadButton.OnHoverImage = null;
             this.ReadButton.OnPressedColor = System.Drawing.Color.Black;
             this.ReadButton.Radius = 15;
@@ -366,6 +367,38 @@
             this.dgvSanPham.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
             // 
+            // MaSP
+            // 
+            this.MaSP.DataPropertyName = "Product_ID";
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.ReadOnly = true;
+            // 
+            // TenSP
+            // 
+            this.TenSP.DataPropertyName = "ProductName";
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "UnitPrice";
+            this.Gia.HeaderText = "Giá bán";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "Quantity";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
+            // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
@@ -400,38 +433,6 @@
             this.gunaLabel2.Size = new System.Drawing.Size(61, 44);
             this.gunaLabel2.TabIndex = 13;
             this.gunaLabel2.Text = "20";
-            // 
-            // MaSP
-            // 
-            this.MaSP.DataPropertyName = "Product_ID";
-            this.MaSP.HeaderText = "Mã sản phẩm";
-            this.MaSP.MinimumWidth = 6;
-            this.MaSP.Name = "MaSP";
-            this.MaSP.ReadOnly = true;
-            // 
-            // TenSP
-            // 
-            this.TenSP.DataPropertyName = "ProductName";
-            this.TenSP.HeaderText = "Tên sản phẩm";
-            this.TenSP.MinimumWidth = 6;
-            this.TenSP.Name = "TenSP";
-            this.TenSP.ReadOnly = true;
-            // 
-            // Gia
-            // 
-            this.Gia.DataPropertyName = "UnitPrice";
-            this.Gia.HeaderText = "Giá bán";
-            this.Gia.MinimumWidth = 6;
-            this.Gia.Name = "Gia";
-            this.Gia.ReadOnly = true;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "Quantity";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.ReadOnly = true;
             // 
             // SanPhamUi
             // 

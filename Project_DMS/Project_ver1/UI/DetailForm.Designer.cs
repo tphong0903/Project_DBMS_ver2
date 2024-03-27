@@ -41,8 +41,8 @@
             this.ThuongHieu = new Guna.UI2.WinForms.Guna2TextBox();
             this.DanhMuc = new Guna.UI2.WinForms.Guna2TextBox();
             this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.a = new System.Windows.Forms.DataGridView();
+            this.SaveButton = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a)).BeginInit();
             this.SuspendLayout();
@@ -127,6 +127,7 @@
             this.MaSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.MaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MaSP.FocusedState.Parent = this.MaSP;
+            this.MaSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MaSP.HoverState.Parent = this.MaSP;
             this.MaSP.Location = new System.Drawing.Point(420, 13);
@@ -136,11 +137,12 @@
             this.MaSP.PlaceholderText = "";
             this.MaSP.SelectedText = "";
             this.MaSP.ShadowDecoration.Parent = this.MaSP;
-            this.MaSP.Size = new System.Drawing.Size(267, 44);
+            this.MaSP.Size = new System.Drawing.Size(450, 44);
             this.MaSP.TabIndex = 12;
             // 
             // TenSP
             // 
+            this.TenSP.AutoScroll = true;
             this.TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TenSP.DefaultText = "";
             this.TenSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -150,6 +152,7 @@
             this.TenSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TenSP.FocusedState.Parent = this.TenSP;
+            this.TenSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TenSP.HoverState.Parent = this.TenSP;
             this.TenSP.Location = new System.Drawing.Point(420, 65);
@@ -159,7 +162,7 @@
             this.TenSP.PlaceholderText = "";
             this.TenSP.SelectedText = "";
             this.TenSP.ShadowDecoration.Parent = this.TenSP;
-            this.TenSP.Size = new System.Drawing.Size(267, 44);
+            this.TenSP.Size = new System.Drawing.Size(450, 44);
             this.TenSP.TabIndex = 13;
             // 
             // Gia
@@ -173,6 +176,7 @@
             this.Gia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Gia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Gia.FocusedState.Parent = this.Gia;
+            this.Gia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Gia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Gia.HoverState.Parent = this.Gia;
             this.Gia.Location = new System.Drawing.Point(420, 117);
@@ -182,7 +186,7 @@
             this.Gia.PlaceholderText = "";
             this.Gia.SelectedText = "";
             this.Gia.ShadowDecoration.Parent = this.Gia;
-            this.Gia.Size = new System.Drawing.Size(267, 44);
+            this.Gia.Size = new System.Drawing.Size(450, 44);
             this.Gia.TabIndex = 14;
             // 
             // ThuongHieu
@@ -196,6 +200,7 @@
             this.ThuongHieu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.ThuongHieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ThuongHieu.FocusedState.Parent = this.ThuongHieu;
+            this.ThuongHieu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ThuongHieu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ThuongHieu.HoverState.Parent = this.ThuongHieu;
             this.ThuongHieu.Location = new System.Drawing.Point(420, 169);
@@ -205,7 +210,7 @@
             this.ThuongHieu.PlaceholderText = "";
             this.ThuongHieu.SelectedText = "";
             this.ThuongHieu.ShadowDecoration.Parent = this.ThuongHieu;
-            this.ThuongHieu.Size = new System.Drawing.Size(267, 44);
+            this.ThuongHieu.Size = new System.Drawing.Size(450, 44);
             this.ThuongHieu.TabIndex = 15;
             // 
             // DanhMuc
@@ -219,6 +224,7 @@
             this.DanhMuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DanhMuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DanhMuc.FocusedState.Parent = this.DanhMuc;
+            this.DanhMuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.DanhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DanhMuc.HoverState.Parent = this.DanhMuc;
             this.DanhMuc.Location = new System.Drawing.Point(420, 221);
@@ -228,7 +234,7 @@
             this.DanhMuc.PlaceholderText = "";
             this.DanhMuc.SelectedText = "";
             this.DanhMuc.ShadowDecoration.Parent = this.DanhMuc;
-            this.DanhMuc.Size = new System.Drawing.Size(267, 44);
+            this.DanhMuc.Size = new System.Drawing.Size(450, 44);
             this.DanhMuc.TabIndex = 16;
             // 
             // SoLuong
@@ -242,31 +248,18 @@
             this.SoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.SoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SoLuong.FocusedState.Parent = this.SoLuong;
+            this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(420, 273);
+            this.SoLuong.Location = new System.Drawing.Point(420, 277);
             this.SoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.PasswordChar = '\0';
             this.SoLuong.PlaceholderText = "";
             this.SoLuong.SelectedText = "";
             this.SoLuong.ShadowDecoration.Parent = this.SoLuong;
-            this.SoLuong.Size = new System.Drawing.Size(267, 44);
+            this.SoLuong.Size = new System.Drawing.Size(450, 44);
             this.SoLuong.TabIndex = 17;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(507, 339);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 18;
-            this.guna2Button1.Text = "Lưu";
             // 
             // a
             // 
@@ -279,13 +272,41 @@
             this.a.TabIndex = 19;
             this.a.Visible = false;
             // 
+            // SaveButton
+            // 
+            this.SaveButton.AnimationHoverSpeed = 0.07F;
+            this.SaveButton.AnimationSpeed = 0.03F;
+            this.SaveButton.BackColor = System.Drawing.Color.Transparent;
+            this.SaveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.SaveButton.BorderColor = System.Drawing.Color.Black;
+            this.SaveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SaveButton.FocusedColor = System.Drawing.Color.Empty;
+            this.SaveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.ForeColor = System.Drawing.Color.Black;
+            this.SaveButton.Image = null;
+            this.SaveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.SaveButton.Location = new System.Drawing.Point(732, 335);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.SaveButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverForeColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverImage = null;
+            this.SaveButton.OnPressedColor = System.Drawing.Color.Black;
+            this.SaveButton.Radius = 15;
+            this.SaveButton.Size = new System.Drawing.Size(138, 49);
+            this.SaveButton.TabIndex = 20;
+            this.SaveButton.Text = "Lưu";
+            this.SaveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
             // DetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 396);
+            this.ClientSize = new System.Drawing.Size(886, 396);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.a);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.SoLuong);
             this.Controls.Add(this.DanhMuc);
             this.Controls.Add(this.ThuongHieu);
@@ -325,7 +346,7 @@
         private Guna.UI2.WinForms.Guna2TextBox ThuongHieu;
         private Guna.UI2.WinForms.Guna2TextBox DanhMuc;
         private Guna.UI2.WinForms.Guna2TextBox SoLuong;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.DataGridView a;
+        private Guna.UI.WinForms.GunaButton SaveButton;
     }
 }

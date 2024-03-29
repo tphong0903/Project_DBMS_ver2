@@ -69,10 +69,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\BienLaiUI.cs">
+    <Compile Include="UI\UserControl\BienLaiUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\BienLaiUI.Designer.cs">
+    <Compile Include="UI\UserControl\BienLaiUI.Designer.cs">
       <DependentUpon>BienLaiUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Detail\DetailForm.cs">
@@ -87,34 +87,34 @@
     <Compile Include="UI\Detail\NVDetail.Designer.cs">
       <DependentUpon>NVDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\HoaDonUI.cs">
+    <Compile Include="UI\UserControl\HoaDonUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\HoaDonUI.Designer.cs">
+    <Compile Include="UI\UserControl\HoaDonUI.Designer.cs">
       <DependentUpon>HoaDonUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\NhaCungCapUI.cs">
+    <Compile Include="UI\UserControl\NhaCungCapUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\NhaCungCapUI.Designer.cs">
+    <Compile Include="UI\UserControl\NhaCungCapUI.Designer.cs">
       <DependentUpon>NhaCungCapUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\NhanVienUI.cs">
+    <Compile Include="UI\UserControl\NhanVienUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\NhanVienUI.Designer.cs">
+    <Compile Include="UI\UserControl\NhanVienUI.Designer.cs">
       <DependentUpon>NhanVienUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\SanPhamUi.cs">
+    <Compile Include="UI\UserControl\SanPhamUi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\SanPhamUi.Designer.cs">
+    <Compile Include="UI\UserControl\SanPhamUi.Designer.cs">
       <DependentUpon>SanPhamUi.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\GUI\KhachHangUI.cs">
+    <Compile Include="UI\UserControl\KhachHangUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\GUI\KhachHangUI.Designer.cs">
+    <Compile Include="UI\UserControl\KhachHangUI.Designer.cs">
       <DependentUpon>KhachHangUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Form\LoginForm.cs">
@@ -131,28 +131,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="UI\GUI\BienLaiUI.resx">
+    <EmbeddedResource Include="UI\UserControl\BienLaiUI.resx">
       <DependentUpon>BienLaiUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Detail\DetailForm.resx">
       <DependentUpon>DetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\GUI\HoaDonUI.resx">
+    <EmbeddedResource Include="UI\UserControl\HoaDonUI.resx">
       <DependentUpon>HoaDonUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\GUI\NhaCungCapUI.resx">
+    <EmbeddedResource Include="UI\UserControl\NhaCungCapUI.resx">
       <DependentUpon>NhaCungCapUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\GUI\NhanVienUI.resx">
+    <EmbeddedResource Include="UI\UserControl\NhanVienUI.resx">
       <DependentUpon>NhanVienUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Detail\NVDetail.resx">
       <DependentUpon>NVDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\GUI\SanPhamUi.resx">
+    <EmbeddedResource Include="UI\UserControl\SanPhamUi.resx">
       <DependentUpon>SanPhamUi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\GUI\KhachHangUI.resx">
+    <EmbeddedResource Include="UI\UserControl\KhachHangUI.resx">
       <DependentUpon>KhachHangUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Form\LoginForm.resx">

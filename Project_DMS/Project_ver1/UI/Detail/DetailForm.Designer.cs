@@ -43,7 +43,7 @@
             this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
             this.a = new System.Windows.Forms.DataGridView();
             this.SaveButton = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.imgBtn = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.PicProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             this.PicProduct.Location = new System.Drawing.Point(12, 22);
             this.PicProduct.Name = "PicProduct";
             this.PicProduct.ShadowDecoration.Parent = this.PicProduct;
-            this.PicProduct.Size = new System.Drawing.Size(236, 279);
+            this.PicProduct.Size = new System.Drawing.Size(236, 304);
             this.PicProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicProduct.TabIndex = 0;
             this.PicProduct.TabStop = false;
@@ -62,65 +62,66 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(270, 22);
+            this.gunaLabel1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel1.Location = new System.Drawing.Point(295, 20);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(143, 24);
+            this.gunaLabel1.Size = new System.Drawing.Size(112, 19);
             this.gunaLabel1.TabIndex = 5;
-            this.gunaLabel1.Text = "Mã sản phẩm:";
+            this.gunaLabel1.Text = "Mã sản phẩm";
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(270, 77);
+            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel2.Location = new System.Drawing.Point(295, 80);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(151, 24);
+            this.gunaLabel2.Size = new System.Drawing.Size(119, 19);
             this.gunaLabel2.TabIndex = 6;
-            this.gunaLabel2.Text = "Tên sản phẩm:";
+            this.gunaLabel2.Text = "Tên sản phẩm";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(273, 126);
+            this.gunaLabel3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel3.Location = new System.Drawing.Point(295, 147);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(49, 24);
+            this.gunaLabel3.Size = new System.Drawing.Size(35, 19);
             this.gunaLabel3.TabIndex = 7;
-            this.gunaLabel3.Text = "Giá:";
+            this.gunaLabel3.Text = "Giá";
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(270, 179);
+            this.gunaLabel4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel4.Location = new System.Drawing.Point(295, 218);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(140, 24);
+            this.gunaLabel4.Size = new System.Drawing.Size(111, 19);
             this.gunaLabel4.TabIndex = 8;
-            this.gunaLabel4.Text = "Thương hiệu:";
+            this.gunaLabel4.Text = "Thương hiệu";
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(270, 231);
+            this.gunaLabel5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel5.Location = new System.Drawing.Point(295, 288);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(112, 24);
+            this.gunaLabel5.Size = new System.Drawing.Size(88, 19);
             this.gunaLabel5.TabIndex = 9;
-            this.gunaLabel5.Text = "Danh mục:";
+            this.gunaLabel5.Text = "Danh mục";
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(270, 277);
+            this.gunaLabel6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel6.Location = new System.Drawing.Point(295, 350);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(105, 24);
+            this.gunaLabel6.Size = new System.Drawing.Size(83, 19);
             this.gunaLabel6.TabIndex = 10;
-            this.gunaLabel6.Text = "Số lượng:";
+            this.gunaLabel6.Text = "Số lượng";
             // 
             // MaSP
             // 
+            this.MaSP.BorderRadius = 10;
             this.MaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.MaSP.DefaultText = "";
             this.MaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -133,7 +134,7 @@
             this.MaSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MaSP.HoverState.Parent = this.MaSP;
-            this.MaSP.Location = new System.Drawing.Point(420, 13);
+            this.MaSP.Location = new System.Drawing.Point(274, 32);
             this.MaSP.Margin = new System.Windows.Forms.Padding(4);
             this.MaSP.Name = "MaSP";
             this.MaSP.PasswordChar = '\0';
@@ -146,6 +147,7 @@
             // TenSP
             // 
             this.TenSP.AutoScroll = true;
+            this.TenSP.BorderRadius = 10;
             this.TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TenSP.DefaultText = "";
             this.TenSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -158,7 +160,7 @@
             this.TenSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TenSP.HoverState.Parent = this.TenSP;
-            this.TenSP.Location = new System.Drawing.Point(420, 65);
+            this.TenSP.Location = new System.Drawing.Point(274, 93);
             this.TenSP.Margin = new System.Windows.Forms.Padding(4);
             this.TenSP.Name = "TenSP";
             this.TenSP.PasswordChar = '\0';
@@ -170,6 +172,7 @@
             // 
             // Gia
             // 
+            this.Gia.BorderRadius = 10;
             this.Gia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Gia.DefaultText = "";
             this.Gia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -182,7 +185,7 @@
             this.Gia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Gia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Gia.HoverState.Parent = this.Gia;
-            this.Gia.Location = new System.Drawing.Point(420, 117);
+            this.Gia.Location = new System.Drawing.Point(274, 159);
             this.Gia.Margin = new System.Windows.Forms.Padding(4);
             this.Gia.Name = "Gia";
             this.Gia.PasswordChar = '\0';
@@ -194,6 +197,7 @@
             // 
             // ThuongHieu
             // 
+            this.ThuongHieu.BorderRadius = 10;
             this.ThuongHieu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ThuongHieu.DefaultText = "";
             this.ThuongHieu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -206,7 +210,7 @@
             this.ThuongHieu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ThuongHieu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ThuongHieu.HoverState.Parent = this.ThuongHieu;
-            this.ThuongHieu.Location = new System.Drawing.Point(420, 169);
+            this.ThuongHieu.Location = new System.Drawing.Point(274, 231);
             this.ThuongHieu.Margin = new System.Windows.Forms.Padding(4);
             this.ThuongHieu.Name = "ThuongHieu";
             this.ThuongHieu.PasswordChar = '\0';
@@ -218,6 +222,7 @@
             // 
             // DanhMuc
             // 
+            this.DanhMuc.BorderRadius = 10;
             this.DanhMuc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.DanhMuc.DefaultText = "";
             this.DanhMuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -230,7 +235,7 @@
             this.DanhMuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.DanhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DanhMuc.HoverState.Parent = this.DanhMuc;
-            this.DanhMuc.Location = new System.Drawing.Point(420, 221);
+            this.DanhMuc.Location = new System.Drawing.Point(274, 302);
             this.DanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.DanhMuc.Name = "DanhMuc";
             this.DanhMuc.PasswordChar = '\0';
@@ -242,6 +247,7 @@
             // 
             // SoLuong
             // 
+            this.SoLuong.BorderRadius = 10;
             this.SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SoLuong.DefaultText = "";
             this.SoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -254,7 +260,7 @@
             this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(420, 277);
+            this.SoLuong.Location = new System.Drawing.Point(274, 364);
             this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.PasswordChar = '\0';
@@ -267,7 +273,7 @@
             // a
             // 
             this.a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.a.Location = new System.Drawing.Point(12, 362);
+            this.a.Location = new System.Drawing.Point(12, 431);
             this.a.Name = "a";
             this.a.RowHeadersWidth = 51;
             this.a.RowTemplate.Height = 24;
@@ -289,7 +295,7 @@
             this.SaveButton.Image = null;
             this.SaveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SaveButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.SaveButton.Location = new System.Drawing.Point(732, 335);
+            this.SaveButton.Location = new System.Drawing.Point(586, 415);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.SaveButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -303,54 +309,55 @@
             this.SaveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // gunaButton1
+            // imgBtn
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(55, 307);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 15;
-            this.gunaButton1.Size = new System.Drawing.Size(138, 49);
-            this.gunaButton1.TabIndex = 21;
-            this.gunaButton1.Text = "Hình ảnh";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            this.imgBtn.AnimationHoverSpeed = 0.07F;
+            this.imgBtn.AnimationSpeed = 0.03F;
+            this.imgBtn.BackColor = System.Drawing.Color.Transparent;
+            this.imgBtn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.imgBtn.BorderColor = System.Drawing.Color.Black;
+            this.imgBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.imgBtn.FocusedColor = System.Drawing.Color.Empty;
+            this.imgBtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imgBtn.ForeColor = System.Drawing.Color.Black;
+            this.imgBtn.Image = null;
+            this.imgBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.imgBtn.ImageSize = new System.Drawing.Size(20, 20);
+            this.imgBtn.Location = new System.Drawing.Point(50, 332);
+            this.imgBtn.Name = "imgBtn";
+            this.imgBtn.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.imgBtn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.imgBtn.OnHoverForeColor = System.Drawing.Color.Black;
+            this.imgBtn.OnHoverImage = null;
+            this.imgBtn.OnPressedColor = System.Drawing.Color.Black;
+            this.imgBtn.Radius = 15;
+            this.imgBtn.Size = new System.Drawing.Size(138, 49);
+            this.imgBtn.TabIndex = 21;
+            this.imgBtn.Text = "Hình ảnh";
+            this.imgBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.imgBtn.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // DetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 396);
-            this.Controls.Add(this.gunaButton1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(767, 481);
+            this.Controls.Add(this.gunaLabel6);
+            this.Controls.Add(this.gunaLabel5);
+            this.Controls.Add(this.gunaLabel4);
+            this.Controls.Add(this.gunaLabel3);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.TenSP);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.imgBtn);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.a);
             this.Controls.Add(this.SoLuong);
             this.Controls.Add(this.DanhMuc);
             this.Controls.Add(this.ThuongHieu);
             this.Controls.Add(this.Gia);
-            this.Controls.Add(this.TenSP);
             this.Controls.Add(this.MaSP);
-            this.Controls.Add(this.gunaLabel6);
-            this.Controls.Add(this.gunaLabel5);
-            this.Controls.Add(this.gunaLabel4);
-            this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.PicProduct);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -384,6 +391,6 @@
         private Guna.UI2.WinForms.Guna2TextBox SoLuong;
         private System.Windows.Forms.DataGridView a;
         private Guna.UI.WinForms.GunaButton SaveButton;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton imgBtn;
     }
 }

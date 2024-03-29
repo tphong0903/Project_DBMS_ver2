@@ -22,8 +22,8 @@ namespace Project_ver1
         string Product_ID = null;
         DetailForm detailForm = null;
         string DMName =null;
-        string THName = null;
-        string Name = null ;
+        string THName =null;
+        string Name = null;
         public SanPhamUi()
         {
             InitializeComponent();
@@ -38,15 +38,7 @@ namespace Project_ver1
                 dtSanPham = new DataTable();
                 dtSanPham.Clear();
                 dtSanPham = dbsp.LayThanhPho().Tables[0];
-                // Đưa dữ liệu lên DataGridView  
                 dgvSanPham.DataSource = dtSanPham;
-
-                DataTable dtDM = new DataTable();
-                dtDM.Clear();
-                dtDM = dbsp.LayDanhMuc().Tables[0];
-                dtDM.Rows.InsertAt(dtDM.NewRow(), 0);
-               // DMCombox.DataSource = dtDM;
-               // DMCombox.DisplayMember = "CategoryName";
 
                 DataTable dtTT = new DataTable();
                 dtTT.Clear();
@@ -75,7 +67,6 @@ namespace Project_ver1
             {
                 DMName= clickedButton.Text;
                 FindButton_Click(sender, e);
-                DMName = null;
             }
         }
         private void FindButton_Click(object sender, EventArgs e)
@@ -83,16 +74,18 @@ namespace Project_ver1
             try
             {
                 THName = THCombox.Text;
-                Name = NameText.Text;
-                DataTable dtSanPham = dbsp.TimSanPham(THName, DMName,Name).Tables[0];
+                Name = NameText.Text.ToLower();
+                dtSanPham = new DataTable();
+                dtSanPham.Clear();
+                dtSanPham = dbsp.TimSanPham(THName,DMName,Name).Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
-
-                SLSP.Text = (dtSanPham.Rows.Count).ToString();
-
-                if (dtSanPham.Rows.Count > 0)
+                int r = dgvSanPham.RowCount;
+                if (r > 1)
                 {
                     Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
+                    SLSP.Text = (dgvSanPham.RowCount - 1).ToString();
                 }
+
             }
             catch (SqlException ex)
             {
@@ -149,29 +142,10 @@ namespace Project_ver1
 
         private void ReloadButton_Click(object sender, EventArgs e)
         {
+            NameText.Text = null;
+            DMName = null;
+            THName = null;
             LoadData();
-        }
-
-        private void NameText_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                THName = THCombox.Text;
-                Name = NameText.Text;
-                DataTable dtSanPham = dbsp.TimSanPham(THName, DMName, Name).Tables[0];
-                dgvSanPham.DataSource = dtSanPham;
-
-                SLSP.Text = (dtSanPham.Rows.Count).ToString();
-
-                if (dtSanPham.Rows.Count > 0)
-                {
-                    Product_ID = dgvSanPham.Rows[0].Cells[0].Value.ToString();
-                }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
         }
     }
 }

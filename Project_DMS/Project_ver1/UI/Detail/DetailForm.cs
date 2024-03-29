@@ -27,31 +27,33 @@ namespace Project_ver1.UI
             Product_Id = Product_ID;
             
             InitializeComponent();
-            MaSP.Enabled = false;
-            TenSP.Enabled = false;
-            Gia.Enabled = false;
-            ThuongHieu.Enabled = false;
-            DanhMuc.Enabled = false;
-            SoLuong.Enabled = false;
+            MaSP.ReadOnly= true;
+            TenSP.ReadOnly = true;
+            Gia.ReadOnly = true;
+            ThuongHieu.ReadOnly = true;
+            DanhMuc.ReadOnly = true;
+            SoLuong.ReadOnly = true;
             SaveButton.Visible = false;
+            imgBtn.Visible = false;
             this.Text = "Chi tiết sản phẩm";
             if (Check == 1)
             {
                 this.Text = "Chi tiết sản phẩm";
-                Gia.Enabled = true;
+                Gia.ReadOnly = false;
                 SaveButton.Visible= true;
             }
             else if(Check == 2) 
             {
                 this.Text = "Thêm sản phẩm";
-                MaSP.Enabled = true;
-                TenSP.Enabled = true;
-                Gia.Enabled = true;
-                ThuongHieu.Enabled = true;
-                DanhMuc.Enabled = true;
-                SoLuong.Enabled = true;
+                MaSP.ReadOnly = false;
+                TenSP.ReadOnly = false;
+                Gia.ReadOnly = false;
+                ThuongHieu.ReadOnly = false;
+                DanhMuc.ReadOnly = false;
+                SoLuong.ReadOnly = false;
                 SaveButton.Visible = true;
-                Gia.Enabled = true;
+                Gia.ReadOnly = false;
+                imgBtn.Visible = true;
             }
             dbsp = new DBSanPham();
          

@@ -38,7 +38,7 @@ namespace BusinessAccessLayer
         public DataSet TimSanPham( string a, string b,string c)
         {
             return db.ExecuteQueryDataSet(
-                "SELECT * FROM Find_Product('"+a+ "',N'"+b+ "',N'"+a+"')",
+                "SELECT * FROM Find_Product('"+a+ "',N'"+b+ "',N'"+c+"')",
                 CommandType.Text,null);
         }
         public DataSet ChiTietSanPham(string a)

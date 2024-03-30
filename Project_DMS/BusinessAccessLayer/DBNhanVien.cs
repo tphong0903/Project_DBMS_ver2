@@ -23,13 +23,7 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from Employees", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
-        {
-            return db.MyExecuteNonQuery("spThemThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
-        }
+       
         public bool XoaThanhPho(ref string err, string ThanhPho)
         {
             return db.MyExecuteNonQuery("spXoaThanhPho",

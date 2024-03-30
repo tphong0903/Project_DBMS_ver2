@@ -18,10 +18,15 @@ namespace BusinessAccessLayer
             db = new DAL();
         }
         // CRUD cho table ThanhPho
-        public DataSet LayThanhPho()
+        public DataSet LayHoaDon()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Orders", CommandType.Text, null);
+                "select * from BILLS_VIEW", CommandType.Text, null);
+        }
+        public DataSet TimHoaDon(string HD,string date)
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from Find_Order('"+HD+"','"+date+"')", CommandType.Text, null);
         }
         public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
         {

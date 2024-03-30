@@ -18,17 +18,20 @@ namespace BusinessAccessLayer
             db = new DAL();
         }
         // CRUD cho table ThanhPho
-        public DataSet LayThanhPho()
+        public DataSet LayKhachHang()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Customers", CommandType.Text, null);
+                "select * from View_Customer", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public DataSet TimKhachHang(string Phone, string Name)
         {
-            return db.MyExecuteNonQuery("spThemThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+            return db.ExecuteQueryDataSet("SELECT * FROM Find_Customer('"+Phone+"','"+Name+"')",
+                CommandType.Text,null);
+        }
+        public DataSet SPcuaKhachHang(string Phone)
+        {
+            return db.ExecuteQueryDataSet("SELECT * FROM ProductOfCustomer('" + Phone + "')",
+                CommandType.Text, null);
         }
         public bool XoaThanhPho(ref string err, string ThanhPho)
         {

@@ -18,6 +18,7 @@ namespace Project_ver1
         DataTable dtKhachHang = null;
         KHDetail a = null;
         TaoKHForm b = null;
+        string Phone = null;
         public KhachHangUI()
         {
             InitializeComponent();
@@ -34,9 +35,12 @@ namespace Project_ver1
             {
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
-                dtKhachHang = dbkh.LayThanhPho().Tables[0];
+                dtKhachHang = dbkh.LayKhachHang().Tables[0];
                 // Đưa dữ liệu lên DataGridView  
                 dgvKhachHang.DataSource = dtKhachHang;
+
+                Phone = dgvKhachHang.Rows[0].Cells[0].Value.ToString();
+                SoLuong.Text = (dgvKhachHang.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -52,13 +56,13 @@ namespace Project_ver1
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a = new KHDetail();
+            a = new KHDetail(1,Phone);
             a.ShowDialog();
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            a = new KHDetail();
+            a = new KHDetail(2, Phone);
             a.ShowDialog();
         }
 
@@ -66,6 +70,40 @@ namespace Project_ver1
         {
             b = new TaoKHForm();
             b.ShowDialog(); 
+        }
+
+        private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int r = dgvKhachHang.CurrentCell.RowIndex;
+            Phone = dgvKhachHang.Rows[r].Cells[0].Value.ToString();
+            SDT.Text = dgvKhachHang.Rows[r].Cells[0].Value.ToString();
+            Ten.Text= dgvKhachHang.Rows[r].Cells[1].Value.ToString();
+            GT.Text = dgvKhachHang.Rows[r].Cells[3].Value.ToString();
+            NS.Text = dgvKhachHang.Rows[r].Cells[2].Value.ToString();
+            Diem.Text = dgvKhachHang.Rows[r].Cells[4].Value.ToString();
+            Total.Text = dgvKhachHang.Rows[r].Cells[5].Value.ToString();
+        }
+        private void Find_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string SoDienThoai = SoDT.Text;
+                string Name = NameText.Text.ToLower();
+                dtKhachHang = new DataTable();
+                dtKhachHang.Clear();
+                dtKhachHang = dbkh.TimKhachHang(SoDienThoai, Name).Tables[0];
+                dgvKhachHang.DataSource = dtKhachHang;
+                int r = dgvKhachHang.RowCount;
+                if (r > 1)
+                {
+                    Phone = dgvKhachHang.Rows[0].Cells[0].Value.ToString();
+                    SoLuong.Text = (dgvKhachHang.RowCount - 1).ToString();
+                }
+            }
+            catch (SqlException x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
     }
 }

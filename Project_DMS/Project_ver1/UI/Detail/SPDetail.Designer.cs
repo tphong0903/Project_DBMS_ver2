@@ -1,6 +1,6 @@
 ﻿namespace Project_ver1.UI
 {
-    partial class DetailForm
+    partial class SPDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SPDetail));
             this.PicProduct = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -337,7 +338,7 @@
             this.imgBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.imgBtn.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // DetailForm
+            // SPDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -359,10 +360,10 @@
             this.Controls.Add(this.Gia);
             this.Controls.Add(this.MaSP);
             this.Controls.Add(this.PicProduct);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "DetailForm";
-            this.ShowIcon = false;
+            this.Name = "SPDetail";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết sản phẩm";

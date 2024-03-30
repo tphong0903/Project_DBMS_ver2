@@ -9,13 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Project_ver1.UI.Detail;
 namespace Project_ver1.UI
 {
     public partial class BienLaiUI : Form
     {
         DBBienLai dbbl;
         DataTable dtBienLai = null;
+        BLDetail a = null;
+        TaoBLForm b = null;
         public BienLaiUI()
         {
             InitializeComponent();
@@ -44,6 +46,24 @@ namespace Project_ver1.UI
         {
             dtBienLai.Dispose();
             dtBienLai = null;
+        }
+
+        private void ReadButton_Click(object sender, EventArgs e)
+        {
+            a= new BLDetail();
+            a.ShowDialog();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            a = new BLDetail();
+            a.ShowDialog();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            b = new TaoBLForm();
+            b.ShowDialog();
         }
     }
 }

@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BusinessAccessLayer;
-
+using Project_ver1.UI.Detail;
 namespace Project_ver1
 {
     public partial class KhachHangUI : Form
     {
         DBKhachHang dbkh;
         DataTable dtKhachHang = null;
+        KHDetail a = null;
+        TaoKHForm b = null;
         public KhachHangUI()
         {
             InitializeComponent();
@@ -48,6 +50,22 @@ namespace Project_ver1
             dtKhachHang = null;
         }
 
+        private void ReadButton_Click(object sender, EventArgs e)
+        {
+            a = new KHDetail();
+            a.ShowDialog();
+        }
 
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            a = new KHDetail();
+            a.ShowDialog();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            b = new TaoKHForm();
+            b.ShowDialog(); 
+        }
     }
 }

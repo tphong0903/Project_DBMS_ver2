@@ -15,13 +15,13 @@ using System.Xml.Linq;
 
 namespace Project_ver1.UI
 {
-    public partial class DetailForm : Form
+    public partial class SPDetail : Form
     {
         DBSanPham dbsp;
         DataTable dtSanPham = null;
         int Check;
         string Product_Id;
-        public DetailForm(int check,string Product_ID)
+        public SPDetail(int check,string Product_ID)
         {
             Check=check;
             Product_Id = Product_ID;

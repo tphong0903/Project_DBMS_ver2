@@ -64,10 +64,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    <Compile Include="UI\Detail\BLDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\BLDetail.Designer.cs">
+      <DependentUpon>BLDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\HDDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\HDDetail.Designer.cs">
+      <DependentUpon>HDDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\KHDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\KHDetail.Designer.cs">
+      <DependentUpon>KHDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\NCCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\NCCDetail.Designer.cs">
+      <DependentUpon>NCCDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\TaoBLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\TaoBLForm.Designer.cs">
+      <DependentUpon>TaoBLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\TaoHDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\TaoHDForm.Designer.cs">
+      <DependentUpon>TaoHDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\TaoKHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\TaoKHForm.Designer.cs">
+      <DependentUpon>TaoKHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Detail\TaoNCCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Detail\TaoNCCForm.Designer.cs">
+      <DependentUpon>TaoNCCForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UserControl\BienLaiUI.cs">
       <SubType>Form</SubType>
@@ -75,11 +118,11 @@
     <Compile Include="UI\UserControl\BienLaiUI.Designer.cs">
       <DependentUpon>BienLaiUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Detail\DetailForm.cs">
+    <Compile Include="UI\Detail\SPDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Detail\DetailForm.Designer.cs">
-      <DependentUpon>DetailForm.cs</DependentUpon>
+    <Compile Include="UI\Detail\SPDetail.Designer.cs">
+      <DependentUpon>SPDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Detail\NVDetail.cs">
       <SubType>Form</SubType>
@@ -131,11 +174,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\Detail\BLDetail.resx">
+      <DependentUpon>BLDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\HDDetail.resx">
+      <DependentUpon>HDDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\KHDetail.resx">
+      <DependentUpon>KHDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\NCCDetail.resx">
+      <DependentUpon>NCCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\TaoBLForm.resx">
+      <DependentUpon>TaoBLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\TaoHDForm.resx">
+      <DependentUpon>TaoHDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\TaoKHForm.resx">
+      <DependentUpon>TaoKHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Detail\TaoNCCForm.resx">
+      <DependentUpon>TaoNCCForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\UserControl\BienLaiUI.resx">
       <DependentUpon>BienLaiUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Detail\DetailForm.resx">
-      <DependentUpon>DetailForm.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Detail\SPDetail.resx">
+      <DependentUpon>SPDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UserControl\HoaDonUI.resx">
       <DependentUpon>HoaDonUI.cs</DependentUpon>
@@ -180,17 +247,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TestDataSet.xsc">
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TestDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TestDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TestDataSet.xss">
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

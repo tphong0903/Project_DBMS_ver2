@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Project_ver1.UI.Detail;
 namespace Project_ver1.UI
 {
     public partial class HoaDonUI : Form
@@ -49,5 +49,22 @@ namespace Project_ver1.UI
             dtHoaDon = null;
         }
 
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            TaoHDForm a = new TaoHDForm();
+            a.ShowDialog();
+        }
+
+        private void ReadButton_Click(object sender, EventArgs e)
+        {
+            HDDetail hd = new HDDetail();
+            hd.ShowDialog();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            HDDetail hd = new HDDetail();
+            hd.ShowDialog();
+        }
     }
 }

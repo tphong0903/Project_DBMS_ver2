@@ -16,5 +16,6 @@ namespace Project_ver1.UI
         {
             InitializeComponent();
         }
+
     }
 }

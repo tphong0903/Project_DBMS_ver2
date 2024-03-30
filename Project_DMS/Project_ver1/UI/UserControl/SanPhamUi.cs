@@ -20,7 +20,7 @@ namespace Project_ver1
         DBSanPham dbsp;
         DataTable dtSanPham = null;
         string Product_ID = null;
-        DetailForm detailForm = null;
+        SPDetail detailForm = null;
         string DMName =null;
         string THName =null;
         string Name = null;
@@ -109,7 +109,7 @@ namespace Project_ver1
             int r = dgvSanPham.RowCount;
             if (r > 1)
             {
-                DetailForm detailForm = new DetailForm(0, Product_ID);
+                SPDetail detailForm = new SPDetail(0, Product_ID);
                 detailForm.ShowDialog();
             }
             else
@@ -127,7 +127,7 @@ namespace Project_ver1
             int r = dgvSanPham.RowCount;
             if (r > 1)
             {
-                detailForm = new DetailForm(1, Product_ID);
+                detailForm = new SPDetail(1, Product_ID);
                 detailForm.Show();
             }
             else
@@ -136,7 +136,7 @@ namespace Project_ver1
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            detailForm = new DetailForm(2, Product_ID);
+            detailForm = new SPDetail(2, Product_ID);
             detailForm.Show();
         }
 

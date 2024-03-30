@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BusinessAccessLayer;
-
+using Project_ver1.UI.Detail;
 namespace Project_ver1.UI
 {
     public partial class NhanVienUI : Form
     {
         DBNhanVien dbnv;
         DataTable dtNhanVien = null;
- 
+        NVDetail a = null;
         public NhanVienUI()
         {
             InitializeComponent();
@@ -28,8 +28,7 @@ namespace Project_ver1.UI
             {
                 dtNhanVien = new DataTable();
                 dtNhanVien.Clear();
-                dtNhanVien = dbnv.LayThanhPho().Tables[0];
-                // Đưa dữ liệu lên DataGridView  
+                dtNhanVien = dbnv.LayThanhPho().Tables[0]; 
                 dgvNhanVien.DataSource = dtNhanVien;
             }
             catch (SqlException)
@@ -55,17 +54,20 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-
+            a=new NVDetail();
+            a.ShowDialog();
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-
+            a = new NVDetail();
+            a.ShowDialog();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            a = new NVDetail();
+            a.ShowDialog();
         }
 
     }

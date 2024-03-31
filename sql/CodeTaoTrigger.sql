@@ -117,39 +117,31 @@ END
 GO
 
 -- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN KHI THÊM, XÓA, SỬA CHI TIẾT HÓA ĐƠN
-/*alter TRIGGER UpdateTotal_IUD_OrdersDetails ON OrderDetails
+CREATE TRIGGER UpdateTotalOrderBill ON OrderDetails
 AFTER INSERT, DELETE, UPDATE
 AS
 BEGIN
     BEGIN TRY
         BEGIN TRANSACTION;
-        DECLARE @Total INT 
-        DECLARE @Discount INT
-        DECLARE @table1 TABLE(Product_ID VARCHAR(15), Quantity INT, UnitPrice INT)
-        IF EXISTS(SELECT 1 FROM inserted)
-            BEGIN 
-                INSERT INTO @table1 SELECT o.Product_ID, o.Quantity, UnitPrice FROM inserted i, OrderDetails o, Products p  WHERE o.Product_ID = p.Product_ID AND o.Order_ID = i.Order_ID
-                SELECT @Total = SUM(Quantity * UnitPrice) FROM @table1
-                IF EXISTS(SELECT 1 FROM Orders o, inserted i WHERE o.Order_ID = i.Order_ID AND o.DiscountCode IS NULL)
-                    SET @Discount = 0
-                ELSE
-                    BEGIN
-                        SELECT @Discount = PercentageDiscount FROM Discounts d, Orders o, inserted i WHERE o.Order_ID = i.Order_ID AND o.DiscountCode = d.DiscountCode
-                    END
-                UPDATE Orders SET Total = @Total * (1 - @Discount) FROM Orders o, inserted i WHERE o.Order_ID = i.Order_ID
-            END
-        ELSE
-            BEGIN 
-                INSERT INTO @table1 SELECT o.Product_ID, o.Quantity, UnitPrice FROM deleted d, OrderDetails o, Products p WHERE o.Product_ID = p.Product_ID AND o.Order_ID = d.Order_ID
-                SELECT @Total = SUM(Quantity * UnitPrice) FROM @table1
-                IF EXISTS(SELECT 1 FROM Orders o, deleted d WHERE o.Order_ID = d.Order_ID AND o.DiscountCode IS NULL)
-                    SET @Discount = 0
-                ELSE
-                    BEGIN
-                        SELECT @Discount = PercentageDiscount FROM Discounts d, Orders o, deleted de WHERE o.Order_ID = de.Order_ID AND o.DiscountCode = d.DiscountCode
-                    END
-                UPDATE Orders SET Total = @Total * (1 - @Discount) FROM Orders o, deleted d WHERE o.Order_ID = d.Order_ID
-            END
+
+        -- Cập nhật tổng tiền hóa đơn cho mỗi hóa đơn được thêm
+        UPDATE o
+        SET o.Total = ISNULL((SELECT SUM(p.UnitPrice * od.Quantity)
+                              FROM OrderDetails od
+                              INNER JOIN Products p ON od.Product_ID = p.Product_ID
+                              WHERE od.Order_ID = o.Order_ID), 0)
+        FROM Orders o
+        JOIN inserted i ON o.Order_ID = i.Order_ID;
+
+        -- Cập nhật tổng tiền hóa đơn cho mỗi hóa đơn bị xóa hoặc được sửa
+        UPDATE o
+        SET o.Total = ISNULL((SELECT SUM(p.UnitPrice * od.Quantity)
+                              FROM OrderDetails od
+                              INNER JOIN Products p ON od.Product_ID = p.Product_ID
+                              WHERE od.Order_ID = o.Order_ID), 0)
+        FROM Orders o
+        JOIN deleted d ON o.Order_ID = d.Order_ID;
+
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
@@ -158,7 +150,7 @@ BEGIN
         THROW;
     END CATCH;
 END
-GO*/ 
+GO
 
 -- CẬP NHẬT TRẠNG THÁI ACTIVE CỦA NHÂN VIÊN KHI XÓA
 CREATE TRIGGER UpdateActive_Employee ON Employees

@@ -15,7 +15,7 @@ RETURN
     AND CategoryName LIKE '%' + @CategoryName + '%'
     AND LOWER(ProductName) LIKE '%' + @Name + '%'
 );
-
+go
 -- Hàm tìm kiếm khách hàng
 CREATE FUNCTION Find_Customer
 (
@@ -31,7 +31,7 @@ RETURN
     WHERE LOWER(NameCustomer) LIKE '%' + @Name + '%'
     AND PhoneNumber LIKE '%' + @Phone + '%'
 );
-
+go
 -- Hàm lấy danh sách sản phẩm của khách hàng
 CREATE or alter FUNCTION ProductOfCustomer
 (
@@ -48,7 +48,7 @@ RETURN
     WHERE o.PhoneNumber = @Phone
     GROUP BY od.Product_ID, p.ProductName, p.UnitPrice
 );
-
+go
 -- Hàm tìm kiếm đơn đặt hàng
 CREATE FUNCTION Find_Order
 (
@@ -64,7 +64,7 @@ RETURN
     WHERE LOWER(Order_ID) LIKE '%' + @ID + '%'
     AND CONVERT(DATE, OrderDate, 103) LIKE '%' + @date + '%'
 );
-
+go
 -- Hàm lấy danh sách sản phẩm của đơn đặt hàng
 CREATE FUNCTION ProductOfOrder
 (
@@ -79,7 +79,7 @@ RETURN
     INNER JOIN Products p ON od.Product_ID = p.Product_ID
     WHERE od.Order_ID = @ID
 );
-
+go
 -- Hàm tìm kiếm nhân viên
 CREATE FUNCTION Find_Employee
 (
@@ -95,7 +95,7 @@ RETURN
     WHERE LOWER(NameEmployee) LIKE '%' + @Name + '%'
     AND EmployeeID LIKE '%' + @ID + '%'
 );
-
+go
 -- Hàm tìm kiếm nhà cung cấp
 CREATE FUNCTION Find_Supplier
 (
@@ -111,7 +111,7 @@ RETURN
     WHERE CompanyName LIKE '%' + @Name + '%'
     AND Supplier_ID LIKE '%' + @ID + '%'
 );
-
+go
 -- Hàm lấy danh sách sản phẩm của nhà cung cấp
 CREATE FUNCTION ProductOfSupplier
 (
@@ -128,7 +128,7 @@ RETURN
     WHERE i.Supplier_ID = @ID
     GROUP BY id.Product_ID, p.ProductName, id.Unitcost
 );
-
+go
 -- Hàm tìm kiếm nhập hàng
 CREATE FUNCTION Find_Import
 (
@@ -144,7 +144,7 @@ RETURN
     WHERE LOWER(Import_ID) LIKE '%' + @ID + '%'
     AND CONVERT(DATE, ImportDay, 103) LIKE '%' + @date + '%'
 );
-
+go
 -- Hàm lấy danh sách sản phẩm của nhập hàng
 CREATE FUNCTION ProductOfImport
 (

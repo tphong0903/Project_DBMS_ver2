@@ -11,7 +11,7 @@ SELECT
 FROM Products p
 LEFT JOIN Brands b ON p.Brand_ID = b.Brand_ID
 LEFT JOIN Categories c ON p.Category_ID = c.Category_ID;
-
+go
 CREATE VIEW View_Customer AS
 
 SELECT 
@@ -31,6 +31,7 @@ GROUP BY
         c.Birthday, 
         c.Gender, 
         c.Point
+go
 -- Employee_Active View
 CREATE VIEW EMPLOYEES_ACTIVE_VIEW
 AS
@@ -54,6 +55,7 @@ AS
 		e.AddressEmployee,
 		e.PhoneNumber,
 		e.RoleEmployee
+go
 CREATE VIEW EMPLOYEES_All_VIEW
 AS
 	SELECT 
@@ -79,6 +81,7 @@ AS
 		e.RoleEmployee,
 		e.Active,
 		e.PassWordAccount
+go
 -- Bill View
 CREATE VIEW BILLS_VIEW
 AS
@@ -96,6 +99,7 @@ AS
 	JOIN Employees e ON e.EmployeeID = o.EmployeeID
 	JOIN Customers c ON c.PhoneNumber = o.PhoneNumber
 	left JOIN Discounts d ON d.DiscountCode = o.DiscountCode
+go
 -- Imports View
 CREATE VIEW IMPORTS_VIEW
 AS
@@ -107,7 +111,7 @@ AS
 		s.CompanyName
 	FROM Imports ips
 	JOIN Suppliers s ON ips.Supplier_ID = s.Supplier_ID
-
+go
 Create VIEW SUPPLIER_VIEW
 AS
 	SELECT

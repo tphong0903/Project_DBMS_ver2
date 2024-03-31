@@ -117,7 +117,7 @@ END
 GO
 
 -- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN KHI THÊM, XÓA, SỬA CHI TIẾT HÓA ĐƠN
-CREATE TRIGGER UpdateTotal_IUD_OrdersDetails ON OrderDetails
+/*alter TRIGGER UpdateTotal_IUD_OrdersDetails ON OrderDetails
 AFTER INSERT, DELETE, UPDATE
 AS
 BEGIN
@@ -158,7 +158,7 @@ BEGIN
         THROW;
     END CATCH;
 END
-GO
+GO*/ 
 
 -- CẬP NHẬT TRẠNG THÁI ACTIVE CỦA NHÂN VIÊN KHI XÓA
 CREATE TRIGGER UpdateActive_Employee ON Employees

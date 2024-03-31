@@ -19,6 +19,7 @@ namespace Project_ver1.UI
         DataTable dtCungCap=null;
         NCCDetail a = null;
         TaoNCCForm b = null;
+        string ID = null;
         public NhaCungCapUI()
         {
             InitializeComponent();
@@ -30,8 +31,11 @@ namespace Project_ver1.UI
             {
                 dtCungCap = new DataTable();
                 dtCungCap.Clear();
-                dtCungCap = dbncc.LayThanhPho().Tables[0];
+                dtCungCap = dbncc.LayNhaCungCap().Tables[0];
                 dgvNCC.DataSource = dtCungCap;
+
+                ID = dgvNCC.Rows[0].Cells[0].Value.ToString().ToLower();
+                gunaLabel2.Text = (dgvNCC.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -51,13 +55,13 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a = new NCCDetail();
+            a = new NCCDetail(1,ID);
             a.ShowDialog();
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            a = new NCCDetail();
+            a = new NCCDetail(2,ID);
             a.ShowDialog();
         }
 
@@ -65,6 +69,42 @@ namespace Project_ver1.UI
         {
             b = new TaoNCCForm();
             b.ShowDialog();
+        }
+        private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int r = dgvNCC.CurrentCell.RowIndex;
+            ID = dgvNCC.Rows[r].Cells[0].Value.ToString().ToLower();
+            MaSP.Text = dgvNCC.Rows[r].Cells[0].Value.ToString();
+            TenSP.Text = dgvNCC.Rows[r].Cells[1].Value.ToString();
+            DanhMuc.Text = dgvNCC.Rows[r].Cells[4].Value.ToString();
+            SDT.Text = dgvNCC.Rows[r].Cells[2].Value.ToString();
+            SoLuong.Text = dgvNCC.Rows[r].Cells[5].Value.ToString();
+            ThuongHieu.Text = dgvNCC.Rows[r].Cells[3].Value.ToString();
+        }
+        private void FindButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string hd = MNV.Text;
+                string name = NameText.Text;
+                DataTable dtHoaDon = new DataTable();
+                dtHoaDon.Clear();
+
+                dtHoaDon = dbncc.TimNhaCungCap(hd, name).Tables[0];
+                dgvNCC.DataSource = dtHoaDon;
+                int r = dgvNCC.RowCount;
+                if (r > 1)
+                {
+                    ID = dgvNCC.Rows[0].Cells[0].Value.ToString();
+                    gunaLabel2.Text = (dgvNCC.RowCount - 1).ToString();
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

@@ -35,11 +35,16 @@ namespace Project_ver1.UI
             SoLuong.ReadOnly = true;
             SaveButton.Visible = false;
             imgBtn.Visible = false;
+            SaveButton.Visible = false;
             this.Text = "Chi tiết sản phẩm";
             if (Check == 1)
             {
                 this.Text = "Chi tiết sản phẩm";
+                MaSP.ReadOnly = false;
+                TenSP.ReadOnly = false;
                 Gia.ReadOnly = false;
+                ThuongHieu.ReadOnly = true;
+                DanhMuc.ReadOnly = true;
                 SaveButton.Visible= true;
             }
             else if(Check == 2) 
@@ -48,8 +53,8 @@ namespace Project_ver1.UI
                 MaSP.ReadOnly = false;
                 TenSP.ReadOnly = false;
                 Gia.ReadOnly = false;
-                ThuongHieu.ReadOnly = false;
-                DanhMuc.ReadOnly = false;
+                ThuongHieu.ReadOnly = true;
+                DanhMuc.ReadOnly = true;
                 SoLuong.ReadOnly = false;
                 SaveButton.Visible = true;
                 Gia.ReadOnly = false;
@@ -69,8 +74,8 @@ namespace Project_ver1.UI
                 MaSP.Text = a.Rows[0].Cells[0].Value.ToString();
                 TenSP.Text = a.Rows[0].Cells[1].Value.ToString();
                 Gia.Text = a.Rows[0].Cells[2].Value.ToString();
-                ThuongHieu.Text = a.Rows[0].Cells[6].Value.ToString();
-                DanhMuc.Text = a.Rows[0].Cells[7].Value.ToString();
+                ThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
+                DanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
                 SoLuong.Text = a.Rows[0].Cells[3].Value.ToString();
             }
             catch (SqlException ex)

@@ -48,10 +48,11 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.Tong = new Guna.UI2.WinForms.Guna2TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
@@ -257,7 +258,7 @@
             this.AddButton.Image = null;
             this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddButton.Location = new System.Drawing.Point(823, 399);
+            this.AddButton.Location = new System.Drawing.Point(823, 461);
             this.AddButton.Name = "AddButton";
             this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -303,7 +304,6 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn3,
             this.GiaTien});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -315,7 +315,7 @@
             this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSanPham.EnableHeadersVisualStyles = false;
             this.dgvSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.dgvSanPham.Location = new System.Drawing.Point(369, 83);
+            this.dgvSanPham.Location = new System.Drawing.Point(369, 124);
             this.dgvSanPham.MultiSelect = false;
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.ReadOnly = true;
@@ -363,11 +363,46 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.BackColor = System.Drawing.Color.White;
             this.gunaLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel1.Location = new System.Drawing.Point(528, 53);
+            this.gunaLabel1.Location = new System.Drawing.Point(531, 83);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(237, 24);
             this.gunaLabel1.TabIndex = 162;
             this.gunaLabel1.Text = "Các sản phẩm cung cấp";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaLabel2.Location = new System.Drawing.Point(49, 405);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(197, 19);
+            this.gunaLabel2.TabIndex = 163;
+            this.gunaLabel2.Text = "Tổng tiền đã thanh toán";
+            // 
+            // Tong
+            // 
+            this.Tong.BorderRadius = 10;
+            this.Tong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Tong.DefaultText = "";
+            this.Tong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Tong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Tong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Tong.DisabledState.Parent = this.Tong;
+            this.Tong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Tong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Tong.FocusedState.Parent = this.Tong;
+            this.Tong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Tong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Tong.HoverState.Parent = this.Tong;
+            this.Tong.Location = new System.Drawing.Point(25, 418);
+            this.Tong.Margin = new System.Windows.Forms.Padding(4);
+            this.Tong.Name = "Tong";
+            this.Tong.PasswordChar = '\0';
+            this.Tong.PlaceholderText = "";
+            this.Tong.SelectedText = "";
+            this.Tong.ShadowDecoration.Parent = this.Tong;
+            this.Tong.Size = new System.Drawing.Size(337, 44);
+            this.Tong.TabIndex = 164;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -399,29 +434,23 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 184;
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "UnitPrice";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tổng tiền";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 129;
-            // 
             // GiaTien
             // 
-            this.GiaTien.HeaderText = "Giá bán";
+            this.GiaTien.DataPropertyName = "UnitCost";
+            this.GiaTien.HeaderText = "Giá nhập";
             this.GiaTien.MinimumWidth = 6;
             this.GiaTien.Name = "GiaTien";
             this.GiaTien.ReadOnly = true;
-            this.GiaTien.Width = 112;
+            this.GiaTien.Width = 124;
             // 
             // NCCDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(945, 466);
+            this.ClientSize = new System.Drawing.Size(945, 522);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.Tong);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.AddButton);
@@ -440,6 +469,7 @@
             this.Name = "NCCDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NCCDetail";
+            this.Load += new System.EventHandler(this.NCCDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -462,10 +492,11 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaDataGridView dgvSanPham;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox Tong;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
     }
 }

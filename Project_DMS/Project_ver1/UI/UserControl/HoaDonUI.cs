@@ -65,15 +65,10 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            HDDetail hd = new HDDetail();
+            HDDetail hd = new HDDetail(1,HD);
             hd.ShowDialog();
         }
 
-        private void UpdateButton_Click(object sender, EventArgs e)
-        {
-            HDDetail hd = new HDDetail();
-            hd.ShowDialog();
-        }
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int r = dgvHoaDon.CurrentCell.RowIndex;

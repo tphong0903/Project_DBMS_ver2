@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.Ngay = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
@@ -41,36 +41,35 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.TenSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Tong = new Guna.UI2.WinForms.Guna2TextBox();
             this.Gia = new Guna.UI2.WinForms.Guna2TextBox();
             this.MaSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2DateTimePicker1
+            // Ngay
             // 
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
-            this.guna2DateTimePicker1.BorderRadius = 10;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(12, 259);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(318, 56);
-            this.guna2DateTimePicker1.TabIndex = 62;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 3, 22, 21, 10, 19, 800);
+            this.Ngay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
+            this.Ngay.BorderRadius = 10;
+            this.Ngay.BorderThickness = 1;
+            this.Ngay.CheckedState.Parent = this.Ngay;
+            this.Ngay.FillColor = System.Drawing.Color.White;
+            this.Ngay.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Ngay.HoverState.Parent = this.Ngay;
+            this.Ngay.Location = new System.Drawing.Point(12, 259);
+            this.Ngay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Ngay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Ngay.Name = "Ngay";
+            this.Ngay.ShadowDecoration.Parent = this.Ngay;
+            this.Ngay.Size = new System.Drawing.Size(318, 56);
+            this.Ngay.TabIndex = 62;
+            this.Ngay.Value = new System.DateTime(2024, 3, 22, 21, 10, 19, 800);
             // 
             // gunaLabel9
             // 
@@ -105,7 +104,6 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn3,
             this.GiaTien});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -226,30 +224,30 @@
             this.gunaLabel1.TabIndex = 48;
             this.gunaLabel1.Text = "Mã biên lai";
             // 
-            // SoLuong
+            // Tong
             // 
-            this.SoLuong.BorderRadius = 10;
-            this.SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoLuong.DefaultText = "";
-            this.SoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.DisabledState.Parent = this.SoLuong;
-            this.SoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.FocusedState.Parent = this.SoLuong;
-            this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(12, 332);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.PasswordChar = '\0';
-            this.SoLuong.PlaceholderText = "";
-            this.SoLuong.SelectedText = "";
-            this.SoLuong.ShadowDecoration.Parent = this.SoLuong;
-            this.SoLuong.Size = new System.Drawing.Size(317, 44);
-            this.SoLuong.TabIndex = 59;
+            this.Tong.BorderRadius = 10;
+            this.Tong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Tong.DefaultText = "";
+            this.Tong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Tong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Tong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Tong.DisabledState.Parent = this.Tong;
+            this.Tong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Tong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Tong.FocusedState.Parent = this.Tong;
+            this.Tong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Tong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Tong.HoverState.Parent = this.Tong;
+            this.Tong.Location = new System.Drawing.Point(12, 332);
+            this.Tong.Margin = new System.Windows.Forms.Padding(4);
+            this.Tong.Name = "Tong";
+            this.Tong.PasswordChar = '\0';
+            this.Tong.PlaceholderText = "";
+            this.Tong.SelectedText = "";
+            this.Tong.ShadowDecoration.Parent = this.Tong;
+            this.Tong.Size = new System.Drawing.Size(317, 44);
+            this.Tong.TabIndex = 59;
             // 
             // Gia
             // 
@@ -341,39 +339,31 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 184;
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "UnitPrice";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tổng tiền";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 129;
-            // 
             // GiaTien
             // 
-            this.GiaTien.HeaderText = "Giá bán";
+            this.GiaTien.DataPropertyName = "UnitCost";
+            this.GiaTien.HeaderText = "Giá nhập";
             this.GiaTien.MinimumWidth = 6;
             this.GiaTien.Name = "GiaTien";
             this.GiaTien.ReadOnly = true;
-            this.GiaTien.Width = 112;
+            this.GiaTien.Width = 124;
             // 
             // BLDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(934, 427);
+            this.ClientSize = new System.Drawing.Size(934, 440);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel9);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.Ngay);
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.TenSP);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.SoLuong);
+            this.Controls.Add(this.Tong);
             this.Controls.Add(this.Gia);
             this.Controls.Add(this.MaSP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -381,6 +371,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BLDetail";
+            this.Load += new System.EventHandler(this.BLDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -389,7 +380,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Ngay;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaDataGridView dgvSanPham;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
@@ -397,14 +388,13 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2TextBox TenSP;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox SoLuong;
+        private Guna.UI2.WinForms.Guna2TextBox Tong;
         private Guna.UI2.WinForms.Guna2TextBox Gia;
         private Guna.UI2.WinForms.Guna2TextBox MaSP;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
     }
 }

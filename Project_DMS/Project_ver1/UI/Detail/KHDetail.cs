@@ -26,13 +26,14 @@ namespace Project_ver1.UI.Detail
             dbkh = new DBKhachHang();
             SDT.ReadOnly = true;
             Ten.ReadOnly = true;
-            NS.Enabled=false;
             GT.ReadOnly = true;
             Diem.ReadOnly = true;
             Total.ReadOnly = true;
+            AddButton.Visible = false;
             if (Check == 2) 
             {
                 SDT.ReadOnly = false;
+                AddButton.Visible = true;
             }
         }
         private void LoadData()

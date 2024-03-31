@@ -25,7 +25,7 @@ namespace BusinessAccessLayer
         }
         public DataSet TimKhachHang(string Phone, string Name)
         {
-            return db.ExecuteQueryDataSet("SELECT * FROM Find_Customer('"+Phone+"','"+Name+"')",
+            return db.ExecuteQueryDataSet("SELECT * FROM Find_Customer('"+Phone+"',N'"+Name+"')",
                 CommandType.Text,null);
         }
         public DataSet SPcuaKhachHang(string Phone)

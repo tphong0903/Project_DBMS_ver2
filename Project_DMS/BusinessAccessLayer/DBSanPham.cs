@@ -38,13 +38,13 @@ namespace BusinessAccessLayer
         public DataSet TimSanPham( string a, string b,string c)
         {
             return db.ExecuteQueryDataSet(
-                "SELECT * FROM Find_Product('"+a+ "',N'"+b+ "',N'"+c+"')",
+                "SELECT * FROM Find_Product(N'"+a+ "',N'"+b+ "',N'"+c+"')",
                 CommandType.Text,null);
         }
         public DataSet ChiTietSanPham(string a)
         {
             return db.ExecuteQueryDataSet(
-                "SELECT * FROM View_Product where Product_ID = '"+a+"'",
+                "SELECT * FROM View_Product where Product_ID = N'"+a+"'",
                 CommandType.Text, null);
         }
         public bool XoaThanhPho(ref string err, string ThanhPho)

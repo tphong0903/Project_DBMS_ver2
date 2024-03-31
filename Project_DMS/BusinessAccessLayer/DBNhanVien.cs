@@ -18,12 +18,27 @@ namespace BusinessAccessLayer
             db = new DAL();
         }
         // CRUD cho table ThanhPho
-        public DataSet LayThanhPho()
+        public DataSet LayNhanVien()
         {
             return db.ExecuteQueryDataSet(
-                "select * from Employees", CommandType.Text, null);
+                "select * from EMPLOYEES_ACTIVE_VIEW", CommandType.Text, null);
         }
-       
+        public DataSet LayALLNhanVien()
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from EMPLOYEES_All_VIEW", CommandType.Text, null);
+        }
+        public DataSet TimNhanVien(string ID,string  name)
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from Find_Employee(N'"+ID+"',N'"+name+"')", CommandType.Text, null);
+        }
+        public DataSet TimAllNhanVien(string ID)
+        {
+            return db.ExecuteQueryDataSet(
+                "select * from EMPLOYEES_All_VIEW where EmployeeID like '%'+'"+ID+"'+'%'", CommandType.Text, null);
+        }
+
         public bool XoaThanhPho(ref string err, string ThanhPho)
         {
             return db.MyExecuteNonQuery("spXoaThanhPho",

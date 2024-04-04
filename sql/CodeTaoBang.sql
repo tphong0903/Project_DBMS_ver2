@@ -85,7 +85,11 @@ CREATE TABLE Orders (
 	CONSTRAINT FK_Discount_Order FOREIGN KEY (DiscountCode)
 			REFERENCES Discounts(DiscountCode) 
 );
-
+CREATE TABLE PictureProduct (
+	Pic_ID INT IDENTITY(1,1) PRIMARY KEY,
+	Pic_Name varchar(100) not null
+	
+);
 CREATE TABLE Products (
 	Product_ID VARCHAR(15) CONSTRAINT Product_IDKey PRIMARY KEY,
 	ProductName NVARCHAR(100) NOT NULL,
@@ -93,12 +97,14 @@ CREATE TABLE Products (
 	Quantity INT NOT NULL,
 	Brand_ID VARCHAR(10) NOT NULL,
 	Category_ID VARCHAR(10) NOT NULL,
+	Picture_ID int not null;
 	CONSTRAINT FK_Brand_Product FOREIGN KEY (Brand_ID)
 			REFERENCES Brands(Brand_ID) ,
 	CONSTRAINT FK_Category_Product FOREIGN KEY (Category_ID)
 			REFERENCES Categories(Category_ID)
+	 CONSTRAINT FK_Pic_Product FOREIGN KEY (Picture_ID)
+			REFERENCES PictureProduct(Pic_ID)
 );
-
 
 
 CREATE TABLE OrderDetails (
@@ -123,3 +129,5 @@ CREATE TABLE ImportDetails (
 			REFERENCES Products(Product_ID),
 	CONSTRAINT ImportDetail_IDKey PRIMARY KEY (Import_ID , Product_ID)
 );
+
+

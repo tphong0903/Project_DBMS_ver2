@@ -44,7 +44,6 @@ namespace Project_ver1.UI
         
             if (Check == 1)
             {
-                PicProduct.Image = GetImageByName("AdidasXCrazyfastMessi.jpg");
                 this.Text = "Chi tiết sản phẩm";
                 MaSP.ReadOnly = false;
                 TenSP.ReadOnly = false;
@@ -83,6 +82,8 @@ namespace Project_ver1.UI
                 ThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
                 DanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
                 SoLuong.Text = a.Rows[0].Cells[3].Value.ToString();
+         
+                PicProduct.Image=GetImageByName(a.Rows[0].Cells[6].Value.ToString());
             }
             catch (SqlException ex)
             {
@@ -126,7 +127,6 @@ namespace Project_ver1.UI
                 MessageBox.Show("Vui lòng chọn một hình ảnh trước khi lưu!");
             }
         }
-
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();

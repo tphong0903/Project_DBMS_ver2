@@ -87,7 +87,7 @@ CREATE TABLE Orders (
 );
 CREATE TABLE PictureProduct (
 	Pic_ID INT IDENTITY(1,1) PRIMARY KEY,
-	Pic_Name varchar(100) not null
+	Pic_Name varchar(100) 
 	
 );
 CREATE TABLE Products (
@@ -97,11 +97,11 @@ CREATE TABLE Products (
 	Quantity INT NOT NULL,
 	Brand_ID VARCHAR(10) NOT NULL,
 	Category_ID VARCHAR(10) NOT NULL,
-	Picture_ID int not null;
+	Picture_ID int 
 	CONSTRAINT FK_Brand_Product FOREIGN KEY (Brand_ID)
 			REFERENCES Brands(Brand_ID) ,
 	CONSTRAINT FK_Category_Product FOREIGN KEY (Category_ID)
-			REFERENCES Categories(Category_ID)
+			REFERENCES Categories(Category_ID),
 	 CONSTRAINT FK_Pic_Product FOREIGN KEY (Picture_ID)
 			REFERENCES PictureProduct(Pic_ID)
 );

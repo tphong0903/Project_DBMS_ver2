@@ -10,8 +10,7 @@ namespace DataAccessLayer
 {
     public class DAL
     {
-        string ConnStr = "Data Source= MSI\\CSDL;" +
-            "Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        string ConnStr = "Data Source=LAPTOP-P3K0HSSJ;Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

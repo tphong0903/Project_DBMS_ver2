@@ -1,4 +1,6 @@
-﻿INSERT [dbo].[Brands] ([Brand_ID], [BrandName]) VALUES (N'ADD', N'Adidas')
+﻿USE QuanLyBanHangTheThao;
+GO
+INSERT [dbo].[Brands] ([Brand_ID], [BrandName]) VALUES (N'ADD', N'Adidas')
 INSERT [dbo].[Brands] ([Brand_ID], [BrandName]) VALUES (N'KMT', N'Kamito')
 INSERT [dbo].[Brands] ([Brand_ID], [BrandName]) VALUES (N'KWS', N'Kawasaki')
 INSERT [dbo].[Brands] ([Brand_ID], [BrandName]) VALUES (N'LN', N'Lining')

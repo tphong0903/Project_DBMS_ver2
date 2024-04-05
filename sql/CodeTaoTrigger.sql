@@ -1,4 +1,5 @@
-﻿-- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN IMPORT
+﻿USE QuanLyBanHangTheThao;
+-- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN IMPORT
 -- Khi thêm vào chi tiết nhập
 CREATE TRIGGER UpdateTotalImport_InsertImportDetails ON [dbo].[ImportDetails]
 AFTER INSERT

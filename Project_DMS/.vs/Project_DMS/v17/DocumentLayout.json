@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project_DBMS_ver2\\Project_DMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|d:\\project_dbms_ver2\\project_dms\\project_ver1\\ui\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\form\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|d:\\project_dbms_ver2\\project_dms\\project_ver1\\ui\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|d:\\project_dbms_ver2\\project_dms\\project_ver1\\ui\\usercontrol\\sanphamui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\usercontrol\\sanphamui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|d:\\project_dbms_ver2\\project_dms\\project_ver1\\ui\\usercontrol\\sanphamui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\usercontrol\\sanphamui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2C09C62-6BD5-401B-AB61-69E2C870343E}|BusinessAccessLayer\\BusinessAccessLayer.csproj|d:\\project_dbms_ver2\\project_dms\\businessaccesslayer\\dbkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2C09C62-6BD5-401B-AB61-69E2C870343E}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dbkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50961172-C266-4D92-AA1F-4A1432D75D20}|DataAccessLayer\\DataAccessLayer.csproj|D:\\Project_DBMS_ver2\\Project_DMS\\dataaccesslayer\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50961172-C266-4D92-AA1F-4A1432D75D20}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|D:\\Project_DBMS_ver2\\Project_DMS\\project_ver1\\ui\\detail\\spdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\detail\\spdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|D:\\Project_DBMS_ver2\\Project_DMS\\project_ver1\\ui\\detail\\spdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\detail\\spdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2C09C62-6BD5-401B-AB61-69E2C870343E}|BusinessAccessLayer\\BusinessAccessLayer.csproj|D:\\Project_DBMS_ver2\\Project_DMS\\businessaccesslayer\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2C09C62-6BD5-401B-AB61-69E2C870343E}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|D:\\Project_DBMS_ver2\\Project_DMS\\project_ver1\\ui\\usercontrol\\bienlaiui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D09A85-35AF-4D2D-A298-1EBF835BD7E0}|Project_ver1\\Project_ver1.csproj|solutionrelative:project_ver1\\ui\\usercontrol\\bienlaiui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Form\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\Form\\LoginForm.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Form\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Project_ver1\\UI\\Form\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T02:01:05.601Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SanPhamUi.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "RelativeToolTip": "Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAkwGcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:50:14.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BienLaiUI.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\BienLaiUI.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\UserControl\\BienLaiUI.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\BienLaiUI.cs",
+              "RelativeToolTip": "Project_ver1\\UI\\UserControl\\BienLaiUI.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAIwC0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-05T00:34:50.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SPDetail.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "RelativeToolTip": "Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T00:34:50.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SPDetail.cs [Design]",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\Detail\\SPDetail.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Detail\\SPDetail.cs [Design]",
+              "RelativeToolTip": "Project_ver1\\UI\\Detail\\SPDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T00:34:50.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBKhachHang.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\BusinessAccessLayer\\DBKhachHang.cs",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\DBKhachHang.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\BusinessAccessLayer\\DBKhachHang.cs",
+              "RelativeToolTip": "BusinessAccessLayer\\DBKhachHang.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T00:34:50.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Form\\MainForm.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\Form\\MainForm.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\Form\\MainForm.cs [Design]",
+              "RelativeToolTip": "Project_ver1\\UI\\Form\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:49:58.923Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DBSanPham.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\BusinessAccessLayer\\DBSanPham.cs",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\DBSanPham.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\BusinessAccessLayer\\DBSanPham.cs",
+              "RelativeToolTip": "BusinessAccessLayer\\DBSanPham.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA3wC4AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T00:34:50.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\DataAccessLayer\\DAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAL.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\DataAccessLayer\\DAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAL.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T00:35:20.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPhamUi.cs [Design]",
+              "DocumentMoniker": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "RelativeDocumentMoniker": "Project_ver1\\UI\\UserControl\\SanPhamUi.cs",
+              "ToolTip": "D:\\Project_DBMS_ver2\\Project_DMS\\Project_ver1\\UI\\UserControl\\SanPhamUi.cs [Design]",
+              "RelativeToolTip": "Project_ver1\\UI\\UserControl\\SanPhamUi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:50:09.765Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

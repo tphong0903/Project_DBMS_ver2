@@ -1,4 +1,6 @@
-﻿-- Hàm tìm kiếm sản phẩm
+﻿USE QuanLyBanHangTheThao;
+GO
+-- Hàm tìm kiếm sản phẩm
 CREATE FUNCTION Find_Product
 (
     @BrandName NVARCHAR(50),

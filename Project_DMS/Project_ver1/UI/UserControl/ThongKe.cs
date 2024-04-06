@@ -18,12 +18,12 @@ namespace Project_ver1.UI.UserControl
         public ThongKe()
         {
             InitializeComponent();
-            dtpStartDate.Value = DateTime.Today.AddDays(-7);
-            dtpEndDate.Value = DateTime.Now;
-            Btn7Date.Select();
+            //dtpStartDate.Value = DateTime.Today.AddDays(-7);
+            //dtpEndDate.Value = DateTime.Now;
+            //Btn7Date.Select();
 
-            model = new DBThongKe();
-            LoadData();
+            //model = new DBThongKe();
+            //LoadData();
         }
 
         private void LoadData()

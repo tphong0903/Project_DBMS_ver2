@@ -36,6 +36,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhaCungCapUI));
             this.dgvNCC = new Guna.UI.WinForms.GunaDataGridView();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReadButton = new Guna.UI.WinForms.GunaButton();
             this.AddButton = new Guna.UI.WinForms.GunaButton();
             this.RemoveButton = new Guna.UI.WinForms.GunaButton();
@@ -60,12 +66,6 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.SDT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.SuspendLayout();
@@ -160,6 +160,55 @@
             this.dgvNCC.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.dgvNCC.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvNCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.DataPropertyName = "Supplier_ID";
+            this.MaNCC.HeaderText = "Mã nhà cung cấp";
+            this.MaNCC.MinimumWidth = 6;
+            this.MaNCC.Name = "MaNCC";
+            this.MaNCC.ReadOnly = true;
+            // 
+            // TenCT
+            // 
+            this.TenCT.DataPropertyName = "CompanyName";
+            this.TenCT.HeaderText = "Tên công ty";
+            this.TenCT.MinimumWidth = 6;
+            this.TenCT.Name = "TenCT";
+            this.TenCT.ReadOnly = true;
+            // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.DataPropertyName = "PhoneNumber";
+            this.PhoneNumber.HeaderText = "Số điện thoại";
+            this.PhoneNumber.MinimumWidth = 6;
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "AddressSupplier";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Tong";
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
             // 
             // ReadButton
             // 
@@ -293,6 +342,7 @@
             this.ReloadButton.Size = new System.Drawing.Size(107, 49);
             this.ReloadButton.TabIndex = 110;
             this.ReloadButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ReloadButton.Click += new System.EventHandler(this.ReloadButton_Click);
             // 
             // gunaLabel9
             // 
@@ -637,55 +687,6 @@
             this.SDT.ShadowDecoration.Parent = this.SDT;
             this.SDT.Size = new System.Drawing.Size(318, 44);
             this.SDT.TabIndex = 153;
-            // 
-            // MaNCC
-            // 
-            this.MaNCC.DataPropertyName = "Supplier_ID";
-            this.MaNCC.HeaderText = "Mã nhà cung cấp";
-            this.MaNCC.MinimumWidth = 6;
-            this.MaNCC.Name = "MaNCC";
-            this.MaNCC.ReadOnly = true;
-            // 
-            // TenCT
-            // 
-            this.TenCT.DataPropertyName = "CompanyName";
-            this.TenCT.HeaderText = "Tên công ty";
-            this.TenCT.MinimumWidth = 6;
-            this.TenCT.Name = "TenCT";
-            this.TenCT.ReadOnly = true;
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.DataPropertyName = "PhoneNumber";
-            this.PhoneNumber.HeaderText = "Số điện thoại";
-            this.PhoneNumber.MinimumWidth = 6;
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.ReadOnly = true;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "AddressSupplier";
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Tong";
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
             // 
             // NhaCungCapUI
             // 

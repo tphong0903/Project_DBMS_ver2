@@ -40,12 +40,12 @@ namespace Project_ver1.UI.Detail
                 DataTable dt = new DataTable();
                 dt.Clear();
                 dt = DBNhaCungCap.TimNhaCungCap(ID, "").Tables[0];
-                MaSP.Text = dt.Rows[0].Field<string>(0);
-                TenSP.Text = dt.Rows[0].Field<string>(1);
-                ThuongHieu.Text = dt.Rows[0].Field<string>(2);
-                DanhMuc.Text = dt.Rows[0].Field<string>(3);
-                SoLuong.Text= dt.Rows[0].Field<string>(4);
-                Tong.Text= dt.Rows[0].Field<int>(5).ToString();
+                textBoxMaNhaCungCap.Text = dt.Rows[0].Field<string>(0);
+                textBoxTenNhaCungCap.Text = dt.Rows[0].Field<string>(1);
+                textBoxSoDienThoai.Text = dt.Rows[0].Field<string>(2);
+                textBoxDiaChi.Text = dt.Rows[0].Field<string>(3);
+                textBoxEmail.Text= dt.Rows[0].Field<string>(4);
+                Tong.Text= dt.Rows[0].Field<int?>(5).ToString()=="" ? "0":dt.Rows[0].Field<int?>(5).ToString();
             }
             catch (SqlException x)
             {
@@ -56,6 +56,33 @@ namespace Project_ver1.UI.Detail
         private void NCCDetail_Load(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                // Lệnh Update
+                bool f = DBNhaCungCap.CapNhatNhaCungCap(ref err,
+                this.textBoxMaNhaCungCap.Text.ToString(),
+                this.textBoxTenNhaCungCap.Text.ToString(),
+                this.textBoxSoDienThoai.Text.ToString(),
+                this.textBoxDiaChi.Text.ToString(),
+                this.textBoxEmail.Text.ToString());
+                if (f)
+                {
+                    MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
         }
     }
 

@@ -33,25 +33,27 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from ProductOfSupplier('" + ID + "')", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public bool ThemNhaCungCap(ref string err, string Supplier_ID, string CompanyName,
+             string PhoneNumber, string AddressSupplier, string Email)
         {
-            return db.MyExecuteNonQuery("spThemThanhPho",
+            return db.MyExecuteNonQuery("spInsertSupplier",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Supplier_ID", Supplier_ID),
+                new SqlParameter("@CompanyName", CompanyName),
+                new SqlParameter("@PhoneNumber", PhoneNumber),
+                new SqlParameter("@AddressSupplier", AddressSupplier),
+                new SqlParameter("@Email", Email));
         }
-        public bool XoaThanhPho(ref string err, string ThanhPho)
+        public bool CapNhatNhaCungCap(ref string err, string Supplier_ID, string CompanyName,
+            string PhoneNumber, string AddressSupplier, string Email)
         {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
+            return db.MyExecuteNonQuery("spUpdateSupplier",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
-        }
-        public bool CapNhatThanhPho(ref string err, string ThanhPho, string TenThanhPho)
-        {
-            return db.MyExecuteNonQuery("spCapNhatThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Supplier_ID", Supplier_ID),
+                new SqlParameter("@CompanyName", CompanyName),
+                new SqlParameter("@PhoneNumber", PhoneNumber),
+                new SqlParameter("@AddressSupplier", AddressSupplier),
+                new SqlParameter("@Email", Email));
         }
 
     }

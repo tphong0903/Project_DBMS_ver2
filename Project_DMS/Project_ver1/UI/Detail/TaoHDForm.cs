@@ -48,7 +48,7 @@ namespace Project_ver1.UI.Detail
             {
                 DataTable dt = new DataTable();
                 dt.Clear();
-                dt = dbsp.LayThanhPho().Tables[0];
+                dt = dbsp.LaySanPham().Tables[0];
                 dgvSanPham.DataSource = dt;
             }
             catch (SqlException)

@@ -37,7 +37,7 @@ namespace Project_ver1
             {
                 dtSanPham = new DataTable();
                 dtSanPham.Clear();
-                dtSanPham = dbsp.LayThanhPho().Tables[0];
+                dtSanPham = dbsp.LaySanPham().Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
 
                 DataTable dtTT = new DataTable();

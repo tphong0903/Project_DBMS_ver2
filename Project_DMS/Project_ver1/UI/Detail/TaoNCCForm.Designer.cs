@@ -36,11 +36,11 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.TenSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.DanhMuc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ThuongHieu = new Guna.UI2.WinForms.Guna2TextBox();
-            this.MaSP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxTenNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxMaNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
@@ -80,6 +80,7 @@
             this.AddButton.TabIndex = 160;
             this.AddButton.Text = "Lưu";
             this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // gunaLabel3
             // 
@@ -141,131 +142,131 @@
             this.gunaLabel7.TabIndex = 162;
             this.gunaLabel7.Text = "Tên nhà cung cấp";
             // 
-            // TenSP
+            // textBoxTenNhaCungCap
             // 
-            this.TenSP.AutoScroll = true;
-            this.TenSP.BorderRadius = 10;
-            this.TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TenSP.DefaultText = "";
-            this.TenSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TenSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TenSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TenSP.DisabledState.Parent = this.TenSP;
-            this.TenSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TenSP.FocusedState.Parent = this.TenSP;
-            this.TenSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TenSP.HoverState.Parent = this.TenSP;
-            this.TenSP.Location = new System.Drawing.Point(394, 62);
-            this.TenSP.Margin = new System.Windows.Forms.Padding(4);
-            this.TenSP.Name = "TenSP";
-            this.TenSP.PasswordChar = '\0';
-            this.TenSP.PlaceholderText = "";
-            this.TenSP.SelectedText = "";
-            this.TenSP.ShadowDecoration.Parent = this.TenSP;
-            this.TenSP.Size = new System.Drawing.Size(337, 44);
-            this.TenSP.TabIndex = 167;
+            this.textBoxTenNhaCungCap.AutoScroll = true;
+            this.textBoxTenNhaCungCap.BorderRadius = 10;
+            this.textBoxTenNhaCungCap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxTenNhaCungCap.DefaultText = "";
+            this.textBoxTenNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxTenNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxTenNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxTenNhaCungCap.DisabledState.Parent = this.textBoxTenNhaCungCap;
+            this.textBoxTenNhaCungCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxTenNhaCungCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxTenNhaCungCap.FocusedState.Parent = this.textBoxTenNhaCungCap;
+            this.textBoxTenNhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxTenNhaCungCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxTenNhaCungCap.HoverState.Parent = this.textBoxTenNhaCungCap;
+            this.textBoxTenNhaCungCap.Location = new System.Drawing.Point(394, 62);
+            this.textBoxTenNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTenNhaCungCap.Name = "textBoxTenNhaCungCap";
+            this.textBoxTenNhaCungCap.PasswordChar = '\0';
+            this.textBoxTenNhaCungCap.PlaceholderText = "";
+            this.textBoxTenNhaCungCap.SelectedText = "";
+            this.textBoxTenNhaCungCap.ShadowDecoration.Parent = this.textBoxTenNhaCungCap;
+            this.textBoxTenNhaCungCap.Size = new System.Drawing.Size(337, 44);
+            this.textBoxTenNhaCungCap.TabIndex = 167;
             // 
-            // SoLuong
+            // textBoxEmail
             // 
-            this.SoLuong.BorderRadius = 10;
-            this.SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoLuong.DefaultText = "";
-            this.SoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.DisabledState.Parent = this.SoLuong;
-            this.SoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.FocusedState.Parent = this.SoLuong;
-            this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(13, 194);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.PasswordChar = '\0';
-            this.SoLuong.PlaceholderText = "";
-            this.SoLuong.SelectedText = "";
-            this.SoLuong.ShadowDecoration.Parent = this.SoLuong;
-            this.SoLuong.Size = new System.Drawing.Size(337, 44);
-            this.SoLuong.TabIndex = 170;
+            this.textBoxEmail.BorderRadius = 10;
+            this.textBoxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxEmail.DefaultText = "";
+            this.textBoxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxEmail.DisabledState.Parent = this.textBoxEmail;
+            this.textBoxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxEmail.FocusedState.Parent = this.textBoxEmail;
+            this.textBoxEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxEmail.HoverState.Parent = this.textBoxEmail;
+            this.textBoxEmail.Location = new System.Drawing.Point(13, 194);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.PasswordChar = '\0';
+            this.textBoxEmail.PlaceholderText = "";
+            this.textBoxEmail.SelectedText = "";
+            this.textBoxEmail.ShadowDecoration.Parent = this.textBoxEmail;
+            this.textBoxEmail.Size = new System.Drawing.Size(337, 44);
+            this.textBoxEmail.TabIndex = 170;
             // 
-            // DanhMuc
+            // textBoxDiaChi
             // 
-            this.DanhMuc.BorderRadius = 10;
-            this.DanhMuc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DanhMuc.DefaultText = "";
-            this.DanhMuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DanhMuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DanhMuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DanhMuc.DisabledState.Parent = this.DanhMuc;
-            this.DanhMuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DanhMuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DanhMuc.FocusedState.Parent = this.DanhMuc;
-            this.DanhMuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.DanhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DanhMuc.HoverState.Parent = this.DanhMuc;
-            this.DanhMuc.Location = new System.Drawing.Point(394, 127);
-            this.DanhMuc.Margin = new System.Windows.Forms.Padding(4);
-            this.DanhMuc.Name = "DanhMuc";
-            this.DanhMuc.PasswordChar = '\0';
-            this.DanhMuc.PlaceholderText = "";
-            this.DanhMuc.SelectedText = "";
-            this.DanhMuc.ShadowDecoration.Parent = this.DanhMuc;
-            this.DanhMuc.Size = new System.Drawing.Size(337, 44);
-            this.DanhMuc.TabIndex = 169;
+            this.textBoxDiaChi.BorderRadius = 10;
+            this.textBoxDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxDiaChi.DefaultText = "";
+            this.textBoxDiaChi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxDiaChi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxDiaChi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxDiaChi.DisabledState.Parent = this.textBoxDiaChi;
+            this.textBoxDiaChi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxDiaChi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxDiaChi.FocusedState.Parent = this.textBoxDiaChi;
+            this.textBoxDiaChi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxDiaChi.HoverState.Parent = this.textBoxDiaChi;
+            this.textBoxDiaChi.Location = new System.Drawing.Point(394, 127);
+            this.textBoxDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiaChi.Name = "textBoxDiaChi";
+            this.textBoxDiaChi.PasswordChar = '\0';
+            this.textBoxDiaChi.PlaceholderText = "";
+            this.textBoxDiaChi.SelectedText = "";
+            this.textBoxDiaChi.ShadowDecoration.Parent = this.textBoxDiaChi;
+            this.textBoxDiaChi.Size = new System.Drawing.Size(337, 44);
+            this.textBoxDiaChi.TabIndex = 169;
             // 
-            // ThuongHieu
+            // textBoxSoDienThoai
             // 
-            this.ThuongHieu.BorderRadius = 10;
-            this.ThuongHieu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ThuongHieu.DefaultText = "";
-            this.ThuongHieu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.ThuongHieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.ThuongHieu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ThuongHieu.DisabledState.Parent = this.ThuongHieu;
-            this.ThuongHieu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ThuongHieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ThuongHieu.FocusedState.Parent = this.ThuongHieu;
-            this.ThuongHieu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.ThuongHieu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ThuongHieu.HoverState.Parent = this.ThuongHieu;
-            this.ThuongHieu.Location = new System.Drawing.Point(13, 127);
-            this.ThuongHieu.Margin = new System.Windows.Forms.Padding(4);
-            this.ThuongHieu.Name = "ThuongHieu";
-            this.ThuongHieu.PasswordChar = '\0';
-            this.ThuongHieu.PlaceholderText = "";
-            this.ThuongHieu.SelectedText = "";
-            this.ThuongHieu.ShadowDecoration.Parent = this.ThuongHieu;
-            this.ThuongHieu.Size = new System.Drawing.Size(337, 44);
-            this.ThuongHieu.TabIndex = 168;
+            this.textBoxSoDienThoai.BorderRadius = 10;
+            this.textBoxSoDienThoai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxSoDienThoai.DefaultText = "";
+            this.textBoxSoDienThoai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxSoDienThoai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxSoDienThoai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxSoDienThoai.DisabledState.Parent = this.textBoxSoDienThoai;
+            this.textBoxSoDienThoai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxSoDienThoai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxSoDienThoai.FocusedState.Parent = this.textBoxSoDienThoai;
+            this.textBoxSoDienThoai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxSoDienThoai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxSoDienThoai.HoverState.Parent = this.textBoxSoDienThoai;
+            this.textBoxSoDienThoai.Location = new System.Drawing.Point(13, 127);
+            this.textBoxSoDienThoai.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSoDienThoai.Name = "textBoxSoDienThoai";
+            this.textBoxSoDienThoai.PasswordChar = '\0';
+            this.textBoxSoDienThoai.PlaceholderText = "";
+            this.textBoxSoDienThoai.SelectedText = "";
+            this.textBoxSoDienThoai.ShadowDecoration.Parent = this.textBoxSoDienThoai;
+            this.textBoxSoDienThoai.Size = new System.Drawing.Size(337, 44);
+            this.textBoxSoDienThoai.TabIndex = 168;
             // 
-            // MaSP
+            // textBoxMaNhaCungCap
             // 
-            this.MaSP.BorderRadius = 10;
-            this.MaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MaSP.DefaultText = "";
-            this.MaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.MaSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.MaSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MaSP.DisabledState.Parent = this.MaSP;
-            this.MaSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MaSP.FocusedState.Parent = this.MaSP;
-            this.MaSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MaSP.HoverState.Parent = this.MaSP;
-            this.MaSP.Location = new System.Drawing.Point(13, 62);
-            this.MaSP.Margin = new System.Windows.Forms.Padding(4);
-            this.MaSP.Name = "MaSP";
-            this.MaSP.PasswordChar = '\0';
-            this.MaSP.PlaceholderText = "";
-            this.MaSP.SelectedText = "";
-            this.MaSP.ShadowDecoration.Parent = this.MaSP;
-            this.MaSP.Size = new System.Drawing.Size(337, 44);
-            this.MaSP.TabIndex = 166;
+            this.textBoxMaNhaCungCap.BorderRadius = 10;
+            this.textBoxMaNhaCungCap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxMaNhaCungCap.DefaultText = "";
+            this.textBoxMaNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxMaNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxMaNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxMaNhaCungCap.DisabledState.Parent = this.textBoxMaNhaCungCap;
+            this.textBoxMaNhaCungCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxMaNhaCungCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxMaNhaCungCap.FocusedState.Parent = this.textBoxMaNhaCungCap;
+            this.textBoxMaNhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxMaNhaCungCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxMaNhaCungCap.HoverState.Parent = this.textBoxMaNhaCungCap;
+            this.textBoxMaNhaCungCap.Location = new System.Drawing.Point(13, 62);
+            this.textBoxMaNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMaNhaCungCap.Name = "textBoxMaNhaCungCap";
+            this.textBoxMaNhaCungCap.PasswordChar = '\0';
+            this.textBoxMaNhaCungCap.PlaceholderText = "";
+            this.textBoxMaNhaCungCap.SelectedText = "";
+            this.textBoxMaNhaCungCap.ShadowDecoration.Parent = this.textBoxMaNhaCungCap;
+            this.textBoxMaNhaCungCap.Size = new System.Drawing.Size(337, 44);
+            this.textBoxMaNhaCungCap.TabIndex = 166;
             // 
             // TaoNCCForm
             // 
@@ -277,12 +278,12 @@
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.TenSP);
+            this.Controls.Add(this.textBoxTenNhaCungCap);
             this.Controls.Add(gunaLabel8);
-            this.Controls.Add(this.SoLuong);
-            this.Controls.Add(this.DanhMuc);
-            this.Controls.Add(this.ThuongHieu);
-            this.Controls.Add(this.MaSP);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxDiaChi);
+            this.Controls.Add(this.textBoxSoDienThoai);
+            this.Controls.Add(this.textBoxMaNhaCungCap);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel9);
@@ -305,10 +306,10 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI2.WinForms.Guna2TextBox TenSP;
-        private Guna.UI2.WinForms.Guna2TextBox SoLuong;
-        private Guna.UI2.WinForms.Guna2TextBox DanhMuc;
-        private Guna.UI2.WinForms.Guna2TextBox ThuongHieu;
-        private Guna.UI2.WinForms.Guna2TextBox MaSP;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxTenNhaCungCap;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxEmail;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxDiaChi;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxSoDienThoai;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxMaNhaCungCap;
     }
 }

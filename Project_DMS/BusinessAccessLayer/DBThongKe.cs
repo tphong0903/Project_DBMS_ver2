@@ -33,26 +33,49 @@ namespace BusinessAccessLayer
 
         public DBThongKe()
         {
-            DAL dAL = new DBThongKe();
+          
+            db = new DAL();
         }
         private void GetNumberItems()
         {
-            NumCustommers = db.ExecuteReturnInt(
+            DataTable dt = new DataTable();
+
+            DataSet a = db.ExecuteQueryDataSet(
                 "select count(PhoneNumber) from Customers", CommandType.Text, null);
-            NumSuppliers = db.ExecuteReturnInt(
+            dt.Clear();
+            dt = a.Tables[0];
+            NumCustommers = dt.Rows[0].Field<int>(0);
+
+            a = db.ExecuteQueryDataSet(
                 "select count(Supplier_ID) from Suppliers", CommandType.Text, null);
-            NumProduct = db.ExecuteReturnInt(
+            dt.Clear();
+            dt = a.Tables[0];
+            NumSuppliers = dt.Rows[0].Field<int>(0);
+
+
+            a = db.ExecuteQueryDataSet(
                 "select count(Product_ID) from Products", CommandType.Text, null);
+            dt.Clear();
+            dt = a.Tables[0];
+            NumProduct = dt.Rows[0].Field<int>(0);
+
+
             //DateTime a = DateTime.Parse(Ngay.Text);
             //if (a.Month < 10)
             //    date = a.Year + "-0" + a.Month + "-" + a.Day;
             //else
             //    date = a.Year + "-" + a.Month + "-" + a.Day;
 
-            NumOrder = db.ExecuteReturnInt(
-                "select count(Product_ID) from Orders where OrderDate between @fromDate and @todate", CommandType.Text, 
+
+            a = db.ExecuteQueryDataSet(
+               "select count(Product_ID) from Orders where OrderDate between @fromDate and @todate", CommandType.Text,
                 new SqlParameter("@fromDate", startDate),
-                new SqlParameter("@toDate",endDate));
+                new SqlParameter("@toDate", endDate));
+            dt.Clear();
+            dt = a.Tables[0];
+            NumOrder = dt.Rows[0].Field<int>(0);
+          
+                
 
         }
         private void GetOrderAnaliys()
@@ -62,9 +85,10 @@ namespace BusinessAccessLayer
             TotalRevenue = 0;
 
             var reader = db.ExecuteReader(
-               "select OrderDate, SUM(Total) From Orders where OrderDate between @fromDate and @toDate group by OrderDate", CommandType.Text,
-               new SqlParameter("@fromDate", startDate),
-               new SqlParameter("@toDate", endDate));
+                "select OrderDate, SUM(Total) From Orders where OrderDate between @fromDate and @toDate group by OrderDate",
+                CommandType.Text,
+                new SqlParameter("@fromDate", startDate),
+                new SqlParameter("@toDate", endDate));
             var resultTable = new List<KeyValuePair<DateTime, decimal>>();
             while (reader.Read())
             {
@@ -169,7 +193,7 @@ namespace BusinessAccessLayer
             reader.Close();
 
         }
-        public bool LoadDate(DateTime startDate, DateTime endDate)
+        public bool LoadData(DateTime startDate, DateTime endDate)
         {
             endDate = new DateTime(endDate.Year,endDate.Month,endDate.Day,endDate.Hour,endDate.Minute,59);
             if (startDate != this.startDate || endDate != this.endDate)
@@ -187,8 +211,6 @@ namespace BusinessAccessLayer
             {
                 return false;
             }
-           
-
         }
     }
 }

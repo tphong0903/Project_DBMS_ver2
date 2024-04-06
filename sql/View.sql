@@ -1,3 +1,5 @@
+use QuanLyBanHangTheThao
+go
 --Product View
 create VIEW View_Product AS
 SELECT 

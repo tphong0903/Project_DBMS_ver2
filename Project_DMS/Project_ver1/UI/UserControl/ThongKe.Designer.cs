@@ -146,6 +146,7 @@
             this.btnCustom.Size = new System.Drawing.Size(126, 45);
             this.btnCustom.TabIndex = 202;
             this.btnCustom.Text = "Tùy chỉnh";
+            this.btnCustom.Click += new System.EventHandler(this.btnCustomDate_Click);
             // 
             // Btn7Date
             // 
@@ -160,6 +161,7 @@
             this.Btn7Date.Size = new System.Drawing.Size(126, 45);
             this.Btn7Date.TabIndex = 203;
             this.Btn7Date.Text = "7 ngày";
+            this.Btn7Date.Click += new System.EventHandler(this.btnLast7Days_Click);
             // 
             // btnLast30
             // 
@@ -174,6 +176,7 @@
             this.btnLast30.Size = new System.Drawing.Size(126, 45);
             this.btnLast30.TabIndex = 204;
             this.btnLast30.Text = "30 ngày ";
+            this.btnLast30.Click += new System.EventHandler(this.btnLast30Days_Click);
             // 
             // btnThisMonth
             // 
@@ -188,6 +191,7 @@
             this.btnThisMonth.Size = new System.Drawing.Size(126, 45);
             this.btnThisMonth.TabIndex = 205;
             this.btnThisMonth.Text = "Tháng này";
+            this.btnThisMonth.Click += new System.EventHandler(this.btnThisMonth_Click);
             // 
             // btnOKDate
             // 
@@ -202,6 +206,7 @@
             this.btnOKDate.Size = new System.Drawing.Size(60, 45);
             this.btnOKDate.TabIndex = 206;
             this.btnOKDate.Text = "OK";
+            this.btnOKDate.Click += new System.EventHandler(this.btnOkCustomDate_Click);
             // 
             // SLDH
             // 
@@ -548,7 +553,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUnderstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUnderstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUnderstock.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -579,7 +584,7 @@
             this.dgvUnderstock.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvUnderstock.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvUnderstock.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvUnderstock.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUnderstock.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvUnderstock.ThemeStyle.HeaderStyle.Height = 4;
             this.dgvUnderstock.ThemeStyle.ReadOnly = false;
             this.dgvUnderstock.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;

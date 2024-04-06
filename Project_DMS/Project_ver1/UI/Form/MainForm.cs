@@ -1,4 +1,5 @@
 ﻿using Project_ver1.UI;
+using Project_ver1.UI.UserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,8 @@ namespace Project_ver1
         HoaDonUI frm4 = new HoaDonUI();
         BienLaiUI frm5 = new BienLaiUI();
         NhaCungCapUI frm6 = new NhaCungCapUI();
+        ThongKe frm7 = new ThongKe();
+
         public MainForm()
         {
             InitializeComponent();
@@ -56,6 +59,9 @@ namespace Project_ver1
 
             frm6.TopLevel = false;
             panel1.Controls.Add(frm6);
+
+            frm7.TopLevel = false;
+            panel1.Controls.Add(frm7);
         }
         void TurnOffAllForm()
         {
@@ -65,6 +71,7 @@ namespace Project_ver1
             frm4.Hide();
             frm5.Hide();
             frm6.Hide();
+            frm7.Hide();
         }
         private void gunaButton1_Click(object sender, EventArgs e)
         {
@@ -105,6 +112,12 @@ namespace Project_ver1
         {
             TurnOffAllForm();
             frm5.Show();
+        }
+
+        private void gunaButton8_Click(object sender, EventArgs e)
+        {
+            TurnOffAllForm();
+            frm7.Show();
         }
     }
 }

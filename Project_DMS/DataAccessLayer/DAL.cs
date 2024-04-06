@@ -21,7 +21,7 @@ namespace DataAccessLayer
             conn = new SqlConnection(ConnStr);
             comm = conn.CreateCommand();
         }
-        // Khai bao ham thuc thi tang ket noi
+       
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] p)
         {
             if (conn.State == ConnectionState.Open)
@@ -34,15 +34,7 @@ namespace DataAccessLayer
             da.Fill(ds);
             return ds;
         }
-        public int ExecuteReturnInt(string strSQL, CommandType ct, params SqlParameter[] p)
-        {
-            if (conn.State == ConnectionState.Open)
-                conn.Close();
-            conn.Open();
-            comm.CommandText = strSQL;
-            comm.CommandType = ct;
-            return (int)comm.ExecuteScalar();
-        }
+        
 
         public SqlDataReader ExecuteReader(string strSQL, CommandType ct, params SqlParameter[] p)
         {

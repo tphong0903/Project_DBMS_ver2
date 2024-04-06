@@ -289,6 +289,7 @@
             this.gunaButton8.Size = new System.Drawing.Size(306, 42);
             this.gunaButton8.TabIndex = 7;
             this.gunaButton8.Text = "Thống Kê";
+            this.gunaButton8.Click += new System.EventHandler(this.gunaButton8_Click);
             // 
             // gunaElipse1
             // 

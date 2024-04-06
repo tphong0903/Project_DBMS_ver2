@@ -33,25 +33,35 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from ProductOfImport('" + HD + "')", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public bool ThemBienLai(ref string err, string Import_ID, string Supplier_ID,
+             DateTime ImportDay, int Total)
         {
-            return db.MyExecuteNonQuery("spThemThanhPho",
+            return db.MyExecuteNonQuery("spInsertImport",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Import_ID", Import_ID),
+                new SqlParameter("@Supplier_ID", Supplier_ID),
+                new SqlParameter("@ImportDay", ImportDay),
+                new SqlParameter("@Total", Total));
         }
-        public bool XoaThanhPho(ref string err, string ThanhPho)
+        public bool CapNhatBienLai(ref string err, string Import_ID, string Supplier_ID,
+            DateTime ImportDay, int Total)
         {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
+            return db.MyExecuteNonQuery("spInsertImport",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
+                new SqlParameter("@Import_ID", Import_ID),
+                new SqlParameter("@Supplier_ID", Supplier_ID),
+                new SqlParameter("@ImportDay", ImportDay),
+                new SqlParameter("@Total", Total));
         }
-        public bool CapNhatThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public bool ThemChiTietBienLai(ref string err, string Import_ID, string Product_ID,
+            int Quantity, int Unitcost)
         {
-            return db.MyExecuteNonQuery("spCapNhatThanhPho",
+            return db.MyExecuteNonQuery("spInsertImportDetail",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Import_ID", Import_ID),
+                new SqlParameter("@Product_ID", Product_ID),
+                new SqlParameter("@Quantity", Quantity),
+                new SqlParameter("@Unitcost", Unitcost));
         }
 
     }

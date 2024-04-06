@@ -1,4 +1,6 @@
-﻿-- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN IMPORT
+﻿use QuanLyBanHangTheThao
+go
+-- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN IMPORT
 -- Khi thêm vào chi tiết nhập
 CREATE TRIGGER UpdateTotalImport_InsertImportDetails ON [dbo].[ImportDetails]
 AFTER INSERT
@@ -197,3 +199,34 @@ BEGIN
         THROW;
     END CATCH;
 END
+
+
+
+CREATE TRIGGER trg_Customers_UpdateDeleteInsert
+ON Customers
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+
+    DELETE FROM View_Customer;
+
+    -- Thêm lại dữ liệu mới từ bảng Customers và Orders vào view customer
+    INSERT INTO View_Customer (PhoneNumber, NameCustomer, Birthday, Gender, Point, Tong)
+    SELECT 
+        c.[PhoneNumber],
+        c.[NameCustomer],
+        c.[Birthday],
+        c.[Gender],
+        c.[Point],
+        ISNULL(SUM(o.[Amount]), 0) AS Tong
+    FROM 
+        Customers c
+    LEFT JOIN 
+        Orders o ON c.[PhoneNumber] = o.[CustomerPhoneNumber]
+    GROUP BY 
+        c.[PhoneNumber],
+        c.[NameCustomer],
+        c.[Birthday],
+        c.[Gender],
+        c.[Point];
+END;

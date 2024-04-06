@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Project_ver1.UI.Detail
 {
@@ -32,7 +33,8 @@ namespace Project_ver1.UI.Detail
             AddButton.Visible = false;
             if (Check == 2) 
             {
-                SDT.ReadOnly = false;
+                Ten.ReadOnly = false;
+                GT.ReadOnly = false;
                 AddButton.Visible = true;
             }
         }
@@ -64,6 +66,34 @@ namespace Project_ver1.UI.Detail
         private void Form_load(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+
+                bool f = dbkh.CapNhatKhachHang(ref err,
+                    SDT.Text,
+                    Ten.Text,
+                    DateTime.Parse(NS.Text),
+                    GT.Text,
+                    int.Parse(Diem.Text));
+                if (f)
+                {
+                    LoadData();
+                    MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
         }
     }
 }

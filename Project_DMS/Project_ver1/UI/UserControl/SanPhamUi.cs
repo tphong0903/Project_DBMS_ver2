@@ -129,6 +129,7 @@ namespace Project_ver1
             {
                 detailForm = new SPDetail(1, Product_ID);
                 detailForm.Show();
+                LoadData();
             }
             else
                 MessageBox.Show("Vui lòng chọn sản phẩm");

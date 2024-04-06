@@ -64,12 +64,14 @@ namespace Project_ver1
         {
             a = new KHDetail(2, Phone);
             a.ShowDialog();
+            LoadData();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
             b = new TaoKHForm();
-            b.ShowDialog(); 
+            b.ShowDialog();
+            LoadData();
         }
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -103,6 +105,43 @@ namespace Project_ver1
             catch (SqlException x)
             {
                 MessageBox.Show(x.ToString());
+            }
+        }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int r = dgvKhachHang.CurrentCell.RowIndex;
+                //Get PhoneNumber of current row 
+                string strPhoneNumber =
+                dgvKhachHang.Rows[r].Cells[0].Value.ToString();
+                DialogResult confirmRes;
+                confirmRes = MessageBox.Show("Chắc xóa khách hàng này không?", "Trả lời",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                string err = "";
+                if (confirmRes == DialogResult.Yes)
+                {
+                    bool f = dbkh.XoaKhachHang(ref err, strPhoneNumber);
+                    if (f)
+                    {
+                        LoadData();
+                        MessageBox.Show("Đã xóa xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không xóa được!\n\r" + "Lỗi:" + err);
+                    }
+                }
+                else
+                {
+                    // Thông báo 
+                    MessageBox.Show("Không thực hiện việc xóa mẫu tin!");
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không xóa được. Lỗi rồi!!!");
             }
         }
     }

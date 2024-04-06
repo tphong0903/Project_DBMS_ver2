@@ -48,3 +48,36 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoNCCForm.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.KHDetail.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.UserControl.ThongKe.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe.config
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\Project_ver1.pdb
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\BusinessAccessLayer.dll
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.dll
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\BusinessAccessLayer.pdb
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.pdb
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.AssemblyReference.cache
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.BLDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.HDDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.KHDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.NCCDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoBLForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoHDForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoKHForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoNCCForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.BienLaiUI.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.SPDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.HoaDonUI.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhaCungCapUI.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhanVienUI.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NVDetail.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.SanPhamUi.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.KhachHangUI.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LoginForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.MainForm.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.Properties.Resources.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.UserControl.ThongKe.resources
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.GenerateResource.cache
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.CoreCompileInputs.cache
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_.503BD5A7.Up2Date
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.exe
+D:\Project_DBMS_ver2\Project_DMS\Project_ver1\obj\Debug\Project_ver1.pdb

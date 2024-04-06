@@ -10,8 +10,7 @@ namespace DataAccessLayer
 {
     public class DAL
     {
-        string ConnStr = "Data Source= MSI\\CSDL;" +
-            "Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        string ConnStr = "Data Source=LAPTOP-P3K0HSSJ;Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;
@@ -63,8 +62,14 @@ namespace DataAccessLayer
             comm.Parameters.Clear();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
-            foreach (SqlParameter p in param)
-                comm.Parameters.Add(p);
+            if (param != null)
+            {
+                foreach (SqlParameter p in param)
+                {
+                    comm.Parameters.Add(p);
+                    Console.WriteLine(p.ToString());
+                }
+            }
             try
             {
                 comm.ExecuteNonQuery();

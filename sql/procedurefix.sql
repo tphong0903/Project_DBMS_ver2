@@ -11,11 +11,9 @@ CREATE PROCEDURE spInsertCustomer
 AS
 BEGIN
     BEGIN TRANSACTION;
-    
     BEGIN TRY
         INSERT INTO Customers (PhoneNumber, NameCustomer, Birthday, Gender, Point)
         VALUES (@PhoneNumber, @NameCustomer, @Birthday, @Gender, @Point);
-        
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
@@ -532,7 +530,7 @@ END;
 
 
 GO
-Alter PROCEDURE spUpdateProduct
+CREATE PROCEDURE spUpdateProduct
     @Product_ID VARCHAR(15),
     @ProductName NVARCHAR(100),
     @UnitPrice INT,
@@ -662,10 +660,19 @@ CREATE PROCEDURE spInsertProduct
 	@Pic_Name VARCHAR(100)
 AS
 BEGIN
-	DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10), @Pic_ID INT
-	SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName like N'%'+@BrandName+'%';
-	SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName like N'%'+@CategoryName+'%';
-	SELECT @Pic_ID = Pic_ID FROM PictureProduct WHERE @Pic_Name like @Pic_Name;
-    INSERT INTO Products (Product_ID, ProductName, UnitPrice, Quantity, Brand_ID, Category_ID, Picture_ID)
-    VALUES (@Product_ID, @ProductName, @UnitPrice, @Quantity, @Brand_ID, @Category_ID, @Pic_ID);
+ BEGIN TRANSACTION;
+
+    BEGIN TRY
+        DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10), @Pic_ID INT
+		SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName like N'%'+@BrandName+'%';
+		SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName like N'%'+@CategoryName+'%';
+		SELECT @Pic_ID = Pic_ID FROM PictureProduct WHERE @Pic_Name like @Pic_Name;
+		INSERT INTO Products (Product_ID, ProductName, UnitPrice, Quantity, Brand_ID, Category_ID, Picture_ID)
+		VALUES (@Product_ID, @ProductName, @UnitPrice, @Quantity, @Brand_ID, @Category_ID, @Pic_ID);
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+    END CATCH
 END;

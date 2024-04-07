@@ -221,6 +221,7 @@
             this.AddButton.TabIndex = 175;
             this.AddButton.Text = "Lưu";
             this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click_1);
             // 
             // gunaLabel3
             // 

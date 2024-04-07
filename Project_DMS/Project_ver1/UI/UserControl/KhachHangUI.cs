@@ -105,5 +105,12 @@ namespace Project_ver1
                 MessageBox.Show(x.ToString());
             }
         }
+
+        private void ReloadButton_Click(object sender, EventArgs e)
+        {
+            SoDT.Text = null;
+            NameText.Text = null;
+            LoadData();
+        }
     }
 }

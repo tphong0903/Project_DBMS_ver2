@@ -23,11 +23,12 @@ namespace Project_ver1.UI
         DataTable dtSanPham = null;
         int Check;
         string Product_Id;
-        Image img=  null;
+        Image img = null;
         string selectedFilePath = null;
+        string maPic_ID = null;
+        bool checkChangeImg = false;
         public SPDetail(int check, string Product_ID)
         {
-            
             Check = check;
             Product_Id = Product_ID;
 
@@ -42,7 +43,7 @@ namespace Project_ver1.UI
             imgBtn.Visible = false;
             SaveButton.Visible = false;
             this.Text = "Chi tiết sản phẩm";
-        
+
             if (Check == 1)
             {
                 this.Text = "Chi tiết sản phẩm";
@@ -51,8 +52,8 @@ namespace Project_ver1.UI
                 Gia.ReadOnly = false;
                 ThuongHieu.ReadOnly = true;
                 DanhMuc.ReadOnly = true;
+                imgBtn.Visible = true;
                 SaveButton.Visible = true;
-                
             }
             else if (Check == 2)
             {
@@ -60,8 +61,8 @@ namespace Project_ver1.UI
                 MaSP.ReadOnly = false;
                 TenSP.ReadOnly = false;
                 Gia.ReadOnly = false;
-                ThuongHieu.ReadOnly = true;
-                DanhMuc.ReadOnly = true;
+                ThuongHieu.ReadOnly = false;
+                DanhMuc.ReadOnly = false;
                 SoLuong.ReadOnly = false;
                 SaveButton.Visible = true;
                 Gia.ReadOnly = false;
@@ -84,8 +85,10 @@ namespace Project_ver1.UI
                 ThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
                 DanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
                 SoLuong.Text = a.Rows[0].Cells[3].Value.ToString();
-         
-                PicProduct.Image=GetImageByName(a.Rows[0].Cells[6].Value.ToString());
+
+                PicProduct.Image = GetImageByName(a.Rows[0].Cells[6].Value.ToString());
+                maPic_ID = a.Rows[0].Cells[7].Value.ToString();
+                img = PicProduct.Image;
             }
             catch (SqlException ex)
             {
@@ -105,28 +108,105 @@ namespace Project_ver1.UI
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (img != null && !string.IsNullOrEmpty(selectedFilePath))
+            bool f = false;
+            string err = "";
+            if(Check==2 && img == null)
             {
-                // Đường dẫn tới thư mục IMG trong thư mục Image của project_ver1
+                MessageBox.Show("Vui lòng chọn một hình ảnh trước khi lưu!");
+                return;
+            }
+            if (checkChangeImg)
+            {
                 string imgFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Project_ver1/UI/Image");
-
-                // Tạo thư mục IMG nếu nó không tồn tại
-                if (!Directory.Exists(imgFolderPath))
-                {
-                    Directory.CreateDirectory(imgFolderPath);
-                }
-                // Tạo tên file từ đường dẫn đã chọn
                 string imgFileName = Path.GetFileName(selectedFilePath);
-                // Đường dẫn đến tệp tin ảnh trong thư mục IMG
                 string imgFilePath = Path.Combine(imgFolderPath, imgFileName);
-                // Lưu ảnh vào thư mục IMG
-                img.Save(imgFilePath);
-                // Hiển thị thông báo thành công
-                MessageBox.Show("Ảnh đã được lưu vào thư mục IMG trong project_ver1 của solution1 thành công!");
+                if (Check == 2)
+                {
+                    img.Save(imgFilePath);
+                    f = dbsp.ThemHinhAnh(imgFileName, err);
+                }
+                else if (Check == 1)
+                {
+                    string present = a.Rows[0].Cells[6].Value.ToString();
+                    if (present != imgFileName)
+                    {
+                        img.Save(imgFilePath);
+                        f = dbsp.SuaHinhAnh(imgFileName, int.Parse(maPic_ID), err);
+                    }
+                }
+                if (f)
+                {
+                    UpateOrAddProduct(imgFileName);
+                }
+                else
+                {
+                    Console.WriteLine(err);
+                }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn một hình ảnh trước khi lưu!");
+                UpateOrAddProduct("");
+            }
+        }
+
+        private void UpateOrAddProduct(string imgFileName)
+        {
+            string err = "";
+
+            if (Check == 1)
+            {
+                try
+                {
+                    bool f = dbsp.CapNhatSanPham(ref err,
+                        MaSP.Text,
+                        TenSP.Text,
+                        int.Parse(Gia.Text),
+                        ThuongHieu.Text,
+                        DanhMuc.Text,
+                        int.Parse(SoLuong.Text),
+                        int.Parse(maPic_ID));
+                    if (f)
+                    {
+                        LoadData();
+                        MessageBox.Show("Đã cập nhật xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                    }
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+                }
+            }
+            else
+            {
+                try
+                {
+                    MessageBox.Show(DanhMuc.Text);
+                    bool f = dbsp.TaoSanPham(ref err,
+                        MaSP.Text,
+                        TenSP.Text,
+                        int.Parse(Gia.Text),
+                        ThuongHieu.Text,
+                        DanhMuc.Text,
+                        0,
+                        imgFileName);
+                    if (f)
+                    {
+                        LoadData();
+                        MessageBox.Show("Đã thêm mới xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã thêm mới chưa xong!\n\r" + "Lỗi:" + err);
+                    }
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Không thêm mới được. Lỗi rồi!");
+                }
             }
         }
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -142,7 +222,7 @@ namespace Project_ver1.UI
                 Image selectedImage = Image.FromFile(selectedFilePath);
                 PicProduct.Image = selectedImage;
                 img = selectedImage;
-               
+                checkChangeImg = true;
             }
         }
         private Image GetImageByName(string imageName)

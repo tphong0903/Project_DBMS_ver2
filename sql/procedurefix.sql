@@ -501,20 +501,25 @@ END;
 
 -- Stored Proc Product
 GO
-CREATE PROCEDURE spInsertProduct
+Alter PROCEDURE spInsertProduct
     @Product_ID VARCHAR(15),
     @ProductName NVARCHAR(100),
     @UnitPrice INT,
     @Quantity INT,
-    @Brand_ID VARCHAR(10),
-    @Category_ID VARCHAR(10)
+    @BrandName VARCHAR(10),
+    @CategoryName VARCHAR(10),
+	@Pic_Name VARCHAR(100)
 AS
 BEGIN
+	DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10), @Pic_ID INT
+	SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName =  @BrandName;
+	SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName = @CategoryName;
+	SELECT @Pic_ID = Pic_ID FROM PictureProduct WHERE @Pic_Name = @Pic_Name;
     BEGIN TRANSACTION;
 
     BEGIN TRY
-        INSERT INTO Products (Product_ID, ProductName, UnitPrice, Quantity, Brand_ID, Category_ID)
-        VALUES (@Product_ID, @ProductName, @UnitPrice, @Quantity, @Brand_ID, @Category_ID);
+        INSERT INTO Products (Product_ID, ProductName, UnitPrice, Quantity, Brand_ID, Category_ID, Picture_ID)
+        VALUES (@Product_ID, @ProductName, @UnitPrice, @Quantity, @Brand_ID, @Category_ID, @Pic_ID);
 
         COMMIT TRANSACTION;
     END TRY
@@ -524,16 +529,22 @@ BEGIN
 END;
 
 
+
+
 GO
-CREATE PROCEDURE spUpdateProduct
+Alter PROCEDURE spUpdateProduct
     @Product_ID VARCHAR(15),
     @ProductName NVARCHAR(100),
     @UnitPrice INT,
     @Quantity INT,
-    @Brand_ID VARCHAR(10),
-    @Category_ID VARCHAR(10)
+    @BrandName NVARCHAR(50),
+    @CategoryName NVARCHAR(50),
+	@Pic_ID INT
 AS
 BEGIN
+	DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10)
+	SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName = @BrandName;
+	SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName = @CategoryName;
     BEGIN TRANSACTION;
 
     BEGIN TRY
@@ -542,7 +553,8 @@ BEGIN
             UnitPrice = @UnitPrice,
             Quantity = @Quantity,
             Brand_ID = @Brand_ID,
-            Category_ID = @Category_ID
+            Category_ID = @Category_ID,
+			Picture_ID = @Pic_ID
         WHERE Product_ID = @Product_ID;
 
         COMMIT TRANSACTION;
@@ -636,4 +648,24 @@ BEGIN
     BEGIN CATCH
         ROLLBACK TRANSACTION;
     END CATCH
+END;
+
+
+
+CREATE PROCEDURE spInsertProduct
+    @Product_ID VARCHAR(15),
+    @ProductName NVARCHAR(100),
+    @UnitPrice INT,
+    @Quantity INT,
+    @BrandName NVARCHAR(10),
+    @CategoryName NVARCHAR(10),
+	@Pic_Name VARCHAR(100)
+AS
+BEGIN
+	DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10), @Pic_ID INT
+	SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName like N'%'+@BrandName+'%';
+	SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName like N'%'+@CategoryName+'%';
+	SELECT @Pic_ID = Pic_ID FROM PictureProduct WHERE @Pic_Name like @Pic_Name;
+    INSERT INTO Products (Product_ID, ProductName, UnitPrice, Quantity, Brand_ID, Category_ID, Picture_ID)
+    VALUES (@Product_ID, @ProductName, @UnitPrice, @Quantity, @Brand_ID, @Category_ID, @Pic_ID);
 END;

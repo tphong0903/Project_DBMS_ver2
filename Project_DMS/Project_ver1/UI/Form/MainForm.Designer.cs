@@ -143,7 +143,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.Black;
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton3.Location = new System.Drawing.Point(1, 808);
+            this.gunaButton3.Location = new System.Drawing.Point(1, 805);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;

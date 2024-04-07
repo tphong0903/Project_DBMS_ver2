@@ -243,11 +243,11 @@
             this.SLDH.AutoSize = true;
             this.SLDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.SLDH.CausesValidation = false;
-            this.SLDH.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.SLDH.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.SLDH.ForeColor = System.Drawing.Color.Black;
-            this.SLDH.Location = new System.Drawing.Point(90, 137);
+            this.SLDH.Location = new System.Drawing.Point(92, 146);
             this.SLDH.Name = "SLDH";
-            this.SLDH.Size = new System.Drawing.Size(40, 44);
+            this.SLDH.Size = new System.Drawing.Size(32, 35);
             this.SLDH.TabIndex = 209;
             this.SLDH.Text = "0";
             // 
@@ -292,11 +292,11 @@
             this.lbTotalRe.AutoSize = true;
             this.lbTotalRe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.lbTotalRe.CausesValidation = false;
-            this.lbTotalRe.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTotalRe.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTotalRe.ForeColor = System.Drawing.Color.Black;
-            this.lbTotalRe.Location = new System.Drawing.Point(333, 137);
+            this.lbTotalRe.Location = new System.Drawing.Point(337, 146);
             this.lbTotalRe.Name = "lbTotalRe";
-            this.lbTotalRe.Size = new System.Drawing.Size(40, 44);
+            this.lbTotalRe.Size = new System.Drawing.Size(32, 35);
             this.lbTotalRe.TabIndex = 212;
             this.lbTotalRe.Text = "0";
             // 
@@ -331,7 +331,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(344, 110);
+            this.guna2Button1.Size = new System.Drawing.Size(381, 110);
             this.guna2Button1.TabIndex = 210;
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.TextOffset = new System.Drawing.Point(5, 0);
@@ -341,14 +341,13 @@
             this.lbTotalPro.AutoSize = true;
             this.lbTotalPro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.lbTotalPro.CausesValidation = false;
-            this.lbTotalPro.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTotalPro.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTotalPro.ForeColor = System.Drawing.Color.Black;
-            this.lbTotalPro.Location = new System.Drawing.Point(692, 137);
+            this.lbTotalPro.Location = new System.Drawing.Point(724, 146);
             this.lbTotalPro.Name = "lbTotalPro";
-            this.lbTotalPro.Size = new System.Drawing.Size(40, 44);
+            this.lbTotalPro.Size = new System.Drawing.Size(32, 35);
             this.lbTotalPro.TabIndex = 215;
             this.lbTotalPro.Text = "0";
-            this.lbTotalPro.Click += new System.EventHandler(this.lbTotalPro_Click);
             // 
             // gunaLabel7
             // 
@@ -356,7 +355,7 @@
             this.gunaLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.gunaLabel7.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel7.Location = new System.Drawing.Point(687, 85);
+            this.gunaLabel7.Location = new System.Drawing.Point(725, 85);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(185, 27);
             this.gunaLabel7.TabIndex = 214;
@@ -376,12 +375,12 @@
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageOffset = new System.Drawing.Point(0, -5);
             this.guna2Button2.ImageSize = new System.Drawing.Size(60, 60);
-            this.guna2Button2.Location = new System.Drawing.Point(609, 81);
+            this.guna2Button2.Location = new System.Drawing.Point(646, 80);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(473, 110);
+            this.guna2Button2.Size = new System.Drawing.Size(435, 110);
             this.guna2Button2.TabIndex = 213;
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.TextOffset = new System.Drawing.Point(5, 0);
@@ -562,7 +561,6 @@
             this.gunaLabel11.Size = new System.Drawing.Size(97, 21);
             this.gunaLabel11.TabIndex = 223;
             this.gunaLabel11.Text = "Sản phẩm";
-            this.gunaLabel11.Click += new System.EventHandler(this.gunaLabel11_Click);
             // 
             // SLNCC
             // 
@@ -589,7 +587,6 @@
             this.SLSPham.Size = new System.Drawing.Size(40, 44);
             this.SLSPham.TabIndex = 225;
             this.SLSPham.Text = "0";
-            this.SLSPham.Click += new System.EventHandler(this.SLSPham_Click);
             // 
             // guna2Button3
             // 
@@ -726,7 +723,7 @@
             this.gunaLabel4.CausesValidation = false;
             this.gunaLabel4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel4.Location = new System.Drawing.Point(531, 150);
+            this.gunaLabel4.Location = new System.Drawing.Point(561, 154);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(61, 27);
             this.gunaLabel4.TabIndex = 230;
@@ -789,7 +786,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(611, 85);
+            this.pictureBox3.Location = new System.Drawing.Point(646, 85);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 96);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

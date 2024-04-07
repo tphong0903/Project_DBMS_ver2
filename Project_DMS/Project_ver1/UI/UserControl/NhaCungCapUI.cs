@@ -78,7 +78,9 @@ namespace Project_ver1.UI
             TenSP.Text = dgvNCC.Rows[r].Cells[1].Value.ToString();
             DanhMuc.Text = dgvNCC.Rows[r].Cells[4].Value.ToString();
             SDT.Text = dgvNCC.Rows[r].Cells[2].Value.ToString();
-            SoLuong.Text = dgvNCC.Rows[r].Cells[5].Value.ToString();
+            string a = (string.IsNullOrEmpty(dgvNCC.Rows[r].Cells[5].Value.ToString()) ? "0" : dgvNCC.Rows[r].Cells[5].Value.ToString());
+            decimal value = Convert.ToDecimal(a);
+            SoLuong.Text = value.ToString("N0");
             ThuongHieu.Text = dgvNCC.Rows[r].Cells[3].Value.ToString();
         }
         private void FindButton_Click(object sender, EventArgs e)

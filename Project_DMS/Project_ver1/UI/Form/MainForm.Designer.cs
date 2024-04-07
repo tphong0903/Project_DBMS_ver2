@@ -43,6 +43,7 @@
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(53, 152);
+            this.textBox1.Location = new System.Drawing.Point(49, 188);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 30);
@@ -86,7 +87,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton1.Location = new System.Drawing.Point(1, 220);
+            this.gunaButton1.Location = new System.Drawing.Point(1, 268);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -111,7 +112,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton2.Location = new System.Drawing.Point(1, 268);
+            this.gunaButton2.Location = new System.Drawing.Point(1, 316);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -168,7 +169,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.Black;
             this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
             this.gunaButton4.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton4.Location = new System.Drawing.Point(1, 316);
+            this.gunaButton4.Location = new System.Drawing.Point(1, 364);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -193,7 +194,7 @@
             this.gunaButton5.ForeColor = System.Drawing.Color.Black;
             this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
             this.gunaButton5.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton5.Location = new System.Drawing.Point(1, 364);
+            this.gunaButton5.Location = new System.Drawing.Point(1, 412);
             this.gunaButton5.Name = "gunaButton5";
             this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -218,7 +219,7 @@
             this.gunaButton6.ForeColor = System.Drawing.Color.Black;
             this.gunaButton6.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton6.Image")));
             this.gunaButton6.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton6.Location = new System.Drawing.Point(1, 412);
+            this.gunaButton6.Location = new System.Drawing.Point(1, 460);
             this.gunaButton6.Name = "gunaButton6";
             this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -243,7 +244,7 @@
             this.gunaButton7.ForeColor = System.Drawing.Color.Black;
             this.gunaButton7.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton7.Image")));
             this.gunaButton7.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton7.Location = new System.Drawing.Point(1, 460);
+            this.gunaButton7.Location = new System.Drawing.Point(1, 508);
             this.gunaButton7.Name = "gunaButton7";
             this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -268,7 +269,7 @@
             this.gunaButton8.ForeColor = System.Drawing.Color.Black;
             this.gunaButton8.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton8.Image")));
             this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton8.Location = new System.Drawing.Point(1, 508);
+            this.gunaButton8.Location = new System.Drawing.Point(1, 556);
             this.gunaButton8.Name = "gunaButton8";
             this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -296,12 +297,26 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox2.Location = new System.Drawing.Point(89, 152);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(143, 30);
+            this.textBox2.TabIndex = 8;
+            this.textBox2.Text = "Quản lý";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 850);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.gunaButton8);
             this.Controls.Add(this.gunaButton7);
             this.Controls.Add(this.gunaButton6);
@@ -343,5 +358,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton8;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -43,6 +43,7 @@ namespace DataAccessLayer
             conn.Open();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
+            comm.Parameters.AddRange(p);
             return comm.ExecuteReader();
         }
         // Action Query = Insert | Delete | Update | Stored Procedure

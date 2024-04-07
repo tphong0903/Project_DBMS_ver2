@@ -18,47 +18,104 @@ namespace Project_ver1.UI.UserControl
         public ThongKe()
         {
             InitializeComponent();
-            //dtpStartDate.Value = DateTime.Today.AddDays(-7);
-            //dtpEndDate.Value = DateTime.Now;
-            //Btn7Date.Select();
+            dtpStartDate.Value = DateTime.Today.AddDays(-7);
+            dtpEndDate.Value = DateTime.Now;
+            Btn7Date.Select();
 
-            //model = new DBThongKe();
-            //LoadData();
+            model = new DBThongKe();
+            DisableCustomDates();
+            LoadData();
         }
 
         private void LoadData()
         {
-            bool refreshData = model.LoadData(dtpStartDate.Value, dtpEndDate.Value);
-            //if (refreshData)
-            //{
-            //    SLDH.Text = model.NumOrder.ToString();
-            //    lbTotalRe.Text = model.TotalRevenue.ToString();
-            //    lbTotalPro.Text = model.TotalProfit.ToString();
-            //    SLKH.Text = model.NumCustommers.ToString();
-            //    SLNCC.Text = model.NumSuppliers.ToString();
-            //    SLSPham.Text = model.NumProduct.ToString();
+            var refreshData = model.LoadData(dtpStartDate.Value, dtpEndDate.Value);
+            if (refreshData== true)
+            {
+                SLDH.Text = model.NumOrder.ToString();
+                lbTotalRe.Text = model.TotalRevenue.ToString();
+                lbTotalPro.Text = model.TotalProfit.ToString();
+                SLKH.Text = model.NumCustommers.ToString();
+                SLNCC.Text = model.NumSuppliers.ToString();
+                SLSPham.Text = model.NumProduct.ToString();
 
-            //    chartGross.DataSource = model.GrossRevenueList;
-            //    chartGross.Series[0].XValueMember = "Date";
-            //    chartGross.Series[0].YValueMembers = "TotalAmount";
-            //    chartGross.DataBind();
+                chartGross.DataSource = model.GrossRevenueList;
+                chartGross.Series[0].XValueMember = "Date";
+                chartGross.Series[0].YValueMembers = "TotalAmount";
+                chartGross.DataBind();
 
-            //    chartProduct.DataSource = model.TopProductList;
-            //    chartProduct.Series[0].XValueMember = "Key";
-            //    chartProduct.Series[0].YValueMembers = "Value";
-            //    chartProduct.DataBind();
+                chartProduct.DataSource = model.TopProductsList;
+                chartProduct.Series[0].XValueMember = "Key";
+                chartProduct.Series[0].YValueMembers = "Value";
+                chartProduct.DataBind();
 
-            //    dgvUnderstock.DataSource = model.UnderstockList;
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Khong load được dữ liệu.");
-            //}
+                dgvUnderstock.DataSource = model.UnderstocksList;
+            }
+            else
+            {
+                MessageBox.Show("Khong load được dữ liệu.");
+            }
+        }
+        private void DisableCustomDates()
+        {
+            dtpStartDate.Enabled = false;
+            dtpEndDate.Enabled = false;
+            tick.Visible = false;
+        }
+        //Event methods
+        private void btnToday_Click(object sender, EventArgs e)
+        {
+            dtpStartDate.Value = DateTime.Today;
+            dtpEndDate.Value = DateTime.Now;
+            LoadData();
+            DisableCustomDates();
+        }
+        private void btnLast7Days_Click(object sender, EventArgs e)
+        {
+            dtpStartDate.Value = DateTime.Today.AddDays(-7);
+            dtpEndDate.Value = DateTime.Now;
+            LoadData();
+            DisableCustomDates();
+        }
+        private void btnLast30Days_Click(object sender, EventArgs e)
+        {
+            dtpStartDate.Value = DateTime.Today.AddDays(-30);
+            dtpEndDate.Value = DateTime.Now;
+            LoadData();
+            DisableCustomDates();
+        }
+        private void btnThisMonth_Click(object sender, EventArgs e)
+        {
+            dtpStartDate.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+            dtpEndDate.Value = DateTime.Now;
+            LoadData();
+            DisableCustomDates();
+        }
+        private void btnCustomDate_Click(object sender, EventArgs e)
+        {
+            dtpStartDate.Enabled = true;
+            dtpEndDate.Enabled = true;
+            tick.Visible = true;
+        }
+        private void btnOkCustomDate_Click(object sender, EventArgs e)
+        {
+            //DisableCustomDates();
+            LoadData();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void lbTotalPro_Click(object sender, EventArgs e)
         {
-            // Your button click event handler code goes here
+
+        }
+
+        private void gunaLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SLSPham_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

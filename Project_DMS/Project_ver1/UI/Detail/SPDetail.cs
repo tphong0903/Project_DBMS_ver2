@@ -27,6 +27,7 @@ namespace Project_ver1.UI
         string selectedFilePath = null;
         public SPDetail(int check, string Product_ID)
         {
+            
             Check = check;
             Product_Id = Product_ID;
 
@@ -51,6 +52,7 @@ namespace Project_ver1.UI
                 ThuongHieu.ReadOnly = true;
                 DanhMuc.ReadOnly = true;
                 SaveButton.Visible = true;
+                
             }
             else if (Check == 2)
             {

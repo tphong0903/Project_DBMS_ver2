@@ -83,8 +83,9 @@ namespace Project_ver1.UI
             TenSP.Text = dgvNhanVien.Rows[r].Cells[1].Value.ToString();
             DanhMuc.Text = dgvNhanVien.Rows[r].Cells[3].Value.ToString();
             Ngay.Text = dgvNhanVien.Rows[r].Cells[2].Value.ToString();
-            SoLuong.Text = dgvNhanVien.Rows[r].Cells[4].Value.ToString();
-            ThuongHieu.Text = dgvNhanVien.Rows[r].Cells[5].Value.ToString();
+            decimal value = Convert.ToDecimal(dgvNhanVien.Rows[r].Cells[7].Value); 
+            SoLuong.Text = value.ToString("N0");
+            ThuongHieu.Text = dgvNhanVien.Rows[r].Cells[6].Value.ToString();
         }
         private void FindButton_Click(object sender, EventArgs e)
         {

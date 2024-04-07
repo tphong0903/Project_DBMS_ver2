@@ -81,7 +81,8 @@ namespace Project_ver1
             GT.Text = dgvKhachHang.Rows[r].Cells[3].Value.ToString();
             NS.Text = dgvKhachHang.Rows[r].Cells[2].Value.ToString();
             Diem.Text = dgvKhachHang.Rows[r].Cells[4].Value.ToString();
-            Total.Text = dgvKhachHang.Rows[r].Cells[5].Value.ToString();
+            decimal value = Convert.ToDecimal(dgvKhachHang.Rows[r].Cells[5].Value);
+            Total.Text = value.ToString("N0");
         }
         private void Find_Click(object sender, EventArgs e)
         {

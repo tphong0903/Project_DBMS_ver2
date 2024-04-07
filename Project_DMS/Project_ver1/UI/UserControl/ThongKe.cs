@@ -33,8 +33,8 @@ namespace Project_ver1.UI.UserControl
             if (refreshData== true)
             {
                 SLDH.Text = model.NumOrder.ToString();
-                lbTotalRe.Text = model.TotalRevenue.ToString();
-                lbTotalPro.Text = model.TotalProfit.ToString();
+                lbTotalRe.Text = model.TotalRevenue.ToString("N0");
+                lbTotalPro.Text = model.TotalProfit.ToString("N0");
                 SLKH.Text = model.NumCustommers.ToString();
                 SLNCC.Text = model.NumSuppliers.ToString();
                 SLSPham.Text = model.NumProduct.ToString();
@@ -99,23 +99,7 @@ namespace Project_ver1.UI.UserControl
         }
         private void btnOkCustomDate_Click(object sender, EventArgs e)
         {
-            //DisableCustomDates();
             LoadData();
-        }
-
-        private void lbTotalPro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SLSPham_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

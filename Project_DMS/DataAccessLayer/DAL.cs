@@ -55,8 +55,14 @@ namespace DataAccessLayer
             comm.Parameters.Clear();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
-            foreach (SqlParameter p in param)
-                comm.Parameters.Add(p);
+            if (param != null)
+            {
+                foreach (SqlParameter p in param)
+                {
+                    comm.Parameters.Add(p);
+                    Console.WriteLine(p.ToString());
+                }
+            }
             try
             {
                 comm.ExecuteNonQuery();

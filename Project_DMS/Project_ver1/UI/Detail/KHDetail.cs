@@ -18,7 +18,7 @@ namespace Project_ver1.UI.Detail
         string Phone = null;
         DataTable dtKhachHang = null;
         DBKhachHang dbkh = null;
-        public KHDetail(int check, string phone )
+        public KHDetail(int check, string phone)
         {
             Check = check;
             Phone = phone;
@@ -30,9 +30,10 @@ namespace Project_ver1.UI.Detail
             Diem.ReadOnly = true;
             Total.ReadOnly = true;
             AddButton.Visible = false;
-            if (Check == 2) 
+            if (Check == 2)
             {
-                SDT.ReadOnly = false;
+                Ten.ReadOnly = false;
+                GT.ReadOnly = false;
                 AddButton.Visible = true;
             }
         }
@@ -65,5 +66,33 @@ namespace Project_ver1.UI.Detail
         {
             LoadData();
         }
+
+        private void AddButton_Click_1(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                bool f = dbkh.CapNhatKhachHang(ref err,
+                    SDT.Text,
+                    Ten.Text,
+                    NS.Value,
+                    GT.Text,
+                    int.Parse(Diem.Text));
+                if (f)
+                {
+                    LoadData();
+                    MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
+        }
+
     }
 }

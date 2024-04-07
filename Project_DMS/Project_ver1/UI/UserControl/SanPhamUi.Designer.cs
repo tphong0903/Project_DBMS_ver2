@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SanPhamUi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AddButton = new Guna.UI.WinForms.GunaButton();
             this.UpdateButton = new Guna.UI.WinForms.GunaButton();
-            this.RemoveButton = new Guna.UI.WinForms.GunaButton();
             this.ReadButton = new Guna.UI.WinForms.GunaButton();
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -116,33 +115,6 @@
             this.UpdateButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // RemoveButton
-            // 
-            this.RemoveButton.AnimationHoverSpeed = 0.07F;
-            this.RemoveButton.AnimationSpeed = 0.03F;
-            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
-            this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.RemoveButton.BorderColor = System.Drawing.Color.Black;
-            this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.RemoveButton.FocusedColor = System.Drawing.Color.Empty;
-            this.RemoveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButton.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveButton.Image")));
-            this.RemoveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.RemoveButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.RemoveButton.Location = new System.Drawing.Point(636, 787);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.RemoveButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.RemoveButton.OnHoverForeColor = System.Drawing.Color.Black;
-            this.RemoveButton.OnHoverImage = null;
-            this.RemoveButton.OnPressedColor = System.Drawing.Color.Black;
-            this.RemoveButton.Radius = 15;
-            this.RemoveButton.Size = new System.Drawing.Size(107, 49);
-            this.RemoveButton.TabIndex = 8;
-            this.RemoveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
-            // 
             // ReadButton
             // 
             this.ReadButton.AnimationHoverSpeed = 0.07F;
@@ -173,53 +145,53 @@
             // dgvSanPham
             // 
             this.dgvSanPham.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            this.dgvSanPham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvSanPham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSanPham.BackgroundColor = System.Drawing.Color.White;
             this.dgvSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvSanPham.ColumnHeadersHeight = 29;
             this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSP,
             this.TenSP,
             this.Gia,
             this.SoLuong});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvSanPham.EnableHeadersVisualStyles = false;
             this.dgvSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvSanPham.Location = new System.Drawing.Point(12, 373);
             this.dgvSanPham.MultiSelect = false;
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvSanPham.RowHeadersVisible = false;
             this.dgvSanPham.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
-            this.dgvSanPham.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
+            this.dgvSanPham.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvSanPham.RowTemplate.Height = 24;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSanPham.Size = new System.Drawing.Size(1070, 399);
@@ -588,6 +560,7 @@
             this.NameText.ShadowDecoration.Parent = this.NameText;
             this.NameText.Size = new System.Drawing.Size(412, 44);
             this.NameText.TabIndex = 109;
+            this.NameText.TextChanged += new System.EventHandler(this.FindButton_Click);
             // 
             // label3
             // 
@@ -647,7 +620,6 @@
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.ReadButton);
             this.Controls.Add(this.UpdateButton);
-            this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.dgvSanPham);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SanPhamUi";
@@ -664,7 +636,6 @@
         #endregion
         private Guna.UI.WinForms.GunaButton AddButton;
         private Guna.UI.WinForms.GunaButton UpdateButton;
-        private Guna.UI.WinForms.GunaButton RemoveButton;
         private Guna.UI.WinForms.GunaButton ReadButton;
         private Guna.UI.WinForms.GunaDataGridView dgvSanPham;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;

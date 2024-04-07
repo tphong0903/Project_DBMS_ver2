@@ -23,6 +23,7 @@ namespace Project_ver1.UI.UserControl
             Btn7Date.Select();
 
             model = new DBThongKe();
+            DisableCustomDates();
             LoadData();
         }
 
@@ -59,7 +60,7 @@ namespace Project_ver1.UI.UserControl
         {
             dtpStartDate.Enabled = false;
             dtpEndDate.Enabled = false;
-            btnOKDate.Visible = false;
+            tick.Visible = false;
         }
         //Event methods
         private void btnToday_Click(object sender, EventArgs e)
@@ -94,15 +95,27 @@ namespace Project_ver1.UI.UserControl
         {
             dtpStartDate.Enabled = true;
             dtpEndDate.Enabled = true;
-            btnOKDate.Visible = true;
+            tick.Visible = true;
         }
         private void btnOkCustomDate_Click(object sender, EventArgs e)
         {
+            //DisableCustomDates();
             LoadData();
         }
-        private void guna2Button1_Click(object sender, EventArgs e)
+
+        private void lbTotalPro_Click(object sender, EventArgs e)
         {
-            // Your button click event handler code goes here
+
+        }
+
+        private void gunaLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SLSPham_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -82,8 +82,27 @@ namespace BusinessAccessLayer
                     );
                 TotalRevenue += (int)reader[1];
             }
-            TotalProfit = TotalRevenue * 0.2m;//20%
             reader.Close();
+
+            db.comm.CommandText = @"SELECT CAST(o.OrderDate AS DATE) AS OrderDate, SUM((p.UnitPrice - id.Unitcost) * od.Quantity) AS TotalProfit
+                                    FROM  OrderDetails od
+                                    JOIN Products p ON od.Product_ID = p.Product_ID
+                                    JOIN ImportDetails id ON od.Product_ID = id.Product_ID
+                                    JOIN Orders o ON od.Order_ID = o.Order_ID
+                                    WHERE o.OrderDate BETWEEN @fromDate AND @toDate
+                                    GROUP BY CAST(o.OrderDate AS DATE);";
+            db.comm.Parameters.Add("@fromDate", System.Data.SqlDbType.Date).Value = startDate;
+            db.comm.Parameters.Add("@todate", System.Data.SqlDbType.Date).Value = endDate;
+            var reader1 = db.comm.ExecuteReader();
+            db.comm.Parameters.Clear();
+
+            var resultTable1 = new List<KeyValuePair<DateTime, int>>();
+            while (reader1.Read())
+            { 
+                decimal unitProfit = Convert.ToDecimal(reader1[1]);
+                TotalProfit += unitProfit;
+            }
+            reader1.Close();
 
             // Gộp ngày
             if (numberDays <= 1)

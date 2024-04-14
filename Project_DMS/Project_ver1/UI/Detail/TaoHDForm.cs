@@ -16,6 +16,8 @@ namespace Project_ver1.UI.Detail
     public partial class TaoHDForm : Form
     {
         DBSanPham dbsp= null;
+        DBHoaDon dbhd;
+        string hd;
         int r=0;
         int x = 0;
         public TaoHDForm()
@@ -23,7 +25,7 @@ namespace Project_ver1.UI.Detail
             InitializeComponent();
             dbsp= new DBSanPham();
         }
-
+        //nut Them San Pham
         private void ReloadButton_Click(object sender, EventArgs e)
         {
             r = dgvSanPham.CurrentCell.RowIndex;
@@ -83,6 +85,46 @@ namespace Project_ver1.UI.Detail
         {
             x = dgvSPMua.CurrentCell.RowIndex;
             dgvSPMua.Rows.RemoveAt(x);
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+
+            {
+                Console.WriteLine(MaSP.Text);
+                Console.WriteLine(TenSP.Text);
+                Console.WriteLine(ThuongHieu.Text);
+                Console.WriteLine(int.Parse(SoLuong.Text));
+                Console.WriteLine(DanhMuc.Text);
+                //
+                bool f = dbhd.ThemHoaDon(ref err, MaSP.Text, TenSP.Text, ThuongHieu.Text, guna2DateTimePicker1.Value,int.Parse(SoLuong.Text), DanhMuc.Text);
+
+                foreach (DataGridViewRow row in dgvSPMua.Rows)
+                {
+                    if (row.Cells["Product_ID"].Value != null)
+                    {
+                        string maSP = row.Cells["Product_ID"].Value.ToString();
+                        int soLuong = Convert.ToInt32(row.Cells["Quantity"].Value);
+                       
+
+                        bool success = dbhd.ThemChiTietHoaDon(ref err, MaSP.Text, maSP, soLuong);
+                        if (success)
+                        {
+                            MessageBox.Show("Successfully added!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add!\n\r" + "Error:" + err);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding invoice: " + ex.Message);
+            }
         }
     }
 

@@ -7,3 +7,12 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\BusinessAccessLayer\bi
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.AssemblyReference.cache
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb

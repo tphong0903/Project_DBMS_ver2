@@ -117,5 +117,10 @@ namespace Project_ver1.UI
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void ReloadButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

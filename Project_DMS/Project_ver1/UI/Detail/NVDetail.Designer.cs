@@ -71,7 +71,8 @@
             this.imgButton.Image = null;
             this.imgButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.imgButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.imgButton.Location = new System.Drawing.Point(53, 340);
+            this.imgButton.Location = new System.Drawing.Point(40, 276);
+            this.imgButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgButton.Name = "imgButton";
             this.imgButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.imgButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -79,7 +80,7 @@
             this.imgButton.OnHoverImage = null;
             this.imgButton.OnPressedColor = System.Drawing.Color.Black;
             this.imgButton.Radius = 15;
-            this.imgButton.Size = new System.Drawing.Size(138, 49);
+            this.imgButton.Size = new System.Drawing.Size(104, 40);
             this.imgButton.TabIndex = 37;
             this.imgButton.Text = "Hình ảnh";
             this.imgButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -98,7 +99,8 @@
             this.AddButton.Image = null;
             this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddButton.Location = new System.Drawing.Point(907, 340);
+            this.AddButton.Location = new System.Drawing.Point(680, 276);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddButton.Name = "AddButton";
             this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
             this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -106,19 +108,21 @@
             this.AddButton.OnHoverImage = null;
             this.AddButton.OnPressedColor = System.Drawing.Color.Black;
             this.AddButton.Radius = 15;
-            this.AddButton.Size = new System.Drawing.Size(138, 49);
+            this.AddButton.Size = new System.Drawing.Size(104, 40);
             this.AddButton.TabIndex = 36;
             this.AddButton.Text = "Lưu";
             this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // a
             // 
             this.a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.a.Location = new System.Drawing.Point(14, 301);
+            this.a.Location = new System.Drawing.Point(10, 245);
+            this.a.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.a.Name = "a";
             this.a.RowHeadersWidth = 51;
             this.a.RowTemplate.Height = 24;
-            this.a.Size = new System.Drawing.Size(52, 33);
+            this.a.Size = new System.Drawing.Size(39, 27);
             this.a.TabIndex = 35;
             this.a.Visible = false;
             // 
@@ -137,14 +141,13 @@
             this.SDT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.SDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SDT.HoverState.Parent = this.SDT;
-            this.SDT.Location = new System.Drawing.Point(698, 20);
-            this.SDT.Margin = new System.Windows.Forms.Padding(4);
+            this.SDT.Location = new System.Drawing.Point(524, 16);
             this.SDT.Name = "SDT";
             this.SDT.PasswordChar = '\0';
             this.SDT.PlaceholderText = "";
             this.SDT.SelectedText = "";
             this.SDT.ShadowDecoration.Parent = this.SDT;
-            this.SDT.Size = new System.Drawing.Size(348, 44);
+            this.SDT.Size = new System.Drawing.Size(261, 36);
             this.SDT.TabIndex = 33;
             // 
             // Total
@@ -162,14 +165,13 @@
             this.Total.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Total.HoverState.Parent = this.Total;
-            this.Total.Location = new System.Drawing.Point(697, 262);
-            this.Total.Margin = new System.Windows.Forms.Padding(4);
+            this.Total.Location = new System.Drawing.Point(523, 213);
             this.Total.Name = "Total";
             this.Total.PasswordChar = '\0';
             this.Total.PlaceholderText = "";
             this.Total.SelectedText = "";
             this.Total.ShadowDecoration.Parent = this.Total;
-            this.Total.Size = new System.Drawing.Size(348, 44);
+            this.Total.Size = new System.Drawing.Size(261, 36);
             this.Total.TabIndex = 32;
             // 
             // TenSP
@@ -188,14 +190,13 @@
             this.TenSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TenSP.HoverState.Parent = this.TenSP;
-            this.TenSP.Location = new System.Drawing.Point(276, 80);
-            this.TenSP.Margin = new System.Windows.Forms.Padding(4);
+            this.TenSP.Location = new System.Drawing.Point(207, 65);
             this.TenSP.Name = "TenSP";
             this.TenSP.PasswordChar = '\0';
             this.TenSP.PlaceholderText = "";
             this.TenSP.SelectedText = "";
             this.TenSP.ShadowDecoration.Parent = this.TenSP;
-            this.TenSP.Size = new System.Drawing.Size(348, 44);
+            this.TenSP.Size = new System.Drawing.Size(261, 36);
             this.TenSP.TabIndex = 30;
             // 
             // MaSP
@@ -213,23 +214,23 @@
             this.MaSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MaSP.HoverState.Parent = this.MaSP;
-            this.MaSP.Location = new System.Drawing.Point(276, 20);
-            this.MaSP.Margin = new System.Windows.Forms.Padding(4);
+            this.MaSP.Location = new System.Drawing.Point(207, 16);
             this.MaSP.Name = "MaSP";
             this.MaSP.PasswordChar = '\0';
             this.MaSP.PlaceholderText = "";
             this.MaSP.SelectedText = "";
             this.MaSP.ShadowDecoration.Parent = this.MaSP;
-            this.MaSP.Size = new System.Drawing.Size(348, 44);
+            this.MaSP.Size = new System.Drawing.Size(261, 36);
             this.MaSP.TabIndex = 29;
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel6.Location = new System.Drawing.Point(718, 66);
+            this.gunaLabel6.Location = new System.Drawing.Point(538, 54);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(76, 19);
+            this.gunaLabel6.Size = new System.Drawing.Size(66, 16);
             this.gunaLabel6.TabIndex = 28;
             this.gunaLabel6.Text = "Chức vụ";
             // 
@@ -237,9 +238,10 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel5.Location = new System.Drawing.Point(717, 6);
+            this.gunaLabel5.Location = new System.Drawing.Point(538, 5);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(112, 19);
+            this.gunaLabel5.Size = new System.Drawing.Size(99, 16);
             this.gunaLabel5.TabIndex = 27;
             this.gunaLabel5.Text = "Số điện thoại";
             // 
@@ -247,9 +249,10 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel4.Location = new System.Drawing.Point(716, 252);
+            this.gunaLabel4.Location = new System.Drawing.Point(537, 205);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(141, 19);
+            this.gunaLabel4.Size = new System.Drawing.Size(124, 16);
             this.gunaLabel4.TabIndex = 26;
             this.gunaLabel4.Text = "Tổng tiền đã bán";
             // 
@@ -257,9 +260,10 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel3.Location = new System.Drawing.Point(295, 195);
+            this.gunaLabel3.Location = new System.Drawing.Point(221, 158);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(77, 19);
+            this.gunaLabel3.Size = new System.Drawing.Size(67, 16);
             this.gunaLabel3.TabIndex = 25;
             this.gunaLabel3.Text = "Giới tính";
             // 
@@ -267,9 +271,10 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel2.Location = new System.Drawing.Point(295, 68);
+            this.gunaLabel2.Location = new System.Drawing.Point(221, 55);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(119, 19);
+            this.gunaLabel2.Size = new System.Drawing.Size(105, 16);
             this.gunaLabel2.TabIndex = 24;
             this.gunaLabel2.Text = "Tên nhân viên";
             // 
@@ -277,19 +282,21 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel1.Location = new System.Drawing.Point(295, 9);
+            this.gunaLabel1.Location = new System.Drawing.Point(221, 7);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(112, 19);
+            this.gunaLabel1.Size = new System.Drawing.Size(101, 16);
             this.gunaLabel1.TabIndex = 23;
             this.gunaLabel1.Text = "Mã nhân viên";
             // 
             // PicProduct
             // 
             this.PicProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PicProduct.Location = new System.Drawing.Point(14, 16);
+            this.PicProduct.Location = new System.Drawing.Point(10, 13);
+            this.PicProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicProduct.Name = "PicProduct";
             this.PicProduct.ShadowDecoration.Parent = this.PicProduct;
-            this.PicProduct.Size = new System.Drawing.Size(242, 318);
+            this.PicProduct.Size = new System.Drawing.Size(182, 259);
             this.PicProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicProduct.TabIndex = 22;
             this.PicProduct.TabStop = false;
@@ -298,9 +305,10 @@
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel7.Location = new System.Drawing.Point(718, 128);
+            this.gunaLabel7.Location = new System.Drawing.Point(538, 104);
+            this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(88, 19);
+            this.gunaLabel7.Size = new System.Drawing.Size(76, 16);
             this.gunaLabel7.TabIndex = 38;
             this.gunaLabel7.Text = "Trạng thái";
             // 
@@ -308,9 +316,10 @@
             // 
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel8.Location = new System.Drawing.Point(718, 186);
+            this.gunaLabel8.Location = new System.Drawing.Point(538, 151);
+            this.gunaLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(80, 19);
+            this.gunaLabel8.Size = new System.Drawing.Size(71, 16);
             this.gunaLabel8.TabIndex = 39;
             this.gunaLabel8.Text = "Mật khẩu";
             // 
@@ -329,14 +338,13 @@
             this.TT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.TT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TT.HoverState.Parent = this.TT;
-            this.TT.Location = new System.Drawing.Point(697, 138);
-            this.TT.Margin = new System.Windows.Forms.Padding(4);
+            this.TT.Location = new System.Drawing.Point(523, 112);
             this.TT.Name = "TT";
             this.TT.PasswordChar = '\0';
             this.TT.PlaceholderText = "";
             this.TT.SelectedText = "";
             this.TT.ShadowDecoration.Parent = this.TT;
-            this.TT.Size = new System.Drawing.Size(348, 44);
+            this.TT.Size = new System.Drawing.Size(261, 36);
             this.TT.TabIndex = 40;
             // 
             // MK
@@ -354,14 +362,13 @@
             this.MK.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.MK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MK.HoverState.Parent = this.MK;
-            this.MK.Location = new System.Drawing.Point(697, 200);
-            this.MK.Margin = new System.Windows.Forms.Padding(4);
+            this.MK.Location = new System.Drawing.Point(523, 162);
             this.MK.Name = "MK";
             this.MK.PasswordChar = '\0';
             this.MK.PlaceholderText = "";
             this.MK.SelectedText = "";
             this.MK.ShadowDecoration.Parent = this.MK;
-            this.MK.Size = new System.Drawing.Size(348, 44);
+            this.MK.Size = new System.Drawing.Size(261, 36);
             this.MK.TabIndex = 41;
             // 
             // GT
@@ -382,10 +389,11 @@
             "Nam",
             "Nu"});
             this.GT.ItemsAppearance.Parent = this.GT;
-            this.GT.Location = new System.Drawing.Point(275, 205);
+            this.GT.Location = new System.Drawing.Point(206, 167);
+            this.GT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GT.Name = "GT";
             this.GT.ShadowDecoration.Parent = this.GT;
-            this.GT.Size = new System.Drawing.Size(348, 46);
+            this.GT.Size = new System.Drawing.Size(262, 46);
             this.GT.TabIndex = 42;
             // 
             // CV
@@ -406,19 +414,21 @@
             "Bán hàng",
             "Quản lí"});
             this.CV.ItemsAppearance.Parent = this.CV;
-            this.CV.Location = new System.Drawing.Point(698, 79);
+            this.CV.Location = new System.Drawing.Point(524, 64);
+            this.CV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CV.Name = "CV";
             this.CV.ShadowDecoration.Parent = this.CV;
-            this.CV.Size = new System.Drawing.Size(348, 46);
+            this.CV.Size = new System.Drawing.Size(262, 46);
             this.CV.TabIndex = 43;
             // 
             // gunaLabel9
             // 
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel9.Location = new System.Drawing.Point(295, 128);
+            this.gunaLabel9.Location = new System.Drawing.Point(221, 104);
+            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(87, 19);
+            this.gunaLabel9.Size = new System.Drawing.Size(75, 16);
             this.gunaLabel9.TabIndex = 44;
             this.gunaLabel9.Text = "Ngày sinh";
             // 
@@ -432,12 +442,13 @@
             this.Ngay.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Ngay.HoverState.Parent = this.Ngay;
-            this.Ngay.Location = new System.Drawing.Point(276, 138);
+            this.Ngay.Location = new System.Drawing.Point(207, 112);
+            this.Ngay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ngay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Ngay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Ngay.Name = "Ngay";
             this.Ngay.ShadowDecoration.Parent = this.Ngay;
-            this.Ngay.Size = new System.Drawing.Size(348, 54);
+            this.Ngay.Size = new System.Drawing.Size(261, 44);
             this.Ngay.TabIndex = 45;
             this.Ngay.Value = new System.DateTime(2024, 3, 22, 21, 10, 19, 800);
             // 
@@ -445,9 +456,10 @@
             // 
             this.gunaLabel10.AutoSize = true;
             this.gunaLabel10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel10.Location = new System.Drawing.Point(294, 252);
+            this.gunaLabel10.Location = new System.Drawing.Point(220, 205);
+            this.gunaLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(62, 19);
+            this.gunaLabel10.Size = new System.Drawing.Size(54, 16);
             this.gunaLabel10.TabIndex = 46;
             this.gunaLabel10.Text = "Địa chỉ";
             // 
@@ -466,22 +478,21 @@
             this.DC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.DC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DC.HoverState.Parent = this.DC;
-            this.DC.Location = new System.Drawing.Point(275, 262);
-            this.DC.Margin = new System.Windows.Forms.Padding(4);
+            this.DC.Location = new System.Drawing.Point(206, 213);
             this.DC.Name = "DC";
             this.DC.PasswordChar = '\0';
             this.DC.PlaceholderText = "";
             this.DC.SelectedText = "";
             this.DC.ShadowDecoration.Parent = this.DC;
-            this.DC.Size = new System.Drawing.Size(348, 44);
+            this.DC.Size = new System.Drawing.Size(261, 36);
             this.DC.TabIndex = 47;
             // 
             // NVDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1069, 407);
+            this.ClientSize = new System.Drawing.Size(802, 331);
             this.Controls.Add(this.gunaLabel10);
             this.Controls.Add(this.DC);
             this.Controls.Add(this.gunaLabel9);
@@ -508,6 +519,7 @@
             this.Controls.Add(this.PicProduct);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "NVDetail";
             this.ShowIcon = false;

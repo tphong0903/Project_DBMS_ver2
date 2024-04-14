@@ -16,7 +16,7 @@ namespace Project_ver1.UI
     {
         int Check;
         string ID;
-        DBNhanVien dbnv=null;
+        DBNhanVien dbnv = null;
         public NVDetail(int check, string iD)
         {
             Check = check;
@@ -31,12 +31,14 @@ namespace Project_ver1.UI
             {
                 imgButton.Visible = true;
                 AddButton.Visible = true;
+                this.Text = "Cập nhật thông tin nhân viên";
                 LoadData();
-            }
+            }   
             else 
             {
                 imgButton.Visible = true;
                 AddButton.Visible = true;
+                this.Text = "Thêm nhân viên mới";
             }
 
         }
@@ -57,7 +59,7 @@ namespace Project_ver1.UI
                 CV.Text = dt.Rows[0].Field<string>(6);
                 TT.Text = dt.Rows[0].Field<string>(7);
                 MK.Text = dt.Rows[0].Field<string>(8);
-                Total.Text = dt.Rows[0].Field<int>(9).ToString();
+                Total.Text = dt.Rows[0].Field<int?>(9).ToString();
             }
             catch (SqlException x)
             {
@@ -68,6 +70,63 @@ namespace Project_ver1.UI
         private void NVDetail_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                if (Check ==2)
+                {
+                    bool f = dbnv.CapNhatNhanVien(ref err,
+                    MaSP.Text,
+                    TenSP.Text,
+                    Ngay.Value,
+                    GT.Text,
+                    DC.Text,
+                    SDT.Text,
+                    CV.Text,
+                    int.Parse(TT.Text),
+                    MK.Text);
+                    if (f)
+                    {
+                        LoadData();
+                        MessageBox.Show("Đã cập nhật xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                    }
+                } 
+                else if (Check ==3)
+                {
+                    bool f = dbnv.ThemNhanVien(ref err,
+                    MaSP.Text,
+                    TenSP.Text,
+                    Ngay.Value,
+                    GT.Text,
+                    DC.Text,
+                    SDT.Text,
+                    CV.Text,
+                    int.Parse(TT.Text),
+                    MK.Text);
+                    if (f)
+                    {
+                        LoadData();
+                        MessageBox.Show("Đã cập nhật xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
+                    }
+                }
+                
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
         }
     }
 }

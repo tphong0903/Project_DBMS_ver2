@@ -53,6 +53,38 @@ namespace BusinessAccessLayer
                 new SqlParameter("@ThanhPho", ThanhPho),
                 new SqlParameter("@TenThanhPho", TenThanhPho));
         }
-
+        public bool ThemHoaDon(ref string err, string order_ID, string sdt,string nv,
+             DateTime orderdate, int Total,string magiam)
+        {
+            return db.MyExecuteNonQuery("spInsertOrder",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@Order_ID", order_ID),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@NameEmployee", nv),
+                new SqlParameter("@OrderDate", orderdate),
+                new SqlParameter("@Total", Total),
+                new SqlParameter("@DiscountCode", magiam));
+        }
+        public bool CapNhatHoaDon(ref string err, string order_ID, string sdt, string nv,
+             DateTime orderdate, int Total, string magiam)
+        {
+            return db.MyExecuteNonQuery("spUpdateOrder",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@Order_ID", order_ID),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@EmployeeID", nv),
+                new SqlParameter("@OrderDate", orderdate),
+                new SqlParameter("@Total", Total),
+                new SqlParameter("@DiscountCode", magiam));
+        }
+        public bool ThemChiTietHoaDon(ref string err, string Order_ID, string Product_ID,
+            int Quantity)
+        {
+            return db.MyExecuteNonQuery("spInsertOrderDetail",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@Order_ID", Order_ID),
+                new SqlParameter("@Product_ID", Product_ID),
+                new SqlParameter("@Quantity", Quantity));
+        }
     }
 }

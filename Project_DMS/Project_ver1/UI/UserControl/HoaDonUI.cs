@@ -45,7 +45,7 @@ namespace Project_ver1.UI
                 MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
             }
         }
-
+        #region Event
         private void HoaDonUI_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -123,5 +123,6 @@ namespace Project_ver1.UI
         {
             LoadData();
         }
+        #endregion
     }
 }

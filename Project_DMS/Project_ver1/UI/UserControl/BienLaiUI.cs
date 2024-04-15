@@ -45,6 +45,7 @@ namespace Project_ver1.UI
                 MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
             }
         }
+        #region Event
         private void BienLaiUI_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -121,10 +122,10 @@ namespace Project_ver1.UI
                 MessageBox.Show(ex.ToString());
             }
         }
-
         private void ReloadButton_Click(object sender, EventArgs e)
         {
             LoadData();
         }
+        #endregion
     }
 }

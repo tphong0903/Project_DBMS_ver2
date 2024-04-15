@@ -62,6 +62,7 @@ namespace Project_ver1.UI.UserControl
             dtpEndDate.Enabled = false;
             tick.Visible = false;
         }
+        #region Event
         //Event methods
         private void btnToday_Click(object sender, EventArgs e)
         {
@@ -101,5 +102,6 @@ namespace Project_ver1.UI.UserControl
         {
             LoadData();
         }
+        #endregion
     }
 }

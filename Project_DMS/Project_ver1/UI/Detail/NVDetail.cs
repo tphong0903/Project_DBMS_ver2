@@ -68,11 +68,6 @@ namespace Project_ver1.UI
             }
         }
 
-        private void NVDetail_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void AddButton_Click(object sender, EventArgs e)
         {
             string err = "";

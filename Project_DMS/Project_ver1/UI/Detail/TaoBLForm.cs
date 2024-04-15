@@ -39,7 +39,7 @@ namespace Project_ver1.UI.Detail
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
-
+        #region Event
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             r = e.RowIndex;
@@ -134,6 +134,7 @@ namespace Project_ver1.UI.Detail
                 MessageBox.Show("Please select a row to delete.");
             }
         }
+        #endregion
     }
 }
 

@@ -17,7 +17,6 @@ namespace BusinessAccessLayer
         {
             db = new DAL();
         }
-        // CRUD cho table ThanhPho
         public DataSet LayNhaCungCap()
         {
             return db.ExecuteQueryDataSet(

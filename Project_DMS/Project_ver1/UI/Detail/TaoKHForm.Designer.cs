@@ -38,12 +38,12 @@
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPoint = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSdt = new Guna.UI2.WinForms.Guna2TextBox();
             this.AddButton = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ComboGT = new Guna.UI2.WinForms.Guna2ComboBox();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
@@ -162,31 +162,6 @@
             this.txtName.Size = new System.Drawing.Size(337, 44);
             this.txtName.TabIndex = 139;
             // 
-            // txtGender
-            // 
-            this.txtGender.BorderRadius = 10;
-            this.txtGender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGender.DefaultText = "";
-            this.txtGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGender.DisabledState.Parent = this.txtGender;
-            this.txtGender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.FocusedState.Parent = this.txtGender;
-            this.txtGender.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.HoverState.Parent = this.txtGender;
-            this.txtGender.Location = new System.Drawing.Point(419, 151);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.PasswordChar = '\0';
-            this.txtGender.PlaceholderText = "";
-            this.txtGender.SelectedText = "";
-            this.txtGender.ShadowDecoration.Parent = this.txtGender;
-            this.txtGender.Size = new System.Drawing.Size(337, 44);
-            this.txtGender.TabIndex = 141;
-            // 
             // txtPoint
             // 
             this.txtPoint.BorderRadius = 10;
@@ -304,6 +279,30 @@
             this.SoLuong.Size = new System.Drawing.Size(337, 44);
             this.SoLuong.TabIndex = 142;
             // 
+            // ComboGT
+            // 
+            this.ComboGT.BackColor = System.Drawing.Color.Transparent;
+            this.ComboGT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.ComboGT.BorderRadius = 10;
+            this.ComboGT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboGT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboGT.FocusedColor = System.Drawing.Color.Empty;
+            this.ComboGT.FocusedState.Parent = this.ComboGT;
+            this.ComboGT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ComboGT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboGT.FormattingEnabled = true;
+            this.ComboGT.HoverState.Parent = this.ComboGT;
+            this.ComboGT.ItemHeight = 35;
+            this.ComboGT.Items.AddRange(new object[] {
+            "Nam",
+            "Nu"});
+            this.ComboGT.ItemsAppearance.Parent = this.ComboGT;
+            this.ComboGT.Location = new System.Drawing.Point(416, 151);
+            this.ComboGT.Name = "ComboGT";
+            this.ComboGT.ShadowDecoration.Parent = this.ComboGT;
+            this.ComboGT.Size = new System.Drawing.Size(340, 41);
+            this.ComboGT.TabIndex = 191;
+            // 
             // TaoKHForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -322,9 +321,9 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(gunaLabel8);
             this.Controls.Add(this.SoLuong);
-            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtPoint);
             this.Controls.Add(this.txtSdt);
+            this.Controls.Add(this.ComboGT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -347,11 +346,11 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
-        private Guna.UI2.WinForms.Guna2TextBox txtGender;
         private Guna.UI2.WinForms.Guna2TextBox txtPoint;
         private Guna.UI2.WinForms.Guna2TextBox txtSdt;
         private Guna.UI.WinForms.GunaButton AddButton;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2TextBox SoLuong;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboGT;
     }
 }

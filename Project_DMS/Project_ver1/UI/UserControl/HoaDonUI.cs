@@ -77,7 +77,8 @@ namespace Project_ver1.UI
             TenSP.Text = dgvHoaDon.Rows[r].Cells[1].Value.ToString();
             DanhMuc.Text = dgvHoaDon.Rows[r].Cells[2].Value.ToString();
             Ngay.Text = dgvHoaDon.Rows[r].Cells[3].Value.ToString();
-            decimal value = Convert.ToDecimal(dgvHoaDon.Rows[r].Cells[4].Value);
+            string a = (string.IsNullOrEmpty(dgvHoaDon.Rows[r].Cells[4].Value.ToString()) ? "0" : dgvHoaDon.Rows[r].Cells[4].Value.ToString());
+            decimal value = Convert.ToDecimal(a);
             SoLuong.Text = value.ToString("N0");
             ThuongHieu.Text = dgvHoaDon.Rows[r].Cells[5].Value.ToString()+"%";
         }

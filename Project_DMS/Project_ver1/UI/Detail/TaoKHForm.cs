@@ -33,7 +33,7 @@ namespace Project_ver1.UI.Detail
                 txtSdt.Text,
                 txtName.Text,
                 dtpBirthday.Value,
-                txtGender.Text,
+                ComboGT.Text,
                 int.Parse(txtPoint.Text));
                 if (f)
                 {

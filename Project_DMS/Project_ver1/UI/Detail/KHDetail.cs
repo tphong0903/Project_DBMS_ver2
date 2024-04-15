@@ -24,16 +24,14 @@ namespace Project_ver1.UI.Detail
             Phone = phone;
             InitializeComponent();
             dbkh = new DBKhachHang();
-            SDT.ReadOnly = true;
-            Ten.ReadOnly = true;
-            GT.ReadOnly = true;
-            Diem.ReadOnly = true;
-            Total.ReadOnly = true;
+            txtSDT.ReadOnly = true;
+            txtTen.ReadOnly = true;
+            txtDiem.ReadOnly = true;
+            txtTotal.ReadOnly = true;
             AddButton.Visible = false;
             if (Check == 2)
             {
-                Ten.ReadOnly = false;
-                GT.ReadOnly = false;
+                txtTen.ReadOnly = false;
                 AddButton.Visible = true;
             }
         }
@@ -50,12 +48,12 @@ namespace Project_ver1.UI.Detail
                 dt.Clear();
                 dt = dbkh.TimKhachHang(Phone, "").Tables[0];
 
-                SDT.Text = dt.Rows[0].Field<string>(0);
-                Ten.Text = dt.Rows[0].Field<string>(1);
-                NS.Text = dt.Rows[0].Field<DateTime>(2).ToString();
-                GT.Text = dt.Rows[0].Field<string>(3).ToString();
-                Diem.Text = dt.Rows[0].Field<int>(4).ToString();
-                Total.Text = dt.Rows[0].Field<int>(5).ToString();
+                txtSDT.Text = dt.Rows[0].Field<string>(0);
+                txtTen.Text = dt.Rows[0].Field<string>(1);
+                txtNS.Text = dt.Rows[0].Field<DateTime>(2).ToString();
+                ComboGT.Text = dt.Rows[0].Field<string>(3).ToString();
+                txtDiem.Text = dt.Rows[0].Field<int>(4).ToString();
+                txtTotal.Text = dt.Rows[0].Field<int>(5).ToString();
             }
             catch (SqlException x)
             {
@@ -73,11 +71,11 @@ namespace Project_ver1.UI.Detail
             try
             {
                 bool f = dbkh.CapNhatKhachHang(ref err,
-                    SDT.Text,
-                    Ten.Text,
-                    NS.Value,
-                    GT.Text,
-                    int.Parse(Diem.Text));
+                    txtSDT.Text,
+                    txtTen.Text,
+                    txtNS.Value,
+                    ComboGT.Text,
+                    int.Parse(txtDiem.Text));
                 if (f)
                 {
                     LoadData();

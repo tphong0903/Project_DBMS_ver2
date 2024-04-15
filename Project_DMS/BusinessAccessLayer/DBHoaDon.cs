@@ -33,26 +33,6 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from ProductOfOrder('" + HD + "')", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
-        {
-            return db.MyExecuteNonQuery("spThemThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
-        }
-        public bool XoaThanhPho(ref string err, string ThanhPho)
-        {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
-        }
-        public bool CapNhatThanhPho(ref string err, string ThanhPho, string TenThanhPho)
-        {
-            return db.MyExecuteNonQuery("spCapNhatThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
-        }
         public bool ThemHoaDon(ref string err, string order_ID, string sdt,string nv,
              DateTime orderdate, int Total,string magiam)
         {
@@ -60,7 +40,7 @@ namespace BusinessAccessLayer
                 CommandType.StoredProcedure, ref err,
                 new SqlParameter("@Order_ID", order_ID),
                 new SqlParameter("@PhoneNumber", sdt),
-                new SqlParameter("@NameEmployee", nv),
+                new SqlParameter("@EmployeeID", nv),
                 new SqlParameter("@OrderDate", orderdate),
                 new SqlParameter("@Total", Total),
                 new SqlParameter("@DiscountCode", magiam));

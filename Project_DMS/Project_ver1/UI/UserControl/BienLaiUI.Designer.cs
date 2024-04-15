@@ -42,7 +42,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReadButton = new Guna.UI.WinForms.GunaButton();
             this.AddButton = new Guna.UI.WinForms.GunaButton();
-            this.RemoveButton = new Guna.UI.WinForms.GunaButton();
             this.ReloadButton = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.ngayNhap = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -241,32 +240,6 @@
             this.AddButton.TabIndex = 6;
             this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // RemoveButton
-            // 
-            this.RemoveButton.AnimationHoverSpeed = 0.07F;
-            this.RemoveButton.AnimationSpeed = 0.03F;
-            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
-            this.RemoveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.RemoveButton.BorderColor = System.Drawing.Color.Black;
-            this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.RemoveButton.FocusedColor = System.Drawing.Color.Empty;
-            this.RemoveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButton.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveButton.Image")));
-            this.RemoveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.RemoveButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.RemoveButton.Location = new System.Drawing.Point(749, 784);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.RemoveButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.RemoveButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.RemoveButton.OnHoverImage = null;
-            this.RemoveButton.OnPressedColor = System.Drawing.Color.Black;
-            this.RemoveButton.Radius = 15;
-            this.RemoveButton.Size = new System.Drawing.Size(107, 49);
-            this.RemoveButton.TabIndex = 8;
-            this.RemoveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ReloadButton
             // 
@@ -634,7 +607,6 @@
             this.Controls.Add(this.ReloadButton);
             this.Controls.Add(this.ReadButton);
             this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.dgvBienLai);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BienLaiUI";
@@ -651,7 +623,6 @@
         private Guna.UI.WinForms.GunaDataGridView dgvBienLai;
         private Guna.UI.WinForms.GunaButton ReadButton;
         private Guna.UI.WinForms.GunaButton AddButton;
-        private Guna.UI.WinForms.GunaButton RemoveButton;
         private Guna.UI.WinForms.GunaButton ReloadButton;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI2.WinForms.Guna2DateTimePicker ngayNhap;

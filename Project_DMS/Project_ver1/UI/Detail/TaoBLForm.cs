@@ -27,6 +27,12 @@ namespace Project_ver1.UI.Detail
             {
                 dtSanPham = dbsp.LaySanPhamChoFormBienLai().Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
+
+                dtSanPham = dbbl.LayBienLai().Tables[0];
+                int s= dtSanPham.Rows.Count;
+                textBoxMaBienLai.Text = "IP" + s;
+                textBoxMaBienLai.Enabled = false;
+
             }
             catch (SqlException ex)
             {
@@ -89,26 +95,26 @@ namespace Project_ver1.UI.Detail
             try
             {
                 bool f = dbbl.ThemBienLai(ref err, textBoxMaBienLai.Text, textBoxMaNhaCungCap.Text, dateTimePickerNgayThanhToan.Value, 0);
-
-                foreach (DataGridViewRow row in insertGridView.Rows)
+                if (f)
                 {
-                    if (row.Cells["Product_ID"].Value != null)
+                    foreach (DataGridViewRow row in insertGridView.Rows)
                     {
-                        string maSP = row.Cells["Product_ID"].Value.ToString();
-                        int soLuong = Convert.ToInt32(row.Cells["Quantity"].Value);
-                        int giaNhap = Convert.ToInt32(row.Cells["UnitCost"].Value);
+                        if (row.Cells["Product_ID"].Value != null)
+                        {
+                            string maSP = row.Cells["Product_ID"].Value.ToString();
+                            int soLuong = Convert.ToInt32(row.Cells["Quantity"].Value);
+                            int giaNhap = Convert.ToInt32(row.Cells["UnitCost"].Value);
 
-                        bool success = dbbl.ThemChiTietBienLai(ref err, textBoxMaBienLai.Text, maSP, soLuong, giaNhap);
-                        if (success)
-                        {
-                            MessageBox.Show("Successfully added!");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Failed to add!\n\r" + "Error:" + err);
+                            bool success = dbbl.ThemChiTietBienLai(ref err, textBoxMaBienLai.Text, maSP, soLuong, giaNhap);
                         }
                     }
+                    MessageBox.Show("Successfully added!");
                 }
+                else
+                {
+                    MessageBox.Show("Failed to add!\n\r" + "Error:" + err);
+                }
+               
             }
             catch (Exception ex)
             {

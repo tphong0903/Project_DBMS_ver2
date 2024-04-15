@@ -75,14 +75,14 @@ namespace Project_ver1.UI
         {
             int r = dgvNhanVien.CurrentCell.RowIndex;
             ID = dgvNhanVien.Rows[r].Cells[0].Value.ToString().ToLower();
-            MaSP.Text = dgvNhanVien.Rows[r].Cells[0].Value.ToString();
-            TenSP.Text = dgvNhanVien.Rows[r].Cells[1].Value.ToString();
-            DanhMuc.Text = dgvNhanVien.Rows[r].Cells[3].Value.ToString();
+            txtMaNV.Text = dgvNhanVien.Rows[r].Cells[0].Value.ToString();
+            txtTenNV.Text = dgvNhanVien.Rows[r].Cells[1].Value.ToString();
+            txtGT.Text = dgvNhanVien.Rows[r].Cells[3].Value.ToString();
             Ngay.Text = dgvNhanVien.Rows[r].Cells[2].Value.ToString();
             string a = (string.IsNullOrEmpty(dgvNhanVien.Rows[r].Cells[7].Value.ToString()) ? "0" : dgvNhanVien.Rows[r].Cells[7].Value.ToString());
             decimal value = Convert.ToDecimal(a);
-            SoLuong.Text = value.ToString("N0");
-            ThuongHieu.Text = dgvNhanVien.Rows[r].Cells[6].Value.ToString();
+            txtTotal.Text = value.ToString("N0");
+            txtChucVu.Text = dgvNhanVien.Rows[r].Cells[6].Value.ToString();
         }
         private void FindButton_Click(object sender, EventArgs e)
         {

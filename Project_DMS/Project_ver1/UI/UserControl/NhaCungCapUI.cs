@@ -74,21 +74,21 @@ namespace Project_ver1.UI
         {
             int r = dgvNCC.CurrentCell.RowIndex;
             ID = dgvNCC.Rows[r].Cells[0].Value.ToString().ToLower();
-            MaSP.Text = dgvNCC.Rows[r].Cells[0].Value.ToString();
-            TenSP.Text = dgvNCC.Rows[r].Cells[1].Value.ToString();
-            DanhMuc.Text = dgvNCC.Rows[r].Cells[4].Value.ToString();
-            SDT.Text = dgvNCC.Rows[r].Cells[2].Value.ToString();
+            txtMaNCC.Text = dgvNCC.Rows[r].Cells[0].Value.ToString();
+            txtTenNCC.Text = dgvNCC.Rows[r].Cells[1].Value.ToString();
+            txtEmail.Text = dgvNCC.Rows[r].Cells[4].Value.ToString();
+            txtSDT.Text = dgvNCC.Rows[r].Cells[2].Value.ToString();
             string a = (string.IsNullOrEmpty(dgvNCC.Rows[r].Cells[5].Value.ToString()) ? "0" : dgvNCC.Rows[r].Cells[5].Value.ToString());
             decimal value = Convert.ToDecimal(a);
-            SoLuong.Text = value.ToString("N0");
-            ThuongHieu.Text = dgvNCC.Rows[r].Cells[3].Value.ToString();
+            txtTotal.Text = value.ToString("N0");
+            txtDiaChi.Text = dgvNCC.Rows[r].Cells[3].Value.ToString();
         }
         private void FindButton_Click(object sender, EventArgs e)
         {
             try
             {
 
-                string hd = MNV.Text;
+                string hd = MaNhaCungCap.Text;
                 string name = NameText.Text;
                 DataTable dtHoaDon = new DataTable();
                 dtHoaDon.Clear();

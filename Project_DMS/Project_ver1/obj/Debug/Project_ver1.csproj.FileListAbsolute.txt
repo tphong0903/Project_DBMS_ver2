@@ -29,7 +29,6 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhanVienUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NVDetail.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.SanPhamUi.resources
-D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.KhachHangUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LoginForm.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.MainForm.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.Properties.Resources.resources
@@ -81,3 +80,4 @@ D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\DataAccessLay
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.CopyComplete
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.exe
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LbSDT.resources

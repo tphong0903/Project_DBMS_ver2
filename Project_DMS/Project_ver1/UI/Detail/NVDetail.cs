@@ -23,21 +23,22 @@ namespace Project_ver1.UI
             ID = iD;
             InitializeComponent();
             dbnv = new DBNhanVien();
-            imgButton.Visible = false;
             AddButton.Visible = false;
             if(Check ==1)
                 LoadData();
             else if (Check ==2)
             {
-                imgButton.Visible = true;
                 AddButton.Visible = true;
                 this.Text = "Cập nhật thông tin nhân viên";
                 LoadData();
             }   
             else 
             {
-                imgButton.Visible = true;
                 AddButton.Visible = true;
+                txtTrangThai.Text = "1";
+                txtTrangThai.Enabled = false;
+                textTotal.Visible = false;
+                gunaLabel4.Visible = false;
                 this.Text = "Thêm nhân viên mới";
             }
 
@@ -50,16 +51,16 @@ namespace Project_ver1.UI
                 dt.Clear();
                 dt = dbnv.TimAllNhanVien(ID).Tables[0];
                 
-                MaSP.Text=dt.Rows[0].Field<string>(0);
-                TenSP.Text = dt.Rows[0].Field<string>(1);
+                txtMaNV.Text=dt.Rows[0].Field<string>(0);
+                txtTenNV.Text = dt.Rows[0].Field<string>(1);
                 Ngay.Text = dt.Rows[0].Field<DateTime>(2).ToString();
-                GT.Text =dt.Rows[0].Field<string>(3).ToString();
-                DC.Text = dt.Rows[0].Field<string>(4);
-                SDT.Text = dt.Rows[0].Field<string>(5);
-                CV.Text = dt.Rows[0].Field<string>(6);
-                TT.Text = dt.Rows[0].Field<string>(7);
+                txtGioiTinh.Text =dt.Rows[0].Field<string>(3).ToString();
+                textDiaChi.Text = dt.Rows[0].Field<string>(4);
+                txtSDT.Text = dt.Rows[0].Field<string>(5);
+                txtChucVu.Text = dt.Rows[0].Field<string>(6);
+                txtTrangThai.Text = dt.Rows[0].Field<string>(7);
                 MK.Text = dt.Rows[0].Field<string>(8);
-                Total.Text = dt.Rows[0].Field<int?>(9).ToString();
+                textTotal.Text = dt.Rows[0].Field<int?>(9).ToString();
             }
             catch (SqlException x)
             {
@@ -80,18 +81,17 @@ namespace Project_ver1.UI
                 if (Check ==2)
                 {
                     bool f = dbnv.CapNhatNhanVien(ref err,
-                    MaSP.Text,
-                    TenSP.Text,
+                    txtMaNV.Text,
+                    txtTenNV.Text,
                     Ngay.Value,
-                    GT.Text,
-                    DC.Text,
-                    SDT.Text,
-                    CV.Text,
-                    int.Parse(TT.Text),
+                    txtGioiTinh.Text,
+                    textDiaChi.Text,
+                    txtSDT.Text,
+                    txtChucVu.Text,
+                    int.Parse(txtTrangThai.Text),
                     MK.Text);
                     if (f)
                     {
-                        LoadData();
                         MessageBox.Show("Đã cập nhật xong!");
                     }
                     else
@@ -102,25 +102,25 @@ namespace Project_ver1.UI
                 else if (Check ==3)
                 {
                     bool f = dbnv.ThemNhanVien(ref err,
-                    MaSP.Text,
-                    TenSP.Text,
+                    txtMaNV.Text,
+                    txtTenNV.Text,
                     Ngay.Value,
-                    GT.Text,
-                    DC.Text,
-                    SDT.Text,
-                    CV.Text,
-                    int.Parse(TT.Text),
+                    txtGioiTinh.Text,
+                    textDiaChi.Text,
+                    txtSDT.Text,
+                    txtChucVu.Text,
+                    1,
                     MK.Text);
                     if (f)
                     {
-                        LoadData();
-                        MessageBox.Show("Đã cập nhật xong!");
+                        MessageBox.Show("Đã thêm xong!");
                     }
                     else
                     {
                         MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
                     }
                 }
+                //this.Close();
                 
             }
             catch (SqlException)

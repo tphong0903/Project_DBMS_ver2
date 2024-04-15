@@ -44,16 +44,16 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.NS = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtNS = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.Ten = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Total = new Guna.UI2.WinForms.Guna2TextBox();
-            this.GT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Diem = new Guna.UI2.WinForms.Guna2TextBox();
-            this.SDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTen = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDiem = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ComboGT = new Guna.UI2.WinForms.Guna2ComboBox();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).BeginInit();
             this.SuspendLayout();
@@ -253,26 +253,26 @@
             this.gunaLabel2.TabIndex = 189;
             this.gunaLabel2.Text = "Ngày sinh";
             // 
-            // NS
+            // txtNS
             // 
-            this.NS.BackColor = System.Drawing.Color.Transparent;
-            this.NS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
-            this.NS.BorderRadius = 10;
-            this.NS.BorderThickness = 1;
-            this.NS.CheckedState.Parent = this.NS;
-            this.NS.FillColor = System.Drawing.Color.White;
-            this.NS.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NS.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NS.HoverState.Parent = this.NS;
-            this.NS.Location = new System.Drawing.Point(13, 277);
-            this.NS.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.NS.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.NS.Name = "NS";
-            this.NS.ShadowDecoration.Parent = this.NS;
-            this.NS.Size = new System.Drawing.Size(337, 44);
-            this.NS.TabIndex = 188;
-            this.NS.UseTransparentBackground = true;
-            this.NS.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
+            this.txtNS.BackColor = System.Drawing.Color.Transparent;
+            this.txtNS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
+            this.txtNS.BorderRadius = 10;
+            this.txtNS.BorderThickness = 1;
+            this.txtNS.CheckedState.Parent = this.txtNS;
+            this.txtNS.FillColor = System.Drawing.Color.White;
+            this.txtNS.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtNS.HoverState.Parent = this.txtNS;
+            this.txtNS.Location = new System.Drawing.Point(13, 277);
+            this.txtNS.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtNS.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtNS.Name = "txtNS";
+            this.txtNS.ShadowDecoration.Parent = this.txtNS;
+            this.txtNS.Size = new System.Drawing.Size(337, 44);
+            this.txtNS.TabIndex = 188;
+            this.txtNS.UseTransparentBackground = true;
+            this.txtNS.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
             // 
             // gunaLabel6
             // 
@@ -314,131 +314,130 @@
             this.gunaLabel7.TabIndex = 179;
             this.gunaLabel7.Text = "Tên khách hàng";
             // 
-            // Ten
+            // txtTen
             // 
-            this.Ten.AutoScroll = true;
-            this.Ten.BorderRadius = 10;
-            this.Ten.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Ten.DefaultText = "";
-            this.Ten.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Ten.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Ten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Ten.DisabledState.Parent = this.Ten;
-            this.Ten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Ten.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Ten.FocusedState.Parent = this.Ten;
-            this.Ten.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Ten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Ten.HoverState.Parent = this.Ten;
-            this.Ten.Location = new System.Drawing.Point(10, 146);
-            this.Ten.Margin = new System.Windows.Forms.Padding(4);
-            this.Ten.Name = "Ten";
-            this.Ten.PasswordChar = '\0';
-            this.Ten.PlaceholderText = "";
-            this.Ten.SelectedText = "";
-            this.Ten.ShadowDecoration.Parent = this.Ten;
-            this.Ten.Size = new System.Drawing.Size(337, 44);
-            this.Ten.TabIndex = 184;
+            this.txtTen.AutoScroll = true;
+            this.txtTen.BorderRadius = 10;
+            this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTen.DefaultText = "";
+            this.txtTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTen.DisabledState.Parent = this.txtTen;
+            this.txtTen.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTen.FocusedState.Parent = this.txtTen;
+            this.txtTen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTen.HoverState.Parent = this.txtTen;
+            this.txtTen.Location = new System.Drawing.Point(10, 146);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.PasswordChar = '\0';
+            this.txtTen.PlaceholderText = "";
+            this.txtTen.SelectedText = "";
+            this.txtTen.ShadowDecoration.Parent = this.txtTen;
+            this.txtTen.Size = new System.Drawing.Size(337, 44);
+            this.txtTen.TabIndex = 184;
             // 
-            // Total
+            // txtTotal
             // 
-            this.Total.BorderRadius = 10;
-            this.Total.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Total.DefaultText = "";
-            this.Total.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Total.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Total.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Total.DisabledState.Parent = this.Total;
-            this.Total.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Total.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Total.FocusedState.Parent = this.Total;
-            this.Total.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Total.HoverState.Parent = this.Total;
-            this.Total.Location = new System.Drawing.Point(13, 415);
-            this.Total.Margin = new System.Windows.Forms.Padding(4);
-            this.Total.Name = "Total";
-            this.Total.PasswordChar = '\0';
-            this.Total.PlaceholderText = "";
-            this.Total.SelectedText = "";
-            this.Total.ShadowDecoration.Parent = this.Total;
-            this.Total.Size = new System.Drawing.Size(337, 44);
-            this.Total.TabIndex = 187;
+            this.txtTotal.BorderRadius = 10;
+            this.txtTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotal.DefaultText = "";
+            this.txtTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotal.DisabledState.Parent = this.txtTotal;
+            this.txtTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotal.FocusedState.Parent = this.txtTotal;
+            this.txtTotal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotal.HoverState.Parent = this.txtTotal;
+            this.txtTotal.Location = new System.Drawing.Point(13, 415);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.PasswordChar = '\0';
+            this.txtTotal.PlaceholderText = "";
+            this.txtTotal.SelectedText = "";
+            this.txtTotal.ShadowDecoration.Parent = this.txtTotal;
+            this.txtTotal.Size = new System.Drawing.Size(337, 44);
+            this.txtTotal.TabIndex = 187;
             // 
-            // GT
+            // txtDiem
             // 
-            this.GT.BorderRadius = 10;
-            this.GT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.GT.DefaultText = "";
-            this.GT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.GT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.GT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GT.DisabledState.Parent = this.GT;
-            this.GT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GT.FocusedState.Parent = this.GT;
-            this.GT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.GT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GT.HoverState.Parent = this.GT;
-            this.GT.Location = new System.Drawing.Point(13, 211);
-            this.GT.Margin = new System.Windows.Forms.Padding(4);
-            this.GT.Name = "GT";
-            this.GT.PasswordChar = '\0';
-            this.GT.PlaceholderText = "";
-            this.GT.SelectedText = "";
-            this.GT.ShadowDecoration.Parent = this.GT;
-            this.GT.Size = new System.Drawing.Size(337, 44);
-            this.GT.TabIndex = 186;
+            this.txtDiem.BorderRadius = 10;
+            this.txtDiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiem.DefaultText = "";
+            this.txtDiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiem.DisabledState.Parent = this.txtDiem;
+            this.txtDiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiem.FocusedState.Parent = this.txtDiem;
+            this.txtDiem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiem.HoverState.Parent = this.txtDiem;
+            this.txtDiem.Location = new System.Drawing.Point(13, 346);
+            this.txtDiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiem.Name = "txtDiem";
+            this.txtDiem.PasswordChar = '\0';
+            this.txtDiem.PlaceholderText = "";
+            this.txtDiem.SelectedText = "";
+            this.txtDiem.ShadowDecoration.Parent = this.txtDiem;
+            this.txtDiem.Size = new System.Drawing.Size(337, 44);
+            this.txtDiem.TabIndex = 185;
             // 
-            // Diem
+            // txtSDT
             // 
-            this.Diem.BorderRadius = 10;
-            this.Diem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Diem.DefaultText = "";
-            this.Diem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Diem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Diem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Diem.DisabledState.Parent = this.Diem;
-            this.Diem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Diem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Diem.FocusedState.Parent = this.Diem;
-            this.Diem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Diem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Diem.HoverState.Parent = this.Diem;
-            this.Diem.Location = new System.Drawing.Point(13, 346);
-            this.Diem.Margin = new System.Windows.Forms.Padding(4);
-            this.Diem.Name = "Diem";
-            this.Diem.PasswordChar = '\0';
-            this.Diem.PlaceholderText = "";
-            this.Diem.SelectedText = "";
-            this.Diem.ShadowDecoration.Parent = this.Diem;
-            this.Diem.Size = new System.Drawing.Size(337, 44);
-            this.Diem.TabIndex = 185;
+            this.txtSDT.BorderRadius = 10;
+            this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSDT.DefaultText = "";
+            this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT.DisabledState.Parent = this.txtSDT;
+            this.txtSDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT.FocusedState.Parent = this.txtSDT;
+            this.txtSDT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT.HoverState.Parent = this.txtSDT;
+            this.txtSDT.Location = new System.Drawing.Point(10, 80);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.PasswordChar = '\0';
+            this.txtSDT.PlaceholderText = "";
+            this.txtSDT.SelectedText = "";
+            this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
+            this.txtSDT.Size = new System.Drawing.Size(337, 44);
+            this.txtSDT.TabIndex = 183;
             // 
-            // SDT
+            // ComboGT
             // 
-            this.SDT.BorderRadius = 10;
-            this.SDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SDT.DefaultText = "";
-            this.SDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SDT.DisabledState.Parent = this.SDT;
-            this.SDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SDT.FocusedState.Parent = this.SDT;
-            this.SDT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SDT.HoverState.Parent = this.SDT;
-            this.SDT.Location = new System.Drawing.Point(10, 80);
-            this.SDT.Margin = new System.Windows.Forms.Padding(4);
-            this.SDT.Name = "SDT";
-            this.SDT.PasswordChar = '\0';
-            this.SDT.PlaceholderText = "";
-            this.SDT.SelectedText = "";
-            this.SDT.ShadowDecoration.Parent = this.SDT;
-            this.SDT.Size = new System.Drawing.Size(337, 44);
-            this.SDT.TabIndex = 183;
+            this.ComboGT.BackColor = System.Drawing.Color.Transparent;
+            this.ComboGT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.ComboGT.BorderRadius = 10;
+            this.ComboGT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboGT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboGT.FocusedColor = System.Drawing.Color.Empty;
+            this.ComboGT.FocusedState.Parent = this.ComboGT;
+            this.ComboGT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ComboGT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboGT.FormattingEnabled = true;
+            this.ComboGT.HoverState.Parent = this.ComboGT;
+            this.ComboGT.ItemHeight = 35;
+            this.ComboGT.Items.AddRange(new object[] {
+            "Nam",
+            "Nu"});
+            this.ComboGT.ItemsAppearance.Parent = this.ComboGT;
+            this.ComboGT.Location = new System.Drawing.Point(10, 209);
+            this.ComboGT.Name = "ComboGT";
+            this.ComboGT.ShadowDecoration.Parent = this.ComboGT;
+            this.ComboGT.Size = new System.Drawing.Size(340, 41);
+            this.ComboGT.TabIndex = 190;
             // 
             // KHDetail
             // 
@@ -447,22 +446,22 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(940, 507);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.NS);
+            this.Controls.Add(this.txtNS);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.Ten);
+            this.Controls.Add(this.txtTen);
             this.Controls.Add(gunaLabel8);
-            this.Controls.Add(this.Total);
-            this.Controls.Add(this.GT);
-            this.Controls.Add(this.Diem);
-            this.Controls.Add(this.SDT);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtDiem);
+            this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.dgvSP);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel9);
+            this.Controls.Add(this.ComboGT);
             this.Name = "KHDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KHDetail";
@@ -481,19 +480,19 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker NS;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtNS;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI2.WinForms.Guna2TextBox Ten;
-        private Guna.UI2.WinForms.Guna2TextBox Total;
-        private Guna.UI2.WinForms.Guna2TextBox GT;
-        private Guna.UI2.WinForms.Guna2TextBox Diem;
-        private Guna.UI2.WinForms.Guna2TextBox SDT;
+        private Guna.UI2.WinForms.Guna2TextBox txtTen;
+        private Guna.UI2.WinForms.Guna2TextBox txtTotal;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiem;
+        private Guna.UI2.WinForms.Guna2TextBox txtSDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboGT;
     }
 }

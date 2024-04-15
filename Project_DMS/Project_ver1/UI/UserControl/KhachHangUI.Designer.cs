@@ -1,6 +1,6 @@
 ﻿namespace Project_ver1
 {
-    partial class KhachHangUI
+    partial class LbSDT
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KhachHangUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LbSDT));
             this.sanphamBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgvKhachHang = new Guna.UI.WinForms.GunaDataGridView();
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,11 +48,11 @@
             this.UpdateButton = new Guna.UI.WinForms.GunaButton();
             this.ReloadButton = new Guna.UI.WinForms.GunaButton();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.NameText = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SoLuong = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.SoDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSoDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.Diem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -318,38 +318,38 @@
             this.guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // NameText
+            // txtName
             // 
-            this.NameText.AccessibleName = "";
-            this.NameText.BackColor = System.Drawing.Color.Transparent;
-            this.NameText.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameText.BorderRadius = 8;
-            this.NameText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NameText.DefaultText = "";
-            this.NameText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NameText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NameText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NameText.DisabledState.Parent = this.NameText;
-            this.NameText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NameText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameText.FocusedState.Parent = this.NameText;
-            this.NameText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.NameText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameText.HoverState.Parent = this.NameText;
-            this.NameText.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.NameText.IconRight = ((System.Drawing.Image)(resources.GetObject("NameText.IconRight")));
-            this.NameText.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.NameText.IconRightSize = new System.Drawing.Size(30, 30);
-            this.NameText.Location = new System.Drawing.Point(647, 298);
-            this.NameText.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.NameText.Name = "NameText";
-            this.NameText.PasswordChar = '\0';
-            this.NameText.PlaceholderText = "";
-            this.NameText.SelectedText = "";
-            this.NameText.ShadowDecoration.Parent = this.NameText;
-            this.NameText.Size = new System.Drawing.Size(412, 44);
-            this.NameText.TabIndex = 113;
-            this.NameText.TextChanged += new System.EventHandler(this.Find_Click);
+            this.txtName.AccessibleName = "";
+            this.txtName.BackColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtName.BorderRadius = 8;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.Parent = this.txtName;
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedState.Parent = this.txtName;
+            this.txtName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.HoverState.Parent = this.txtName;
+            this.txtName.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtName.IconRight = ((System.Drawing.Image)(resources.GetObject("txtName.IconRight")));
+            this.txtName.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.txtName.IconRightSize = new System.Drawing.Size(30, 30);
+            this.txtName.Location = new System.Drawing.Point(647, 298);
+            this.txtName.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PlaceholderText = "";
+            this.txtName.SelectedText = "";
+            this.txtName.ShadowDecoration.Parent = this.txtName;
+            this.txtName.Size = new System.Drawing.Size(412, 44);
+            this.txtName.TabIndex = 113;
+            this.txtName.TextChanged += new System.EventHandler(this.Find_Click);
             // 
             // label1
             // 
@@ -386,37 +386,37 @@
             this.gunaLabel1.TabIndex = 18;
             this.gunaLabel1.Text = "Khách Hàng";
             // 
-            // SoDT
+            // txtSoDT
             // 
-            this.SoDT.AccessibleName = "";
-            this.SoDT.BackColor = System.Drawing.Color.Transparent;
-            this.SoDT.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SoDT.BorderRadius = 8;
-            this.SoDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoDT.DefaultText = "";
-            this.SoDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SoDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SoDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoDT.DisabledState.Parent = this.SoDT;
-            this.SoDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoDT.FocusedState.Parent = this.SoDT;
-            this.SoDT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoDT.HoverState.Parent = this.SoDT;
-            this.SoDT.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.SoDT.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.SoDT.IconRightSize = new System.Drawing.Size(30, 30);
-            this.SoDT.Location = new System.Drawing.Point(236, 298);
-            this.SoDT.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.SoDT.Name = "SoDT";
-            this.SoDT.PasswordChar = '\0';
-            this.SoDT.PlaceholderText = "";
-            this.SoDT.SelectedText = "";
-            this.SoDT.ShadowDecoration.Parent = this.SoDT;
-            this.SoDT.Size = new System.Drawing.Size(389, 44);
-            this.SoDT.TabIndex = 115;
-            this.SoDT.TextChanged += new System.EventHandler(this.Find_Click);
+            this.txtSoDT.AccessibleName = "";
+            this.txtSoDT.BackColor = System.Drawing.Color.Transparent;
+            this.txtSoDT.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSoDT.BorderRadius = 8;
+            this.txtSoDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSoDT.DefaultText = "";
+            this.txtSoDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSoDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSoDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoDT.DisabledState.Parent = this.txtSoDT;
+            this.txtSoDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoDT.FocusedState.Parent = this.txtSoDT;
+            this.txtSoDT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSoDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoDT.HoverState.Parent = this.txtSoDT;
+            this.txtSoDT.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtSoDT.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.txtSoDT.IconRightSize = new System.Drawing.Size(30, 30);
+            this.txtSoDT.Location = new System.Drawing.Point(236, 298);
+            this.txtSoDT.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.txtSoDT.Name = "txtSoDT";
+            this.txtSoDT.PasswordChar = '\0';
+            this.txtSoDT.PlaceholderText = "";
+            this.txtSoDT.SelectedText = "";
+            this.txtSoDT.ShadowDecoration.Parent = this.txtSoDT;
+            this.txtSoDT.Size = new System.Drawing.Size(389, 44);
+            this.txtSoDT.TabIndex = 115;
+            this.txtSoDT.TextChanged += new System.EventHandler(this.Find_Click);
             // 
             // label2
             // 
@@ -660,7 +660,7 @@
             this.ReadButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ReadButton.Click += new System.EventHandler(this.ReadButton_Click);
             // 
-            // KhachHangUI
+            // LbSDT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -681,11 +681,11 @@
             this.Controls.Add(this.Diem);
             this.Controls.Add(this.SDT);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.SoDT);
+            this.Controls.Add(this.txtSoDT);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.SoLuong);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NameText);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.ReloadButton);
             this.Controls.Add(this.AddButton);
@@ -693,7 +693,7 @@
             this.Controls.Add(this.dgvKhachHang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
-            this.Name = "KhachHangUI";
+            this.Name = "LbSDT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Button2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KhachHangUI_FormClosing);
@@ -714,11 +714,11 @@
         private Guna.UI.WinForms.GunaButton UpdateButton;
         private Guna.UI.WinForms.GunaButton ReloadButton;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        public Guna.UI2.WinForms.Guna2TextBox NameText;
+        public Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaLabel SoLuong;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        public Guna.UI2.WinForms.Guna2TextBox SoDT;
+        public Guna.UI2.WinForms.Guna2TextBox txtSoDT;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox SDT;
         private Guna.UI2.WinForms.Guna2TextBox Diem;

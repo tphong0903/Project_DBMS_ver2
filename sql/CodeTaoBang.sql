@@ -6,7 +6,7 @@ GO
 USE QuanLyBanHangTheThao;
 go
 CREATE TABLE Customers (
-	PhoneNumber VARCHAR(10) CONSTRAINT PhoneKey PRIMARY KEY,
+	PhoneNumber VARCHAR(12) CONSTRAINT PhoneKey PRIMARY KEY,
 	NameCustomer NVARCHAR(50) NOT NULL,
 	Birthday DATE,
 	Gender CHAR(3) NOT NULL CONSTRAINT GenderCheck_Customer CHECK (GENDER IN ('Nam', 'Nu')),

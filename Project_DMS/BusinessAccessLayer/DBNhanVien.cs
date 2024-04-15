@@ -7,6 +7,9 @@ using System.Data.SqlClient;
 using System.Data;
 //
 using DataAccessLayer;
+using Microsoft.SqlServer.Server;
+using System.Net;
+using System.Xml.Linq;
 
 namespace BusinessAccessLayer
 {
@@ -51,6 +54,36 @@ namespace BusinessAccessLayer
                 CommandType.StoredProcedure, ref err,
                 new SqlParameter("@ThanhPho", ThanhPho),
                 new SqlParameter("@TenThanhPho", TenThanhPho));
+        }
+        public bool ThemNhanVien(ref string err, string id, string name,DateTime birthday, string gender, string address,string sdt,string role,int active, string password )
+        {
+            return db.MyExecuteNonQuery("spInsertEmployee",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@EmployeeID", id),
+                new SqlParameter("@NameEmployee", name),
+                new SqlParameter("@Birthday", birthday),
+                new SqlParameter("@Gender", gender),
+                new SqlParameter("@AddressEmployee", address),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@RoleEmployee", role),
+                new SqlParameter("@Active", active),
+                new SqlParameter("@PassWordAccount", password)
+                );
+        }
+        public bool CapNhatNhanVien(ref string err, string id, string name, DateTime birthday, string gender, string address, string sdt, string role, int active, string password)
+        {
+            return db.MyExecuteNonQuery("spUpdateEmployee",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@EmployeeID", id),
+                new SqlParameter("@NameEmployee", name),
+                new SqlParameter("@Birthday", birthday),
+                new SqlParameter("@Gender", gender),
+                new SqlParameter("@AddressEmployee", address),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@RoleEmployee", role),
+                new SqlParameter("@Active", active),
+                new SqlParameter("@PassWordAccount", password)
+                );
         }
 
     }

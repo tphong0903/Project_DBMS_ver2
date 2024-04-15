@@ -15,7 +15,7 @@ namespace Project_ver1
     public partial class MainForm : Form
     {
         SanPhamUi frm1 = new SanPhamUi();
-        KhachHangUI frm2 = new KhachHangUI();
+        LbSDT frm2 = new LbSDT();
         NhanVienUI frm3 = new NhanVienUI();
         HoaDonUI frm4 = new HoaDonUI();
         BienLaiUI frm5 = new BienLaiUI();

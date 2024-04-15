@@ -33,26 +33,38 @@ namespace BusinessAccessLayer
             return db.ExecuteQueryDataSet(
                 "select * from ProductOfOrder('" + HD + "')", CommandType.Text, null);
         }
-        public bool ThemThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public bool ThemHoaDon(ref string err, string order_ID, string sdt,string nv,
+             DateTime orderdate, int Total,string magiam)
         {
-            return db.MyExecuteNonQuery("spThemThanhPho",
+            return db.MyExecuteNonQuery("spInsertOrder",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Order_ID", order_ID),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@EmployeeID", nv),
+                new SqlParameter("@OrderDate", orderdate),
+                new SqlParameter("@Total", Total),
+                new SqlParameter("@DiscountCode", magiam));
         }
-        public bool XoaThanhPho(ref string err, string ThanhPho)
+        public bool CapNhatHoaDon(ref string err, string order_ID, string sdt, string nv,
+             DateTime orderdate, int Total, string magiam)
         {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
+            return db.MyExecuteNonQuery("spUpdateOrder",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
+                new SqlParameter("@Order_ID", order_ID),
+                new SqlParameter("@PhoneNumber", sdt),
+                new SqlParameter("@EmployeeID", nv),
+                new SqlParameter("@OrderDate", orderdate),
+                new SqlParameter("@Total", Total),
+                new SqlParameter("@DiscountCode", magiam));
         }
-        public bool CapNhatThanhPho(ref string err, string ThanhPho, string TenThanhPho)
+        public bool ThemChiTietHoaDon(ref string err, string Order_ID, string Product_ID,
+            int Quantity)
         {
-            return db.MyExecuteNonQuery("spCapNhatThanhPho",
+            return db.MyExecuteNonQuery("spInsertOrderDetail",
                 CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
+                new SqlParameter("@Order_ID", Order_ID),
+                new SqlParameter("@Product_ID", Product_ID),
+                new SqlParameter("@Quantity", Quantity));
         }
-
     }
 }

@@ -16,32 +16,17 @@ namespace Project_ver1.UI.Detail
     public partial class TaoHDForm : Form
     {
         DBSanPham dbsp= null;
+        DBHoaDon dbhd;
+        string hd;
         int r=0;
         int x = 0;
         public TaoHDForm()
         {
             InitializeComponent();
             dbsp= new DBSanPham();
+            dbhd = new DBHoaDon();
         }
-
-        private void ReloadButton_Click(object sender, EventArgs e)
-        {
-            r = dgvSanPham.CurrentCell.RowIndex;
-            string MaSP = dgvSanPham.Rows[r].Cells[0].Value.ToString();
-            string TenSP = dgvSanPham.Rows[r].Cells[1].Value.ToString();
-            string GiaBan = dgvSanPham.Rows[r].Cells[2].Value.ToString();
-            string SLCon = dgvSanPham.Rows[r].Cells[3].Value.ToString();
-            string SL = SLmua.Text;
-            if(SL == "" || Int32.Parse(SL)> Int32.Parse(SLCon))
-            {
-                MessageBox.Show("Khong du san pham");
-            }
-            else
-            {
-                dgvSPMua.Rows.Add(new Object[] { MaSP, TenSP, GiaBan, SL });
-                dgvSanPham.Rows[r].Cells[3].Value=(Int32.Parse(SLCon)- Int32.Parse(SL)).ToString();
-            }
-        }
+     
         private void LoadData()
         {
             try
@@ -50,10 +35,50 @@ namespace Project_ver1.UI.Detail
                 dt.Clear();
                 dt = dbsp.LaySanPham().Tables[0];
                 dgvSanPham.DataSource = dt;
+
+                dt = new DataTable();
+                dt = dbhd.LayHoaDon().Tables[0];
+
+                int s = dt.Rows.Count;
+                string hd = "HD";
+                if (s < 10)
+                    hd = hd + "0000" + s;
+                else if(s<100)
+                    hd = hd + "000" + s;
+                else if (s < 1000)
+                    hd = hd + "00" + s;
+                else if (s < 10000)
+                    hd = hd + "0" + s;
+                else
+                    hd = hd  + s;
+                txtMaSP.Text= hd;
+                txtMaSP.Enabled = false;
+
             }
             catch (SqlException)
             {
                 MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
+            }
+        }
+        #region Event
+        //nut Them San Pham
+        private void ThemSPButton_Click(object sender, EventArgs e)
+        {
+            r = dgvSanPham.CurrentCell.RowIndex;
+            string MaSP = dgvSanPham.Rows[r].Cells[0].Value.ToString();
+            string TenSP = dgvSanPham.Rows[r].Cells[1].Value.ToString();
+            string GiaBan = dgvSanPham.Rows[r].Cells[2].Value.ToString();
+            string SLCon = dgvSanPham.Rows[r].Cells[3].Value.ToString();
+            string SL = SLmua.Text;
+            if (SL == "" || Int32.Parse(SL) > Int32.Parse(SLCon))
+            {
+                MessageBox.Show("Khong du san pham");
+            }
+            else
+            {
+                txtSoLuong.Text = (Int32.Parse(txtSoLuong.Text) + Int32.Parse(SL) * Int32.Parse(GiaBan)).ToString();
+                dgvSPMua.Rows.Add(new Object[] { MaSP, TenSP, GiaBan, SL });
+                dgvSanPham.Rows[r].Cells[3].Value = (Int32.Parse(SLCon) - Int32.Parse(SL)).ToString();
             }
         }
         private void TaoHDForm_Load(object sender, EventArgs e)
@@ -79,11 +104,43 @@ namespace Project_ver1.UI.Detail
             }
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
+        private void Xoa_Click(object sender, EventArgs e)
         {
             x = dgvSPMua.CurrentCell.RowIndex;
             dgvSPMua.Rows.RemoveAt(x);
         }
+
+        private void Luu_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                bool f = dbhd.ThemHoaDon(ref err, txtMaSP.Text, txtTenSP.Text, txtThuongHieu.Text, txtDate.Value, 0,txtDanhMuc.Text) ;
+                if (f)
+                {
+                    foreach (DataGridViewRow row in dgvSPMua.Rows)
+                    {
+                        if (row.Cells[0].Value != null)
+                        {
+                            string maSP = row.Cells[0].Value.ToString();
+                            int soLuong = Convert.ToInt32(row.Cells[3].Value);
+                            bool success = dbhd.ThemChiTietHoaDon(ref err, txtMaSP.Text, maSP, soLuong);
+                        }
+                    }
+                    MessageBox.Show("Successfully added!");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add!\n\r" + "Error:" + err);
+                }
+            
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding invoice: " + ex.Message);
+            }
+        }
+        #endregion
     }
 
 }

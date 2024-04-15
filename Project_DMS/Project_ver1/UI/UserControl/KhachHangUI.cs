@@ -12,14 +12,14 @@ using BusinessAccessLayer;
 using Project_ver1.UI.Detail;
 namespace Project_ver1
 {
-    public partial class KhachHangUI : Form
+    public partial class LbSDT : Form
     {
         DBKhachHang dbkh;
         DataTable dtKhachHang = null;
-        KHDetail a = null;
-        TaoKHForm b = null;
+        KHDetail ChiTietKhachHang = null;
+        TaoKHForm TaoKhachHang = null;
         string Phone = null;
-        public KhachHangUI()
+        public LbSDT()
         {
             InitializeComponent();
             dbkh = new DBKhachHang();
@@ -29,6 +29,7 @@ namespace Project_ver1
   
             LoadData();
         }
+       
         public void LoadData()
         {
             try
@@ -36,7 +37,6 @@ namespace Project_ver1
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
                 dtKhachHang = dbkh.LayKhachHang().Tables[0];
-                // Đưa dữ liệu lên DataGridView  
                 dgvKhachHang.DataSource = dtKhachHang;
 
                 Phone = dgvKhachHang.Rows[0].Cells[0].Value.ToString();
@@ -47,6 +47,7 @@ namespace Project_ver1
                 MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
             }
         }
+        #region Event
 
         private void KhachHangUI_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -56,20 +57,20 @@ namespace Project_ver1
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a = new KHDetail(1,Phone);
-            a.ShowDialog();
+            ChiTietKhachHang = new KHDetail(1,Phone);
+            ChiTietKhachHang.ShowDialog();
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            a = new KHDetail(2, Phone);
-            a.ShowDialog();
+            ChiTietKhachHang = new KHDetail(2, Phone);
+            ChiTietKhachHang.ShowDialog();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            b = new TaoKHForm();
-            b.ShowDialog(); 
+            TaoKhachHang = new TaoKHForm();
+            TaoKhachHang.ShowDialog(); 
         }
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -81,15 +82,16 @@ namespace Project_ver1
             GT.Text = dgvKhachHang.Rows[r].Cells[3].Value.ToString();
             NS.Text = dgvKhachHang.Rows[r].Cells[2].Value.ToString();
             Diem.Text = dgvKhachHang.Rows[r].Cells[4].Value.ToString();
-            decimal value = Convert.ToDecimal(dgvKhachHang.Rows[r].Cells[5].Value);
+            string a = (string.IsNullOrEmpty(dgvKhachHang.Rows[r].Cells[5].Value.ToString()) ? "0" : dgvKhachHang.Rows[r].Cells[5].Value.ToString());
+            decimal value = Convert.ToDecimal(a);
             Total.Text = value.ToString("N0");
         }
         private void Find_Click(object sender, EventArgs e)
         {
             try
             {
-                string SoDienThoai = SoDT.Text;
-                string Name = NameText.Text.ToLower();
+                string SoDienThoai = txtSoDT.Text;
+                string Name = txtName.Text.ToLower();
                 dtKhachHang = new DataTable();
                 dtKhachHang.Clear();
                 dtKhachHang = dbkh.TimKhachHang(SoDienThoai, Name).Tables[0];
@@ -109,9 +111,10 @@ namespace Project_ver1
 
         private void ReloadButton_Click(object sender, EventArgs e)
         {
-            SoDT.Text = null;
-            NameText.Text = null;
+            txtSoDT.Text = null;
+            txtName.Text = null;
             LoadData();
         }
+        #endregion
     }
 }

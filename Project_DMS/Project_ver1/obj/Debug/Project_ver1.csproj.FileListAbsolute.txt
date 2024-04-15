@@ -29,7 +29,6 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhanVienUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NVDetail.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.SanPhamUi.resources
-D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.KhachHangUI.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LoginForm.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.MainForm.resources
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.Properties.Resources.resources
@@ -48,3 +47,37 @@ D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\bin\Debug
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.CopyComplete
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.exe
 D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.AssemblyReference.cache
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.BLDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.HDDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.KHDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.NCCDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoBLForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoHDForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoKHForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.Detail.TaoNCCForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.BienLaiUI.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.SPDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.HoaDonUI.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhaCungCapUI.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NhanVienUI.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.NVDetail.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.SanPhamUi.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.KhachHangUI.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LoginForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.MainForm.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.Properties.Resources.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.UI.UserControl.ThongKe.resources
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.GenerateResource.cache
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.CoreCompileInputs.cache
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe.config
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\Project_ver1.exe
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\Project_ver1.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\BusinessAccessLayer.dll
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.dll
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\BusinessAccessLayer.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\bin\Debug\DataAccessLayer.pdb
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.csproj.CopyComplete
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.exe
+D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\Project_ver1\obj\Debug\Project_ver1.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\Project_DBMS\Project_DMS\Project_ver1\obj\Debug\Project_ver1.LbSDT.resources

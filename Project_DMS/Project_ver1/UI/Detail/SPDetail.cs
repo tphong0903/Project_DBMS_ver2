@@ -33,42 +33,51 @@ namespace Project_ver1.UI
             Product_Id = Product_ID;
 
             InitializeComponent();
-            MaSP.ReadOnly = true;
-            TenSP.ReadOnly = true;
-            Gia.ReadOnly = true;
-            ThuongHieu.ReadOnly = true;
-            DanhMuc.ReadOnly = true;
+            txtMaSP.ReadOnly = true;
+            txtTenSP.ReadOnly = true;
+            txtGia.ReadOnly = true;
             SoLuong.ReadOnly = true;
             SaveButton.Visible = false;
             imgBtn.Visible = false;
             SaveButton.Visible = false;
+
+            DataTable dtTT = new DataTable();
+            dbsp = new DBSanPham();
+
+            dtTT.Clear();
+            dtTT = dbsp.LayThuongHieu().Tables[0];
+            dtTT.Rows.InsertAt(dtTT.NewRow(), 0);
+            ComboThuongHieu.DataSource = dtTT;
+            ComboThuongHieu.DisplayMember = "BrandName";
+
+            dtTT = new DataTable();
+            dtTT = dbsp.LayDanhMuc().Tables[0];
+            dtTT.Rows.InsertAt(dtTT.NewRow(), 0);
+            ComboDanhMuc.DataSource = dtTT;
+            ComboDanhMuc.DisplayMember = "CategoryName";
             this.Text = "Chi tiết sản phẩm";
 
             if (Check == 1)
             {
                 this.Text = "Chi tiết sản phẩm";
-                MaSP.ReadOnly = false;
-                TenSP.ReadOnly = false;
-                Gia.ReadOnly = false;
-                ThuongHieu.ReadOnly = true;
-                DanhMuc.ReadOnly = true;
+                txtMaSP.ReadOnly = false;
+                txtTenSP.ReadOnly = false;
+                txtGia.ReadOnly = false;
                 imgBtn.Visible = true;
                 SaveButton.Visible = true;
             }
             else if (Check == 2)
             {
                 this.Text = "Thêm sản phẩm";
-                MaSP.ReadOnly = false;
-                TenSP.ReadOnly = false;
-                Gia.ReadOnly = false;
-                ThuongHieu.ReadOnly = false;
-                DanhMuc.ReadOnly = false;
+                txtMaSP.ReadOnly = false;
+                txtTenSP.ReadOnly = false;
+                txtGia.ReadOnly = false;
                 SoLuong.ReadOnly = false;
                 SaveButton.Visible = true;
-                Gia.ReadOnly = false;
+                txtGia.ReadOnly = false;
                 imgBtn.Visible = true;
             }
-            dbsp = new DBSanPham();
+            
 
         }
         public void LoadData()
@@ -79,11 +88,12 @@ namespace Project_ver1.UI
                 dtSanPham.Clear();
                 dtSanPham = dbsp.ChiTietSanPham(Product_Id).Tables[0];
                 a.DataSource = dtSanPham;
-                MaSP.Text = a.Rows[0].Cells[0].Value.ToString();
-                TenSP.Text = a.Rows[0].Cells[1].Value.ToString();
-                Gia.Text = a.Rows[0].Cells[2].Value.ToString();
-                ThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
-                DanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
+
+                txtMaSP.Text = a.Rows[0].Cells[0].Value.ToString();
+                txtTenSP.Text = a.Rows[0].Cells[1].Value.ToString();
+                txtGia.Text = a.Rows[0].Cells[2].Value.ToString();
+                ComboThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
+                ComboDanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
                 SoLuong.Text = a.Rows[0].Cells[3].Value.ToString();
 
                 PicProduct.Image = GetImageByName(a.Rows[0].Cells[6].Value.ToString());
@@ -104,6 +114,10 @@ namespace Project_ver1.UI
             }
             else if (Check == 1 || Check == 0)
                 LoadData();
+            else
+            {
+
+            }
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -158,11 +172,11 @@ namespace Project_ver1.UI
                 try
                 {
                     bool f = dbsp.CapNhatSanPham(ref err,
-                        MaSP.Text,
-                        TenSP.Text,
-                        int.Parse(Gia.Text),
-                        ThuongHieu.Text,
-                        DanhMuc.Text,
+                        txtMaSP.Text,
+                        txtTenSP.Text,
+                        int.Parse(txtGia.Text),
+                        ComboThuongHieu.Text,
+                        ComboDanhMuc.Text,
                         int.Parse(SoLuong.Text),
                         int.Parse(maPic_ID));
                     if (f)
@@ -184,13 +198,13 @@ namespace Project_ver1.UI
             {
                 try
                 {
-                    MessageBox.Show(DanhMuc.Text);
+                    MessageBox.Show(ComboDanhMuc.Text);
                     bool f = dbsp.TaoSanPham(ref err,
-                        MaSP.Text,
-                        TenSP.Text,
-                        int.Parse(Gia.Text),
-                        ThuongHieu.Text,
-                        DanhMuc.Text,
+                        txtMaSP.Text,
+                        txtTenSP.Text,
+                        int.Parse(txtGia.Text),
+                        ComboThuongHieu.Text,
+                        ComboDanhMuc.Text,
                         0,
                         imgFileName);
                     if (f)

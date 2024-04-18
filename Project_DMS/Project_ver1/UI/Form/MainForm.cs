@@ -30,6 +30,7 @@ namespace Project_ver1
             this.Closed += new EventHandler(MainForm_Closed);
 
         }
+        #region Event
         private void MainForm_Closed(object sender, System.EventArgs e)
         {
             Application.Exit();
@@ -39,39 +40,6 @@ namespace Project_ver1
         {
             TurnOffAllForm();
             frm2.Show();
-        }
-        void addForm()
-        {
-            frm1.TopLevel = false;
-            panel1.Controls.Add(frm1);
-
-            frm2.TopLevel = false;
-            panel1.Controls.Add(frm2);
-
-            frm3.TopLevel = false;
-            panel1.Controls.Add(frm3);
-
-            frm4.TopLevel = false;
-            panel1.Controls.Add(frm4);
-
-            frm5.TopLevel = false;
-            panel1.Controls.Add(frm5);
-
-            frm6.TopLevel = false;
-            panel1.Controls.Add(frm6);
-
-            frm7.TopLevel = false;
-            panel1.Controls.Add(frm7);
-        }
-        void TurnOffAllForm()
-        {
-            frm1.Hide();
-            frm2.Hide();
-            frm3.Hide();
-            frm4.Hide();
-            frm5.Hide();
-            frm6.Hide();
-            frm7.Hide();
         }
         private void gunaButton1_Click(object sender, EventArgs e)
         {
@@ -119,6 +87,41 @@ namespace Project_ver1
             TurnOffAllForm();
             frm7.Show();
         }
+        #endregion
+        #region Funtion
+        void addForm()
+        {
+            frm1.TopLevel = false;
+            panel1.Controls.Add(frm1);
 
+            frm2.TopLevel = false;
+            panel1.Controls.Add(frm2);
+
+            frm3.TopLevel = false;
+            panel1.Controls.Add(frm3);
+
+            frm4.TopLevel = false;
+            panel1.Controls.Add(frm4);
+
+            frm5.TopLevel = false;
+            panel1.Controls.Add(frm5);
+
+            frm6.TopLevel = false;
+            panel1.Controls.Add(frm6);
+
+            frm7.TopLevel = false;
+            panel1.Controls.Add(frm7);
+        }
+        void TurnOffAllForm()
+        {
+            frm1.Hide();
+            frm2.Hide();
+            frm3.Hide();
+            frm4.Hide();
+            frm5.Hide();
+            frm6.Hide();
+            frm7.Hide();
+        }
+        #endregion
     }
 }

@@ -44,7 +44,7 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.txtNS = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtNgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -53,7 +53,7 @@
             this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ComboGT = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).BeginInit();
             this.SuspendLayout();
@@ -253,26 +253,26 @@
             this.gunaLabel2.TabIndex = 189;
             this.gunaLabel2.Text = "Ngày sinh";
             // 
-            // txtNS
+            // txtNgaySinh
             // 
-            this.txtNS.BackColor = System.Drawing.Color.Transparent;
-            this.txtNS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
-            this.txtNS.BorderRadius = 10;
-            this.txtNS.BorderThickness = 1;
-            this.txtNS.CheckedState.Parent = this.txtNS;
-            this.txtNS.FillColor = System.Drawing.Color.White;
-            this.txtNS.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNS.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtNS.HoverState.Parent = this.txtNS;
-            this.txtNS.Location = new System.Drawing.Point(13, 277);
-            this.txtNS.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtNS.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtNS.Name = "txtNS";
-            this.txtNS.ShadowDecoration.Parent = this.txtNS;
-            this.txtNS.Size = new System.Drawing.Size(337, 44);
-            this.txtNS.TabIndex = 188;
-            this.txtNS.UseTransparentBackground = true;
-            this.txtNS.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
+            this.txtNgaySinh.BackColor = System.Drawing.Color.Transparent;
+            this.txtNgaySinh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
+            this.txtNgaySinh.BorderRadius = 10;
+            this.txtNgaySinh.BorderThickness = 1;
+            this.txtNgaySinh.CheckedState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.FillColor = System.Drawing.Color.White;
+            this.txtNgaySinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Location = new System.Drawing.Point(13, 277);
+            this.txtNgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtNgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.ShadowDecoration.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Size = new System.Drawing.Size(337, 44);
+            this.txtNgaySinh.TabIndex = 188;
+            this.txtNgaySinh.UseTransparentBackground = true;
+            this.txtNgaySinh.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
             // 
             // gunaLabel6
             // 
@@ -415,29 +415,29 @@
             this.txtSDT.Size = new System.Drawing.Size(337, 44);
             this.txtSDT.TabIndex = 183;
             // 
-            // ComboGT
+            // ComboGioiTinh
             // 
-            this.ComboGT.BackColor = System.Drawing.Color.Transparent;
-            this.ComboGT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.ComboGT.BorderRadius = 10;
-            this.ComboGT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboGT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboGT.FocusedColor = System.Drawing.Color.Empty;
-            this.ComboGT.FocusedState.Parent = this.ComboGT;
-            this.ComboGT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.ComboGT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboGT.FormattingEnabled = true;
-            this.ComboGT.HoverState.Parent = this.ComboGT;
-            this.ComboGT.ItemHeight = 35;
-            this.ComboGT.Items.AddRange(new object[] {
+            this.ComboGioiTinh.BackColor = System.Drawing.Color.Transparent;
+            this.ComboGioiTinh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.ComboGioiTinh.BorderRadius = 10;
+            this.ComboGioiTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboGioiTinh.FocusedColor = System.Drawing.Color.Empty;
+            this.ComboGioiTinh.FocusedState.Parent = this.ComboGioiTinh;
+            this.ComboGioiTinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ComboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboGioiTinh.FormattingEnabled = true;
+            this.ComboGioiTinh.HoverState.Parent = this.ComboGioiTinh;
+            this.ComboGioiTinh.ItemHeight = 35;
+            this.ComboGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nu"});
-            this.ComboGT.ItemsAppearance.Parent = this.ComboGT;
-            this.ComboGT.Location = new System.Drawing.Point(10, 209);
-            this.ComboGT.Name = "ComboGT";
-            this.ComboGT.ShadowDecoration.Parent = this.ComboGT;
-            this.ComboGT.Size = new System.Drawing.Size(340, 41);
-            this.ComboGT.TabIndex = 190;
+            this.ComboGioiTinh.ItemsAppearance.Parent = this.ComboGioiTinh;
+            this.ComboGioiTinh.Location = new System.Drawing.Point(10, 209);
+            this.ComboGioiTinh.Name = "ComboGioiTinh";
+            this.ComboGioiTinh.ShadowDecoration.Parent = this.ComboGioiTinh;
+            this.ComboGioiTinh.Size = new System.Drawing.Size(340, 41);
+            this.ComboGioiTinh.TabIndex = 190;
             // 
             // KHDetail
             // 
@@ -446,7 +446,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(940, 507);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.txtNS);
+            this.Controls.Add(this.txtNgaySinh);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel4);
@@ -461,7 +461,7 @@
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel9);
-            this.Controls.Add(this.ComboGT);
+            this.Controls.Add(this.ComboGioiTinh);
             this.Name = "KHDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KHDetail";
@@ -480,7 +480,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txtNS;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtNgaySinh;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
@@ -493,6 +493,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboGT;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboGioiTinh;
     }
 }

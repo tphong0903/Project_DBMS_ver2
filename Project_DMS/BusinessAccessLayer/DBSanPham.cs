@@ -18,7 +18,7 @@ namespace BusinessAccessLayer
         {
             db = new DAL();
         }
-        // CRUD cho table ThanhPho
+    
         public DataSet LaySanPham()
         {
             return db.ExecuteQueryDataSet(
@@ -63,12 +63,6 @@ namespace BusinessAccessLayer
                 "SELECT * FROM View_Product where Product_ID = N'" + a + "'",
                 CommandType.Text, null);
         }
-        public bool XoaThanhPho(ref string err, string ThanhPho)
-        {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
-        }
         public bool CapNhatSanPham(ref string err, string ma, string ten, int gia, string th, string dm, int sl, int idImg)
         {
             return db.MyExecuteNonQuery("spUpdateProduct",
@@ -84,14 +78,6 @@ namespace BusinessAccessLayer
         }
         public bool TaoSanPham(ref string err, string ma, string ten, int gia, string th, string dm, int sl, string Img)
         {
-            Console.WriteLine(ma);
-            Console.WriteLine(ten);
-            Console.WriteLine(gia);
-            Console.WriteLine(th);
-            Console.WriteLine(dm);
-            Console.WriteLine(sl);
-            Console.WriteLine(Img);
-
             return db.MyExecuteNonQuery("spInsertProduct",
                 CommandType.StoredProcedure, ref err,
                 new SqlParameter("@Product_ID", ma),

@@ -50,8 +50,8 @@ namespace Project_ver1.UI.Detail
 
                 txtSDT.Text = dt.Rows[0].Field<string>(0);
                 txtTen.Text = dt.Rows[0].Field<string>(1);
-                txtNS.Text = dt.Rows[0].Field<DateTime>(2).ToString();
-                ComboGT.Text = dt.Rows[0].Field<string>(3).ToString();
+                txtNgaySinh.Text = dt.Rows[0].Field<DateTime>(2).ToString();
+                ComboGioiTinh.Text = dt.Rows[0].Field<string>(3).ToString();
                 txtDiem.Text = dt.Rows[0].Field<int>(4).ToString();
                 txtTotal.Text = dt.Rows[0].Field<int>(5).ToString();
             }
@@ -73,8 +73,8 @@ namespace Project_ver1.UI.Detail
                 bool f = dbkh.CapNhatKhachHang(ref err,
                     txtSDT.Text,
                     txtTen.Text,
-                    txtNS.Value,
-                    ComboGT.Text,
+                    txtNgaySinh.Value,
+                    ComboGioiTinh.Text,
                     int.Parse(txtDiem.Text));
                 if (f)
                 {

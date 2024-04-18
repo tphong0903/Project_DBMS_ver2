@@ -20,7 +20,7 @@ namespace BusinessAccessLayer
         {
             db = new DAL();
         }
-        // CRUD cho table ThanhPho
+
         public DataSet LayNhanVien()
         {
             return db.ExecuteQueryDataSet(
@@ -42,19 +42,6 @@ namespace BusinessAccessLayer
                 "select * from EMPLOYEES_All_VIEW where EmployeeID like '%'+'"+ID+"'+'%'", CommandType.Text, null);
         }
 
-        public bool XoaThanhPho(ref string err, string ThanhPho)
-        {
-            return db.MyExecuteNonQuery("spXoaThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho));
-        }
-        public bool CapNhatThanhPho(ref string err, string ThanhPho, string TenThanhPho)
-        {
-            return db.MyExecuteNonQuery("spCapNhatThanhPho",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ThanhPho", ThanhPho),
-                new SqlParameter("@TenThanhPho", TenThanhPho));
-        }
         public bool ThemNhanVien(ref string err, string id, string name,DateTime birthday, string gender, string address,string sdt,string role,int active, string password )
         {
             return db.MyExecuteNonQuery("spInsertEmployee",
@@ -85,6 +72,14 @@ namespace BusinessAccessLayer
                 new SqlParameter("@PassWordAccount", password)
                 );
         }
+        public bool XoaNhanVien(ref string err, string id)
+        {
+            return db.MyExecuteNonQuery("spDeleteEmployee",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@EmployeeID", id)
+                );
+        }
+
 
     }
 }

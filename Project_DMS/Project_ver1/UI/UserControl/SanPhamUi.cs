@@ -19,18 +19,17 @@ namespace Project_ver1
     {
         DBSanPham dbsp;
         DataTable dtSanPham = null;
-        string Product_ID = null;
         SPDetail detailForm = null;
+        string Product_ID = null;
         string DMName =null;
         string THName =null;
-        string Name = null;
+
         public SanPhamUi()
         {
             InitializeComponent();
             dbsp = new DBSanPham();
         }
 
-        
         public void LoadData()
         {
             try
@@ -55,6 +54,7 @@ namespace Project_ver1
                 MessageBox.Show(e.ToString());
             }
         }
+        #region Event
         private void SanPhamUi_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -62,7 +62,6 @@ namespace Project_ver1
         private void ButtonDM_Click(object sender, EventArgs e)
         {
             Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
-
             if (clickedButton != null)
             {
                 DMName= clickedButton.Text;
@@ -97,11 +96,6 @@ namespace Project_ver1
         {
             dtSanPham.Dispose();
             dtSanPham = null;
-        }
-
-        private void RemoveButton_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ReadButton_Click(object sender, EventArgs e)
@@ -147,5 +141,6 @@ namespace Project_ver1
             THName = null;
             LoadData();
         }
+        #endregion
     }
 }

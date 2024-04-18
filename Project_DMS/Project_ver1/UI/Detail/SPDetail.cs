@@ -105,6 +105,34 @@ namespace Project_ver1.UI
                 MessageBox.Show(ex.ToString());
             }
         }
+        private Image GetImageByName(string imageName)
+        {
+            // Đường dẫn tới thư mục IMG trong thư mục Image của project_ver1
+            string imgFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Project_ver1/UI/Image");
+            try
+            {
+                // Đường dẫn đến tệp tin ảnh bằng tên hình ảnh
+                string imgFilePath = Path.Combine(imgFolderPath, imageName);
+                // Kiểm tra xem tệp tin ảnh có tồn tại không
+                if (File.Exists(imgFilePath))
+                {
+                    // Tạo một đối tượng Image từ tệp tin ảnh
+                    Image image = Image.FromFile(imgFilePath);
+                    return image;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hình ảnh có tên: " + imageName);
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+                return null;
+            }
+        }
+        #region Event
         private void DetailForm_Load(object sender, EventArgs e)
         {
             if (Product_Id == "")
@@ -239,32 +267,7 @@ namespace Project_ver1.UI
                 checkChangeImg = true;
             }
         }
-        private Image GetImageByName(string imageName)
-        {
-            // Đường dẫn tới thư mục IMG trong thư mục Image của project_ver1
-            string imgFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Project_ver1/UI/Image");
-            try
-            {
-                // Đường dẫn đến tệp tin ảnh bằng tên hình ảnh
-                string imgFilePath = Path.Combine(imgFolderPath, imageName);
-                // Kiểm tra xem tệp tin ảnh có tồn tại không
-                if (File.Exists(imgFilePath))
-                {
-                    // Tạo một đối tượng Image từ tệp tin ảnh
-                    Image image = Image.FromFile(imgFilePath);
-                    return image;
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy hình ảnh có tên: " + imageName);
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-                return null;
-            }
-        }
+        #endregion
+        
     }
 }

@@ -68,7 +68,7 @@ namespace BusinessAccessLayer
             TotalProfit = 0;
             TotalRevenue = 0;
 
-            db.comm.CommandText = "select OrderDate, SUM(Total) From Orders where OrderDate between @fromDate and @toDate group by OrderDate";
+            db.comm.CommandText = "SELECT * FROM TotalRevenue(@fromDate,@todate)";
             db.comm.Parameters.Add("@fromDate", System.Data.SqlDbType.Date).Value = startDate;
             db.comm.Parameters.Add("@todate", System.Data.SqlDbType.Date).Value = endDate;
             var reader = db.comm.ExecuteReader();
@@ -84,13 +84,7 @@ namespace BusinessAccessLayer
             }
             reader.Close();
 
-            db.comm.CommandText = @"SELECT CAST(o.OrderDate AS DATE) AS OrderDate, SUM((p.UnitPrice - id.Unitcost) * od.Quantity) AS TotalProfit
-                                    FROM  OrderDetails od
-                                    JOIN Products p ON od.Product_ID = p.Product_ID
-                                    JOIN ImportDetails id ON od.Product_ID = id.Product_ID
-                                    JOIN Orders o ON od.Order_ID = o.Order_ID
-                                    WHERE o.OrderDate BETWEEN @fromDate AND @toDate
-                                    GROUP BY CAST(o.OrderDate AS DATE);";
+            db.comm.CommandText = @"SELECT * FROM TotalProfit(@fromDate,@todate)";
             db.comm.Parameters.Add("@fromDate", System.Data.SqlDbType.Date).Value = startDate;
             db.comm.Parameters.Add("@todate", System.Data.SqlDbType.Date).Value = endDate;
             var reader1 = db.comm.ExecuteReader();

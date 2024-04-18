@@ -160,3 +160,33 @@ RETURN
     INNER JOIN Products p ON id.Product_ID = p.Product_ID
     WHERE id.Import_ID = @ID
 );
+go
+CREATE FUNCTION TotalRevenue
+(
+    @fromDate Date,
+	@toDate Date
+)
+RETURNS TABLE
+AS
+RETURN
+(
+   select OrderDate, SUM(Total) as Total From Orders where OrderDate between @fromDate and @toDate group by OrderDate
+);
+go
+CREATE FUNCTION TotalProfit
+(
+    @fromDate Date,
+	@toDate Date
+)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT CAST(o.OrderDate AS DATE) AS OrderDate, SUM((p.UnitPrice - id.Unitcost) * od.Quantity) AS TotalProfit
+                                    FROM  OrderDetails od
+                                    JOIN Products p ON od.Product_ID = p.Product_ID
+                                    JOIN ImportDetails id ON od.Product_ID = id.Product_ID
+                                    JOIN Orders o ON od.Order_ID = o.Order_ID
+                                    WHERE o.OrderDate BETWEEN @fromDate AND @toDate
+                                    GROUP BY CAST(o.OrderDate AS DATE)
+);

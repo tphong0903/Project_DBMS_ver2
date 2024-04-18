@@ -42,6 +42,7 @@ namespace Project_ver1.UI
                 MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
             }
         }
+        #region Event
         private void NhaCungCapUI_FormClosing(object sender, FormClosingEventArgs e)
         {
             dtCungCap.Dispose();
@@ -113,5 +114,6 @@ namespace Project_ver1.UI
         {
             LoadData();
         }
+        #endregion
     }
 }

@@ -499,7 +499,7 @@ END;
 
 -- Stored Proc Product
 GO
-Alter PROCEDURE spInsertProduct
+CREATE PROCEDURE spInsertProduct
     @Product_ID VARCHAR(15),
     @ProductName NVARCHAR(100),
     @UnitPrice INT,

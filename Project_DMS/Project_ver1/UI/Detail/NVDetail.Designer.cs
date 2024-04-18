@@ -86,7 +86,7 @@
             // a
             // 
             this.a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.a.Location = new System.Drawing.Point(13, 302);
+            this.a.Location = new System.Drawing.Point(13, 347);
             this.a.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.a.Name = "a";
             this.a.RowHeadersWidth = 51;
@@ -334,7 +334,7 @@
             this.txtGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtGioiTinh.FocusedColor = System.Drawing.Color.Empty;
             this.txtGioiTinh.FocusedState.Parent = this.txtGioiTinh;
-            this.txtGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtGioiTinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.txtGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtGioiTinh.FormattingEnabled = true;
             this.txtGioiTinh.HoverState.Parent = this.txtGioiTinh;
@@ -359,7 +359,7 @@
             this.txtChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtChucVu.FocusedColor = System.Drawing.Color.Empty;
             this.txtChucVu.FocusedState.Parent = this.txtChucVu;
-            this.txtChucVu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtChucVu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.txtChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtChucVu.FormattingEnabled = true;
             this.txtChucVu.HoverState.Parent = this.txtChucVu;
@@ -478,7 +478,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhân Viên";
-           
             ((System.ComponentModel.ISupportInitialize)(this.a)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

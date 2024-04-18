@@ -34,16 +34,6 @@ namespace DataAccessLayer
             return ds;
         }
         
-
-        public SqlDataReader ExecuteReader(string strSQL, CommandType ct, params SqlParameter[] p)
-        {
-            if (conn.State == ConnectionState.Open)
-                conn.Close();
-            conn.Open();
-            comm.CommandText = strSQL;
-            comm.CommandType = ct;
-            return comm.ExecuteReader();
-        }
         // Action Query = Insert | Delete | Update | Stored Procedure
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
         {

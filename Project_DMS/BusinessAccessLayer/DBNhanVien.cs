@@ -72,6 +72,14 @@ namespace BusinessAccessLayer
                 new SqlParameter("@PassWordAccount", password)
                 );
         }
+        public bool XoaNhanVien(ref string err, string id)
+        {
+            return db.MyExecuteNonQuery("spDeleteEmployee",
+                CommandType.StoredProcedure, ref err,
+                new SqlParameter("@EmployeeID", id)
+                );
+        }
+
 
     }
 }

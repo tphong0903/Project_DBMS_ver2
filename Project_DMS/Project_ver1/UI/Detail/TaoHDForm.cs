@@ -39,7 +39,7 @@ namespace Project_ver1.UI.Detail
                 dt = new DataTable();
                 dt = dbhd.LayHoaDon().Tables[0];
 
-                int s = dt.Rows.Count;
+                int s = dt.Rows.Count+1;
                 string hd = "HD";
                 if (s < 10)
                     hd = hd + "0000" + s;

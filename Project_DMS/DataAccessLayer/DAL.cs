@@ -49,7 +49,6 @@ namespace DataAccessLayer
                 foreach (SqlParameter p in param)
                 {
                     comm.Parameters.Add(p);
-                    Console.WriteLine(p.ToString());
                 }
             }
             try

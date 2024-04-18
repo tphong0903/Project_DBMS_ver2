@@ -116,6 +116,28 @@ namespace Project_ver1.UI
             NameText.Text = null;
             LoadData();
         }
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                    bool f = dbnv.XoaNhanVien(ref err,txtMaNV.Text);
+                    if (f)
+                    {
+                        MessageBox.Show("Đã xóa xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã xóa chưa xong!\n\r" + "Lỗi:" + err);
+                    }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
+        }
         #endregion
+
+
     }
 }

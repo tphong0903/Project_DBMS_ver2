@@ -29,8 +29,19 @@ namespace Project_ver1.UI.Detail
                 dgvSanPham.DataSource = dtSanPham;
 
                 dtSanPham = dbbl.LayBienLai().Tables[0];
-                int s= dtSanPham.Rows.Count;
-                textBoxMaBienLai.Text = "IP" + s;
+                int s= dtSanPham.Rows.Count +1;
+                string bl = "NH";
+                if (s < 10)
+                    bl = bl + "0000" + s;
+                else if (s < 100)
+                    bl = bl + "000" + s;
+                else if (s < 1000)
+                    bl = bl + "00" + s;
+                else if (s < 10000)
+                    bl = bl + "0" + s;
+                else
+                    bl = bl + s;
+                textBoxMaBienLai.Text = bl;
                 textBoxMaBienLai.Enabled = false;
 
             }

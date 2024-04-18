@@ -78,14 +78,6 @@ namespace BusinessAccessLayer
         }
         public bool TaoSanPham(ref string err, string ma, string ten, int gia, string th, string dm, int sl, string Img)
         {
-            Console.WriteLine(ma);
-            Console.WriteLine(ten);
-            Console.WriteLine(gia);
-            Console.WriteLine(th);
-            Console.WriteLine(dm);
-            Console.WriteLine(sl);
-            Console.WriteLine(Img);
-
             return db.MyExecuteNonQuery("spInsertProduct",
                 CommandType.StoredProcedure, ref err,
                 new SqlParameter("@Product_ID", ma),

@@ -1,10 +1,12 @@
-﻿use master;
+﻿USE master;
 DROP DATABASE IF EXISTS QuanLyBanHangTheThao;
+
 CREATE DATABASE QuanLyBanHangTheThao;
 
 GO
 USE QuanLyBanHangTheThao;
-go
+
+GO
 CREATE TABLE Customers (
 	PhoneNumber VARCHAR(12) CONSTRAINT PhoneKey PRIMARY KEY,
 	NameCustomer NVARCHAR(50) NOT NULL,
@@ -13,7 +15,6 @@ CREATE TABLE Customers (
 	Point INT,
 	CONSTRAINT PhoneNumber_Customer CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber LIKE '%[0-9]%')
 );
-
 
 CREATE TABLE Employees (
 	EmployeeID VARCHAR(5) CONSTRAINT EmployeeIDKey PRIMARY KEY,
@@ -34,15 +35,10 @@ CREATE TABLE Brands (
 	BrandName NVARCHAR(50) NOT NULL
 );
 
-
-
-
 CREATE TABLE Categories (
 	Category_ID VARCHAR(10) CONSTRAINT Category_IDKey PRIMARY KEY,
 	CategoryName NVARCHAR(50) NOT NULL
 );
-
-
 
 CREATE TABLE Discounts (
 	DiscountCode VARCHAR(10) CONSTRAINT DiscountCodeKey PRIMARY KEY,
@@ -59,7 +55,6 @@ CREATE TABLE Suppliers (
 	Email VARCHAR(50)
 );
 
-
 CREATE TABLE Imports (
 	Import_ID VARCHAR(10) CONSTRAINT Import_IDKey PRIMARY KEY,
 	Supplier_ID VARCHAR(10) Not null ,
@@ -68,7 +63,6 @@ CREATE TABLE Imports (
 	CONSTRAINT FK_Supplier_Import FOREIGN KEY (Supplier_ID)
 			REFERENCES Suppliers(Supplier_ID) On Update Cascade
 );
-
 
 CREATE TABLE Orders (
 	Order_ID VARCHAR(15) CONSTRAINT Order_IDKey PRIMARY KEY,
@@ -85,11 +79,12 @@ CREATE TABLE Orders (
 	CONSTRAINT FK_Discount_Order FOREIGN KEY (DiscountCode)
 			REFERENCES Discounts(DiscountCode) 
 );
+
 CREATE TABLE PictureProduct (
-	Pic_ID INT IDENTITY(1,1) PRIMARY KEY,
-	Pic_Name varchar(100) 
-	
+	Picture_ID INT IDENTITY(1,1) PRIMARY KEY,
+	Picture_Name varchar(100) 
 );
+
 CREATE TABLE Products (
 	Product_ID VARCHAR(15) CONSTRAINT Product_IDKey PRIMARY KEY,
 	ProductName NVARCHAR(100) NOT NULL,
@@ -102,10 +97,9 @@ CREATE TABLE Products (
 			REFERENCES Brands(Brand_ID) ,
 	CONSTRAINT FK_Category_Product FOREIGN KEY (Category_ID)
 			REFERENCES Categories(Category_ID),
-	 CONSTRAINT FK_Pic_Product FOREIGN KEY (Picture_ID)
-			REFERENCES PictureProduct(Pic_ID)
+	 CONSTRAINT FK_Picture_Product FOREIGN KEY (Picture_ID)
+			REFERENCES PictureProduct(Picture_ID)
 );
-
 
 CREATE TABLE OrderDetails (
 	Order_ID VARCHAR(15) NOT NULL,
@@ -129,5 +123,3 @@ CREATE TABLE ImportDetails (
 			REFERENCES Products(Product_ID),
 	CONSTRAINT ImportDetail_IDKey PRIMARY KEY (Import_ID , Product_ID)
 );
-
-

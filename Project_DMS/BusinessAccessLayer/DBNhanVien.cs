@@ -11,41 +11,52 @@ using Microsoft.SqlServer.Server;
 using System.Net;
 using System.Xml.Linq;
 
-namespace BusinessAccessLayer
+namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
 {
-    public class DBNhanVien
+    public class DBNhanVien // Declaring the DBNhanVien class
     {
-        DAL db = null;
+        DAL db = null; // Declaring an instance of the DAL class and initializing it to null
+
+        // Constructor for the DBNhanVien class
         public DBNhanVien()
         {
-            db = new DAL();
+            db = new DAL(); // Initializing the db instance with a new instance of the DAL class
         }
 
+        // Method to retrieve active employees
         public DataSet LayNhanVien()
         {
-            return db.ExecuteQueryDataSet(
-                "select * from EMPLOYEES_ACTIVE_VIEW", CommandType.Text, null);
-        }
-        public DataSet LayALLNhanVien()
-        {
-            return db.ExecuteQueryDataSet(
-                "select * from EMPLOYEES_All_VIEW", CommandType.Text, null);
-        }
-        public DataSet TimNhanVien(string ID,string  name)
-        {
-            return db.ExecuteQueryDataSet(
-                "select * from Find_Employee(N'"+ID+"',N'"+name+"')", CommandType.Text, null);
-        }
-        public DataSet TimAllNhanVien(string ID)
-        {
-            return db.ExecuteQueryDataSet(
-                "select * from EMPLOYEES_All_VIEW where EmployeeID like '%'+'"+ID+"'+'%'", CommandType.Text, null);
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from EMPLOYEES_ACTIVE_VIEW", CommandType.Text, null);
         }
 
-        public bool ThemNhanVien(ref string err, string id, string name,DateTime birthday, string gender, string address,string sdt,string role,int active, string password )
+        // Method to retrieve all employees
+        public DataSet LayALLNhanVien()
         {
-            return db.MyExecuteNonQuery("spInsertEmployee",
-                CommandType.StoredProcedure, ref err,
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from EMPLOYEES_All_VIEW", CommandType.Text, null);
+        }
+
+        // Method to search for employees by ID and name
+        public DataSet TimNhanVien(string ID, string name)
+        {
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from Find_Employee(N'" + ID + "',N'" + name + "')", CommandType.Text, null);
+        }
+
+        // Method to search for all employees by ID
+        public DataSet TimAllNhanVien(string ID)
+        {
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from EMPLOYEES_All_VIEW where EmployeeID like '%'+'" + ID + "'+'%'", CommandType.Text, null);
+        }
+
+        // Method to add a new employee
+        public bool ThemNhanVien(ref string err, string id, string name, DateTime birthday, string gender, string address, string sdt, string role, int active, string password)
+        {
+            // Returning the result of the MyExecuteNonQuery method of the DAL class
+            return db.MyExecuteNonQuery("spInsertEmployee", CommandType.StoredProcedure, ref err,
+                // Passing the parameters to the stored procedure
                 new SqlParameter("@EmployeeID", id),
                 new SqlParameter("@NameEmployee", name),
                 new SqlParameter("@Birthday", birthday),
@@ -57,10 +68,13 @@ namespace BusinessAccessLayer
                 new SqlParameter("@PassWordAccount", password)
                 );
         }
+
+        // Method to update an employee
         public bool CapNhatNhanVien(ref string err, string id, string name, DateTime birthday, string gender, string address, string sdt, string role, int active, string password)
         {
-            return db.MyExecuteNonQuery("spUpdateEmployee",
-                CommandType.StoredProcedure, ref err,
+            // Returning the result of the MyExecuteNonQuery method of the DAL class
+            return db.MyExecuteNonQuery("spUpdateEmployee", CommandType.StoredProcedure, ref err,
+                // Passing the parameters to the stored procedure
                 new SqlParameter("@EmployeeID", id),
                 new SqlParameter("@NameEmployee", name),
                 new SqlParameter("@Birthday", birthday),
@@ -72,14 +86,15 @@ namespace BusinessAccessLayer
                 new SqlParameter("@PassWordAccount", password)
                 );
         }
+
+        // Method to delete an employee
         public bool XoaNhanVien(ref string err, string id)
         {
-            return db.MyExecuteNonQuery("spDeleteEmployee",
-                CommandType.StoredProcedure, ref err,
+            // Returning the result of the MyExecuteNonQuery method of the DAL class
+            return db.MyExecuteNonQuery("spDeleteEmployee", CommandType.StoredProcedure, ref err,
+                // Passing the parameter to the stored procedure
                 new SqlParameter("@EmployeeID", id)
                 );
         }
-
-
     }
 }

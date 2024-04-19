@@ -98,9 +98,7 @@ namespace BusinessAccessLayer
                 TotalProfit += unitProfit;
             }
             reader1.Close();
-             //hahahah
             // Gộp ngày
-            //con chym to
             if (numberDays <= 1)
             {
                 GrossRevenueList = (from orderList in resultTable

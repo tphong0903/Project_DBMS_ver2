@@ -8,46 +8,46 @@ using System.Data;
 //
 using DataAccessLayer;
 
-namespace BusinessAccessLayer
+namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
 {
-    public class DBNhaCungCap
+    public class DBNhaCungCap // Declaring the DBNhaCungCap class
     {
-        DAL db = null;
+        DAL db = null; // Declaring an instance of the DAL class and initializing it to null
+
+        // Constructor for the DBNhaCungCap class
         public DBNhaCungCap()
         {
-            db = new DAL();
+            db = new DAL(); // Initializing the db instance with a new instance of the DAL class
         }
+
+        // Method to retrieve suppliers
         public DataSet LayNhaCungCap()
         {
-            return db.ExecuteQueryDataSet(
-                "select * from SUPPLIER_VIEW", CommandType.Text, null);
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from SUPPLIER_VIEW", CommandType.Text, null);
         }
+
+        // Method to search for suppliers by ID and name
         public DataSet TimNhaCungCap(string ID, string name)
         {
-            return db.ExecuteQueryDataSet(
-                "select * from Find_Supplier('" + ID + "',N'" + name + "')", CommandType.Text, null);
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from Find_Supplier('" + ID + "',N'" + name + "')", CommandType.Text, null);
         }
+
+        // Method to retrieve products associated with a supplier
         public DataSet SPCuaNhaCungCap(string ID)
         {
-            return db.ExecuteQueryDataSet(
-                "select * from ProductOfSupplier('" + ID + "')", CommandType.Text, null);
+            // Returning the result of the ExecuteQueryDataSet method of the DAL class
+            return db.ExecuteQueryDataSet("select * from ProductOfSupplier('" + ID + "')", CommandType.Text, null);
         }
+
+        // Method to add a new supplier
         public bool ThemNhaCungCap(ref string err, string Supplier_ID, string CompanyName,
              string PhoneNumber, string AddressSupplier, string Email)
         {
-            return db.MyExecuteNonQuery("spInsertSupplier",
-                CommandType.StoredProcedure, ref err,
-                new SqlParameter("@Supplier_ID", Supplier_ID),
-                new SqlParameter("@CompanyName", CompanyName),
-                new SqlParameter("@PhoneNumber", PhoneNumber),
-                new SqlParameter("@AddressSupplier", AddressSupplier),
-                new SqlParameter("@Email", Email));
-        }
-        public bool CapNhatNhaCungCap(ref string err, string Supplier_ID, string CompanyName,
-            string PhoneNumber, string AddressSupplier, string Email)
-        {
-            return db.MyExecuteNonQuery("spUpdateSupplier",
-                CommandType.StoredProcedure, ref err,
+            // Returning the result of the MyExecuteNonQuery method of the DAL class
+            return db.MyExecuteNonQuery("spInsertSupplier", CommandType.StoredProcedure, ref err,
+                // Passing the parameters to the stored procedure
                 new SqlParameter("@Supplier_ID", Supplier_ID),
                 new SqlParameter("@CompanyName", CompanyName),
                 new SqlParameter("@PhoneNumber", PhoneNumber),
@@ -55,5 +55,18 @@ namespace BusinessAccessLayer
                 new SqlParameter("@Email", Email));
         }
 
+        // Method to update a supplier
+        public bool CapNhatNhaCungCap(ref string err, string Supplier_ID, string CompanyName,
+            string PhoneNumber, string AddressSupplier, string Email)
+        {
+            // Returning the result of the MyExecuteNonQuery method of the DAL class
+            return db.MyExecuteNonQuery("spUpdateSupplier", CommandType.StoredProcedure, ref err,
+                // Passing the parameters to the stored procedure
+                new SqlParameter("@Supplier_ID", Supplier_ID),
+                new SqlParameter("@CompanyName", CompanyName),
+                new SqlParameter("@PhoneNumber", PhoneNumber),
+                new SqlParameter("@AddressSupplier", AddressSupplier),
+                new SqlParameter("@Email", Email));
+        }
     }
 }

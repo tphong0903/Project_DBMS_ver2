@@ -190,3 +190,22 @@ RETURN
                                     WHERE o.OrderDate BETWEEN @fromDate AND @toDate
                                     GROUP BY CAST(o.OrderDate AS DATE)
 );
+go
+CREATE FUNCTION Top5Product
+(
+    @fromDate Date,
+	@toDate Date
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	Select top 5 p.ProductName,sum(od.Quantity) as Q
+                    from OrderDetails od 
+                    join Products p on p.Product_ID  = od.Product_ID
+                    join Orders o on o.Order_ID = od.Order_ID
+                    where OrderDate between  @fromDate and @toDate
+                    group by p.ProductName
+                    Order by Q desc
+);
+go

@@ -48,7 +48,6 @@ namespace BusinessAccessLayer
         }
 
         // Method to insert a new customer
-        // Method to insert a new customer
         public bool ThemKhachHang(ref string err, string sdt, string name, DateTime birthday, string gender, int point)
         {
             return db.MyExecuteNonQuery("spInsertCustomer",

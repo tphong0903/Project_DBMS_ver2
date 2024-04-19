@@ -41,7 +41,7 @@ namespace Project_ver1.UI.Detail
                 }
                 else
                 {
-                    MessageBox.Show("Chưa được thêm vào!\n\r" + "Lỗi:" + err);
+                    MessageBox.Show("Chưa được thêm vào!\n\r" + err);
                 }
             }
             catch (SqlException)

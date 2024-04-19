@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccessLayer;
@@ -99,6 +100,7 @@ namespace BusinessAccessLayer
             reader1.Close();
              //hahahah
             // Gộp ngày
+            //con chym to
             if (numberDays <= 1)
             {
                 GrossRevenueList = (from orderList in resultTable

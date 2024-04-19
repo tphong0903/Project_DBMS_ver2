@@ -226,24 +226,32 @@ namespace Project_ver1.UI
             {
                 try
                 {
-                    MessageBox.Show(ComboDanhMuc.Text);
-                    bool f = dbsp.TaoSanPham(ref err,
-                        txtMaSP.Text,
-                        txtTenSP.Text,
-                        int.Parse(txtGia.Text),
-                        ComboThuongHieu.Text,
-                        ComboDanhMuc.Text,
-                        0,
-                        imgFileName);
-                    if (f)
+                    bool f;
+                    if (txtGia.Text!="")
                     {
-                        LoadData();
-                        MessageBox.Show("Đã thêm mới xong!");
+                       f = dbsp.TaoSanPham(ref err,
+                       txtMaSP.Text,
+                       txtTenSP.Text,
+                       int.Parse(txtGia.Text),
+                       ComboThuongHieu.Text,
+                       ComboDanhMuc.Text,
+                       0,
+                       imgFileName);
+                       if (f)
+                       {
+                            LoadData();
+                            MessageBox.Show("Đã thêm mới xong!");
+                       }
+                       else
+                       {
+                            MessageBox.Show(err);
+                       }
                     }
                     else
                     {
-                        MessageBox.Show("Đã thêm mới chưa xong!\n\r" + "Lỗi:" + err);
+                        MessageBox.Show("Vui lòng nhập giá!");
                     }
+                    
                 }
                 catch (SqlException)
                 {

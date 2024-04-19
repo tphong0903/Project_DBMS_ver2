@@ -97,7 +97,7 @@ namespace BusinessAccessLayer
                 TotalProfit += unitProfit;
             }
             reader1.Close();
-
+             //hahahah
             // Gộp ngày
             if (numberDays <= 1)
             {

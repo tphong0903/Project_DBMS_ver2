@@ -209,3 +209,35 @@ RETURN
                     Order by Q desc
 );
 go
+
+
+
+CREATE OR ALTER FUNCTION LoginCSDL
+(
+    @username VARCHAR(50), 
+    @password VARCHAR(25)
+)
+RETURNS VARCHAR(1000)
+AS
+BEGIN
+    DECLARE @connectString VARCHAR(1000);
+    
+    -- Check if the username and password exist in the Employees table
+    IF EXISTS (
+        SELECT 1
+        FROM Employees
+        WHERE EmployeeID = @username AND PassWordAccount = @password
+    )
+    BEGIN
+        -- If user exists, construct the connection string
+        SET @connectString = 'Data Source=MSI\\CSDL;Initial Catalog=QuanLyBanHangTheThao;User Id='
+                            + @username + ';Password=' + @password + ';';
+    END
+    ELSE
+    BEGIN
+        -- If user does not exist, set the connection string to empty or default
+        SET @connectString = ''; -- or set it to your default connection string
+    END
+
+    RETURN @connectString;
+END

@@ -177,6 +177,31 @@ BEGIN
 			END
         INSERT INTO Employees (EmployeeID, NameEmployee, Birthday, Gender, AddressEmployee, PhoneNumber, RoleEmployee, Active, PassWordAccount)
         VALUES (@EmployeeID, @NameEmployee, @Birthday, @Gender, @AddressEmployee, @PhoneNumber, @RoleEmployee, @Active, @PassWordAccount);
+		DECLARE @sqlString NVARCHAR(2000)
+
+		-- Tạo tài khoản login cho nhân viên, tên người dùng và mật khẩu là tài khoản được tạo trên bảng Account
+
+		SET @sqlString = 'CREATE LOGIN [' + @EmployeeID + '] WITH PASSWORD=''' +@PassWordAccount + ''', DEFAULT_DATABASE=[HotelManagementSystem], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF'
+
+		EXEC (@sqlString)
+
+		-- Tạo tài khoản người dùng đối với nhân viên đó trên database (tên người dùng trùng với tên login)
+
+		SET @sqlString = 'CREATE USER ' +@EmployeeID + ' FOR LOGIN ' +@EmployeeID;
+
+		EXEC (@sqlString)
+
+		-- Thêm người dùng vào vai trò quyền tương ứng (Staff hoặc Manager(sysadmin))
+
+		IF (@RoleEmployee = 'Quản lý')
+
+		SET @sqlString = 'ALTER SERVER ROLE sysadmin ADD MEMBER ' + @EmployeeID;
+
+		ELSE
+
+		SET @sqlString = 'ALTER ROLE BanHang ADD MEMBER ' + @EmployeeID;
+
+		EXEC (@sqlString)
 
         COMMIT TRANSACTION;
     END TRY

@@ -1,21 +1,32 @@
 ﻿using System.Windows.Forms;
 using System;
+using BusinessAccessLayer;
+using System.Data;
+using DataAccessLayer;
 
 namespace Project_ver1
 {
     public partial class LoginForm : Form
     {
+        DBTaiKhoan dbnv = null;
         public LoginForm()
         {
             InitializeComponent();
+            dbnv = new DBTaiKhoan();
         }
 
 
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals("phongga088") && textBox2.Text.Equals("123"))
+
+            bool isAuthenticated = dbnv.CheckLogin(textBox1.Text, textBox2.Text);
+            if (isAuthenticated)
             {
+                DAL.ConnStrBuilder.IntegratedSecurity = false;
+                DAL.ConnStrBuilder.UserID = textBox1.Text; 
+                DAL.ConnStrBuilder.Password = textBox2.Text;
+                DAL.count = 1;
                 this.Hide();
                 MainForm form2 = new MainForm();
                 form2.ShowDialog();

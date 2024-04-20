@@ -96,5 +96,13 @@ namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
                 new SqlParameter("@EmployeeID", id)
                 );
         }
+        public string LayConStr(string id, string pass)
+        {
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            ds = db.ExecuteQueryDataSet("Select * from dbo.LoginCSDL('" + id + "','" + pass + "')", CommandType.Text, null);
+            dt = ds.Tables[0];
+            return dt.Rows[0].Field<string>(0);
+        }
     }
 }

@@ -217,7 +217,10 @@ CREATE OR ALTER FUNCTION LoginCSDL
     @username VARCHAR(50), 
     @password VARCHAR(25)
 )
-RETURNS VARCHAR(1000)
+RETURNS @ConnectionTable TABLE
+(
+    connectString VARCHAR(1000)
+)
 AS
 BEGIN
     DECLARE @connectString VARCHAR(1000);
@@ -230,14 +233,17 @@ BEGIN
     )
     BEGIN
         -- If user exists, construct the connection string
-        SET @connectString = 'Data Source=MSI\\CSDL;Initial Catalog=QuanLyBanHangTheThao;User Id='
-                            + @username + ';Password=' + @password + ';';
+        SET @connectString = 'Data Source=MSI\\CSDL;Initial Catalog=QuanLyBanHangTheThao;Integrated Security=False;User Id='
+                            + @username + ';Password=' + @password + ';Encrypt=False';
     END
     ELSE
     BEGIN
         -- If user does not exist, set the connection string to empty or default
-        SET @connectString = ''; -- or set it to your default connection string
+        SET @connectString = 'huhu'; -- or set it to your default connection string
     END
 
-    RETURN @connectString;
+    INSERT INTO @ConnectionTable (connectString) VALUES (@connectString);
+	return;
 END
+
+Select * from dbo.LoginCSDL('QL01','123456')

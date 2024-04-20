@@ -1,6 +1,6 @@
 ﻿namespace Project_ver1
 {
-    partial class LbSDT
+    partial class KhachHangUI
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LbSDT));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KhachHangUI));
             this.sanphamBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgvKhachHang = new Guna.UI.WinForms.GunaDataGridView();
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -660,7 +660,7 @@
             this.ReadButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ReadButton.Click += new System.EventHandler(this.ReadButton_Click);
             // 
-            // LbSDT
+            // KhachHangUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -693,7 +693,7 @@
             this.Controls.Add(this.dgvKhachHang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
-            this.Name = "LbSDT";
+            this.Name = "KhachHangUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Button2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KhachHangUI_FormClosing);

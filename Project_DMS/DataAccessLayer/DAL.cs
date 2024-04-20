@@ -5,27 +5,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
 namespace DataAccessLayer // Declaring the DataAccessLayer namespace
 {
     public class DAL // Declaring the DAL class
     {
         // Connection string to the database
-        string ConnStr = "Data Source=MSI\\CSDL;Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True;Encrypt=False";
-
+        public static SqlConnectionStringBuilder ConnStrBuilder = new SqlConnectionStringBuilder();
+        public static int count = 0;
         // Declaring SqlConnection, SqlCommand, and SqlDataAdapter objects
         public SqlConnection conn = null;
         public SqlCommand comm = null;
         SqlDataAdapter da = null;
-
+          
         // Constructor for the DAL class
         public DAL()
         {
-            // Initializing SqlConnection and SqlCommand objects
-            conn = new SqlConnection(ConnStr);
+            if(count == 0)
+            {
+                DAL.ConnStrBuilder.DataSource = "MSI\\CSDL";
+                DAL.ConnStrBuilder.InitialCatalog = "QuanLyBanHangTheThao";
+                DAL.ConnStrBuilder.IntegratedSecurity = true;
+                DAL.ConnStrBuilder.Encrypt = false;
+            }
+            conn = new SqlConnection(DAL.ConnStrBuilder.ToString());
             comm = conn.CreateCommand();
         }
-
         // Method to execute a query and return a DataSet
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] p)
         {
@@ -35,11 +39,10 @@ namespace DataAccessLayer // Declaring the DataAccessLayer namespace
 
             // Opening the connection
             conn.Open();
-
             // Setting command text and type
             comm.CommandText = strSQL;
             comm.CommandType = ct;
-
+            
             // Initializing SqlDataAdapter object
             da = new SqlDataAdapter(comm);
             DataSet ds = new DataSet();
@@ -93,7 +96,48 @@ namespace DataAccessLayer // Declaring the DataAccessLayer namespace
             }
             return f; // Returning the success status
         }
+        public object ExecuteScalar(string strSQL, CommandType ct, params SqlParameter[] param)
+        {
+            // Declaring the result variable
+            object result = null;
+
+            try
+            {
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+                // Opening the connection
+                conn.Open();
+
+                // Clearing parameters and setting command text and type
+                comm.CommandText = strSQL;
+                comm.CommandType = ct;
+
+                // Adding parameters if provided
+                if (param != null)
+                {
+                    foreach (SqlParameter p in param)
+                    {
+                        comm.Parameters.Add(p);
+                    }
+                }
+
+                // Executing the command and getting the scalar result
+                result = comm.ExecuteScalar();
+            }
+            catch (SqlException ex)
+            {
+                // Handling SQL exceptions
+                Console.WriteLine("SQL Error: " + ex.Message);
+            }
+            finally
+            {
+                // Closing the connection
+                conn.Close();
+            }
+
+            // Returning the scalar result
+            return result;
+        }
 
     }
 }
-

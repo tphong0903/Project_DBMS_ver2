@@ -8,7 +8,6 @@ using System.Data;
 //
 using DataAccessLayer;
 using System.Xml.Linq;
-
 namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
 {
     public class DBSanPham // Declaring the DBSanPham class
@@ -19,6 +18,7 @@ namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
         public DBSanPham()
         {
             db = new DAL(); // Initializing the db instance with a new instance of the DAL class
+
         }
 
         // Method to retrieve products for general view

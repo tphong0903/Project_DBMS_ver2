@@ -10,3 +10,9 @@ D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\DataAccessLayer\obj\Debug\DataAccess
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\Study\UNI\Kì 4\DBMS\Project\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\New folder\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

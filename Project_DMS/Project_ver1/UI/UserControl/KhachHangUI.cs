@@ -12,14 +12,14 @@ using BusinessAccessLayer;
 using Project_ver1.UI.Detail;
 namespace Project_ver1
 {
-    public partial class LbSDT : Form
+    public partial class KhachHangUI : Form
     {
         DBKhachHang dbkh;
         DataTable dtKhachHang = null;
         KHDetail ChiTietKhachHang = null;
         TaoKHForm TaoKhachHang = null;
         string Phone = null;
-        public LbSDT()
+        public KhachHangUI()
         {
             InitializeComponent();
             dbkh = new DBKhachHang();

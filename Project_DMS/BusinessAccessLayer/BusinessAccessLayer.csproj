@@ -50,6 +50,7 @@
     <Compile Include="DBNhaCungCap.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBSanPham.cs" />
+    <Compile Include="DBTaiKhoan.cs" />
     <Compile Include="DBThongKe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BienLaiUI));
             this.dgvBienLai = new Guna.UI.WinForms.GunaDataGridView();
             this.MaBL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,28 +62,27 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.tick = new Guna.UI.WinForms.GunaMediumCheckBox();
-            this.DeleButton = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBienLai)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBienLai
             // 
             this.dgvBienLai.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            this.dgvBienLai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvBienLai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBienLai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBienLai.BackgroundColor = System.Drawing.Color.White;
             this.dgvBienLai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBienLai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvBienLai.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBienLai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBienLai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBienLai.ColumnHeadersHeight = 30;
             this.dgvBienLai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBL,
@@ -91,32 +90,32 @@
             this.PhoneNumber,
             this.TongTien,
             this.Column1});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBienLai.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBienLai.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBienLai.EnableHeadersVisualStyles = false;
             this.dgvBienLai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvBienLai.Location = new System.Drawing.Point(12, 373);
             this.dgvBienLai.MultiSelect = false;
             this.dgvBienLai.Name = "dgvBienLai";
             this.dgvBienLai.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBienLai.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBienLai.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBienLai.RowHeadersVisible = false;
             this.dgvBienLai.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
-            this.dgvBienLai.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
+            this.dgvBienLai.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvBienLai.RowTemplate.Height = 24;
             this.dgvBienLai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBienLai.Size = new System.Drawing.Size(1070, 399);
@@ -580,41 +579,12 @@
             this.tick.TabIndex = 198;
             this.tick.CheckedChanged += new System.EventHandler(this.FindButton_Click);
             // 
-            // DeleButton
-            // 
-            this.DeleButton.AnimationHoverSpeed = 0.07F;
-            this.DeleButton.AnimationSpeed = 0.03F;
-            this.DeleButton.BackColor = System.Drawing.Color.Transparent;
-            this.DeleButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.DeleButton.BorderColor = System.Drawing.Color.Black;
-            this.DeleButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.DeleButton.FocusedColor = System.Drawing.Color.Empty;
-            this.DeleButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleButton.ForeColor = System.Drawing.Color.Black;
-            this.DeleButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleButton.Image")));
-            this.DeleButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.DeleButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.DeleButton.Location = new System.Drawing.Point(749, 787);
-            this.DeleButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DeleButton.Name = "DeleButton";
-            this.DeleButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.DeleButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.DeleButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.DeleButton.OnHoverImage = null;
-            this.DeleButton.OnPressedColor = System.Drawing.Color.Black;
-            this.DeleButton.Radius = 15;
-            this.DeleButton.Size = new System.Drawing.Size(107, 49);
-            this.DeleButton.TabIndex = 201;
-            this.DeleButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.DeleButton.Click += new System.EventHandler(this.Delete_Click);
-            // 
             // BienLaiUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1094, 848);
-            this.Controls.Add(this.DeleButton);
             this.Controls.Add(this.tick);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.ngayNhap);
@@ -678,6 +648,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private Guna.UI.WinForms.GunaButton DeleButton;
     }
 }

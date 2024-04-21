@@ -47,9 +47,10 @@ namespace Project_ver1.UI.Detail
                 textBoxEmail.Text= dt.Rows[0].Field<string>(4);
                 Tong.Text= dt.Rows[0].Field<int?>(5).ToString()=="" ? "0":dt.Rows[0].Field<int?>(5).ToString();
             }
-            catch (SqlException x)
+            catch (SqlException)
             {
-                MessageBox.Show(x.ToString());
+                this.Close();
+                MessageBox.Show("Khong the truy cap");
             }
         }
 
@@ -81,7 +82,8 @@ namespace Project_ver1.UI.Detail
             }
             catch (SqlException)
             {
-                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+                this.Close();
+                MessageBox.Show("Khong the truy cap");
             }
         }
     }

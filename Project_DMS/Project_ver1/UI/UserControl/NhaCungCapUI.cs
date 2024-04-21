@@ -39,7 +39,7 @@ namespace Project_ver1.UI
             }
             catch (SqlException)
             {
-                MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
+                MessageBox.Show("Không lấy được nội dung!!!");
             }
         }
         #region Event
@@ -56,14 +56,22 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a = new NCCDetail(1,ID);
+            a = new NCCDetail(1, ID);
             a.ShowDialog();
+ 
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            a = new NCCDetail(2,ID);
-            a.ShowDialog();
+            try
+            {
+                a = new NCCDetail(2 ,ID);
+                a.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong the truy cap");
+            }
         }
 
         private void AddButton_Click(object sender, EventArgs e)

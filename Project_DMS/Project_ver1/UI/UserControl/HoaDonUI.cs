@@ -129,7 +129,6 @@ namespace Project_ver1.UI
             try
             {
                 int r = dgvHoaDon.CurrentCell.RowIndex;
-                MessageBox.Show(dgvHoaDon.Rows[r].Cells[0].Value.ToString());
                 bool f = dbhd.XoaHoaDon(ref err, dgvHoaDon.Rows[r].Cells[0].Value.ToString());
                 if (f)
                 {

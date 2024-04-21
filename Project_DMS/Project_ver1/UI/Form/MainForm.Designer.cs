@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblTen = new System.Windows.Forms.TextBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,7 +43,7 @@
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblChucVu = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,18 +61,18 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
-            // textBox1
+            // lblTen
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(49, 188);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 30);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Lê Thanh Phong";
+            this.lblTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.lblTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lblTen.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblTen.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTen.Location = new System.Drawing.Point(49, 188);
+            this.lblTen.Multiline = true;
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(200, 30);
+            this.lblTen.TabIndex = 0;
+            this.lblTen.Text = "Lê Thanh Phong";
             // 
             // gunaButton1
             // 
@@ -297,18 +297,18 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // textBox2
+            // lblChucVu
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(89, 152);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 30);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.Text = "Quản lý";
+            this.lblChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.lblChucVu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lblChucVu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblChucVu.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblChucVu.Location = new System.Drawing.Point(89, 152);
+            this.lblChucVu.Multiline = true;
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(143, 30);
+            this.lblChucVu.TabIndex = 8;
+            this.lblChucVu.Text = "Quản lý";
             // 
             // MainForm
             // 
@@ -316,7 +316,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 850);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblChucVu);
             this.Controls.Add(this.gunaButton8);
             this.Controls.Add(this.gunaButton7);
             this.Controls.Add(this.gunaButton6);
@@ -325,7 +325,7 @@
             this.Controls.Add(this.gunaButton3);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblTen);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.guna2PictureBox1);
@@ -346,7 +346,7 @@
 
         #endregion
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lblTen;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private System.Windows.Forms.Panel panel1;
@@ -358,6 +358,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton8;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox lblChucVu;
     }
 }

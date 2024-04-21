@@ -28,7 +28,7 @@ namespace Project_ver1
                 DAL.ConnStrBuilder.Password = textBox2.Text;
                 DAL.count = 1;
                 this.Hide();
-                MainForm form2 = new MainForm();
+                MainForm form2 = new MainForm(textBox1.Text);
                 form2.ShowDialog();
             }
             else

@@ -73,14 +73,14 @@ namespace Project_ver1.UI
         {
             int r = dgvHoaDon.CurrentCell.RowIndex;
             HD = dgvHoaDon.Rows[r].Cells[0].Value.ToString().ToLower();
-            MaSP.Text = dgvHoaDon.Rows[r].Cells[0].Value.ToString();
-            TenSP.Text = dgvHoaDon.Rows[r].Cells[1].Value.ToString();
-            DanhMuc.Text = dgvHoaDon.Rows[r].Cells[2].Value.ToString();
+            MaHD.Text = dgvHoaDon.Rows[r].Cells[0].Value.ToString();
+            TenKhachHang.Text = dgvHoaDon.Rows[r].Cells[1].Value.ToString();
+            TenNhanVien.Text = dgvHoaDon.Rows[r].Cells[2].Value.ToString();
             Ngay.Text = dgvHoaDon.Rows[r].Cells[3].Value.ToString();
             string a = (string.IsNullOrEmpty(dgvHoaDon.Rows[r].Cells[4].Value.ToString()) ? "0" : dgvHoaDon.Rows[r].Cells[4].Value.ToString());
             decimal value = Convert.ToDecimal(a);
-            SoLuong.Text = value.ToString("N0");
-            ThuongHieu.Text = dgvHoaDon.Rows[r].Cells[5].Value.ToString()+"%";
+            Total.Text = value.ToString("N0");
+            ChietKhau.Text = dgvHoaDon.Rows[r].Cells[5].Value.ToString()+"%";
         }
         private void FindButton_Click(object sender, EventArgs e)
         {
@@ -122,6 +122,27 @@ namespace Project_ver1.UI
         private void ReloadButton_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                int r = dgvHoaDon.CurrentCell.RowIndex;
+                bool f = dbhd.XoaHoaDon(ref err, dgvHoaDon.Rows[r].Cells[0].Value.ToString());
+                if (f)
+                {
+                    MessageBox.Show("Đã xóa xong!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã xóa chưa xong!\n\r" + "Lỗi:" + err);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
         }
         #endregion
     }

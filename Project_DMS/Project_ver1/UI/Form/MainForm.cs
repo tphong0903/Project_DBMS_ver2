@@ -1,4 +1,5 @@
-﻿using Project_ver1.UI;
+﻿using BusinessAccessLayer;
+using Project_ver1.UI;
 using Project_ver1.UI.UserControl;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,12 @@ namespace Project_ver1
         BienLaiUI frm5 = new BienLaiUI();
         NhaCungCapUI frm6 = new NhaCungCapUI();
         ThongKe frm7 = new ThongKe();
-
-        public MainForm()
+        string ID;
+        DBNhanVien dbnv;
+        public MainForm(string s)
         {
+            ID = s;
+            dbnv = new DBNhanVien();
             InitializeComponent();
             addForm();
             frm1.Show();
@@ -91,6 +95,13 @@ namespace Project_ver1
         #region Funtion
         void addForm()
         {
+            DataTable dtsp = new DataTable();
+            dtsp.Clear();
+            dtsp = dbnv.TimNhanVien(ID,"").Tables[0];
+            lblChucVu.Text = dtsp.Rows[0].Field<string>(6);
+            lblTen.Text = dtsp.Rows[0].Field<string>(1);
+
+
             frm1.TopLevel = false;
             panel1.Controls.Add(frm1);
 

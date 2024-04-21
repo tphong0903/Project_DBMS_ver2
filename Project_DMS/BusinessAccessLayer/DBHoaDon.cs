@@ -77,5 +77,12 @@ namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
                 new SqlParameter("@Product_ID", Product_ID),
                 new SqlParameter("@Quantity", Quantity));
         }
+        public bool XoaHoaDon(ref string err, string Order_ID)
+        {
+            Console.WriteLine(Order_ID);
+            return db.MyExecuteNonQuery("spDeleteOrder", // Returning the result of the MyExecuteNonQuery method of the DAL class
+                CommandType.StoredProcedure, ref err, // Calling the spInsertOrderDetail stored procedure to add details of a bill
+                new SqlParameter("@Order_ID", Order_ID));
+        }
     }
 }

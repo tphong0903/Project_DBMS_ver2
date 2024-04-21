@@ -106,7 +106,7 @@ CREATE TABLE OrderDetails (
 	Product_ID VARCHAR(15) NOT NULL,
 	Quantity INT NOT NULL,
 	CONSTRAINT FK_Order_OrderDetail FOREIGN KEY (Order_ID)
-			REFERENCES Orders(Order_ID),
+			REFERENCES Orders(Order_ID) ON DELETE CASCADE,
 	CONSTRAINT FK_Product_OrderDetail FOREIGN KEY (Product_ID)
 			REFERENCES Products(Product_ID) ON UPDATE CASCADE,
 	CONSTRAINT OrderDetail_IDKey PRIMARY KEY (Order_ID , Product_ID)
@@ -118,7 +118,7 @@ CREATE TABLE ImportDetails (
 	Quantity INT NOT NULL,
 	Unitcost INT NOT NULL,
 	CONSTRAINT FK_Import_ImportDetail FOREIGN KEY (Import_ID)
-			REFERENCES Imports(Import_ID),
+			REFERENCES Imports(Import_ID) ON DELETE CASCADE,
 	CONSTRAINT FK_Product_ImportDetail FOREIGN KEY (Product_ID)
 			REFERENCES Products(Product_ID),
 	CONSTRAINT ImportDetail_IDKey PRIMARY KEY (Import_ID , Product_ID)

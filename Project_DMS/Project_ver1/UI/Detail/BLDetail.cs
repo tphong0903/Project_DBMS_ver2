@@ -42,9 +42,10 @@ namespace Project_ver1.UI.Detail
                 Ngay.Text = dt.Rows[0].Field<DateTime>(1).ToString();
                 Tong.Text = dt.Rows[0].Field<int>(2).ToString();
             }
-            catch (SqlException ex)
+            catch (SqlException)
             {
-                MessageBox.Show(ex.ToString());
+                this.Close();
+                MessageBox.Show("Khong the truy cap");
             }
         }
 

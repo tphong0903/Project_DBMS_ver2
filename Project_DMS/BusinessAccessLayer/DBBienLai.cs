@@ -74,6 +74,11 @@ namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
                 new SqlParameter("@Quantity", Quantity),
                 new SqlParameter("@Unitcost", Unitcost));
         }
-
+        public bool XoaBienLai(ref string err, string Import_ID)
+        {
+            return db.MyExecuteNonQuery("spDeleteImport", // Returning the result of the MyExecuteNonQuery method of the DAL class
+                CommandType.StoredProcedure, ref err, // Calling the spInsertImport stored procedure to update a receipt
+                new SqlParameter("@Import_ID", Import_ID));
+        }
     }
 }

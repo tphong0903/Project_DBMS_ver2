@@ -47,7 +47,8 @@ namespace Project_ver1.UI.Detail
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error loading data: " + ex.Message);
+                this.Close();
+                MessageBox.Show("Khong the truy cap");
             }
         }
         #region Event

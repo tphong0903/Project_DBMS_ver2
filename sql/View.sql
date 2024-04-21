@@ -9,12 +9,12 @@ SELECT
 		p.Quantity,
 		b.BrandName,
 		c.CategoryName,
-		pp.Pic_Name,
+		pp.Picture_Name,
 		p.Picture_ID
 FROM Products p
 LEFT JOIN Brands b ON p.Brand_ID = b.Brand_ID
 LEFT JOIN Categories c ON p.Category_ID = c.Category_ID
-Left Join PictureProduct pp on p.Picture_ID = pp.Pic_ID;
+Left Join PictureProduct pp on p.Picture_ID = pp.Picture_ID;
 
 go
 CREATE VIEW View_Customer AS

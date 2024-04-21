@@ -309,13 +309,13 @@ BEGIN
             END
         END
         ELSE
-        BEGIN 
-            -- Cập nhật số lượng sản phẩm sau khi xóa đơn hàng
-            UPDATE p
-            SET p.Quantity = p.Quantity + d.Quantity
-            FROM Products p
-            INNER JOIN deleted d ON p.Product_ID = d.Product_ID;
-        END
+			BEGIN 
+				-- Cập nhật số lượng sản phẩm sau khi xóa đơn hàng
+				UPDATE p
+				SET p.Quantity = p.Quantity + d.Quantity
+				FROM Products p
+				INNER JOIN deleted d ON p.Product_ID = d.Product_ID;
+			END
 
         COMMIT TRANSACTION;
     END TRY

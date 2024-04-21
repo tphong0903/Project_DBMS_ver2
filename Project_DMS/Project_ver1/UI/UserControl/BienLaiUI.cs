@@ -78,12 +78,12 @@ namespace Project_ver1.UI
         {
             int r = dgvBienLai.CurrentCell.RowIndex;
             HD = dgvBienLai.Rows[r].Cells[0].Value.ToString().ToLower();
-            MaSP.Text = dgvBienLai  .Rows[r].Cells[0].Value.ToString();
-            TenSP.Text = dgvBienLai.Rows[r].Cells[3].Value.ToString();
+            MaBienLai.Text = dgvBienLai  .Rows[r].Cells[0].Value.ToString();
+            MaNhaCungCap.Text = dgvBienLai.Rows[r].Cells[3].Value.ToString();
             ngayNhap.Text = dgvBienLai.Rows[r].Cells[1].Value.ToString();
-            DanhMuc.Text = dgvBienLai.Rows[r].Cells[4].Value.ToString();
+            TenNhaCungCap.Text = dgvBienLai.Rows[r].Cells[4].Value.ToString();
             decimal value = Convert.ToDecimal(dgvBienLai.Rows[r].Cells[2].Value);
-            SoLuong.Text = value.ToString("N0");
+            Total.Text = value.ToString("N0");
 
         }
         private void FindButton_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace Project_ver1.UI
                 {
                     date = null;
                 }
-                hd = MHD.Text;
+                hd = MBL.Text;
                 dtBienLai = new DataTable();
                 dtBienLai.Clear();
 
@@ -125,6 +125,28 @@ namespace Project_ver1.UI
         private void ReloadButton_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            string err = "";
+            try
+            {
+                int r = dgvBienLai.CurrentCell.RowIndex;
+                MessageBox.Show(dgvBienLai.Rows[r].Cells[0].Value.ToString());
+                bool f = dbbl.XoaBienLai(ref err, dgvBienLai.Rows[r].Cells[0].Value.ToString());
+                if (f)
+                {
+                    MessageBox.Show("Đã xóa xong!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã xóa chưa xong!\n\r" + "Lỗi:" + err);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+            }
         }
         #endregion
     }

@@ -307,8 +307,22 @@ BEGIN
 		ROLLBACK TRANSACTION;
     END CATCH
 END;
+go
+CREATE or ALTER PROCEDURE spDeleteImport
+    @Import_ID VARCHAR(10)
+AS
+BEGIN
+    BEGIN TRANSACTION;
 
+    BEGIN TRY
+        DELETE FROM Imports WHERE Import_ID = @Import_ID;
 
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+    END CATCH
+END;
 
 GO
 
@@ -373,8 +387,24 @@ BEGIN
 		ROLLBACK TRANSACTION;
     END CATCH
 END;
+go
+CREATE or ALTER PROCEDURE spDeleteOrder
+    @Order_ID VARCHAR(15)
+AS
+BEGIN
+    BEGIN TRANSACTION;
 
+    BEGIN TRY
+        DELETE FROM Orders WHERE Order_ID = @Order_ID;
 
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+    END CATCH
+END;
+
+EXECUTE spDeleteOrder 'HD00012'
 GO
 -- Stored Procedure Order Details
 GO
@@ -540,7 +570,7 @@ BEGIN
         DECLARE @Brand_ID VARCHAR(10), @Category_ID VARCHAR(10), @Pic_ID INT
 		SELECT @Brand_ID = Brand_ID FROM Brands WHERE BrandName like N'%'+@BrandName+'%';
 		SELECT @Category_ID = Category_ID FROM Categories WHERE CategoryName like N'%'+@CategoryName+'%';
-		SELECT @Pic_ID = Pic_ID FROM PictureProduct WHERE @Pic_Name like @Pic_Name;
+		SELECT @Pic_ID = Picture_ID FROM PictureProduct WHERE @Pic_Name like @Pic_Name;
 		IF (@Product_ID = '' OR @ProductName = '' OR @UnitPrice IS NULL OR @Pic_Name = '' or @CategoryName='' or @BrandName = '')
         BEGIN
             RAISERROR(N'Vui lòng nhập chính xác, đầy đủ thông tin', 16, 1)

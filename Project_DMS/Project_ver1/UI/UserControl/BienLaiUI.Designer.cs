@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BienLaiUI));
             this.dgvBienLai = new Guna.UI.WinForms.GunaDataGridView();
             this.MaBL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,40 +49,41 @@
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.TenSP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MaNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
-            this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.DanhMuc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.MaSP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Total = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TenNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MaBienLai = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Ngay = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.MHD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MBL = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.tick = new Guna.UI.WinForms.GunaMediumCheckBox();
+            this.DeleButton = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBienLai)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBienLai
             // 
             this.dgvBienLai.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            this.dgvBienLai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvBienLai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvBienLai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBienLai.BackgroundColor = System.Drawing.Color.White;
             this.dgvBienLai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBienLai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvBienLai.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBienLai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBienLai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvBienLai.ColumnHeadersHeight = 30;
             this.dgvBienLai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBL,
@@ -90,32 +91,32 @@
             this.PhoneNumber,
             this.TongTien,
             this.Column1});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBienLai.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBienLai.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvBienLai.EnableHeadersVisualStyles = false;
             this.dgvBienLai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvBienLai.Location = new System.Drawing.Point(12, 373);
             this.dgvBienLai.MultiSelect = false;
             this.dgvBienLai.Name = "dgvBienLai";
             this.dgvBienLai.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBienLai.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBienLai.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvBienLai.RowHeadersVisible = false;
             this.dgvBienLai.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
-            this.dgvBienLai.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
+            this.dgvBienLai.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvBienLai.RowTemplate.Height = 24;
             this.dgvBienLai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBienLai.Size = new System.Drawing.Size(1070, 399);
@@ -337,31 +338,31 @@
             this.gunaLabel7.TabIndex = 186;
             this.gunaLabel7.Text = "Mã nhà cung cấp";
             // 
-            // TenSP
+            // MaNhaCungCap
             // 
-            this.TenSP.AutoScroll = true;
-            this.TenSP.BorderRadius = 10;
-            this.TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TenSP.DefaultText = "";
-            this.TenSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TenSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TenSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TenSP.DisabledState.Parent = this.TenSP;
-            this.TenSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TenSP.FocusedState.Parent = this.TenSP;
-            this.TenSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TenSP.HoverState.Parent = this.TenSP;
-            this.TenSP.Location = new System.Drawing.Point(376, 62);
-            this.TenSP.Margin = new System.Windows.Forms.Padding(4);
-            this.TenSP.Name = "TenSP";
-            this.TenSP.PasswordChar = '\0';
-            this.TenSP.PlaceholderText = "";
-            this.TenSP.SelectedText = "";
-            this.TenSP.ShadowDecoration.Parent = this.TenSP;
-            this.TenSP.Size = new System.Drawing.Size(337, 44);
-            this.TenSP.TabIndex = 191;
+            this.MaNhaCungCap.AutoScroll = true;
+            this.MaNhaCungCap.BorderRadius = 10;
+            this.MaNhaCungCap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MaNhaCungCap.DefaultText = "";
+            this.MaNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MaNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MaNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MaNhaCungCap.DisabledState.Parent = this.MaNhaCungCap;
+            this.MaNhaCungCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MaNhaCungCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaNhaCungCap.FocusedState.Parent = this.MaNhaCungCap;
+            this.MaNhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.MaNhaCungCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaNhaCungCap.HoverState.Parent = this.MaNhaCungCap;
+            this.MaNhaCungCap.Location = new System.Drawing.Point(376, 62);
+            this.MaNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
+            this.MaNhaCungCap.Name = "MaNhaCungCap";
+            this.MaNhaCungCap.PasswordChar = '\0';
+            this.MaNhaCungCap.PlaceholderText = "";
+            this.MaNhaCungCap.SelectedText = "";
+            this.MaNhaCungCap.ShadowDecoration.Parent = this.MaNhaCungCap;
+            this.MaNhaCungCap.Size = new System.Drawing.Size(337, 44);
+            this.MaNhaCungCap.TabIndex = 191;
             // 
             // gunaLabel8
             // 
@@ -373,80 +374,80 @@
             this.gunaLabel8.TabIndex = 185;
             this.gunaLabel8.Text = "Mã biên lai";
             // 
-            // SoLuong
+            // Total
             // 
-            this.SoLuong.BorderRadius = 10;
-            this.SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoLuong.DefaultText = "";
-            this.SoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.DisabledState.Parent = this.SoLuong;
-            this.SoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.FocusedState.Parent = this.SoLuong;
-            this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(600, 133);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.PasswordChar = '\0';
-            this.SoLuong.PlaceholderText = "";
-            this.SoLuong.SelectedText = "";
-            this.SoLuong.ShadowDecoration.Parent = this.SoLuong;
-            this.SoLuong.Size = new System.Drawing.Size(337, 44);
-            this.SoLuong.TabIndex = 194;
+            this.Total.BorderRadius = 10;
+            this.Total.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Total.DefaultText = "";
+            this.Total.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Total.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Total.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Total.DisabledState.Parent = this.Total;
+            this.Total.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Total.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Total.FocusedState.Parent = this.Total;
+            this.Total.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Total.HoverState.Parent = this.Total;
+            this.Total.Location = new System.Drawing.Point(600, 133);
+            this.Total.Margin = new System.Windows.Forms.Padding(4);
+            this.Total.Name = "Total";
+            this.Total.PasswordChar = '\0';
+            this.Total.PlaceholderText = "";
+            this.Total.SelectedText = "";
+            this.Total.ShadowDecoration.Parent = this.Total;
+            this.Total.Size = new System.Drawing.Size(337, 44);
+            this.Total.TabIndex = 194;
             // 
-            // DanhMuc
+            // TenNhaCungCap
             // 
-            this.DanhMuc.BorderRadius = 10;
-            this.DanhMuc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DanhMuc.DefaultText = "";
-            this.DanhMuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DanhMuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DanhMuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DanhMuc.DisabledState.Parent = this.DanhMuc;
-            this.DanhMuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DanhMuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DanhMuc.FocusedState.Parent = this.DanhMuc;
-            this.DanhMuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.DanhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DanhMuc.HoverState.Parent = this.DanhMuc;
-            this.DanhMuc.Location = new System.Drawing.Point(748, 62);
-            this.DanhMuc.Margin = new System.Windows.Forms.Padding(4);
-            this.DanhMuc.Name = "DanhMuc";
-            this.DanhMuc.PasswordChar = '\0';
-            this.DanhMuc.PlaceholderText = "";
-            this.DanhMuc.SelectedText = "";
-            this.DanhMuc.ShadowDecoration.Parent = this.DanhMuc;
-            this.DanhMuc.Size = new System.Drawing.Size(337, 44);
-            this.DanhMuc.TabIndex = 193;
+            this.TenNhaCungCap.BorderRadius = 10;
+            this.TenNhaCungCap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TenNhaCungCap.DefaultText = "";
+            this.TenNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TenNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TenNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TenNhaCungCap.DisabledState.Parent = this.TenNhaCungCap;
+            this.TenNhaCungCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TenNhaCungCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TenNhaCungCap.FocusedState.Parent = this.TenNhaCungCap;
+            this.TenNhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.TenNhaCungCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TenNhaCungCap.HoverState.Parent = this.TenNhaCungCap;
+            this.TenNhaCungCap.Location = new System.Drawing.Point(748, 62);
+            this.TenNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
+            this.TenNhaCungCap.Name = "TenNhaCungCap";
+            this.TenNhaCungCap.PasswordChar = '\0';
+            this.TenNhaCungCap.PlaceholderText = "";
+            this.TenNhaCungCap.SelectedText = "";
+            this.TenNhaCungCap.ShadowDecoration.Parent = this.TenNhaCungCap;
+            this.TenNhaCungCap.Size = new System.Drawing.Size(337, 44);
+            this.TenNhaCungCap.TabIndex = 193;
             // 
-            // MaSP
+            // MaBienLai
             // 
-            this.MaSP.BorderRadius = 10;
-            this.MaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MaSP.DefaultText = "";
-            this.MaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.MaSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.MaSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MaSP.DisabledState.Parent = this.MaSP;
-            this.MaSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MaSP.FocusedState.Parent = this.MaSP;
-            this.MaSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.MaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MaSP.HoverState.Parent = this.MaSP;
-            this.MaSP.Location = new System.Drawing.Point(17, 62);
-            this.MaSP.Margin = new System.Windows.Forms.Padding(4);
-            this.MaSP.Name = "MaSP";
-            this.MaSP.PasswordChar = '\0';
-            this.MaSP.PlaceholderText = "";
-            this.MaSP.SelectedText = "";
-            this.MaSP.ShadowDecoration.Parent = this.MaSP;
-            this.MaSP.Size = new System.Drawing.Size(318, 44);
-            this.MaSP.TabIndex = 190;
+            this.MaBienLai.BorderRadius = 10;
+            this.MaBienLai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MaBienLai.DefaultText = "";
+            this.MaBienLai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MaBienLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MaBienLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MaBienLai.DisabledState.Parent = this.MaBienLai;
+            this.MaBienLai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MaBienLai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaBienLai.FocusedState.Parent = this.MaBienLai;
+            this.MaBienLai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.MaBienLai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaBienLai.HoverState.Parent = this.MaBienLai;
+            this.MaBienLai.Location = new System.Drawing.Point(17, 62);
+            this.MaBienLai.Margin = new System.Windows.Forms.Padding(4);
+            this.MaBienLai.Name = "MaBienLai";
+            this.MaBienLai.PasswordChar = '\0';
+            this.MaBienLai.PlaceholderText = "";
+            this.MaBienLai.SelectedText = "";
+            this.MaBienLai.ShadowDecoration.Parent = this.MaBienLai;
+            this.MaBienLai.Size = new System.Drawing.Size(318, 44);
+            this.MaBienLai.TabIndex = 190;
             // 
             // label1
             // 
@@ -486,37 +487,37 @@
             this.label2.TabIndex = 181;
             this.label2.Text = "Mã biên lai";
             // 
-            // MHD
+            // MBL
             // 
-            this.MHD.AccessibleName = "";
-            this.MHD.BackColor = System.Drawing.Color.Transparent;
-            this.MHD.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.MHD.BorderRadius = 8;
-            this.MHD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MHD.DefaultText = "";
-            this.MHD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.MHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.MHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MHD.DisabledState.Parent = this.MHD;
-            this.MHD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.MHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MHD.FocusedState.Parent = this.MHD;
-            this.MHD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.MHD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MHD.HoverState.Parent = this.MHD;
-            this.MHD.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.MHD.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.MHD.IconRightSize = new System.Drawing.Size(30, 30);
-            this.MHD.Location = new System.Drawing.Point(235, 299);
-            this.MHD.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.MHD.Name = "MHD";
-            this.MHD.PasswordChar = '\0';
-            this.MHD.PlaceholderText = "";
-            this.MHD.SelectedText = "";
-            this.MHD.ShadowDecoration.Parent = this.MHD;
-            this.MHD.Size = new System.Drawing.Size(389, 44);
-            this.MHD.TabIndex = 180;
-            this.MHD.TextChanged += new System.EventHandler(this.FindButton_Click);
+            this.MBL.AccessibleName = "";
+            this.MBL.BackColor = System.Drawing.Color.Transparent;
+            this.MBL.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.MBL.BorderRadius = 8;
+            this.MBL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MBL.DefaultText = "";
+            this.MBL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MBL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MBL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MBL.DisabledState.Parent = this.MBL;
+            this.MBL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MBL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MBL.FocusedState.Parent = this.MBL;
+            this.MBL.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.MBL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MBL.HoverState.Parent = this.MBL;
+            this.MBL.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.MBL.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.MBL.IconRightSize = new System.Drawing.Size(30, 30);
+            this.MBL.Location = new System.Drawing.Point(235, 299);
+            this.MBL.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.MBL.Name = "MBL";
+            this.MBL.PasswordChar = '\0';
+            this.MBL.PlaceholderText = "";
+            this.MBL.SelectedText = "";
+            this.MBL.ShadowDecoration.Parent = this.MBL;
+            this.MBL.Size = new System.Drawing.Size(389, 44);
+            this.MBL.TabIndex = 180;
+            this.MBL.TextChanged += new System.EventHandler(this.FindButton_Click);
             // 
             // gunaLabel1
             // 
@@ -579,12 +580,41 @@
             this.tick.TabIndex = 198;
             this.tick.CheckedChanged += new System.EventHandler(this.FindButton_Click);
             // 
+            // DeleButton
+            // 
+            this.DeleButton.AnimationHoverSpeed = 0.07F;
+            this.DeleButton.AnimationSpeed = 0.03F;
+            this.DeleButton.BackColor = System.Drawing.Color.Transparent;
+            this.DeleButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.DeleButton.BorderColor = System.Drawing.Color.Black;
+            this.DeleButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.DeleButton.FocusedColor = System.Drawing.Color.Empty;
+            this.DeleButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleButton.ForeColor = System.Drawing.Color.Black;
+            this.DeleButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleButton.Image")));
+            this.DeleButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DeleButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.DeleButton.Location = new System.Drawing.Point(749, 787);
+            this.DeleButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleButton.Name = "DeleButton";
+            this.DeleButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.DeleButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.DeleButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.DeleButton.OnHoverImage = null;
+            this.DeleButton.OnPressedColor = System.Drawing.Color.Black;
+            this.DeleButton.Radius = 15;
+            this.DeleButton.Size = new System.Drawing.Size(107, 49);
+            this.DeleButton.TabIndex = 201;
+            this.DeleButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DeleButton.Click += new System.EventHandler(this.Delete_Click);
+            // 
             // BienLaiUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1094, 848);
+            this.Controls.Add(this.DeleButton);
             this.Controls.Add(this.tick);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.ngayNhap);
@@ -592,15 +622,15 @@
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.TenSP);
+            this.Controls.Add(this.MaNhaCungCap);
             this.Controls.Add(this.gunaLabel8);
-            this.Controls.Add(this.SoLuong);
-            this.Controls.Add(this.DanhMuc);
-            this.Controls.Add(this.MaSP);
+            this.Controls.Add(this.Total);
+            this.Controls.Add(this.TenNhaCungCap);
+            this.Controls.Add(this.MaBienLai);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Ngay);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.MHD);
+            this.Controls.Add(this.MBL);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.guna2Button7);
@@ -630,15 +660,15 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI2.WinForms.Guna2TextBox TenSP;
+        private Guna.UI2.WinForms.Guna2TextBox MaNhaCungCap;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
-        private Guna.UI2.WinForms.Guna2TextBox SoLuong;
-        private Guna.UI2.WinForms.Guna2TextBox DanhMuc;
-        private Guna.UI2.WinForms.Guna2TextBox MaSP;
+        private Guna.UI2.WinForms.Guna2TextBox Total;
+        private Guna.UI2.WinForms.Guna2TextBox TenNhaCungCap;
+        private Guna.UI2.WinForms.Guna2TextBox MaBienLai;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DateTimePicker Ngay;
         private System.Windows.Forms.Label label2;
-        public Guna.UI2.WinForms.Guna2TextBox MHD;
+        public Guna.UI2.WinForms.Guna2TextBox MBL;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
@@ -648,5 +678,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private Guna.UI.WinForms.GunaButton DeleButton;
     }
 }

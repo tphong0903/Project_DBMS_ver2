@@ -39,7 +39,10 @@ namespace BusinessAccessLayer
         // Constructor for the DBThongKe class
         public DBThongKe()
         {
+            string s = "Data Source=MSI\\CSDL;Initial Catalog=QuanLyBanHangTheThao;Integrated Security=True";
+
             db = new DAL(); // Initializing the db instance with a new instance of the DAL class
+
         }
 
         // Method to get the number of customers, suppliers, and products

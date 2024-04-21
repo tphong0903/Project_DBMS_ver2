@@ -246,4 +246,3 @@ BEGIN
 	return;
 END
 
-Select * from dbo.LoginCSDL('QL01','123456')

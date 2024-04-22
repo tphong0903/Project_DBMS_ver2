@@ -35,28 +35,29 @@ GO
 EXEC spInsertEmployee 
     @EmployeeID = N'BH01',
     @NameEmployee = N'Ngô Thị Mai Anh',
-    @Birthday = CAST(N'1985-12-30' AS Date),
+    @Birthday = '1985-12-30',
     @Gender = N'Nu',
     @AddressEmployee = N'5 Đường Lê Lợi, Quận 3, TP.HCM',
     @PhoneNumber = N'0918575678',
     @RoleEmployee = N'Bán hàng',
     @Active = N'1',
     @PassWordAccount = N'hahaha';
+go
 EXEC spInsertEmployee 
     @EmployeeID = N'BH02',
     @NameEmployee = N'Lương Văn Tuấn',
-    @Birthday = CAST(N'1982-09-26' AS Date),
+    @Birthday = '1982-09-26',
     @Gender = N'Nam',
     @AddressEmployee = N'125 Đường Phan Xích Long, Quận Phú Nhuận, TP.HCM',
     @PhoneNumber = N'0978545412',
     @RoleEmployee = N'Bán hàng',
     @Active = N'1',
     @PassWordAccount = N'huhuhu';
-
+go
 EXEC spInsertEmployee 
     @EmployeeID = N'QL01',
     @NameEmployee = N'Phạm Minh Đức',
-    @Birthday = CAST(N'1980-02-28' AS Date),
+    @Birthday = '1980-02-28',
     @Gender = N'Nam',
     @AddressEmployee = N'1 Đường Võ Văn Ngân, TP.Thủ Đức , TP.HCM',
     @PhoneNumber = N'0987612521',
@@ -66,7 +67,7 @@ EXEC spInsertEmployee
 
 GO
 
-INSERT INTO PictureProduct(Pic_Name)
+INSERT INTO PictureProduct(Picture_Name)
 VALUES('AocaulongYonexDen.jpg'),
 		('AocaulongYonexTrang.jpg'),
 		('KamitoTienMinhLegend.jpg'),
@@ -94,7 +95,10 @@ VALUES('AocaulongYonexDen.jpg'),
 		('YonexAstrox99Pro2022.jpg'),
 		('YonexEclipsionZ3MenNavy.jpg'),
 		('YonexSHB65Z3WhiteTiger.jpg'),
-		('YonexSHB65Z3WomanNavy.jpg')
+		('YonexSHB65Z3WomanNavy.jpg'),
+		('AdidasXCrazyfastMessi.jpg'),
+		('AobongdaNikekhonglogoDen.jpg'),
+		('AobongdaNikekhonglogoTrang.jpg')
 go
 INSERT [dbo].[Products] ([Product_ID], [ProductName], [UnitPrice], [Quantity], [Brand_ID], [Category_ID]) VALUES (N'88D2018', N'Yonex Astrox 88D 2018', 6500000, 0, N'YNX', N'VCL')
 INSERT [dbo].[Products] ([Product_ID], [ProductName], [UnitPrice], [Quantity], [Brand_ID], [Category_ID]) VALUES (N'88DP2022', N'Yonex Astrox 88D Pro 2022', 4900000, 0, N'YNX', N'VCL')

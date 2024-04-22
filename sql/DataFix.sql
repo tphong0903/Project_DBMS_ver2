@@ -66,6 +66,7 @@ EXEC spInsertEmployee
     @PassWordAccount = N'123456';
 
 GO
+  
 
 INSERT INTO PictureProduct(Picture_Name)
 VALUES('AocaulongYonexDen.jpg'),

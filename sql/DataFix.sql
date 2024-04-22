@@ -32,9 +32,38 @@ INSERT [dbo].[Discounts] ([DiscountCode], [PercentageDiscount], [StartDay], [End
 INSERT [dbo].[Discounts] ([DiscountCode], [PercentageDiscount], [StartDay], [EndDay]) VALUES (N'30THANG4', 25, CAST(N'2024-04-25' AS Date), CAST(N'2024-05-02' AS Date))
 INSERT [dbo].[Discounts] ([DiscountCode], [PercentageDiscount], [StartDay], [EndDay]) VALUES (N'8THANG3', 20, CAST(N'2024-03-05' AS Date), CAST(N'2024-03-09' AS Date))
 GO
-INSERT [dbo].[Employees] ([EmployeeID], [NameEmployee], [Birthday], [Gender], [AddressEmployee], [PhoneNumber], [RoleEmployee], [Active], [PassWordAccount]) VALUES (N'BH01', N'Ngô Thị Mai Anh', CAST(N'1985-12-30' AS Date), N'Nu ', N'5 Đường Lê Lợi, Quận 3, TP.HCM', N'0918575678', N'Bán hàng', N'1', N'hahaha')
-INSERT [dbo].[Employees] ([EmployeeID], [NameEmployee], [Birthday], [Gender], [AddressEmployee], [PhoneNumber], [RoleEmployee], [Active], [PassWordAccount]) VALUES (N'BH02', N'Lương Văn Tuấn', CAST(N'1982-09-26' AS Date), N'Nam', N'125 Đường Phan Xích Long, Quận Phú Nhuận, TP.HCM', N'0978545412', N'Bán hàng', N'1', N'huhuhu')
-INSERT [dbo].[Employees] ([EmployeeID], [NameEmployee], [Birthday], [Gender], [AddressEmployee], [PhoneNumber], [RoleEmployee], [Active], [PassWordAccount]) VALUES (N'QL01', N'Phạm Minh Đức', CAST(N'1980-02-28' AS Date), N'Nam', N'1 Đường Võ Văn Ngân, TP.Thủ Đức , TP.HCM', N'0987612521', N'Quản lí', N'1', N'123456')
+EXEC spInsertEmployee 
+    @EmployeeID = N'BH01',
+    @NameEmployee = N'Ngô Thị Mai Anh',
+    @Birthday = CAST(N'1985-12-30' AS Date),
+    @Gender = N'Nu',
+    @AddressEmployee = N'5 Đường Lê Lợi, Quận 3, TP.HCM',
+    @PhoneNumber = N'0918575678',
+    @RoleEmployee = N'Bán hàng',
+    @Active = N'1',
+    @PassWordAccount = N'hahaha';
+EXEC spInsertEmployee 
+    @EmployeeID = N'BH02',
+    @NameEmployee = N'Lương Văn Tuấn',
+    @Birthday = CAST(N'1982-09-26' AS Date),
+    @Gender = N'Nam',
+    @AddressEmployee = N'125 Đường Phan Xích Long, Quận Phú Nhuận, TP.HCM',
+    @PhoneNumber = N'0978545412',
+    @RoleEmployee = N'Bán hàng',
+    @Active = N'1',
+    @PassWordAccount = N'huhuhu';
+
+EXEC spInsertEmployee 
+    @EmployeeID = N'QL01',
+    @NameEmployee = N'Phạm Minh Đức',
+    @Birthday = CAST(N'1980-02-28' AS Date),
+    @Gender = N'Nam',
+    @AddressEmployee = N'1 Đường Võ Văn Ngân, TP.Thủ Đức , TP.HCM',
+    @PhoneNumber = N'0987612521',
+    @RoleEmployee = N'Quản lí',
+    @Active = N'1',
+    @PassWordAccount = N'123456';
+
 GO
 
 INSERT INTO PictureProduct(Pic_Name)

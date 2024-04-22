@@ -36,11 +36,11 @@ namespace Project_ver1.UI.Detail
                 DataTable dt = new DataTable();
                 dt.Clear();
                 dt = dbbl.TimBienLai(ID, "").Tables[0];
-                MaSP.Text = dt.Rows[0].Field<string>(0);
-                TenSP.Text = dt.Rows[0].Field<string>(3);
-                Gia.Text = dt.Rows[0].Field<string>(4);
-                Ngay.Text = dt.Rows[0].Field<DateTime>(1).ToString();
-                Tong.Text = dt.Rows[0].Field<int>(2).ToString();
+                textBoxMaBienLai.Text = dt.Rows[0].Field<string>(0);
+                textBoxMaNhaCungCap.Text = dt.Rows[0].Field<string>(3);
+                textBoxTenNhaCungCap.Text = dt.Rows[0].Field<string>(4);
+                dateTimePickerNgayThanhToan.Text = dt.Rows[0].Field<DateTime>(1).ToString();
+                textBoxThanhTien.Text = dt.Rows[0].Field<int>(2).ToString();
             }
             catch (SqlException)
             {

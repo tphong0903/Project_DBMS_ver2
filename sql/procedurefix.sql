@@ -373,6 +373,8 @@ BEGIN
 				RAISERROR(N'Vui lòng nhập chính xác, đầy đủ thông tin', 16, 1)
 				return
 			END
+		IF @DiscountCode = ''
+			SET @DiscountCode = NULL;
         INSERT INTO Orders (Order_ID, PhoneNumber, EmployeeID, OrderDate, Total, DiscountCode)
         VALUES (@Order_ID, @PhoneNumber, @EmployeeID, @OrderDate, @Total, @DiscountCode);
 
@@ -394,7 +396,6 @@ BEGIN
 
     BEGIN TRY
         DELETE FROM Orders WHERE Order_ID = @Order_ID;
-
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH

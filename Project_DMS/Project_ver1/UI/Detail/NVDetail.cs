@@ -64,7 +64,7 @@ namespace Project_ver1.UI
             }
             catch (SqlException x)
             {
-                MessageBox.Show(x.ToString());
+                this.Close();
             }
         }
 

@@ -51,8 +51,8 @@ namespace Project_ver1.UI.Detail
                     hd = hd + "0" + s;
                 else
                     hd = hd  + s;
-                txtMaSP.Text= hd;
-                txtMaSP.Enabled = false;
+                txtMaHD.Text= hd;
+                txtMaHD.Enabled = false;
 
             }
             catch (SqlException)
@@ -115,7 +115,8 @@ namespace Project_ver1.UI.Detail
             string err = "";
             try
             {
-                bool f = dbhd.ThemHoaDon(ref err, txtMaSP.Text, txtTenSP.Text, txtThuongHieu.Text, txtDate.Value, 0,txtDanhMuc.Text) ;
+
+                bool f = dbhd.ThemHoaDon(ref err, txtMaHD.Text, txtSDT.Text, txtMaNV.Text, txtDate.Value, 0,txtGiamGia.Text) ;
                 if (f)
                 {
                     foreach (DataGridViewRow row in dgvSPMua.Rows)
@@ -124,7 +125,7 @@ namespace Project_ver1.UI.Detail
                         {
                             string maSP = row.Cells[0].Value.ToString();
                             int soLuong = Convert.ToInt32(row.Cells[3].Value);
-                            bool success = dbhd.ThemChiTietHoaDon(ref err, txtMaSP.Text, maSP, soLuong);
+                            bool success = dbhd.ThemChiTietHoaDon(ref err, txtMaHD.Text, maSP, soLuong);
                         }
                     }
                     MessageBox.Show("Successfully added!");

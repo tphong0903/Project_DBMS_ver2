@@ -136,7 +136,10 @@ namespace Project_ver1.UI
                 }
                 else
                 {
-                    MessageBox.Show("Đã xóa chưa xong!\n\r" + "Lỗi:" + err);
+                    if(err != "Maximum stored procedure, function, trigger, or view nesting level exceeded (limit 32).")
+                        MessageBox.Show("Đã xóa chưa xong!\n\r" + "Lỗi:" + err);
+                    else
+                        MessageBox.Show("Đã xóa xong!");
                 }
             }
             catch (SqlException)

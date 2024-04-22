@@ -33,9 +33,9 @@ namespace Project_ver1.UI
             Product_Id = Product_ID;
 
             InitializeComponent();
-            txtMaSP.ReadOnly = true;
-            txtTenSP.ReadOnly = true;
-            txtGia.ReadOnly = true;
+            textBoxMaSP.ReadOnly = true;
+            textBoxTenSP.ReadOnly = true;
+            textBoxGia.ReadOnly = true;
             SoLuong.ReadOnly = true;
             SaveButton.Visible = false;
             imgBtn.Visible = false;
@@ -60,21 +60,21 @@ namespace Project_ver1.UI
             if (Check == 1)
             {
                 this.Text = "Chi tiết sản phẩm";
-                txtMaSP.ReadOnly = false;
-                txtTenSP.ReadOnly = false;
-                txtGia.ReadOnly = false;
+                textBoxMaSP.ReadOnly = false;
+                textBoxTenSP.ReadOnly = false;
+                textBoxGia.ReadOnly = false;
                 imgBtn.Visible = true;
                 SaveButton.Visible = true;
             }
             else if (Check == 2)
             {
                 this.Text = "Thêm sản phẩm";
-                txtMaSP.ReadOnly = false;
-                txtTenSP.ReadOnly = false;
-                txtGia.ReadOnly = false;
+                textBoxMaSP.ReadOnly = false;
+                textBoxTenSP.ReadOnly = false;
+                textBoxGia.ReadOnly = false;
                 SoLuong.ReadOnly = false;
                 SaveButton.Visible = true;
-                txtGia.ReadOnly = false;
+                textBoxGia.ReadOnly = false;
                 imgBtn.Visible = true;
             }
             
@@ -89,16 +89,16 @@ namespace Project_ver1.UI
                 dtSanPham = dbsp.ChiTietSanPham(Product_Id).Tables[0];
                 a.DataSource = dtSanPham;
 
-                txtMaSP.Text = a.Rows[0].Cells[0].Value.ToString();
-                txtTenSP.Text = a.Rows[0].Cells[1].Value.ToString();
-                txtGia.Text = a.Rows[0].Cells[2].Value.ToString();
+                textBoxMaSP.Text = a.Rows[0].Cells[0].Value.ToString();
+                textBoxTenSP.Text = a.Rows[0].Cells[1].Value.ToString();
+                textBoxGia.Text = a.Rows[0].Cells[2].Value.ToString();
                 ComboThuongHieu.Text = a.Rows[0].Cells[4].Value.ToString();
                 ComboDanhMuc.Text = a.Rows[0].Cells[5].Value.ToString();
                 SoLuong.Text = a.Rows[0].Cells[3].Value.ToString();
 
-                PicProduct.Image = GetImageByName(a.Rows[0].Cells[6].Value.ToString());
+                PictureProduct.Image = GetImageByName(a.Rows[0].Cells[6].Value.ToString());
                 maPic_ID = a.Rows[0].Cells[7].Value.ToString();
-                img = PicProduct.Image;
+                img = PictureProduct.Image;
             }
             catch (SqlException ex)
             {
@@ -200,9 +200,9 @@ namespace Project_ver1.UI
                 try
                 {
                     bool f = dbsp.CapNhatSanPham(ref err,
-                        txtMaSP.Text,
-                        txtTenSP.Text,
-                        int.Parse(txtGia.Text),
+                        textBoxMaSP.Text,
+                        textBoxTenSP.Text,
+                        int.Parse(textBoxGia.Text),
                         ComboThuongHieu.Text,
                         ComboDanhMuc.Text,
                         int.Parse(SoLuong.Text),
@@ -227,12 +227,12 @@ namespace Project_ver1.UI
                 try
                 {
                     bool f;
-                    if (txtGia.Text!="")
+                    if (textBoxGia.Text!="")
                     {
                        f = dbsp.TaoSanPham(ref err,
-                       txtMaSP.Text,
-                       txtTenSP.Text,
-                       int.Parse(txtGia.Text),
+                       textBoxMaSP.Text,
+                       textBoxTenSP.Text,
+                       int.Parse(textBoxGia.Text),
                        ComboThuongHieu.Text,
                        ComboDanhMuc.Text,
                        0,
@@ -270,7 +270,7 @@ namespace Project_ver1.UI
             {
                 selectedFilePath = openFileDialog.FileName;
                 Image selectedImage = Image.FromFile(selectedFilePath);
-                PicProduct.Image = selectedImage;
+                PictureProduct.Image = selectedImage;
                 img = selectedImage;
                 checkChangeImg = true;
             }

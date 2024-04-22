@@ -59,7 +59,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.MBL = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.LabelSoBienLai = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.tick = new Guna.UI.WinForms.GunaMediumCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBienLai)).BeginInit();
@@ -530,18 +530,18 @@
             this.gunaLabel1.TabIndex = 177;
             this.gunaLabel1.Text = "Biên lai";
             // 
-            // gunaLabel2
+            // LabelSoBienLai
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.gunaLabel2.CausesValidation = false;
-            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel2.Location = new System.Drawing.Point(89, 279);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(40, 44);
-            this.gunaLabel2.TabIndex = 178;
-            this.gunaLabel2.Text = "0";
+            this.LabelSoBienLai.AutoSize = true;
+            this.LabelSoBienLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.LabelSoBienLai.CausesValidation = false;
+            this.LabelSoBienLai.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LabelSoBienLai.ForeColor = System.Drawing.Color.Black;
+            this.LabelSoBienLai.Location = new System.Drawing.Point(89, 279);
+            this.LabelSoBienLai.Name = "LabelSoBienLai";
+            this.LabelSoBienLai.Size = new System.Drawing.Size(40, 44);
+            this.LabelSoBienLai.TabIndex = 178;
+            this.LabelSoBienLai.Text = "0";
             // 
             // guna2Button7
             // 
@@ -602,7 +602,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.MBL);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.LabelSoBienLai);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.ReloadButton);
             this.Controls.Add(this.ReadButton);
@@ -640,7 +640,7 @@
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox MBL;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel LabelSoBienLai;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI.WinForms.GunaMediumCheckBox tick;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBL;

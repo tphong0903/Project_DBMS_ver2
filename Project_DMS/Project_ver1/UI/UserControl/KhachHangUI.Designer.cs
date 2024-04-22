@@ -50,7 +50,7 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.SoLuong = new Guna.UI.WinForms.GunaLabel();
+            this.LabelSLKH = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtSoDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -361,18 +361,18 @@
             this.label1.TabIndex = 114;
             this.label1.Text = "Tên khách hàng";
             // 
-            // SoLuong
+            // LabelSLKH
             // 
-            this.SoLuong.AutoSize = true;
-            this.SoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.SoLuong.CausesValidation = false;
-            this.SoLuong.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoLuong.ForeColor = System.Drawing.Color.Black;
-            this.SoLuong.Location = new System.Drawing.Point(80, 271);
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Size = new System.Drawing.Size(40, 44);
-            this.SoLuong.TabIndex = 19;
-            this.SoLuong.Text = "0";
+            this.LabelSLKH.AutoSize = true;
+            this.LabelSLKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.LabelSLKH.CausesValidation = false;
+            this.LabelSLKH.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LabelSLKH.ForeColor = System.Drawing.Color.Black;
+            this.LabelSLKH.Location = new System.Drawing.Point(80, 271);
+            this.LabelSLKH.Name = "LabelSLKH";
+            this.LabelSLKH.Size = new System.Drawing.Size(40, 44);
+            this.LabelSLKH.TabIndex = 19;
+            this.LabelSLKH.Text = "0";
             // 
             // gunaLabel1
             // 
@@ -683,7 +683,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSoDT);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.SoLuong);
+            this.Controls.Add(this.LabelSLKH);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.guna2Button7);
@@ -716,7 +716,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaLabel SoLuong;
+        private Guna.UI.WinForms.GunaLabel LabelSLKH;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         public Guna.UI2.WinForms.Guna2TextBox txtSoDT;
         private System.Windows.Forms.Label label2;

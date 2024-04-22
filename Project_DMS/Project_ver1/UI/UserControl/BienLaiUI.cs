@@ -38,7 +38,7 @@ namespace Project_ver1.UI
                 dgvBienLai.DataSource = dtBienLai;
 
                 HD = dgvBienLai.Rows[0].Cells[0].Value.ToString().ToLower();
-                gunaLabel2.Text = (dgvBienLai.RowCount - 1).ToString();
+                LabelSoBienLai.Text = (dgvBienLai.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -113,7 +113,7 @@ namespace Project_ver1.UI
                 if (r > 1)
                 {
                     HD = dgvBienLai.Rows[0].Cells[0].Value.ToString();
-                    gunaLabel2.Text = (dgvBienLai.RowCount - 1).ToString();
+                    LabelSoBienLai.Text = (dgvBienLai.RowCount - 1).ToString();
                 }
 
             }

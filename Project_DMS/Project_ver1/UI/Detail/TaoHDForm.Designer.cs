@@ -45,7 +45,7 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.txtSoLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaHD = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -100,7 +100,7 @@
             this.gunaLabel4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel4.Location = new System.Drawing.Point(685, 48);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(140, 24);
+            this.gunaLabel4.Size = new System.Drawing.Size(112, 19);
             this.gunaLabel4.TabIndex = 33;
             this.gunaLabel4.Text = "Mã nhân viên";
             // 
@@ -150,31 +150,31 @@
             this.gunaLabel1.TabIndex = 30;
             this.gunaLabel1.Text = "Mã hóa đơn";
             // 
-            // txtSoLuong
+            // txtThanhTien
             // 
-            this.txtSoLuong.BorderRadius = 10;
-            this.txtSoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSoLuong.DefaultText = "0";
-            this.txtSoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoLuong.DisabledState.Parent = this.txtSoLuong;
-            this.txtSoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuong.FocusedState.Parent = this.txtSoLuong;
-            this.txtSoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuong.HoverState.Parent = this.txtSoLuong;
-            this.txtSoLuong.Location = new System.Drawing.Point(667, 126);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.PasswordChar = '\0';
-            this.txtSoLuong.PlaceholderText = "";
-            this.txtSoLuong.SelectedText = "";
-            this.txtSoLuong.SelectionStart = 1;
-            this.txtSoLuong.ShadowDecoration.Parent = this.txtSoLuong;
-            this.txtSoLuong.Size = new System.Drawing.Size(317, 44);
-            this.txtSoLuong.TabIndex = 41;
+            this.txtThanhTien.BorderRadius = 10;
+            this.txtThanhTien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtThanhTien.DefaultText = "0";
+            this.txtThanhTien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtThanhTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtThanhTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThanhTien.DisabledState.Parent = this.txtThanhTien;
+            this.txtThanhTien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThanhTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThanhTien.FocusedState.Parent = this.txtThanhTien;
+            this.txtThanhTien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtThanhTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThanhTien.HoverState.Parent = this.txtThanhTien;
+            this.txtThanhTien.Location = new System.Drawing.Point(667, 126);
+            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.PasswordChar = '\0';
+            this.txtThanhTien.PlaceholderText = "";
+            this.txtThanhTien.SelectedText = "";
+            this.txtThanhTien.SelectionStart = 1;
+            this.txtThanhTien.ShadowDecoration.Parent = this.txtThanhTien;
+            this.txtThanhTien.Size = new System.Drawing.Size(317, 44);
+            this.txtThanhTien.TabIndex = 41;
             // 
             // txtMaNV
             // 
@@ -719,7 +719,7 @@
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.txtSoLuong);
+            this.Controls.Add(this.txtThanhTien);
             this.Controls.Add(this.txtGiamGia);
             this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.txtMaHD);
@@ -746,7 +746,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtSDT;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSoLuong;
+        private Guna.UI2.WinForms.Guna2TextBox txtThanhTien;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
         private Guna.UI2.WinForms.Guna2TextBox txtMaHD;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;

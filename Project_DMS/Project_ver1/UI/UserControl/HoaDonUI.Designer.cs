@@ -50,7 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.MHD = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.LabelSoHoaDon = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -370,18 +370,18 @@
             this.gunaLabel1.TabIndex = 152;
             this.gunaLabel1.Text = "Hóa đơn";
             // 
-            // gunaLabel2
+            // LabelSoHoaDon
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.gunaLabel2.CausesValidation = false;
-            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel2.Location = new System.Drawing.Point(88, 282);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(40, 44);
-            this.gunaLabel2.TabIndex = 153;
-            this.gunaLabel2.Text = "0";
+            this.LabelSoHoaDon.AutoSize = true;
+            this.LabelSoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.LabelSoHoaDon.CausesValidation = false;
+            this.LabelSoHoaDon.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LabelSoHoaDon.ForeColor = System.Drawing.Color.Black;
+            this.LabelSoHoaDon.Location = new System.Drawing.Point(88, 282);
+            this.LabelSoHoaDon.Name = "LabelSoHoaDon";
+            this.LabelSoHoaDon.Size = new System.Drawing.Size(40, 44);
+            this.LabelSoHoaDon.TabIndex = 153;
+            this.LabelSoHoaDon.Text = "0";
             // 
             // guna2Button7
             // 
@@ -398,7 +398,7 @@
             this.guna2Button7.ImageOffset = new System.Drawing.Point(0, -5);
             this.guna2Button7.ImageSize = new System.Drawing.Size(60, 60);
             this.guna2Button7.Location = new System.Drawing.Point(13, 254);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
@@ -720,7 +720,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.MHD);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.LabelSoHoaDon);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.ReloadButton);
             this.Controls.Add(this.ReadButton);
@@ -748,7 +748,7 @@
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox MHD;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel LabelSoHoaDon;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2DateTimePicker Date;
         private System.Windows.Forms.Label label1;

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             Guna.UI.WinForms.GunaLabel gunaLabel8;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhaCungCapUI));
             this.dgvNCC = new Guna.UI.WinForms.GunaDataGridView();
             this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,9 +59,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.MaNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.LabelSNCC = new Guna.UI.WinForms.GunaLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.NameText = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NameNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
@@ -82,21 +82,21 @@
             // dgvNCC
             // 
             this.dgvNCC.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            this.dgvNCC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvNCC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNCC.BackgroundColor = System.Drawing.Color.White;
             this.dgvNCC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNCC.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvNCC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNCC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNCC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvNCC.ColumnHeadersHeight = 30;
             this.dgvNCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNCC,
@@ -105,32 +105,32 @@
             this.DiaChi,
             this.Email,
             this.Column1});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNCC.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNCC.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvNCC.EnableHeadersVisualStyles = false;
             this.dgvNCC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvNCC.Location = new System.Drawing.Point(12, 373);
             this.dgvNCC.MultiSelect = false;
             this.dgvNCC.Name = "dgvNCC";
             this.dgvNCC.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNCC.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNCC.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvNCC.RowHeadersVisible = false;
             this.dgvNCC.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
-            this.dgvNCC.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
+            this.dgvNCC.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvNCC.RowTemplate.Height = 24;
             this.dgvNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNCC.Size = new System.Drawing.Size(1070, 399);
@@ -547,18 +547,18 @@
             this.gunaLabel1.TabIndex = 132;
             this.gunaLabel1.Text = "Nhà Cung Cấp";
             // 
-            // gunaLabel2
+            // LabelSNCC
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.gunaLabel2.CausesValidation = false;
-            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel2.Location = new System.Drawing.Point(79, 271);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(40, 44);
-            this.gunaLabel2.TabIndex = 133;
-            this.gunaLabel2.Text = "0";
+            this.LabelSNCC.AutoSize = true;
+            this.LabelSNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.LabelSNCC.CausesValidation = false;
+            this.LabelSNCC.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LabelSNCC.ForeColor = System.Drawing.Color.Black;
+            this.LabelSNCC.Location = new System.Drawing.Point(79, 271);
+            this.LabelSNCC.Name = "LabelSNCC";
+            this.LabelSNCC.Size = new System.Drawing.Size(40, 44);
+            this.LabelSNCC.TabIndex = 133;
+            this.LabelSNCC.Text = "0";
             // 
             // label1
             // 
@@ -570,38 +570,38 @@
             this.label1.TabIndex = 136;
             this.label1.Text = "Tên nhà cung cấp";
             // 
-            // NameText
+            // NameNCC
             // 
-            this.NameText.AccessibleName = "";
-            this.NameText.BackColor = System.Drawing.Color.Transparent;
-            this.NameText.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameText.BorderRadius = 8;
-            this.NameText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NameText.DefaultText = "";
-            this.NameText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NameText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NameText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NameText.DisabledState.Parent = this.NameText;
-            this.NameText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NameText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameText.FocusedState.Parent = this.NameText;
-            this.NameText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.NameText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameText.HoverState.Parent = this.NameText;
-            this.NameText.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.NameText.IconRight = ((System.Drawing.Image)(resources.GetObject("NameText.IconRight")));
-            this.NameText.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.NameText.IconRightSize = new System.Drawing.Size(30, 30);
-            this.NameText.Location = new System.Drawing.Point(646, 298);
-            this.NameText.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.NameText.Name = "NameText";
-            this.NameText.PasswordChar = '\0';
-            this.NameText.PlaceholderText = "";
-            this.NameText.SelectedText = "";
-            this.NameText.ShadowDecoration.Parent = this.NameText;
-            this.NameText.Size = new System.Drawing.Size(412, 44);
-            this.NameText.TabIndex = 135;
-            this.NameText.TextChanged += new System.EventHandler(this.FindButton_Click);
+            this.NameNCC.AccessibleName = "";
+            this.NameNCC.BackColor = System.Drawing.Color.Transparent;
+            this.NameNCC.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NameNCC.BorderRadius = 8;
+            this.NameNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameNCC.DefaultText = "";
+            this.NameNCC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NameNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NameNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameNCC.DisabledState.Parent = this.NameNCC;
+            this.NameNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameNCC.FocusedState.Parent = this.NameNCC;
+            this.NameNCC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.NameNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameNCC.HoverState.Parent = this.NameNCC;
+            this.NameNCC.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.NameNCC.IconRight = ((System.Drawing.Image)(resources.GetObject("NameNCC.IconRight")));
+            this.NameNCC.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.NameNCC.IconRightSize = new System.Drawing.Size(30, 30);
+            this.NameNCC.Location = new System.Drawing.Point(646, 298);
+            this.NameNCC.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.NameNCC.Name = "NameNCC";
+            this.NameNCC.PasswordChar = '\0';
+            this.NameNCC.PlaceholderText = "";
+            this.NameNCC.SelectedText = "";
+            this.NameNCC.ShadowDecoration.Parent = this.NameNCC;
+            this.NameNCC.Size = new System.Drawing.Size(412, 44);
+            this.NameNCC.TabIndex = 135;
+            this.NameNCC.TextChanged += new System.EventHandler(this.FindButton_Click);
             // 
             // guna2Button7
             // 
@@ -684,9 +684,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.MaNhaCungCap);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.LabelSNCC);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NameText);
+            this.Controls.Add(this.NameNCC);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.ReloadButton);
             this.Controls.Add(this.ReadButton);
@@ -725,9 +725,9 @@
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox MaNhaCungCap;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel LabelSNCC;
         private System.Windows.Forms.Label label1;
-        public Guna.UI2.WinForms.Guna2TextBox NameText;
+        public Guna.UI2.WinForms.Guna2TextBox NameNCC;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtSDT;

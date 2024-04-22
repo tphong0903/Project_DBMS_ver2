@@ -194,7 +194,7 @@ BEGIN
 
 		-- Thêm người dùng vào vai trò quyền tương ứng (Staff hoặc Manager(sysadmin))
 
-		IF (@RoleEmployee = 'Quản lý')
+		IF (@RoleEmployee = 'Quản lí')
 
 		SET @sqlString = 'ALTER SERVER ROLE sysadmin ADD MEMBER ' + @EmployeeID;
 

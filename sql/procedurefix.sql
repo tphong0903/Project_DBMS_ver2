@@ -194,14 +194,12 @@ BEGIN
 
 		-- Thêm người dùng vào vai trò quyền tương ứng (Staff hoặc Manager(sysadmin))
 
-		IF (@RoleEmployee = 'Quản lí')
+		IF (@RoleEmployee = N'Bán hàng')
 
-		SET @sqlString = 'ALTER SERVER ROLE sysadmin ADD MEMBER ' + @EmployeeID;
+			SET @sqlString = 'ALTER ROLE BanHang ADD MEMBER ' + @EmployeeID;
 
 		ELSE
-
-		SET @sqlString = 'ALTER ROLE BanHang ADD MEMBER ' + @EmployeeID;
-
+			SET @sqlString = 'ALTER SERVER ROLE sysadmin ADD MEMBER ' + @EmployeeID;
 		EXEC (@sqlString)
 
         COMMIT TRANSACTION;

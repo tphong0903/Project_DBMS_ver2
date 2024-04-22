@@ -56,14 +56,28 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a=new NVDetail(1,ID);
-            a.ShowDialog();
+            try
+            {
+                a = new NVDetail(1, ID);
+                a.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong the truy cap");
+            }
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            a = new NVDetail(2, ID);
-            a.ShowDialog();
+            try
+            {
+                a = new NVDetail(2, ID);
+                a.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong the truy cap");
+            }
         }
 
         private void AddButton_Click(object sender, EventArgs e)

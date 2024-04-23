@@ -20,6 +20,7 @@ namespace Project_ver1.UI.Detail
         string hd;
         int r=0;
         int x = 0;
+        int Tong = 0;
         public TaoHDForm()
         {
             InitializeComponent();
@@ -70,13 +71,18 @@ namespace Project_ver1.UI.Detail
             string GiaBan = dgvSanPham.Rows[r].Cells[2].Value.ToString();
             string SLCon = dgvSanPham.Rows[r].Cells[3].Value.ToString();
             string SL = SLmua.Text;
+            DataTable dt = new DataTable();
+            dt.Clear();
+            dt = dbhd.LayGiamGia(txtGiamGia.Text).Tables[0];
+            double PhanTram = dt.Rows[0].Field<int>(1);
             if (SL == "" || Int32.Parse(SL) > Int32.Parse(SLCon))
             {
                 MessageBox.Show("Khong du san pham");
             }
             else
             {
-                txtThanhTien.Text = (Int32.Parse(txtThanhTien.Text) + Int32.Parse(SL) * Int32.Parse(GiaBan)).ToString();
+                Tong = Tong + Int32.Parse(SL) * Int32.Parse(GiaBan);
+                txtTongTien.Text = (Tong*(1- PhanTram/100)).ToString();
                 dgvSPMua.Rows.Add(new Object[] { MaSP, TenSP, GiaBan, SL });
                 dgvSanPham.Rows[r].Cells[3].Value = (Int32.Parse(SLCon) - Int32.Parse(SL)).ToString();
             }

@@ -25,14 +25,14 @@ namespace Project_ver1.UI.Detail
             InitializeComponent();
             dbkh = new DBKhachHang();
             txtSDT.ReadOnly = true;
-            txtTenKhachHang.ReadOnly = true;
-            textBoxDiemThuong.ReadOnly = true;
-            textBoxTongTienDaThanhToan.ReadOnly = true;
-            SaveButton.Visible = false;
+            txtTen.ReadOnly = true;
+            txtDiem.ReadOnly = true;
+            txtTotal.ReadOnly = true;
+            AddButton.Visible = false;
             if (Check == 2)
             {
-                txtTenKhachHang.ReadOnly = false;
-                SaveButton.Visible = true;
+                txtTen.ReadOnly = false;
+                AddButton.Visible = true;
             }
         }
         private void LoadData()
@@ -49,11 +49,11 @@ namespace Project_ver1.UI.Detail
                 dt = dbkh.TimKhachHang(Phone, "").Tables[0];
 
                 txtSDT.Text = dt.Rows[0].Field<string>(0);
-                txtTenKhachHang.Text = dt.Rows[0].Field<string>(1);
-                dateTimePickerNgaySinh.Text = dt.Rows[0].Field<DateTime>(2).ToString();
+                txtTen.Text = dt.Rows[0].Field<string>(1);
+                txtNgaySinh.Text = dt.Rows[0].Field<DateTime>(2).ToString();
                 ComboGioiTinh.Text = dt.Rows[0].Field<string>(3).ToString();
-                textBoxDiemThuong.Text = dt.Rows[0].Field<int>(4).ToString();
-                textBoxTongTienDaThanhToan.Text = dt.Rows[0].Field<int>(5).ToString();
+                txtDiem.Text = dt.Rows[0].Field<int>(4).ToString();
+                txtTotal.Text = dt.Rows[0].Field<int?>(5).ToString() == "" ? "0" : dt.Rows[0].Field<int?>(5).ToString();
             }
             catch (SqlException x)
             {
@@ -72,10 +72,10 @@ namespace Project_ver1.UI.Detail
             {
                 bool f = dbkh.CapNhatKhachHang(ref err,
                     txtSDT.Text,
-                    txtTenKhachHang.Text,
-                    dateTimePickerNgaySinh.Value,
+                    txtTen.Text,
+                    txtNgaySinh.Value,
                     ComboGioiTinh.Text,
-                    int.Parse(textBoxDiemThuong.Text));
+                    int.Parse(txtDiem.Text));
                 if (f)
                 {
                     LoadData();

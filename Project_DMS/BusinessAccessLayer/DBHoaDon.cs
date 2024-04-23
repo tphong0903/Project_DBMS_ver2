@@ -24,7 +24,11 @@ namespace BusinessAccessLayer // Declaring the BusinessAccessLayer namespace
             return db.ExecuteQueryDataSet( // Returning the result of the ExecuteQueryDataSet method of the DAL class
                 "select * from BILLS_VIEW", CommandType.Text, null); // SQL query to select all data from the BILLS_VIEW view
         }
-
+        public DataSet LayGiamGia(string s)
+        {
+            return db.ExecuteQueryDataSet( // Returning the result of the ExecuteQueryDataSet method of the DAL class
+                "select * from Discounts where DiscountCode = '"+s+"'", CommandType.Text, null); // SQL query to select all data from the BILLS_VIEW view
+        }
         // Method to search for bills by ID and date
         public DataSet TimHoaDon(string HD, string date)
         {

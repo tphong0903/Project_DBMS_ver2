@@ -331,7 +331,7 @@ END
 GO
 
 -- CẬP NHẬT TỔNG TIỀN HÓA ĐƠN KHI THÊM, XÓA, SỬA CHI TIẾT HÓA ĐƠN
-CREATE TRIGGER UpdateTotalOrderBill ON OrderDetails
+CREATE or alter TRIGGER UpdateTotalOrderBill ON OrderDetails
 AFTER INSERT, DELETE, UPDATE
 AS
 BEGIN
@@ -362,7 +362,7 @@ BEGIN
         FROM Orders o
         JOIN deleted d ON o.Order_ID = d.Order_ID;
 
-        -- Cập nhật tổng tiền của hóa đơn dựa trên mã giảm giá
+		 -- Cập nhật tổng tiền của hóa đơn dựa trên mã giảm giá
         UPDATE o
         SET o.Total = o.Total * (1 - (d.PercentageDiscount / 100.0))
         FROM Orders o

@@ -35,7 +35,7 @@ namespace Project_ver1.UI
                 dgvNhanVien.DataSource = dtNhanVien;
 
                 ID = dgvNhanVien.Rows[0].Cells[0].Value.ToString().ToLower();
-                gunaLabel2.Text = (dgvNhanVien.RowCount - 1).ToString();
+                LabelSNV.Text = (dgvNhanVien.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -114,7 +114,7 @@ namespace Project_ver1.UI
                 if (r > 1)
                 {
                     ID = dgvNhanVien.Rows[0].Cells[0].Value.ToString();
-                    gunaLabel2.Text = (dgvNhanVien.RowCount - 1).ToString();
+                    LabelSNV.Text = (dgvNhanVien.RowCount - 1).ToString();
                 }
 
             }

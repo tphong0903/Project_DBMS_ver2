@@ -66,7 +66,7 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.Ngay = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.LabelSNV = new Guna.UI.WinForms.GunaLabel();
             this.DeleBtn = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
@@ -673,18 +673,18 @@
             this.Ngay.TabIndex = 153;
             this.Ngay.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
             // 
-            // gunaLabel2
+            // LabelSNV
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.gunaLabel2.CausesValidation = false;
-            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel2.Location = new System.Drawing.Point(87, 271);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(40, 44);
-            this.gunaLabel2.TabIndex = 132;
-            this.gunaLabel2.Text = "0";
+            this.LabelSNV.AutoSize = true;
+            this.LabelSNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.LabelSNV.CausesValidation = false;
+            this.LabelSNV.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LabelSNV.ForeColor = System.Drawing.Color.Black;
+            this.LabelSNV.Location = new System.Drawing.Point(87, 271);
+            this.LabelSNV.Name = "LabelSNV";
+            this.LabelSNV.Size = new System.Drawing.Size(40, 44);
+            this.LabelSNV.TabIndex = 132;
+            this.LabelSNV.Text = "0";
             // 
             // DeleBtn
             // 
@@ -737,7 +737,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.MNV);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.LabelSNV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NameText);
             this.Controls.Add(this.guna2Button7);
@@ -783,7 +783,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI2.WinForms.Guna2DateTimePicker Ngay;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel LabelSNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;

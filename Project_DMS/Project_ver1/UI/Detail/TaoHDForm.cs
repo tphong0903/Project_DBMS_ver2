@@ -76,7 +76,7 @@ namespace Project_ver1.UI.Detail
             }
             else
             {
-                txtSoLuong.Text = (Int32.Parse(txtSoLuong.Text) + Int32.Parse(SL) * Int32.Parse(GiaBan)).ToString();
+                txtThanhTien.Text = (Int32.Parse(txtThanhTien.Text) + Int32.Parse(SL) * Int32.Parse(GiaBan)).ToString();
                 dgvSPMua.Rows.Add(new Object[] { MaSP, TenSP, GiaBan, SL });
                 dgvSanPham.Rows[r].Cells[3].Value = (Int32.Parse(SLCon) - Int32.Parse(SL)).ToString();
             }

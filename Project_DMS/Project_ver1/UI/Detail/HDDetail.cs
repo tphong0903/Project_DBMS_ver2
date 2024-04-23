@@ -37,13 +37,13 @@ namespace Project_ver1.UI.Detail
                 DataTable dt = new DataTable();
                 dt.Clear();
                 dt = dbhd.TimHoaDon(ID, "").Tables[0];
-                MaSP.Text = dt.Rows[0].Field<string>(0);
-                TenSP.Text = dt.Rows[0].Field<string>(6);
-                Gia.Text = dt.Rows[0].Field<string>(1);
-                Ngay.Text = dt.Rows[0].Field<DateTime>(3).ToString();
-                SoLuong.Text = dt.Rows[0].Field<int>(4).ToString();
-                DanhMuc.Text = dt.Rows[0].Field<int?>(5).ToString();
-                ThuongHieu.Text = dt.Rows[0].Field<string>(2).ToString();
+                textBoxMaHoaDon.Text = dt.Rows[0].Field<string>(0);
+                textBoxSoDienThoai.Text = dt.Rows[0].Field<string>(6);
+                textBoxTenKhachHang.Text = dt.Rows[0].Field<string>(1);
+                dateTimePickerNgayThanhToan.Text = dt.Rows[0].Field<DateTime>(3).ToString();
+                textBoxThanhTien.Text = dt.Rows[0].Field<int>(4).ToString();
+                textBoxGiamGia.Text = dt.Rows[0].Field<int?>(5).ToString();
+                textBoxTenNhanVien.Text = dt.Rows[0].Field<string>(2).ToString();
             }
             catch(SqlException ex) 
             {

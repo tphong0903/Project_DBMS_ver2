@@ -53,7 +53,7 @@ namespace Project_ver1.UI.Detail
                 txtNgaySinh.Text = dt.Rows[0].Field<DateTime>(2).ToString();
                 ComboGioiTinh.Text = dt.Rows[0].Field<string>(3).ToString();
                 txtDiem.Text = dt.Rows[0].Field<int>(4).ToString();
-                txtTotal.Text = dt.Rows[0].Field<int>(5).ToString();
+                txtTotal.Text = dt.Rows[0].Field<int?>(5).ToString() == "" ? "0" : dt.Rows[0].Field<int?>(5).ToString();
             }
             catch (SqlException x)
             {

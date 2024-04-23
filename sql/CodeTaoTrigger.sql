@@ -362,6 +362,13 @@ BEGIN
         FROM Orders o
         JOIN deleted d ON o.Order_ID = d.Order_ID;
 
+        -- Cập nhật tổng tiền của hóa đơn dựa trên mã giảm giá
+        UPDATE o
+        SET o.Total = o.Total * (1 - (d.PercentageDiscount / 100.0))
+        FROM Orders o
+        JOIN inserted i ON o.Order_ID = i.Order_ID
+        LEFT JOIN Discounts d ON o.DiscountCode = d.DiscountCode;
+
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH

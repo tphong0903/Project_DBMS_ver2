@@ -66,7 +66,7 @@ namespace Project_ver1.UI.Detail
         {
             try
             {
-                hd = NameText.Text;
+                hd = FindNameText.Text;
                 dtSanPham = dbsp.TimSanPham("", "", hd).Tables[0];
                 dgvSanPham.DataSource = dtSanPham;
 
@@ -92,7 +92,7 @@ namespace Project_ver1.UI.Detail
                 string GN = textBoxGiaNhap.Text;
                 string SL = textBoxSoLuong.Text;
                 SoLuong.Text = (Int32.Parse(SoLuong.Text) + Int32.Parse(SL)).ToString();
-                guna2TextBox2.Text = (Int32.Parse(guna2TextBox2.Text) + Int32.Parse(SL) * Int32.Parse(GN)).ToString();
+                textBoxThanhTien.Text = (Int32.Parse(textBoxThanhTien.Text) + Int32.Parse(SL) * Int32.Parse(GN)).ToString();
                 insertGridView.Rows.Add(new object[] { MaSP, TenSP, GN, SL });
             }
             else

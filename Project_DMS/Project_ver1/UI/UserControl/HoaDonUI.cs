@@ -38,7 +38,7 @@ namespace Project_ver1.UI
                 dgvHoaDon.DataSource = dtHoaDon;
 
                 HD = dgvHoaDon.Rows[0].Cells[0].Value.ToString().ToLower();
-                gunaLabel2.Text = (dgvHoaDon.RowCount - 1).ToString();
+                LabelSoHoaDon.Text = (dgvHoaDon.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -109,7 +109,7 @@ namespace Project_ver1.UI
                 if (r > 1)
                 {
                     HD = dgvHoaDon.Rows[0].Cells[0].Value.ToString();
-                    gunaLabel2.Text = (dgvHoaDon.RowCount - 1).ToString();
+                    LabelSoHoaDon.Text = (dgvHoaDon.RowCount - 1).ToString();
                 }
 
             }

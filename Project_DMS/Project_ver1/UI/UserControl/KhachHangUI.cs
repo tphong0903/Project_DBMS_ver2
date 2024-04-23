@@ -40,7 +40,7 @@ namespace Project_ver1
                 dgvKhachHang.DataSource = dtKhachHang;
 
                 Phone = dgvKhachHang.Rows[0].Cells[0].Value.ToString();
-                SoLuong.Text = (dgvKhachHang.RowCount - 1).ToString();
+                LabelSLKH.Text = (dgvKhachHang.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -100,7 +100,7 @@ namespace Project_ver1
                 if (r > 1)
                 {
                     Phone = dgvKhachHang.Rows[0].Cells[0].Value.ToString();
-                    SoLuong.Text = (dgvKhachHang.RowCount - 1).ToString();
+                    LabelSLKH.Text = (dgvKhachHang.RowCount - 1).ToString();
                 }
             }
             catch (SqlException x)

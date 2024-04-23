@@ -35,7 +35,7 @@ namespace Project_ver1.UI
                 dgvNCC.DataSource = dtCungCap;
 
                 ID = dgvNCC.Rows[0].Cells[0].Value.ToString().ToLower();
-                gunaLabel2.Text = (dgvNCC.RowCount - 1).ToString();
+                LabelSNCC.Text = (dgvNCC.RowCount - 1).ToString();
             }
             catch (SqlException)
             {
@@ -98,7 +98,7 @@ namespace Project_ver1.UI
             {
 
                 string hd = MaNhaCungCap.Text;
-                string name = NameText.Text;
+                string name = NameNCC.Text;
                 DataTable dtHoaDon = new DataTable();
                 dtHoaDon.Clear();
 
@@ -108,7 +108,7 @@ namespace Project_ver1.UI
                 if (r > 1)
                 {
                     ID = dgvNCC.Rows[0].Cells[0].Value.ToString();
-                    gunaLabel2.Text = (dgvNCC.RowCount - 1).ToString();
+                    LabelSNCC.Text = (dgvNCC.RowCount - 1).ToString();
                 }
 
             }

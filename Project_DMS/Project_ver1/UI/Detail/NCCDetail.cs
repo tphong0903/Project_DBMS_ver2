@@ -25,7 +25,7 @@ namespace Project_ver1.UI.Detail
             DBNhaCungCap = new DBNhaCungCap();
             if(Check==1) 
             {
-                AddButton.Visible=false;
+                SaveButton.Visible=false;
             }
         }
         private void LoadData()

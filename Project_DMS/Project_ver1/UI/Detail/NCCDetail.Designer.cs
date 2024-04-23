@@ -44,7 +44,7 @@
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.textBoxTenNhaCungCap = new Guna.UI2.WinForms.Guna2TextBox();
-            this.AddButton = new Guna.UI.WinForms.GunaButton();
+            this.SaveButton = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.dgvSanPham = new Guna.UI.WinForms.GunaDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -244,33 +244,33 @@
             this.textBoxTenNhaCungCap.Size = new System.Drawing.Size(337, 44);
             this.textBoxTenNhaCungCap.TabIndex = 154;
             // 
-            // AddButton
+            // SaveButton
             // 
-            this.AddButton.AnimationHoverSpeed = 0.07F;
-            this.AddButton.AnimationSpeed = 0.03F;
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.AddButton.BorderColor = System.Drawing.Color.White;
-            this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddButton.ForeColor = System.Drawing.Color.Black;
-            this.AddButton.Image = null;
-            this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AddButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddButton.Location = new System.Drawing.Point(823, 461);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.AddButton.OnHoverForeColor = System.Drawing.Color.Black;
-            this.AddButton.OnHoverImage = null;
-            this.AddButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddButton.Radius = 15;
-            this.AddButton.Size = new System.Drawing.Size(107, 49);
-            this.AddButton.TabIndex = 160;
-            this.AddButton.Text = "Lưu";
-            this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            this.SaveButton.AnimationHoverSpeed = 0.07F;
+            this.SaveButton.AnimationSpeed = 0.03F;
+            this.SaveButton.BackColor = System.Drawing.Color.Transparent;
+            this.SaveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.SaveButton.BorderColor = System.Drawing.Color.White;
+            this.SaveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SaveButton.FocusedColor = System.Drawing.Color.Empty;
+            this.SaveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.ForeColor = System.Drawing.Color.Black;
+            this.SaveButton.Image = null;
+            this.SaveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.SaveButton.Location = new System.Drawing.Point(823, 461);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.SaveButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverForeColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverImage = null;
+            this.SaveButton.OnPressedColor = System.Drawing.Color.Black;
+            this.SaveButton.Radius = 15;
+            this.SaveButton.Size = new System.Drawing.Size(107, 49);
+            this.SaveButton.TabIndex = 160;
+            this.SaveButton.Text = "Lưu";
+            this.SaveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // gunaLabel3
             // 
@@ -454,7 +454,7 @@
             this.Controls.Add(this.Tong);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.dgvSanPham);
-            this.Controls.Add(this.AddButton);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel9);
             this.Controls.Add(this.gunaLabel6);
@@ -489,7 +489,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI2.WinForms.Guna2TextBox textBoxTenNhaCungCap;
-        private Guna.UI.WinForms.GunaButton AddButton;
+        private Guna.UI.WinForms.GunaButton SaveButton;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaDataGridView dgvSanPham;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;

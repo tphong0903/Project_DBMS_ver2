@@ -40,9 +40,9 @@
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPoint = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSdt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.AddButton = new Guna.UI.WinForms.GunaButton();
+            this.SaveButton = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Total = new Guna.UI2.WinForms.Guna2TextBox();
             this.ComboGT = new Guna.UI2.WinForms.Guna2ComboBox();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
@@ -214,33 +214,33 @@
             this.txtSdt.Size = new System.Drawing.Size(337, 44);
             this.txtSdt.TabIndex = 138;
             // 
-            // AddButton
+            // SaveButton
             // 
-            this.AddButton.AnimationHoverSpeed = 0.07F;
-            this.AddButton.AnimationSpeed = 0.03F;
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            this.AddButton.BorderColor = System.Drawing.Color.White;
-            this.AddButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddButton.ForeColor = System.Drawing.Color.Black;
-            this.AddButton.Image = null;
-            this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AddButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddButton.Location = new System.Drawing.Point(649, 273);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
-            this.AddButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.AddButton.OnHoverForeColor = System.Drawing.Color.Black;
-            this.AddButton.OnHoverImage = null;
-            this.AddButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddButton.Radius = 15;
-            this.AddButton.Size = new System.Drawing.Size(107, 49);
-            this.AddButton.TabIndex = 145;
-            this.AddButton.Text = "Lưu";
-            this.AddButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            this.SaveButton.AnimationHoverSpeed = 0.07F;
+            this.SaveButton.AnimationSpeed = 0.03F;
+            this.SaveButton.BackColor = System.Drawing.Color.Transparent;
+            this.SaveButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            this.SaveButton.BorderColor = System.Drawing.Color.White;
+            this.SaveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SaveButton.FocusedColor = System.Drawing.Color.Empty;
+            this.SaveButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.ForeColor = System.Drawing.Color.Black;
+            this.SaveButton.Image = null;
+            this.SaveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.SaveButton.Location = new System.Drawing.Point(649, 273);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.OnHoverBaseColor = System.Drawing.Color.LemonChiffon;
+            this.SaveButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverForeColor = System.Drawing.Color.Black;
+            this.SaveButton.OnHoverImage = null;
+            this.SaveButton.OnPressedColor = System.Drawing.Color.Black;
+            this.SaveButton.Radius = 15;
+            this.SaveButton.Size = new System.Drawing.Size(107, 49);
+            this.SaveButton.TabIndex = 145;
+            this.SaveButton.Text = "Lưu";
+            this.SaveButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SaveButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // gunaLabel1
             // 
@@ -252,32 +252,32 @@
             this.gunaLabel1.TabIndex = 146;
             this.gunaLabel1.Text = "Ngày sinh";
             // 
-            // SoLuong
+            // Total
             // 
-            this.SoLuong.BorderRadius = 10;
-            this.SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoLuong.DefaultText = "0";
-            this.SoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.DisabledState.Parent = this.SoLuong;
-            this.SoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SoLuong.Enabled = false;
-            this.SoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.FocusedState.Parent = this.SoLuong;
-            this.SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SoLuong.HoverState.Parent = this.SoLuong;
-            this.SoLuong.Location = new System.Drawing.Point(419, 222);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.PasswordChar = '\0';
-            this.SoLuong.PlaceholderText = "";
-            this.SoLuong.SelectedText = "";
-            this.SoLuong.SelectionStart = 1;
-            this.SoLuong.ShadowDecoration.Parent = this.SoLuong;
-            this.SoLuong.Size = new System.Drawing.Size(337, 44);
-            this.SoLuong.TabIndex = 142;
+            this.Total.BorderRadius = 10;
+            this.Total.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Total.DefaultText = "0";
+            this.Total.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Total.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Total.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Total.DisabledState.Parent = this.Total;
+            this.Total.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Total.Enabled = false;
+            this.Total.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Total.FocusedState.Parent = this.Total;
+            this.Total.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Total.HoverState.Parent = this.Total;
+            this.Total.Location = new System.Drawing.Point(419, 222);
+            this.Total.Margin = new System.Windows.Forms.Padding(4);
+            this.Total.Name = "Total";
+            this.Total.PasswordChar = '\0';
+            this.Total.PlaceholderText = "";
+            this.Total.SelectedText = "";
+            this.Total.SelectionStart = 1;
+            this.Total.ShadowDecoration.Parent = this.Total;
+            this.Total.Size = new System.Drawing.Size(337, 44);
+            this.Total.TabIndex = 142;
             // 
             // ComboGT
             // 
@@ -310,7 +310,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(782, 340);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.AddButton);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.dtpBirthday);
             this.Controls.Add(this.gunaLabel9);
@@ -320,7 +320,7 @@
             this.Controls.Add(this.gunaLabel7);
             this.Controls.Add(this.txtName);
             this.Controls.Add(gunaLabel8);
-            this.Controls.Add(this.SoLuong);
+            this.Controls.Add(this.Total);
             this.Controls.Add(this.txtPoint);
             this.Controls.Add(this.txtSdt);
             this.Controls.Add(this.ComboGT);
@@ -348,9 +348,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtName;
         private Guna.UI2.WinForms.Guna2TextBox txtPoint;
         private Guna.UI2.WinForms.Guna2TextBox txtSdt;
-        private Guna.UI.WinForms.GunaButton AddButton;
+        private Guna.UI.WinForms.GunaButton SaveButton;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox SoLuong;
+        private Guna.UI2.WinForms.Guna2TextBox Total;
         private Guna.UI2.WinForms.Guna2ComboBox ComboGT;
     }
 }

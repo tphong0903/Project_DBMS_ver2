@@ -322,7 +322,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(252, 276);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 24);
+            this.label2.Size = new System.Drawing.Size(99, 19);
             this.label2.TabIndex = 158;
             this.label2.Text = "Mã hóa đơn";
             // 
@@ -366,7 +366,7 @@
             this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel1.Location = new System.Drawing.Point(61, 326);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(107, 27);
+            this.gunaLabel1.Size = new System.Drawing.Size(89, 22);
             this.gunaLabel1.TabIndex = 152;
             this.gunaLabel1.Text = "Hóa đơn";
             // 
@@ -379,7 +379,7 @@
             this.LabelSoHoaDon.ForeColor = System.Drawing.Color.Black;
             this.LabelSoHoaDon.Location = new System.Drawing.Point(88, 282);
             this.LabelSoHoaDon.Name = "LabelSoHoaDon";
-            this.LabelSoHoaDon.Size = new System.Drawing.Size(40, 44);
+            this.LabelSoHoaDon.Size = new System.Drawing.Size(32, 35);
             this.LabelSoHoaDon.TabIndex = 153;
             this.LabelSoHoaDon.Text = "0";
             // 
@@ -418,7 +418,7 @@
             this.Date.HoverState.Parent = this.Date;
             this.Date.Location = new System.Drawing.Point(636, 295);
             this.Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Date.MaxDate = new System.DateTime(2024, 4, 24, 0, 0, 0, 0);
             this.Date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Date.Name = "Date";
             this.Date.ShadowDecoration.Parent = this.Date;
@@ -432,7 +432,7 @@
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(659, 276);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 24);
+            this.label1.Size = new System.Drawing.Size(135, 19);
             this.label1.TabIndex = 161;
             this.label1.Text = "Ngày thanh toán";
             // 
@@ -442,7 +442,7 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel3.Location = new System.Drawing.Point(35, 118);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(139, 19);
+            this.gunaLabel3.Size = new System.Drawing.Size(120, 16);
             this.gunaLabel3.TabIndex = 175;
             this.gunaLabel3.Text = "Ngày thanh toán";
             // 
@@ -472,7 +472,7 @@
             this.gunaLabel9.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel9.Location = new System.Drawing.Point(432, 9);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(220, 27);
+            this.gunaLabel9.Size = new System.Drawing.Size(182, 22);
             this.gunaLabel9.TabIndex = 173;
             this.gunaLabel9.Text = "Thông tin hóa đơn";
             // 
@@ -482,7 +482,7 @@
             this.gunaLabel6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel6.Location = new System.Drawing.Point(768, 118);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(88, 19);
+            this.gunaLabel6.Size = new System.Drawing.Size(77, 16);
             this.gunaLabel6.TabIndex = 167;
             this.gunaLabel6.Text = "Tổng tiền ";
             // 
@@ -492,7 +492,7 @@
             this.gunaLabel5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel5.Location = new System.Drawing.Point(768, 48);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(119, 19);
+            this.gunaLabel5.Size = new System.Drawing.Size(105, 16);
             this.gunaLabel5.TabIndex = 166;
             this.gunaLabel5.Text = "Tên nhân viên";
             // 
@@ -502,7 +502,7 @@
             this.gunaLabel4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel4.Location = new System.Drawing.Point(393, 118);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(93, 19);
+            this.gunaLabel4.Size = new System.Drawing.Size(82, 16);
             this.gunaLabel4.TabIndex = 165;
             this.gunaLabel4.Text = "Chiết khấu";
             // 
@@ -512,7 +512,7 @@
             this.gunaLabel7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel7.Location = new System.Drawing.Point(393, 47);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(134, 19);
+            this.gunaLabel7.Size = new System.Drawing.Size(117, 16);
             this.gunaLabel7.TabIndex = 164;
             this.gunaLabel7.Text = "Tên khách hàng";
             // 
@@ -548,7 +548,7 @@
             this.gunaLabel8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel8.Location = new System.Drawing.Point(35, 48);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(102, 19);
+            this.gunaLabel8.Size = new System.Drawing.Size(90, 16);
             this.gunaLabel8.TabIndex = 163;
             this.gunaLabel8.Text = "Mã hóa đơn";
             // 

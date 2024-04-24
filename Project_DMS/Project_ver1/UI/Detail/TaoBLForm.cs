@@ -32,16 +32,14 @@ namespace Project_ver1.UI.Detail
                 int s= dtSanPham.Rows.Count +1;
                 string bl = "NH";
                 if (s < 10)
-                    bl = bl + "0000" + s;
+                    bl = bl + "0000";
                 else if (s < 100)
-                    bl = bl + "000" + s;
+                    bl = bl + "000";
                 else if (s < 1000)
-                    bl = bl + "00" + s;
+                    bl = bl + "00";
                 else if (s < 10000)
-                    bl = bl + "0" + s;
-                else
-                    bl = bl + s;
-                textBoxMaBienLai.Text = bl;
+                    bl = bl + "0";
+                textBoxMaBienLai.Text = bl+s;
                 textBoxMaBienLai.Enabled = false;
 
             }

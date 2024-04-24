@@ -22,8 +22,10 @@ namespace Project_ver1.UI
         string HD = null;
         string date = null;
         string hd = null;
-        public HoaDonUI()
+        string strMaNV=null;
+        public HoaDonUI(string s)
         {
+            this.strMaNV = s;
             InitializeComponent();
             dbhd = new DBHoaDon();
         }
@@ -59,7 +61,7 @@ namespace Project_ver1.UI
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            TaoHDForm a = new TaoHDForm();
+            TaoHDForm a = new TaoHDForm(strMaNV);
             a.ShowDialog();
         }
 

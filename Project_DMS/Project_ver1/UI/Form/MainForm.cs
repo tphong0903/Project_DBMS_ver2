@@ -18,7 +18,7 @@ namespace Project_ver1
         SanPhamUi frm1 = new SanPhamUi();
         KhachHangUI frm2 = new KhachHangUI();
         NhanVienUI frm3 = new NhanVienUI();
-        HoaDonUI frm4 = new HoaDonUI();
+        HoaDonUI frm4 = null;
         BienLaiUI frm5 = new BienLaiUI();
         NhaCungCapUI frm6 = new NhaCungCapUI();
         ThongKe frm7 = new ThongKe();
@@ -28,6 +28,7 @@ namespace Project_ver1
         {
             ID = s;
             dbnv = new DBNhanVien();
+            frm4 = new HoaDonUI(s);
             InitializeComponent();
             addForm();
             frm1.Show();

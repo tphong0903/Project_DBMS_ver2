@@ -22,7 +22,7 @@ namespace DataAccessLayer // Declaring the DataAccessLayer namespace
         {
             if(count == 0)
             {
-                DAL.ConnStrBuilder.DataSource = "NGOT\\SQLEXPRESS";
+                DAL.ConnStrBuilder.DataSource = "MSI\\CSDL";
                 DAL.ConnStrBuilder.InitialCatalog = "QuanLyBanHangTheThao";
                 DAL.ConnStrBuilder.IntegratedSecurity = true;
                 DAL.ConnStrBuilder.Encrypt = false;

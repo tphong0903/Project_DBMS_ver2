@@ -28,11 +28,11 @@ namespace Project_ver1.UI.Detail
             txtTen.ReadOnly = true;
             txtDiem.ReadOnly = true;
             txtTotal.ReadOnly = true;
-            AddButton.Visible = false;
+            SaveButton.Visible = false;
             if (Check == 2)
             {
                 txtTen.ReadOnly = false;
-                AddButton.Visible = true;
+                SaveButton.Visible = true;
             }
         }
         private void LoadData()

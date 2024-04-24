@@ -80,7 +80,7 @@
             this.gunaLabel6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel6.Location = new System.Drawing.Point(687, 112);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(92, 19);
+            this.gunaLabel6.Size = new System.Drawing.Size(81, 16);
             this.gunaLabel6.TabIndex = 35;
             this.gunaLabel6.Text = "Thành tiền";
             // 
@@ -90,7 +90,7 @@
             this.gunaLabel5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel5.Location = new System.Drawing.Point(363, 112);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(77, 19);
+            this.gunaLabel5.Size = new System.Drawing.Size(67, 16);
             this.gunaLabel5.TabIndex = 34;
             this.gunaLabel5.Text = "Giảm giá";
             // 
@@ -100,7 +100,7 @@
             this.gunaLabel4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel4.Location = new System.Drawing.Point(685, 48);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(112, 19);
+            this.gunaLabel4.Size = new System.Drawing.Size(101, 16);
             this.gunaLabel4.TabIndex = 33;
             this.gunaLabel4.Text = "Mã nhân viên";
             // 
@@ -110,7 +110,7 @@
             this.gunaLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel2.Location = new System.Drawing.Point(361, 48);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(112, 19);
+            this.gunaLabel2.Size = new System.Drawing.Size(99, 16);
             this.gunaLabel2.TabIndex = 31;
             this.gunaLabel2.Text = "Số điện thoại";
             // 
@@ -146,7 +146,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel1.Location = new System.Drawing.Point(36, 49);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(102, 19);
+            this.gunaLabel1.Size = new System.Drawing.Size(90, 16);
             this.gunaLabel1.TabIndex = 30;
             this.gunaLabel1.Text = "Mã hóa đơn";
             // 
@@ -232,7 +232,7 @@
             this.gunaLabel9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel9.Location = new System.Drawing.Point(36, 112);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(139, 19);
+            this.gunaLabel9.Size = new System.Drawing.Size(120, 16);
             this.gunaLabel9.TabIndex = 46;
             this.gunaLabel9.Text = "Ngày thanh toán";
             // 
@@ -254,7 +254,7 @@
             this.txtDate.ShadowDecoration.Parent = this.txtDate;
             this.txtDate.Size = new System.Drawing.Size(317, 44);
             this.txtDate.TabIndex = 47;
-            this.txtDate.Value = new System.DateTime(2024, 3, 22, 21, 10, 19, 800);
+            this.txtDate.Value = new System.DateTime(2024, 4, 24, 0, 0, 0, 0);
             // 
             // dgvSanPham
             // 
@@ -341,7 +341,7 @@
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 165;
+            this.dataGridViewTextBoxColumn1.Width = 135;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -350,7 +350,7 @@
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 173;
+            this.dataGridViewTextBoxColumn2.Width = 142;
             // 
             // Gia
             // 
@@ -359,7 +359,7 @@
             this.Gia.MinimumWidth = 6;
             this.Gia.Name = "Gia";
             this.Gia.ReadOnly = true;
-            this.Gia.Width = 112;
+            this.Gia.Width = 92;
             // 
             // SL
             // 
@@ -368,7 +368,7 @@
             this.SL.MinimumWidth = 6;
             this.SL.Name = "SL";
             this.SL.ReadOnly = true;
-            this.SL.Width = 127;
+            this.SL.Width = 106;
             // 
             // dgvSPMua
             // 
@@ -455,7 +455,7 @@
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 165;
+            this.dataGridViewTextBoxColumn4.Width = 135;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -464,7 +464,7 @@
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 173;
+            this.dataGridViewTextBoxColumn5.Width = 142;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -473,7 +473,7 @@
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 112;
+            this.dataGridViewTextBoxColumn6.Width = 92;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -482,7 +482,7 @@
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 134;
+            this.dataGridViewTextBoxColumn7.Width = 112;
             // 
             // ReloadButton
             // 
@@ -548,7 +548,7 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel3.Location = new System.Drawing.Point(709, 213);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(114, 27);
+            this.gunaLabel3.Size = new System.Drawing.Size(94, 22);
             this.gunaLabel3.TabIndex = 111;
             this.gunaLabel3.Text = "Giỏ hàng";
             // 
@@ -591,7 +591,7 @@
             this.gunaLabel7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel7.Location = new System.Drawing.Point(36, 194);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(119, 19);
+            this.gunaLabel7.Size = new System.Drawing.Size(103, 16);
             this.gunaLabel7.TabIndex = 113;
             this.gunaLabel7.Text = "Tên sản phẩm";
             // 
@@ -630,7 +630,7 @@
             this.gunaLabel8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel8.Location = new System.Drawing.Point(276, 194);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(83, 19);
+            this.gunaLabel8.Size = new System.Drawing.Size(71, 16);
             this.gunaLabel8.TabIndex = 115;
             this.gunaLabel8.Text = "Số lượng";
             // 
@@ -665,7 +665,7 @@
             this.gunaLabel10.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel10.Location = new System.Drawing.Point(420, 9);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(153, 27);
+            this.gunaLabel10.Size = new System.Drawing.Size(129, 22);
             this.gunaLabel10.TabIndex = 130;
             this.gunaLabel10.Text = "Tạo hóa đơn";
             // 

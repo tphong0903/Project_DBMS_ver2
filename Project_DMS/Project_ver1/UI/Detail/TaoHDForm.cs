@@ -21,11 +21,12 @@ namespace Project_ver1.UI.Detail
         int r=0;
         int x = 0;
         int Tong = 0;
-        public TaoHDForm()
+        public TaoHDForm(string s)
         {
             InitializeComponent();
             dbsp= new DBSanPham();
             dbhd = new DBHoaDon();
+            txtMaNV.Text = s;
         }
      
         private void LoadData()
@@ -43,17 +44,15 @@ namespace Project_ver1.UI.Detail
                 int s = dt.Rows.Count+1;
                 string hd = "HD";
                 if (s < 10)
-                    hd = hd + "0000" + s;
+                    hd = hd + "0000";
                 else if(s<100)
-                    hd = hd + "000" + s;
+                    hd = hd + "000";
                 else if (s < 1000)
-                    hd = hd + "00" + s;
+                    hd = hd + "00";
                 else if (s < 10000)
-                    hd = hd + "0" + s;
-                else
-                    hd = hd  + s;
-                txtMaHD.Text= hd;
-                txtMaHD.Enabled = false;
+                    hd = hd + "0";
+                txtMaHD.Text= hd+s;
+                txtMaHD.ReadOnly= true;
 
             }
             catch (SqlException)

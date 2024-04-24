@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKe));
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.dtpStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -101,7 +101,7 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel3.Location = new System.Drawing.Point(36, 18);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(74, 19);
+            this.gunaLabel3.Size = new System.Drawing.Size(62, 16);
             this.gunaLabel3.TabIndex = 198;
             this.gunaLabel3.Text = "Từ ngày";
             // 
@@ -122,7 +122,7 @@
             this.dtpStartDate.ShadowDecoration.Parent = this.dtpStartDate;
             this.dtpStartDate.Size = new System.Drawing.Size(192, 44);
             this.dtpStartDate.TabIndex = 199;
-            this.dtpStartDate.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
+            this.dtpStartDate.Value = new System.DateTime(2024, 4, 24, 0, 0, 0, 0);
             // 
             // gunaLabel1
             // 
@@ -130,7 +130,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gunaLabel1.Location = new System.Drawing.Point(234, 17);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(85, 19);
+            this.gunaLabel1.Size = new System.Drawing.Size(73, 16);
             this.gunaLabel1.TabIndex = 200;
             this.gunaLabel1.Text = "Đến Ngày";
             // 
@@ -151,7 +151,7 @@
             this.dtpEndDate.ShadowDecoration.Parent = this.dtpEndDate;
             this.dtpEndDate.Size = new System.Drawing.Size(197, 44);
             this.dtpEndDate.TabIndex = 201;
-            this.dtpEndDate.Value = new System.DateTime(2024, 3, 29, 7, 43, 2, 28);
+            this.dtpEndDate.Value = new System.DateTime(2024, 4, 24, 0, 0, 0, 0);
             // 
             // btnToday
             // 
@@ -247,7 +247,7 @@
             this.SLDH.ForeColor = System.Drawing.Color.Black;
             this.SLDH.Location = new System.Drawing.Point(92, 146);
             this.SLDH.Name = "SLDH";
-            this.SLDH.Size = new System.Drawing.Size(32, 35);
+            this.SLDH.Size = new System.Drawing.Size(26, 29);
             this.SLDH.TabIndex = 209;
             this.SLDH.Text = "0";
             // 
@@ -259,7 +259,7 @@
             this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel2.Location = new System.Drawing.Point(93, 85);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(123, 27);
+            this.gunaLabel2.Size = new System.Drawing.Size(102, 22);
             this.gunaLabel2.TabIndex = 208;
             this.gunaLabel2.Text = "Đơn hàng";
             // 
@@ -296,7 +296,7 @@
             this.lbTotalRe.ForeColor = System.Drawing.Color.Black;
             this.lbTotalRe.Location = new System.Drawing.Point(337, 146);
             this.lbTotalRe.Name = "lbTotalRe";
-            this.lbTotalRe.Size = new System.Drawing.Size(32, 35);
+            this.lbTotalRe.Size = new System.Drawing.Size(26, 29);
             this.lbTotalRe.TabIndex = 212;
             this.lbTotalRe.Text = "0";
             // 
@@ -308,7 +308,7 @@
             this.gunaLabel5.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel5.Location = new System.Drawing.Point(338, 85);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(191, 27);
+            this.gunaLabel5.Size = new System.Drawing.Size(158, 22);
             this.gunaLabel5.TabIndex = 211;
             this.gunaLabel5.Text = "Tổng doanh thu";
             // 
@@ -345,7 +345,7 @@
             this.lbTotalPro.ForeColor = System.Drawing.Color.Black;
             this.lbTotalPro.Location = new System.Drawing.Point(724, 146);
             this.lbTotalPro.Name = "lbTotalPro";
-            this.lbTotalPro.Size = new System.Drawing.Size(32, 35);
+            this.lbTotalPro.Size = new System.Drawing.Size(26, 29);
             this.lbTotalPro.TabIndex = 215;
             this.lbTotalPro.Text = "0";
             // 
@@ -357,7 +357,7 @@
             this.gunaLabel7.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel7.Location = new System.Drawing.Point(725, 85);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(185, 27);
+            this.gunaLabel7.Size = new System.Drawing.Size(152, 22);
             this.gunaLabel7.TabIndex = 214;
             this.gunaLabel7.Text = "Tổng lợi nhuận";
             // 
@@ -387,24 +387,24 @@
             // 
             // chartGross
             // 
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.IsMarginVisible = false;
-            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            chartArea1.AxisX.MajorGrid.LineWidth = 0;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorTickMark.Size = 2F;
-            chartArea1.AxisY.IsLabelAutoFit = false;
-            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            chartArea1.AxisY.LabelStyle.Format = "{0,0} VND";
-            chartArea1.AxisY.LineWidth = 0;
-            chartArea1.AxisY.MajorTickMark.Size = 2F;
-            chartArea1.Name = "ChartArea1";
-            this.chartGross.ChartAreas.Add(chartArea1);
-            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.chartGross.Legends.Add(legend1);
+            chartArea3.AxisX.IsLabelAutoFit = false;
+            chartArea3.AxisX.IsMarginVisible = false;
+            chartArea3.AxisX.LabelStyle.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            chartArea3.AxisX.MajorGrid.LineWidth = 0;
+            chartArea3.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea3.AxisX.MajorTickMark.Size = 2F;
+            chartArea3.AxisY.IsLabelAutoFit = false;
+            chartArea3.AxisY.LabelStyle.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            chartArea3.AxisY.LabelStyle.Format = "{0,0} VND";
+            chartArea3.AxisY.LineWidth = 0;
+            chartArea3.AxisY.MajorTickMark.Size = 2F;
+            chartArea3.Name = "ChartArea1";
+            this.chartGross.ChartAreas.Add(chartArea3);
+            legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            legend3.IsTextAutoFit = false;
+            legend3.Name = "Legend1";
+            this.chartGross.Legends.Add(legend3);
             this.chartGross.Location = new System.Drawing.Point(12, 198);
             this.chartGross.Name = "chartGross";
             this.chartGross.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -414,41 +414,41 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(177)))), ((int)(((byte)(131))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(177)))), ((int)(((byte)(131))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(166)))), ((int)(((byte)(12)))))};
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
-            series1.BorderColor = System.Drawing.Color.Gold;
-            series1.BorderWidth = 5;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series1.Color = System.Drawing.Color.PaleGoldenrod;
-            series1.Legend = "Legend1";
-            series1.MarkerBorderColor = System.Drawing.Color.DarkGoldenrod;
-            series1.MarkerBorderWidth = 2;
-            series1.MarkerSize = 10;
-            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 2;
-            this.chartGross.Series.Add(series1);
+            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
+            series3.BorderColor = System.Drawing.Color.Gold;
+            series3.BorderWidth = 5;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series3.Color = System.Drawing.Color.PaleGoldenrod;
+            series3.Legend = "Legend1";
+            series3.MarkerBorderColor = System.Drawing.Color.DarkGoldenrod;
+            series3.MarkerBorderWidth = 2;
+            series3.MarkerSize = 10;
+            series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series3.Name = "Series1";
+            series3.YValuesPerPoint = 2;
+            this.chartGross.Series.Add(series3);
             this.chartGross.Size = new System.Drawing.Size(766, 344);
             this.chartGross.TabIndex = 216;
             this.chartGross.Text = "chart1";
-            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title1.Name = "Title1";
-            title1.Text = "Doanh thu";
-            this.chartGross.Titles.Add(title1);
+            title3.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            title3.Name = "Title1";
+            title3.Text = "Doanh thu";
+            this.chartGross.Titles.Add(title3);
             // 
             // chartProduct
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea2);
-            legend2.AutoFitMinFontSize = 15;
-            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            legend2.IsTextAutoFit = false;
-            legend2.Name = "Legend1";
-            legend2.TitleBackColor = System.Drawing.Color.Black;
-            legend2.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chartProduct.Legends.Add(legend2);
+            chartArea4.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea4);
+            legend4.AutoFitMinFontSize = 15;
+            legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            legend4.IsTextAutoFit = false;
+            legend4.Name = "Legend1";
+            legend4.TitleBackColor = System.Drawing.Color.Black;
+            legend4.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chartProduct.Legends.Add(legend4);
             this.chartProduct.Location = new System.Drawing.Point(784, 198);
             this.chartProduct.Name = "chartProduct";
             this.chartProduct.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -458,24 +458,24 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(177)))), ((int)(((byte)(131))))),
         System.Drawing.Color.Khaki,
         System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(166)))), ((int)(((byte)(12)))))};
-            series2.BorderColor = System.Drawing.Color.White;
-            series2.BorderWidth = 5;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.YValuesPerPoint = 4;
-            this.chartProduct.Series.Add(series2);
+            series4.BorderColor = System.Drawing.Color.White;
+            series4.BorderWidth = 5;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            series4.IsValueShownAsLabel = true;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            series4.YValuesPerPoint = 4;
+            this.chartProduct.Series.Add(series4);
             this.chartProduct.Size = new System.Drawing.Size(298, 637);
             this.chartProduct.TabIndex = 217;
             this.chartProduct.Text = "chart2";
-            title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title2.Name = "Title1";
-            title2.Text = "Top Seller";
-            this.chartProduct.Titles.Add(title2);
+            title4.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            title4.Name = "Title1";
+            title4.Text = "Top Seller";
+            this.chartProduct.Titles.Add(title4);
             // 
             // SLKH
             // 
@@ -486,7 +486,7 @@
             this.SLKH.ForeColor = System.Drawing.Color.Black;
             this.SLKH.Location = new System.Drawing.Point(73, 620);
             this.SLKH.Name = "SLKH";
-            this.SLKH.Size = new System.Drawing.Size(40, 44);
+            this.SLKH.Size = new System.Drawing.Size(32, 35);
             this.SLKH.TabIndex = 220;
             this.SLKH.Text = "0";
             // 
@@ -498,7 +498,7 @@
             this.gunaLabel9.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel9.Location = new System.Drawing.Point(20, 558);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(70, 27);
+            this.gunaLabel9.Size = new System.Drawing.Size(59, 22);
             this.gunaLabel9.TabIndex = 219;
             this.gunaLabel9.Text = "Tổng";
             // 
@@ -534,7 +534,7 @@
             this.SLDonHang.ForeColor = System.Drawing.Color.Black;
             this.SLDonHang.Location = new System.Drawing.Point(77, 599);
             this.SLDonHang.Name = "SLDonHang";
-            this.SLDonHang.Size = new System.Drawing.Size(113, 21);
+            this.SLDonHang.Size = new System.Drawing.Size(92, 18);
             this.SLDonHang.TabIndex = 221;
             this.SLDonHang.Text = "Khách hàng";
             // 
@@ -546,7 +546,7 @@
             this.label.ForeColor = System.Drawing.Color.Black;
             this.label.Location = new System.Drawing.Point(77, 680);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(128, 21);
+            this.label.Size = new System.Drawing.Size(104, 18);
             this.label.TabIndex = 222;
             this.label.Text = "Nhà cung cấp";
             // 
@@ -558,7 +558,7 @@
             this.gunaLabel11.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel11.Location = new System.Drawing.Point(77, 764);
             this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(97, 21);
+            this.gunaLabel11.Size = new System.Drawing.Size(77, 18);
             this.gunaLabel11.TabIndex = 223;
             this.gunaLabel11.Text = "Sản phẩm";
             // 
@@ -571,7 +571,7 @@
             this.SLNCC.ForeColor = System.Drawing.Color.Black;
             this.SLNCC.Location = new System.Drawing.Point(73, 701);
             this.SLNCC.Name = "SLNCC";
-            this.SLNCC.Size = new System.Drawing.Size(40, 44);
+            this.SLNCC.Size = new System.Drawing.Size(32, 35);
             this.SLNCC.TabIndex = 224;
             this.SLNCC.Text = "0";
             // 
@@ -584,7 +584,7 @@
             this.SLSPham.ForeColor = System.Drawing.Color.Black;
             this.SLSPham.Location = new System.Drawing.Point(73, 785);
             this.SLSPham.Name = "SLSPham";
-            this.SLSPham.Size = new System.Drawing.Size(40, 44);
+            this.SLSPham.Size = new System.Drawing.Size(32, 35);
             this.SLSPham.TabIndex = 225;
             this.SLSPham.Text = "0";
             // 
@@ -620,7 +620,7 @@
             this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel8.Location = new System.Drawing.Point(252, 555);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(159, 27);
+            this.gunaLabel8.Size = new System.Drawing.Size(132, 22);
             this.gunaLabel8.TabIndex = 228;
             this.gunaLabel8.Text = "Sắp hết hàng";
             // 
@@ -628,51 +628,51 @@
             // 
             this.dgvUnderstock.AllowUserToResizeColumns = false;
             this.dgvUnderstock.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            this.dgvUnderstock.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvUnderstock.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvUnderstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUnderstock.BackgroundColor = System.Drawing.Color.White;
             this.dgvUnderstock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvUnderstock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvUnderstock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUnderstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(215)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnderstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvUnderstock.ColumnHeadersHeight = 29;
             this.dgvUnderstock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenSP,
             this.SoLuong});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUnderstock.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUnderstock.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvUnderstock.EnableHeadersVisualStyles = false;
             this.dgvUnderstock.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvUnderstock.Location = new System.Drawing.Point(257, 585);
             this.dgvUnderstock.MultiSelect = false;
             this.dgvUnderstock.Name = "dgvUnderstock";
             this.dgvUnderstock.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUnderstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnderstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvUnderstock.RowHeadersVisible = false;
             this.dgvUnderstock.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
-            this.dgvUnderstock.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
+            this.dgvUnderstock.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvUnderstock.RowTemplate.Height = 24;
             this.dgvUnderstock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUnderstock.Size = new System.Drawing.Size(505, 244);
@@ -725,7 +725,7 @@
             this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel4.Location = new System.Drawing.Point(561, 154);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(61, 27);
+            this.gunaLabel4.Size = new System.Drawing.Size(50, 22);
             this.gunaLabel4.TabIndex = 230;
             this.gunaLabel4.Text = "VND";
             // 
@@ -739,7 +739,7 @@
             this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel6.Location = new System.Drawing.Point(1012, 154);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(61, 27);
+            this.gunaLabel6.Size = new System.Drawing.Size(50, 22);
             this.gunaLabel6.TabIndex = 231;
             this.gunaLabel6.Text = "VND";
             // 

@@ -22,3 +22,9 @@ C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\D
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

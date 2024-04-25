@@ -47,10 +47,10 @@ namespace Project_ver1.UI.Detail
                 textBoxEmail.Text= dt.Rows[0].Field<string>(4);
                 Tong.Text= dt.Rows[0].Field<int?>(5).ToString()=="" ? "0":dt.Rows[0].Field<int?>(5).ToString();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
                 this.Close();
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
 
@@ -80,10 +80,10 @@ namespace Project_ver1.UI.Detail
                     MessageBox.Show("Đã cập nhật chưa xong!\n\r" + "Lỗi:" + err);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
                 this.Close();
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
     }

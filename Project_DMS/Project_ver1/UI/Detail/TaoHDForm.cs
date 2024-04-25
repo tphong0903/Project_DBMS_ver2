@@ -55,9 +55,9 @@ namespace Project_ver1.UI.Detail
                 txtMaHD.ReadOnly= true;
 
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
+                MessageBox.Show("Không lấy được nội dung trong.Lỗi rồi!!! \n\n Lỗi: "+ ex.Message);
             }
         }
         #region Event

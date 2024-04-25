@@ -339,7 +339,7 @@
             this.dateTimePickerNgayThanhToan.ShadowDecoration.Parent = this.dateTimePickerNgayThanhToan;
             this.dateTimePickerNgayThanhToan.Size = new System.Drawing.Size(318, 44);
             this.dateTimePickerNgayThanhToan.TabIndex = 129;
-            this.dateTimePickerNgayThanhToan.Value = new System.DateTime(2024, 3, 22, 21, 10, 19, 800);
+            this.dateTimePickerNgayThanhToan.Value = new System.DateTime(2024, 4, 25, 0, 0, 0, 0);
             // 
             // gunaLabel6
             // 

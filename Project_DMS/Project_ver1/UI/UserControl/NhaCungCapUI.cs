@@ -37,9 +37,9 @@ namespace Project_ver1.UI
                 ID = dgvNCC.Rows[0].Cells[0].Value.ToString().ToLower();
                 LabelSNCC.Text = (dgvNCC.RowCount - 1).ToString();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không lấy được nội dung!!!");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
         #region Event
@@ -56,9 +56,16 @@ namespace Project_ver1.UI
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            a = new NCCDetail(1, ID);
-            a.ShowDialog();
- 
+            try
+            {
+                a = new NCCDetail(1, ID);
+                a.ShowDialog();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
+            }
+
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -68,9 +75,9 @@ namespace Project_ver1.UI
                 a = new NCCDetail(2 ,ID);
                 a.ShowDialog();
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Không thể truy cập!!!\nLỗi: " + ex.Message);
             }
         }
 
@@ -114,7 +121,7 @@ namespace Project_ver1.UI
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
 

@@ -101,57 +101,6 @@ END;
 
 
 GO
-CREATE or ALTER PROCEDURE spUpdateDiscount
-    @DiscountCode VARCHAR(10),
-    @PercentageDiscount INT,
-    @StartDay DATE,
-    @EndDay DATE
-AS
-BEGIN
-    BEGIN TRANSACTION;
-
-    BEGIN TRY
-		IF(@DiscountCode ='' or @PercentageDiscount IS NULL or @StartDay > @EndDay)
-			BEGIN
-				RAISERROR(N'Vui lòng nhập chính xác, đầy đủ thông tin', 16, 1)
-				return
-			END
-        UPDATE Discounts 
-        SET PercentageDiscount = @PercentageDiscount, 
-            StartDay = @StartDay, 
-            EndDay = @EndDay
-        WHERE DiscountCode = @DiscountCode;
-
-        COMMIT TRANSACTION;
-    END TRY
-    BEGIN CATCH
-		DECLARE @err NVARCHAR(MAX);
-		SELECT @err = N'Lỗi: '  + ERROR_MESSAGE();
-		RAISERROR(@err, 16, 1)
-		ROLLBACK TRANSACTION;
-    END CATCH
-END;
-
-
-
-GO
-CREATE or ALTER PROCEDURE spDeleteDiscount
-    @DiscountCode VARCHAR(10)
-AS
-BEGIN
-    BEGIN TRANSACTION;
-
-    BEGIN TRY
-        DELETE FROM Discounts WHERE DiscountCode = @DiscountCode;
-
-        COMMIT TRANSACTION;
-    END TRY
-    BEGIN CATCH
-        ROLLBACK TRANSACTION;
-    END CATCH
-END;
-
-
 
 -- Stored Procedure Employee
 GO
@@ -305,22 +254,6 @@ BEGIN
 		ROLLBACK TRANSACTION;
     END CATCH
 END;
-go
-CREATE or ALTER PROCEDURE spDeleteImport
-    @Import_ID VARCHAR(10)
-AS
-BEGIN
-    BEGIN TRANSACTION;
-
-    BEGIN TRY
-        DELETE FROM Imports WHERE Import_ID = @Import_ID;
-
-        COMMIT TRANSACTION;
-    END TRY
-    BEGIN CATCH
-        ROLLBACK TRANSACTION;
-    END CATCH
-END;
 
 GO
 
@@ -403,8 +336,6 @@ BEGIN
     END CATCH
 END;
 
-EXECUTE spDeleteOrder 'HD00012'
-GO
 -- Stored Procedure Order Details
 GO
 CREATE or ALTER PROCEDURE spInsertOrderDetail

@@ -63,9 +63,9 @@ namespace Project_ver1.UI
                 a = new NVDetail(1, ID);
                 a.ShowDialog();
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Khong the truy cap\n" + ex.Message);
             }
         }
 
@@ -76,9 +76,9 @@ namespace Project_ver1.UI
                 a = new NVDetail(2, ID);
                 a.ShowDialog();
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Khong the truy cap\n" + ex.Message);
             }
         }
 

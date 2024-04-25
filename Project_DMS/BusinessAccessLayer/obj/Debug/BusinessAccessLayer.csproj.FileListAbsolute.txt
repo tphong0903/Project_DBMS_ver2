@@ -34,3 +34,12 @@ C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\o
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 C:\HCMUTE\HeQuanTriCSDL\DoAn\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.AssemblyReference.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+D:\TAI LIEU DAI HOC\HQTCSDL\Code\ProjectCuoiKi\Project_DBMS_ver2\Project_DMS\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb

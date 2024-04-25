@@ -17,7 +17,7 @@ namespace Project_ver1
     {
         SanPhamUi frm1 = new SanPhamUi();
         KhachHangUI frm2 = new KhachHangUI();
-        NhanVienUI frm3 = new NhanVienUI();
+        NhanVienUI frm3 = null;
         HoaDonUI frm4 = null;
         BienLaiUI frm5 = new BienLaiUI();
         NhaCungCapUI frm6 = new NhaCungCapUI();
@@ -29,8 +29,14 @@ namespace Project_ver1
             ID = s;
             dbnv = new DBNhanVien();
             frm4 = new HoaDonUI(s);
+            frm3 =new NhanVienUI(s);
             InitializeComponent();
             addForm();
+            if (ID.Contains("BH"))
+            {
+                ButtonNCC.Visible= false;
+                ButtonHDNH.Visible = false;
+            }
             frm1.Show();
             this.Closed += new EventHandler(MainForm_Closed);
 

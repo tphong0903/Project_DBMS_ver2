@@ -27,6 +27,8 @@ namespace Project_ver1.UI
         {
             this.strMaNV = s;
             InitializeComponent();
+            if (strMaNV.Contains("BH"))
+                DeleButton.Visible = false;
             dbhd = new DBHoaDon();
         }
         public void LoadData()

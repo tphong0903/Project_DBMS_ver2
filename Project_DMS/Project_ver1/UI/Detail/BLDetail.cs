@@ -42,10 +42,10 @@ namespace Project_ver1.UI.Detail
                 dateTimePickerNgayThanhToan.Text = dt.Rows[0].Field<DateTime>(1).ToString();
                 textBoxThanhTien.Text = dt.Rows[0].Field<int>(2).ToString();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
                 this.Close();
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
 

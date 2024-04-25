@@ -38,12 +38,13 @@ namespace Project_ver1.UI.Detail
                 }
                 else
                 {
+                    this.Close();
                     MessageBox.Show("Đã thêm chưa xong!\n\r" + "Lỗi:" + err);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không thêm được. Lỗi rồi!");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
 

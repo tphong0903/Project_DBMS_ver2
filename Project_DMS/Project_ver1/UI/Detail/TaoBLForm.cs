@@ -46,7 +46,7 @@ namespace Project_ver1.UI.Detail
             catch (SqlException ex)
             {
                 this.Close();
-                MessageBox.Show("Khong the truy cap");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
         #region Event

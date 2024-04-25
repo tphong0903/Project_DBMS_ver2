@@ -42,9 +42,9 @@ namespace Project_ver1.UI
                 HD = dgvHoaDon.Rows[0].Cells[0].Value.ToString().ToLower();
                 LabelSoHoaDon.Text = (dgvHoaDon.RowCount - 1).ToString();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không lấy được nội dung trong table KHACHHANG.Lỗi rồi!!!");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
         #region Event
@@ -144,9 +144,9 @@ namespace Project_ver1.UI
                         MessageBox.Show("Đã xóa xong!");
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+                MessageBox.Show("Không thể truy cập!!!\n\nLỗi: " + ex.Message);
             }
         }
         #endregion

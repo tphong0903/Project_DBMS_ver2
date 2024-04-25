@@ -20,10 +20,12 @@ namespace Project_ver1.UI
         DataTable dtNhanVien = null;
         NVDetail a = null;
         string ID = null;
-        public NhanVienUI()
+        public NhanVienUI(string s)
         {
             InitializeComponent();
             dbnv = new DBNhanVien();
+            if (s.Contains("BH"))
+                DeleBtn.Visible = false;
         }
         public void LoadData()
         {

@@ -13,7 +13,7 @@ CREATE TABLE Customers (
 	Birthday DATE,
 	Gender CHAR(3) NOT NULL CONSTRAINT GenderCheck_Customer CHECK (GENDER IN ('Nam', 'Nu')),
 	Point INT,
-	CONSTRAINT PhoneNumber_Customer CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber LIKE '%[0-9]%')
+	CONSTRAINT PhoneNumber_Customer CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber NOT LIKE '%[^0-9]%')
 );
 
 CREATE TABLE Employees (
@@ -26,7 +26,7 @@ CREATE TABLE Employees (
 	RoleEmployee NVARCHAR(50) NOT NULL,
 	Active CHAR(1) NOT NULL,
 	PassWordAccount VARCHAR(10) NOT NULL,
-	CONSTRAINT PhoneNumber_Employee CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber LIKE '%[0-9]%'),
+	CONSTRAINT PhoneNumber_Employee CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber NOT LIKE '%[^0-9]%'),
 	CONSTRAINT LengthPassWordAccount CHECK (LEN(PassWordAccount) >= 6)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE Discounts (
 CREATE TABLE Suppliers (
 	Supplier_ID VARCHAR(10) CONSTRAINT Supplier_IDKey PRIMARY KEY,
 	CompanyName NVARCHAR(30) NOT NULL,
-	PhoneNumber VARCHAR(12) CONSTRAINT PhoneNumber_Supplier CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber LIKE '%[0-9]%'),
+	PhoneNumber VARCHAR(12) CONSTRAINT PhoneNumber_Supplier CHECK (LEN(PhoneNumber) = 10 AND PhoneNumber NOT LIKE '%[^0-9]%'),
 	AddressSupplier NVARCHAR(100) NOT NULL,
 	Email VARCHAR(50)
 );
